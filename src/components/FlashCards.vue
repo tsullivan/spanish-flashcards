@@ -95,6 +95,7 @@ loadNewCard()
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  min-height: 100dvh;
   border: 1px solid #6a7a8a;
   box-sizing: border-box;
   background-color: white;
