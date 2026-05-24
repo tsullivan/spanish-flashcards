@@ -154,6 +154,7 @@ button {
   font-size: 1rem;
   cursor: pointer;
   font-family: inherit;
+  touch-action: manipulation;
 }
 
 button:hover {
