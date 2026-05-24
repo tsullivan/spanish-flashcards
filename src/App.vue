@@ -1,18 +1,20 @@
 <script setup lang="ts">
 import FlashCards from './components/FlashCards.vue';
-import { ref } from 'vue';
-
-const runFlashcards = ref(false);
 </script>
 
 <template>
-  <div class="container">
-    <button @click="runFlashcards = !runFlashcards">
-      {{ runFlashcards ? 'Restart' : 'Start' }}
-    </button>
-  </div>
-
-  <div v-if="runFlashcards" class="box a">
-    <FlashCards />
-  </div>
+  <FlashCards />
 </template>
+
+<style>
+html, body, #app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #111;
+}
+</style>

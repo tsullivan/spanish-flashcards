@@ -38,35 +38,115 @@ const returnToPrevious = () => {
   }
 }
 
+const restart = () => {
+  visitedQuestions.value = []
+  step.value = 0
+  loadNewCard()
+}
+
 loadNewCard()
 </script>
 
 <template>
   <div class="flashcards">
-    <div class="card">
+    <header class="bar header">
       <h1>{{ currentCard.type }}</h1>
+    </header>
+
+    <main class="content">
       <h2>
-        {{ currentCard[showQuestionFirst ? 'question' : 'answer'] }}
-        {{ step > 0 ? ` - ${currentCard[showQuestionFirst ? 'answer' : 'question']}` : '' }}
+        {{ currentCard[showQuestionFirst ? 'question' : 'answer'] }}{{ step > 0 ? ` - ${currentCard[showQuestionFirst ? 'answer' : 'question']}` : '' }}
       </h2>
 
-      <div v-if="step > 1">
-        <p>{{ currentPhrase[showQuestionFirst ? 'question' : 'answer'] }}</p>
-      </div>
-
-      <div v-if="step > 2">
-        <p>{{ currentPhrase[showQuestionFirst ? 'answer' : 'question'] }}</p>
-      </div>
-
-      <p>
-        <button @click="advance">Next</button>
+      <p v-if="step > 1">
+        {{ currentPhrase[showQuestionFirst ? 'question' : 'answer'] }}
       </p>
 
-      <div v-if="visitedQuestions.length > 0">
-        <p>
-          <button @click="returnToPrevious">Previous</button>
-        </p>
+      <p v-if="step > 2">
+        {{ currentPhrase[showQuestionFirst ? 'answer' : 'question'] }}
+      </p>
+    </main>
+
+    <footer class="bar footer">
+      <button @click="restart">Restart</button>
+      <div class="nav-buttons">
+        <button v-if="visitedQuestions.length > 0" @click="returnToPrevious">Previous</button>
+        <button @click="advance">Next</button>
       </div>
-    </div>
+    </footer>
   </div>
 </template>
+
+<style scoped>
+.flashcards {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  border: 1px solid #6a7a8a;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.bar {
+  background-color: #b6d4e8;
+  padding: 0.85rem 1rem;
+}
+
+.header {
+  text-align: center;
+  border-bottom: 1px solid #6a7a8a;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.content {
+  flex: 1;
+  padding: 1.25rem 1rem;
+}
+
+.content h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 1.25rem;
+}
+
+.content p {
+  font-size: 1.05rem;
+  margin: 0.85rem 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #6a7a8a;
+  gap: 0.5rem;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+button {
+  background-color: white;
+  border: 1px solid #6a7a8a;
+  border-radius: 10px;
+  padding: 0.5rem 1.4rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+button:hover {
+  background-color: #f2f2f2;
+}
+
+button:active {
+  background-color: #e6e6e6;
+}
+</style>
