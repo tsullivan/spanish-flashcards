@@ -39,7 +39,7 @@ const setNext = (next = 0) => {
 
 const returnToPrevious = () => {
   if (visitedQuestions.value.length > 0) {
-    const [previousQuestionIndex, previousPhrasesIndex, previousShowQuestionFirst] = visitedQuestions.value.pop()
+    const [previousQuestionIndex, previousPhrasesIndex, previousShowQuestionFirst] = visitedQuestions.value.pop()!
     currentQuestionIndex.value = previousQuestionIndex
     currentPhrasesIndex.value = previousPhrasesIndex
     currentShowQuestionFirst.value = previousShowQuestionFirst
