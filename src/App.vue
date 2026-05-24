@@ -1,11 +1,26 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import FlashCards from './components/FlashCards.vue';
+import { ref } from 'vue';
+
+// Local state to track which box is visible
+const runFlashcards = ref(false);
+
+// Handler to update the state
+const showBox = (next) => {
+  runFlashcards.value = next;
+};
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
-</template>
+  <div class="container">
+    <!-- "Start" button text changes to "Restart" when flashcards are shown -->
+    <button @click="showBox(!runFlashcards)">
+      {{ runFlashcards ? 'Restart' : 'Start' }}
+    </button>
+  </div>
 
-<style scoped></style>
+  <!-- Conditional Rendering Blocks -->
+  <div v-if="runFlashcards === true" class="box a">
+    <FlashCards />
+  </div>
+</template>
