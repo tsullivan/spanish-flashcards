@@ -2772,7 +2772,7 @@ const regularVerbs: Card[] = [
       { answer: "let's meet our responsibilities", question: 'debamos cumplir con nuestras responsabilidades', },
     ],
   },
-]
+];
 
 // 1b. Irregular Verbs
 const irregularVerbs: Card[] = [
@@ -2935,7 +2935,7 @@ const irregularVerbs: Card[] = [
       { answer: "let's go to the park", question: 'vamos al parque' },
     ],
   },
-]
+];
 
 // 1c. Reflexive Verbs
 const reflexiveVerbs: Card[] = [
@@ -3095,7 +3095,7 @@ const reflexiveVerbs: Card[] = [
       { answer: "let's get dressed for the party", question: 'vistámonos para la fiesta' },
     ],
   },
-]
+];
 
 // 2. Nouns
 const nouns: Card[] = [
@@ -3161,7 +3161,7 @@ const nouns: Card[] = [
       { answer: 'a noisy dog', question: 'un perro ruidoso' },
     ],
   },
-]
+];
 
 export const source: AppData = {
   language: 'es-ES',
@@ -3171,4 +3171,4 @@ export const source: AppData = {
     ...reflexiveVerbs.map((card) => ({ ...card, type: 'Reflexive Verbs' })),
     ...nouns.map((card) => ({ ...card, type: 'Nouns' })),
   ],
-}
+};
