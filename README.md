@@ -46,6 +46,13 @@ npm run type-check
 npm run build
 ```
 
+The app is deployed at `/spanish-flashcards/` (GitHub Pages), so the Vite config sets `base: '/spanish-flashcards/'`. Built assets use that prefix — do not test the `dist/` output with a generic static server like `npx serve`. Use Vite's preview server instead, which handles the base path correctly:
+
+```sh
+npm run preview
+# open http://localhost:4173/spanish-flashcards/
+```
+
 ### Lint
 
 ```sh
