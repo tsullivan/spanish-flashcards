@@ -12,12 +12,12 @@ const currentPhrasesIndex = ref(0)
 const showQuestionFirst = ref(true)
 const step = ref(0)
 
-const currentCard = computed(() => source[currentQuestionIndex.value]!)
+const currentCard = computed(() => source.cards[currentQuestionIndex.value]!)
 const currentPhrase = computed(() => currentCard.value.phrases[currentPhrasesIndex.value]!)
 
 const loadNewCard = () => {
-  currentQuestionIndex.value = Math.floor(Math.random() * source.length)
-  currentPhrasesIndex.value = Math.floor(Math.random() * source[currentQuestionIndex.value]!.phrases.length)
+  currentQuestionIndex.value = Math.floor(Math.random() * source.cards.length)
+  currentPhrasesIndex.value = Math.floor(Math.random() * source.cards[currentQuestionIndex.value]!.phrases.length)
   showQuestionFirst.value = Math.random() < 0.5
 }
 
@@ -66,7 +66,7 @@ const speak = (text: string) => {
   if (!speechSupported) return
   window.speechSynthesis.cancel()
   const utterance = new SpeechSynthesisUtterance(text)
-  utterance.lang = 'es-ES'
+  utterance.lang = source.language;
   window.speechSynthesis.speak(utterance)
 }
 
@@ -82,17 +82,17 @@ loadNewCard()
     <main class="content">
       <h2>
         {{ currentCard[showQuestionFirst ? 'question' : 'answer'] }}{{ step > 0 ? ` - ${currentCard[showQuestionFirst ? 'answer' : 'question']}` : '' }}
-        <button v-if="speechSupported && step > 0" class="speaker" @click="speak(currentCard.question)" aria-label="Play Spanish audio">🔊</button>
+        <button v-if="speechSupported && step > 0" class="speaker" @click="speak(currentCard.question)" aria-label="Play question audio">🔊</button>
       </h2>
 
       <p v-if="step > 1">
         {{ currentPhrase[showQuestionFirst ? 'question' : 'answer'] }}
-        <button v-if="speechSupported && showQuestionFirst" class="speaker" @click="speak(currentPhrase.question)" aria-label="Play Spanish audio">🔊</button>
+        <button v-if="speechSupported && showQuestionFirst" class="speaker" @click="speak(currentPhrase.question)" aria-label="Play question audio">🔊</button>
       </p>
 
       <p v-if="step > 2">
         {{ currentPhrase[showQuestionFirst ? 'answer' : 'question'] }}
-        <button v-if="speechSupported && !showQuestionFirst" class="speaker" @click="speak(currentPhrase.question)" aria-label="Play Spanish audio">🔊</button>
+        <button v-if="speechSupported && !showQuestionFirst" class="speaker" @click="speak(currentPhrase.question)" aria-label="Play question audio">🔊</button>
       </p>
     </main>
 
