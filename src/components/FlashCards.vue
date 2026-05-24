@@ -44,6 +44,16 @@ const restart = () => {
   loadNewCard()
 }
 
+const speechSupported = typeof window !== 'undefined' && 'speechSynthesis' in window
+
+const speak = (text: string) => {
+  if (!speechSupported) return
+  window.speechSynthesis.cancel()
+  const utterance = new SpeechSynthesisUtterance(text)
+  utterance.lang = 'es-ES'
+  window.speechSynthesis.speak(utterance)
+}
+
 loadNewCard()
 </script>
 
@@ -56,14 +66,17 @@ loadNewCard()
     <main class="content">
       <h2>
         {{ currentCard[showQuestionFirst ? 'question' : 'answer'] }}{{ step > 0 ? ` - ${currentCard[showQuestionFirst ? 'answer' : 'question']}` : '' }}
+        <button v-if="speechSupported && step > 0" class="speaker" @click="speak(currentCard.question)" aria-label="Play Spanish audio">🔊</button>
       </h2>
 
       <p v-if="step > 1">
         {{ currentPhrase[showQuestionFirst ? 'question' : 'answer'] }}
+        <button v-if="speechSupported && showQuestionFirst" class="speaker" @click="speak(currentPhrase.question)" aria-label="Play Spanish audio">🔊</button>
       </p>
 
       <p v-if="step > 2">
         {{ currentPhrase[showQuestionFirst ? 'answer' : 'question'] }}
+        <button v-if="speechSupported && !showQuestionFirst" class="speaker" @click="speak(currentPhrase.question)" aria-label="Play Spanish audio">🔊</button>
       </p>
     </main>
 
@@ -148,5 +161,24 @@ button:hover {
 
 button:active {
   background-color: #e6e6e6;
+}
+
+.speaker {
+  background: none;
+  border: none;
+  padding: 0 0.25rem;
+  margin-left: 0.4rem;
+  font-size: 1rem;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.speaker:hover {
+  opacity: 0.7;
+  background: none;
+}
+
+.speaker:active {
+  background: none;
 }
 </style>
