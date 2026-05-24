@@ -774,25 +774,6 @@ const regularVerbs: FlashcardMain[] = [
     ],
   },
   {
-    answer: 'to lose',
-    question: 'perder',
-    phrases: [
-      { answer: 'I lose my keys', question: 'yo pierdo mis llaves' },
-      { answer: 'You (informal) lose your phone', question: 'tú pierdes tu teléfono' },
-      { answer: 'You (formal) lose your phone', question: 'usted pierde su teléfono' },
-      { answer: 'She (informal) loses her wallet', question: 'ella pierde su cartera' },
-      { answer: 'He (informal) loses his wallet', question: 'él pierde su cartera' },
-      { answer: 'They (informal) lose their keys', question: 'ellos pierden sus llaves' },
-      { answer: 'They (formal) lose their keys', question: 'ustedes pierden sus llaves' },
-      { answer: 'We lose together', question: 'nosotros perdemos juntos' },
-      { answer: 'We should lose less', question: 'nosotros deberíamos perder menos' },
-      { answer: 'Let\'s lose a game', question: 'perdamos un juego' },
-      { answer: 'to lose something', question: 'perder algo' },
-      { answer: 'to lose a solution', question: 'perder una solución' },
-      { answer: 'to lose a place', question: 'perder un lugar' },
-    ],
-  },
-  {
     answer: 'to think',
     question: 'pensar',
     phrases: [
