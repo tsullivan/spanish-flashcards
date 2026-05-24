@@ -2,7 +2,10 @@
 import { source } from '../../data/source'
 import { ref, computed } from 'vue'
 
-const visitedQuestions = ref<Array<[number, number, boolean]>>([])
+type CardState = [number, number, boolean]
+
+const back = ref<CardState[]>([])
+const forward = ref<CardState[]>([])
 
 const currentQuestionIndex = ref(0)
 const currentPhrasesIndex = ref(0)
@@ -18,28 +21,41 @@ const loadNewCard = () => {
   showQuestionFirst.value = Math.random() < 0.5
 }
 
+const captureState = (): CardState =>
+  [currentQuestionIndex.value, currentPhrasesIndex.value, showQuestionFirst.value]
+
+const restoreState = ([q, p, s]: CardState) => {
+  currentQuestionIndex.value = q
+  currentPhrasesIndex.value = p
+  showQuestionFirst.value = s
+}
+
 const advance = () => {
-  if (step.value === 3) {
-    visitedQuestions.value.push([currentQuestionIndex.value, currentPhrasesIndex.value, showQuestionFirst.value])
+  if (step.value < 3) {
+    step.value++
+    return
+  }
+  back.value.push(captureState())
+  if (forward.value.length > 0) {
+    restoreState(forward.value.pop()!)
+    step.value = 1
+  } else {
     loadNewCard()
     step.value = 0
-  } else {
-    step.value++
   }
 }
 
 const returnToPrevious = () => {
-  if (visitedQuestions.value.length > 0) {
-    const [q, p, s] = visitedQuestions.value.pop()!
-    currentQuestionIndex.value = q
-    currentPhrasesIndex.value = p
-    showQuestionFirst.value = s
-    step.value = 0
+  if (back.value.length > 0) {
+    forward.value.push(captureState())
+    restoreState(back.value.pop()!)
+    step.value = 1
   }
 }
 
 const restart = () => {
-  visitedQuestions.value = []
+  back.value = []
+  forward.value = []
   step.value = 0
   loadNewCard()
 }
@@ -83,7 +99,7 @@ loadNewCard()
     <footer class="bar footer">
       <button @click="restart">Restart</button>
       <div class="nav-buttons">
-        <button v-if="visitedQuestions.length > 0" @click="returnToPrevious">Previous</button>
+        <button v-if="back.length > 0" @click="returnToPrevious">Previous</button>
         <button @click="advance">Next</button>
       </div>
     </footer>
