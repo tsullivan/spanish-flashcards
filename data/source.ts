@@ -649,43 +649,47 @@ const DummiesBook: Record<string, Card[]> = {
     },
   ],
   'Putting Spanish into Action - Asking for directions': [
-    // Hello, can you please tell me how to get to...?
     {
       answer: `Hello, can you (formal) please tell me how to get to...?`,
       question: `Buenos días, ¿puede por favor decirme cómo llegar a...?`,
       phrases: [],
     },
-    // Please show me on this map.
-    { answer: `Please show me on this map.`, question: `Por favor, enséñeme en este mapa.`, phrases:
-      [] },
-    // Where are we now?
+    { answer: `Please show me on this map.`, question: `Por favor, enséñeme en este mapa.`, phrases: [] },
     { answer: `Where are we now?`, question: `¿Dónde estamos ahora?`, phrases: [] },
-    // How far is it to...?
     { answer: `How far is it to...?`, question: `¿A cuanto estámos de...?`, phrases: [] },
   ],
   'Putting Spanish into Action - Eating out and buying food': [
-    // I want this one
-    // restaurant
-    // market
-    // supermarket
+    { answer: `I want this one`, question: `Quiero este`, phrases: [] },
+    { answer: `the restaurant`, question: `el restaurante`, phrases: [] },
+    { answer: `the market`, question: `el mercado`, phrases: [] },
+    { answer: `the supermarket`, question: `el supermercado`, phrases: [] },
   ],
   'Putting Spanish into Action - Going shopping': [
-    // the shirt
-    // the shampoo
-    // the skirt
-    // the soap
-    // the pants
-    // the toilet paper
-    // the toothpaste
-    // the toothbrush
-    // the dress
-    // the jacket
-    // the shoes
-    // the socks
+    { answer: `the shirt`, question: `la camisa`, phrases: [] },
+    { answer: `the shampoo`, question: `el champú`, phrases: [] },
+    { answer: `the skirt`, question: `la falda`, phrases: [] },
+    { answer: `the soap`, question: `el jabón`, phrases: [] },
+    { answer: `the pants`, question: `los pantalones`, phrases: [] },
+    { answer: `the toilet paper`, question: `el papel higiénico`, phrases: [] },
+    { answer: `the toothpaste`, question: `la pasta de dientes`, phrases: [] },
+    { answer: `the toothbrush`, question: `el cepillo de dientes`, phrases: [] },
+    { answer: `the dress`, question: `el vestido`, phrases: [] },
+    { answer: `the jacket`, question: `la chaqueta`, phrases: [] },
+    { answer: `the shoes`, question: `los zapatos`, phrases: [] },
+    { answer: `the socks`, question: `los calcetines`, phrases: [] },
   ],
   'Putting Spanish into Action - Heading out on the town': [
-    // to go out, to leave
-    // to invite
+    { answer: `to go out`, question: `salir`, phrases: [] },
+    { answer: `to leave`, question: `irse`, phrases: [] },
+    { answer: `the bar`, question: `el bar`, phrases: [] },
+    { answer: `the club`, question: `la discoteca`, phrases: [] },
+    { answer: `the concert`, question: `el concierto`, phrases: [] },
+    { answer: `the movie theater`, question: `el cine`, phrases: [] },
+    { answer: `the restaurant`, question: `el restaurante`, phrases: [] },
+    { answer: `the park`, question: `el parque`, phrases: [] },
+    { answer: `the museum`, question: `el museo`, phrases: [] },
+    { answer: `the beach`, question: `la playa`, phrases: [] },
+    { answer: `to invite`, question: `invitar`, phrases: [] },
   ],
   'Putting Spanish into Action - Doing business': [
     // the office
