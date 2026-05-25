@@ -607,7 +607,7 @@ const DummiesBook: Record<string, Card[]> = {
 };
 
 const mapRecordToCards = (record: Record<string, Card[]>): AppData['cards'] => {
-  return Object.keys(record).flatMap((category) => record[category].map((card) => ({ ...card, type: category })));
+  return Object.keys(record).flatMap((category) => record[category]!.map((card) => ({ ...card, type: category })));
 };
 
 export const source: AppData = {
