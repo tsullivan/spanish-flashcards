@@ -70,6 +70,11 @@ body {
   font-size: 1.25rem;
   font-weight: 700;
 }
+.header h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
 
 .content {
   flex: 1;
@@ -85,6 +90,11 @@ body {
 .content p {
   font-size: 1.05rem;
   margin: 0.85rem 0;
+}
+
+.empty-state {
+  color: var(--color-fg-muted);
+  font-style: italic;
 }
 
 .footer {

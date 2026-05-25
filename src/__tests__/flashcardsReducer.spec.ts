@@ -2,23 +2,32 @@ import { describe, it, expect } from 'vitest';
 import { reducer } from '../stores/flashcards';
 
 type State = Parameters<typeof reducer>[0];
-type Action = Parameters<typeof reducer>[1];
 type Entry = State['current'];
 
-const entry = (q = 0, p = 0, s = true): Entry => ({ questionIndex: q, phrasesIndex: p, showQuestionFirst: s });
-const newEntry = entry(5, 1, false);
+const entry = (sectionKey = 'Basic Grammar', cardIndex = 0, phrasesIndex = 0, showQuestionFirst = true): Entry => ({
+  chapterKey: 'Chapter 1',
+  sectionKey,
+  groupIndex: 0,
+  cardIndex,
+  phrasesIndex,
+  showQuestionFirst,
+});
+const newEntry = entry('Numbers and Time', 5, 1, false);
 
 const mkState = (overrides: Partial<State> = {}): State => ({
   current: entry(),
   step: 0,
   back: [],
   forward: [],
+  enabledSections: ['Basic Grammar', 'Numbers and Time'],
   ...overrides,
 });
 
 const advance = (state: State): State => reducer(state, { type: 'ADVANCE', newEntry });
 const previous = (state: State): State => reducer(state, { type: 'PREVIOUS' });
-const restart = (state: State): State => reducer(state, { type: 'RESTART', newEntry });
+const restart = (state: State, entry?: Entry): State => reducer(state, { type: 'RESTART', newEntry: entry });
+const setSections = (state: State, sections: string[], entry?: Entry): State =>
+  reducer(state, { type: 'SET_ENABLED_SECTIONS', enabledSections: sections, newEntry: entry });
 
 describe('reducer — ADVANCE', () => {
   it('increments step from 0 to 1 without changing card or stacks', () => {
@@ -38,7 +47,7 @@ describe('reducer — ADVANCE', () => {
   });
 
   it('at step 3 with empty forward: uses newEntry, pushes current to back, resets step to 0', () => {
-    const original = entry(1, 2, true);
+    const original = entry('Basic Grammar', 1, 2, true);
     const s = advance(mkState({ current: original, step: 3 }));
     expect(s.step).toBe(0);
     expect(s.current).toEqual(newEntry);
@@ -47,17 +56,17 @@ describe('reducer — ADVANCE', () => {
   });
 
   it('at step 3 with existing back: appends current to back before loading new card', () => {
-    const existing = entry(9, 0, false);
-    const original = entry(1, 2, true);
+    const existing = entry('Numbers and Time', 9, 0, false);
+    const original = entry('Basic Grammar', 1, 2, true);
     const s = advance(mkState({ current: original, step: 3, back: [existing] }));
     expect(s.back).toEqual([existing, original]);
     expect(s.current).toEqual(newEntry);
   });
 
   it('at step 3 with non-empty forward: pops forward, pushes current to back, sets step to 1', () => {
-    const forward1 = entry(7, 0, true);
-    const forward2 = entry(8, 0, false);
-    const original = entry(1, 2, true);
+    const forward1 = entry('Basic Grammar', 7, 0, true);
+    const forward2 = entry('Numbers and Time', 8, 0, false);
+    const original = entry('Basic Grammar', 1, 2, true);
     const s = advance(mkState({ current: original, step: 3, forward: [forward1, forward2] }));
     expect(s.step).toBe(1);
     expect(s.current).toEqual(forward2);
@@ -66,10 +75,16 @@ describe('reducer — ADVANCE', () => {
   });
 
   it('at step 3 with forward: ignores newEntry entirely', () => {
-    const forwardEntry = entry(7, 0, true);
+    const forwardEntry = entry('Basic Grammar', 7, 0, true);
     const s = advance(mkState({ step: 3, forward: [forwardEntry] }));
     expect(s.current).toEqual(forwardEntry);
     expect(s.current).not.toEqual(newEntry);
+  });
+
+  it('preserves enabledSections across ADVANCE', () => {
+    const sections = ['Numbers and Time', 'Common Expressions'];
+    const s = advance(mkState({ step: 3, enabledSections: sections }));
+    expect(s.enabledSections).toEqual(sections);
   });
 
   it('does not mutate the original state object', () => {
@@ -88,8 +103,8 @@ describe('reducer — PREVIOUS', () => {
   });
 
   it('pops last entry from back, pushes current to forward, resets step to 0', () => {
-    const backEntry = entry(3, 1, false);
-    const original = entry(0, 0, true);
+    const backEntry = entry('Numbers and Time', 3, 1, false);
+    const original = entry('Basic Grammar', 0, 0, true);
     const s = previous(mkState({ current: original, step: 2, back: [backEntry] }));
     expect(s.step).toBe(0);
     expect(s.current).toEqual(backEntry);
@@ -98,22 +113,32 @@ describe('reducer — PREVIOUS', () => {
   });
 
   it('only pops the last back entry when multiple exist', () => {
-    const back1 = entry(1, 0, true);
-    const back2 = entry(2, 0, false);
+    const back1 = entry('Basic Grammar', 1, 0, true);
+    const back2 = entry('Numbers and Time', 2, 0, false);
     const s = previous(mkState({ back: [back1, back2] }));
     expect(s.current).toEqual(back2);
     expect(s.back).toEqual([back1]);
   });
 
   it('appends current to existing forward stack', () => {
-    const existing = entry(9, 0, true);
-    const original = entry(0, 0, false);
-    const s = previous(mkState({ current: original, back: [entry(1, 0, true)], forward: [existing] }));
+    const existing = entry('Common Expressions', 9, 0, true);
+    const original = entry('Basic Grammar', 0, 0, false);
+    const s = previous(mkState({
+      current: original,
+      back: [entry('Numbers and Time', 1, 0, true)],
+      forward: [existing],
+    }));
     expect(s.forward).toEqual([existing, original]);
   });
 
+  it('preserves enabledSections', () => {
+    const sections = ['Numbers and Time'];
+    const s = previous(mkState({ back: [entry()], enabledSections: sections }));
+    expect(s.enabledSections).toEqual(sections);
+  });
+
   it('does not mutate the original state', () => {
-    const backEntry = entry(3, 1, false);
+    const backEntry = entry('Numbers and Time', 3, 1, false);
     const original = mkState({ back: [backEntry] });
     const result = previous(original);
     expect(result).not.toBe(original);
@@ -124,55 +149,101 @@ describe('reducer — PREVIOUS', () => {
 describe('reducer — RESTART', () => {
   it('uses newEntry as current, resets step to 0, clears both stacks', () => {
     const s = restart(mkState({
-      current: entry(1, 2, true),
+      current: entry('Basic Grammar', 1, 2, true),
       step: 3,
-      back: [entry(4, 0, false)],
-      forward: [entry(5, 1, true)],
-    }));
+      back: [entry('Numbers and Time', 4, 0, false)],
+      forward: [entry('Common Expressions', 5, 1, true)],
+    }), newEntry);
     expect(s.current).toEqual(newEntry);
+    expect(s.step).toBe(0);
+    expect(s.back).toEqual([]);
+    expect(s.forward).toEqual([]);
+  });
+
+  it('preserves enabledSections', () => {
+    const sections = ['Common Expressions'];
+    const s = restart(mkState({ enabledSections: sections }), newEntry);
+    expect(s.enabledSections).toEqual(sections);
+  });
+
+  it('with undefined newEntry: keeps current, still clears stacks (empty-sections case)', () => {
+    const original = entry('Basic Grammar', 1, 2, true);
+    const s = restart(mkState({
+      current: original,
+      step: 3,
+      back: [entry('Numbers and Time', 4, 0, false)],
+      enabledSections: [],
+    }));
+    expect(s.current).toEqual(original);
     expect(s.step).toBe(0);
     expect(s.back).toEqual([]);
     expect(s.forward).toEqual([]);
   });
 });
 
+describe('reducer — SET_ENABLED_SECTIONS', () => {
+  it('updates enabledSections and replaces current with newEntry when stacks are empty', () => {
+    const original = entry('Basic Grammar', 0, 0, true);
+    const newSections = ['Numbers and Time', 'Common Expressions'];
+    const s = setSections(mkState({ current: original, step: 2 }), newSections, newEntry);
+    expect(s.enabledSections).toEqual(newSections);
+    expect(s.current).toEqual(newEntry);
+    expect(s.step).toBe(0);
+  });
+
+  it('returns the same state when back is non-empty (precondition fail)', () => {
+    const s = mkState({ back: [entry()] });
+    expect(setSections(s, ['Numbers and Time'], newEntry)).toBe(s);
+  });
+
+  it('returns the same state when forward is non-empty (precondition fail)', () => {
+    const s = mkState({ forward: [entry()] });
+    expect(setSections(s, ['Numbers and Time'], newEntry)).toBe(s);
+  });
+
+  it('accepts an empty enabledSections array (empty state)', () => {
+    const original = entry('Basic Grammar', 0, 0, true);
+    const s = setSections(mkState({ current: original }), [], undefined);
+    expect(s.enabledSections).toEqual([]);
+    expect(s.current).toEqual(original);
+    expect(s.step).toBe(0);
+  });
+
+  it('does not mutate the original state', () => {
+    const original = mkState();
+    const result = setSections(original, ['Numbers and Time'], newEntry);
+    expect(result).not.toBe(original);
+    expect(original.enabledSections).toEqual(['Basic Grammar', 'Numbers and Time']);
+  });
+});
+
 describe('reducer — navigation flows', () => {
   it('advance three times then advance reveals new card; previous restores old at step 0', () => {
-    const original = entry(0, 0, true);
+    const original = entry('Basic Grammar', 0, 0, true);
     let s = mkState({ current: original, step: 3 });
-    s = advance(s); // step 3 → new card at step 0
+    s = advance(s);
     expect(s.current).toEqual(newEntry);
     expect(s.back).toEqual([original]);
 
-    s = previous(s); // back → original at step 0
+    s = previous(s);
     expect(s.current).toEqual(original);
     expect(s.step).toBe(0);
     expect(s.forward).toEqual([newEntry]);
     expect(s.back).toEqual([]);
   });
 
-  it('going back then forward (via advance at step 3) restores the forward entry at step 1', () => {
-    const first = entry(0, 0, true);
-    const second = entry(1, 0, false);
+  it('going back then forward (advance at step 3) restores the forward entry at step 1', () => {
+    const first = entry('Basic Grammar', 0, 0, true);
+    const second = entry('Numbers and Time', 1, 0, false);
 
-    // Simulate: advance past first to second, go back to first, then advance past first again
-    let s = mkState({ current: second, step: 3, back: [first] });
-    s = advance(s); // pop first onto back? No wait — at step 3, advance pushes current (second) to back and loads newEntry
-    // Actually that's wrong. Let me redo this.
-    // State: current=second, step=3, back=[first], forward=[]
-    // advance → current=newEntry, step=0, back=[first, second], forward=[]
-    // previous → current=second, step=0, back=[first], forward=[newEntry]
-    // advance (step0→1→2→3 then advance again) restores forward
-
-    s = mkState({ current: second, step: 3, back: [first], forward: [] });
-    s = advance(s); // current=newEntry, step=0, back=[first,second]
+    let s = mkState({ current: second, step: 3, back: [first], forward: [] });
+    s = advance(s);
     expect(s.current).toEqual(newEntry);
 
-    s = previous(s); // current=second, step=0, back=[first], forward=[newEntry]
+    s = previous(s);
     expect(s.current).toEqual(second);
     expect(s.forward).toEqual([newEntry]);
 
-    // Advance through steps 0→1→2→3, then one more
     s = advance(mkState({ current: second, step: 3, back: [first], forward: [newEntry] }));
     expect(s.current).toEqual(newEntry);
     expect(s.step).toBe(1);

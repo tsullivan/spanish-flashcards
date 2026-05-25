@@ -7,9 +7,19 @@ export type Card = CardPair & {
   phrases: CardPair[];
 };
 
-export interface AppData {
-  language: 'es-ES';
-  cards: Array<Card & { type: string }>;
+interface CollectionSet {
+  [chapter: string]: CardCollection;
 }
 
+export interface AppData {
+  language: 'es-ES';
+  cards: CollectionSet;
+}
+
+export interface CardCollection {
+  [section: string]: {
+    subTitle?: string;
+    cards: Card[];
+  }[];
+}
 
