@@ -652,101 +652,440 @@ const DummiesBook: Record<string, Card[]> = {
     {
       answer: `Hello, can you (formal) please tell me how to get to...?`,
       question: `Buenos días, ¿puede por favor decirme cómo llegar a...?`,
-      phrases: [],
+      phrases: [
+        { answer: 'Can you tell me how to get to the museum?', question: '¿Puede decirme cómo llegar al museo?' },
+      ],
     },
-    { answer: `Please show me on this map.`, question: `Por favor, enséñeme en este mapa.`, phrases: [] },
-    { answer: `Where are we now?`, question: `¿Dónde estamos ahora?`, phrases: [] },
-    { answer: `How far is it to...?`, question: `¿A cuanto estámos de...?`, phrases: [] },
+    {
+      answer: `Please show me on this map.`,
+      question: `Por favor, enséñeme en este mapa.`,
+      phrases: [
+        {
+          answer: 'Please show me where we are on this map',
+          question: 'Por favor, enséñeme dónde estamos en este mapa',
+        },
+      ],
+    },
+    {
+      answer: `Where are we now?`,
+      question: `¿Dónde estamos ahora?`,
+      phrases: [{ answer: 'I do not know where we are now', question: 'No sé dónde estamos ahora' }],
+    },
+    {
+      answer: `How far is it to...?`,
+      question: `¿A cuánto estamos de...?`,
+      phrases: [{ answer: 'How far is it to the airport?', question: '¿A cuánto estamos del aeropuerto?' }],
+    },
   ],
   'Putting Spanish into Action - Eating out and buying food': [
-    { answer: `I want this one`, question: `Quiero este`, phrases: [] },
-    { answer: `the restaurant`, question: `el restaurante`, phrases: [] },
-    { answer: `the market`, question: `el mercado`, phrases: [] },
-    { answer: `the supermarket`, question: `el supermercado`, phrases: [] },
+    {
+      answer: `I want this one`,
+      question: `Quiero este`,
+      phrases: [{ answer: 'I want this one instead', question: 'Prefiero este' }],
+    },
+    {
+      answer: `the restaurant`,
+      question: `el restaurante`,
+      phrases: [{ answer: 'I ate at that restaurant last week', question: 'Comí en ese restaurante la semana pasada' }],
+    },
+    {
+      answer: `the market`,
+      question: `el mercado`,
+      phrases: [
+        { answer: 'I bought fresh vegetables at the market', question: 'Compré vegetales frescos en el mercado' },
+      ],
+    },
+    {
+      answer: `the supermarket`,
+      question: `el supermercado`,
+      phrases: [{ answer: 'I go to the supermarket on Saturday', question: 'Voy al supermercado el sábado' }],
+    },
   ],
   'Putting Spanish into Action - Going shopping': [
-    { answer: `the shirt`, question: `la camisa`, phrases: [] },
-    { answer: `the shampoo`, question: `el champú`, phrases: [] },
-    { answer: `the skirt`, question: `la falda`, phrases: [] },
-    { answer: `the soap`, question: `el jabón`, phrases: [] },
-    { answer: `the pants`, question: `los pantalones`, phrases: [] },
-    { answer: `the toilet paper`, question: `el papel higiénico`, phrases: [] },
-    { answer: `the toothpaste`, question: `la pasta de dientes`, phrases: [] },
-    { answer: `the toothbrush`, question: `el cepillo de dientes`, phrases: [] },
-    { answer: `the dress`, question: `el vestido`, phrases: [] },
-    { answer: `the jacket`, question: `la chaqueta`, phrases: [] },
-    { answer: `the shoes`, question: `los zapatos`, phrases: [] },
-    { answer: `the socks`, question: `los calcetines`, phrases: [] },
+    {
+      answer: `the shirt`,
+      question: `la camisa`,
+      phrases: [{ answer: 'I bought a blue shirt yesterday', question: 'Compré una camisa azul ayer' }],
+    },
+    {
+      answer: `the shampoo`,
+      question: `el champú`,
+      phrases: [{ answer: 'I need to buy new shampoo', question: 'Necesito comprar champú nuevo' }],
+    },
+    {
+      answer: `the skirt`,
+      question: `la falda`,
+      phrases: [{ answer: 'She wore a red skirt to the party', question: 'Ella llevaba una falda roja a la fiesta' }],
+    },
+    {
+      answer: `the soap`,
+      question: `el jabón`,
+      phrases: [{ answer: 'I use soap to wash my hands', question: 'Uso jabón para lavarme las manos' }],
+    },
+    {
+      answer: `the pants`,
+      question: `los pantalones`,
+      phrases: [{ answer: 'These pants fit perfectly', question: 'Estos pantalones me quedan perfectos' }],
+    },
+    {
+      answer: `the toilet paper`,
+      question: `el papel higiénico`,
+      phrases: [{ answer: 'We need to buy toilet paper', question: 'Necesitamos comprar papel higiénico' }],
+    },
+    {
+      answer: `the toothpaste`,
+      question: `la pasta de dientes`,
+      phrases: [{ answer: 'I forgot my toothpaste at home', question: 'Olvidé mi pasta de dientes en casa' }],
+    },
+    {
+      answer: `the toothbrush`,
+      question: `el cepillo de dientes`,
+      phrases: [
+        {
+          answer: 'I brush my teeth with my toothbrush every morning',
+          question: 'Me cepillo los dientes con mi cepillo cada mañana',
+        },
+      ],
+    },
+    {
+      answer: `the dress`,
+      question: `el vestido`,
+      phrases: [{ answer: 'I wore a beautiful dress to the wedding', question: 'Usé un vestido hermoso en la boda' }],
+    },
+    {
+      answer: `the jacket`,
+      question: `la chaqueta`,
+      phrases: [{ answer: 'I left my jacket at the office', question: 'Dejé mi chaqueta en la oficina' }],
+    },
+    {
+      answer: `the shoes`,
+      question: `los zapatos`,
+      phrases: [{ answer: 'I walked so much that my shoes hurt', question: 'Caminé tanto que me duelen los zapatos' }],
+    },
+    {
+      answer: `the socks`,
+      question: `los calcetines`,
+      phrases: [{ answer: 'I could not find matching socks', question: 'No pude encontrar calcetines que combinaran' }],
+    },
   ],
   'Putting Spanish into Action - Heading out on the town': [
-    { answer: `to go out`, question: `salir`, phrases: [] },
-    { answer: `to leave`, question: `irse`, phrases: [] },
-    { answer: `the bar`, question: `el bar`, phrases: [] },
-    { answer: `the club`, question: `la discoteca`, phrases: [] },
-    { answer: `the concert`, question: `el concierto`, phrases: [] },
-    { answer: `the movie theater`, question: `el cine`, phrases: [] },
-    { answer: `the restaurant`, question: `el restaurante`, phrases: [] },
-    { answer: `the park`, question: `el parque`, phrases: [] },
-    { answer: `the museum`, question: `el museo`, phrases: [] },
-    { answer: `the beach`, question: `la playa`, phrases: [] },
-    { answer: `to invite`, question: `invitar`, phrases: [] },
+    {
+      answer: `to go out`,
+      question: `salir`,
+      phrases: [{ answer: 'I went out with my friends last night', question: 'Salí con mis amigos anoche' }],
+    },
+    {
+      answer: `to leave`,
+      question: `irse`,
+      phrases: [{ answer: 'I left the party early', question: 'Me fui de la fiesta temprano' }],
+    },
+    {
+      answer: `the bar`,
+      question: `el bar`,
+      phrases: [{ answer: 'We met at the bar downtown', question: 'Nos encontramos en el bar del centro' }],
+    },
+    {
+      answer: `the club`,
+      question: `la discoteca`,
+      phrases: [{ answer: 'They danced at the club all night', question: 'Bailaron en la discoteca toda la noche' }],
+    },
+    {
+      answer: `the concert`,
+      question: `el concierto`,
+      phrases: [
+        { answer: 'I loved the concert last weekend', question: 'Me encantó el concierto el fin de semana pasado' },
+      ],
+    },
+    {
+      answer: `the movie theater`,
+      question: `el cine`,
+      phrases: [{ answer: 'I saw a great movie at the cinema', question: 'Vi una película excelente en el cine' }],
+    },
+    {
+      answer: `the restaurant`,
+      question: `el restaurante`,
+      phrases: [{ answer: 'We had dinner at a nice restaurant', question: 'Cenamos en un restaurante agradable' }],
+    },
+    {
+      answer: `the park`,
+      question: `el parque`,
+      phrases: [{ answer: 'We walked through the park yesterday', question: 'Caminamos por el parque ayer' }],
+    },
+    {
+      answer: `the museum`,
+      question: `el museo`,
+      phrases: [{ answer: 'I visited the art museum', question: 'Visité el museo de arte' }],
+    },
+    {
+      answer: `the beach`,
+      question: `la playa`,
+      phrases: [{ answer: 'I went to the beach during vacation', question: 'Fui a la playa durante las vacaciones' }],
+    },
+    {
+      answer: `to invite`,
+      question: `invitar`,
+      phrases: [
+        { answer: 'I invited my coworkers to the party', question: 'Invité a mis compañeros de trabajo a la fiesta' },
+      ],
+    },
   ],
   'Putting Spanish into Action - Doing business': [
-    // the office
-    // the computer
-    // the telephone
-    // the break room
-    // the meeting
-    // the presentation
-    // the project
-    // the report
-    // the schedule
-    // the deadline
-    // the client
-    // the boss
-    // the coworker
-    // the employee
-    // the company
+    {
+      answer: 'the office',
+      question: 'la oficina',
+      phrases: [{ answer: 'I work in the office every day', question: 'Trabajo en la oficina cada día' }],
+    },
+    {
+      answer: 'the computer',
+      question: 'la computadora',
+      phrases: [{ answer: 'The computer is broken', question: 'La computadora está rota' }],
+    },
+    {
+      answer: 'the telephone',
+      question: 'el teléfono',
+      phrases: [{ answer: 'Where is the telephone?', question: '¿Dónde está el teléfono?' }],
+    },
+    {
+      answer: 'the break room',
+      question: 'la sala de descanso',
+      phrases: [{ answer: 'I take a break in the break room', question: 'Tomo un descanso en la sala de descanso' }],
+    },
+    {
+      answer: 'the meeting',
+      question: 'la reunión',
+      phrases: [{ answer: 'The meeting is at 2 PM', question: 'La reunión es a las dos de la tarde' }],
+    },
+    {
+      answer: 'the presentation',
+      question: 'la presentación',
+      phrases: [{ answer: 'I gave a presentation yesterday', question: 'Di una presentación ayer' }],
+    },
+    {
+      answer: 'the project',
+      question: 'el proyecto',
+      phrases: [{ answer: 'We finished the project on time', question: 'Terminamos el proyecto a tiempo' }],
+    },
+    {
+      answer: 'the report',
+      question: 'el informe',
+      phrases: [{ answer: 'Did you read the report?', question: '¿Leíste el informe?' }],
+    },
+    {
+      answer: 'the schedule',
+      question: 'el horario',
+      phrases: [{ answer: 'What is your work schedule?', question: '¿Cuál es tu horario de trabajo?' }],
+    },
+    {
+      answer: 'the deadline',
+      question: 'la fecha límite',
+      phrases: [{ answer: 'The deadline is next Friday', question: 'La fecha límite es el próximo viernes' }],
+    },
+    {
+      answer: 'the client',
+      question: 'el cliente',
+      phrases: [{ answer: 'The client was very satisfied', question: 'El cliente estaba muy satisfecho' }],
+    },
+    {
+      answer: 'the boss',
+      question: 'el jefe',
+      phrases: [{ answer: 'My boss gave me a raise', question: 'Mi jefe me dio un aumento' }],
+    },
+    {
+      answer: 'the coworker',
+      question: 'el compañero de trabajo',
+      phrases: [
+        {
+          answer: 'My coworker helped me with the project',
+          question: 'Mi compañero de trabajo me ayudó con el proyecto',
+        },
+      ],
+    },
+    {
+      answer: 'the employee',
+      question: 'el empleado',
+      phrases: [{ answer: 'The employee was hired last month', question: 'El empleado fue contratado el mes pasado' }],
+    },
+    {
+      answer: 'the company',
+      question: 'la empresa',
+      phrases: [{ answer: 'The company grows every year', question: 'La empresa crece cada año' }],
+    },
   ],
   'Putting Spanish into Action - Enjoying the great outdoors and more': [
-    // Do you like to walk (hike)?
-    // What do you like to play?
-    // Do you play chess?
-    // Do you like to read?
+    {
+      answer: 'Do you like to walk or hike?',
+      question: '¿Te gusta caminar o hacer senderismo?',
+      phrases: [{ answer: 'I liked to hike in the mountains', question: 'Me gustaba caminar en las montañas' }],
+    },
+    {
+      answer: 'What games do you like to play?',
+      question: '¿Qué juegos te gusta jugar?',
+      phrases: [{ answer: 'I used to play soccer', question: 'Solía jugar fútbol' }],
+    },
+    {
+      answer: 'Do you play chess?',
+      question: '¿Juegas al ajedrez?',
+      phrases: [{ answer: 'I played chess when I was younger', question: 'Jugaba al ajedrez cuando era más joven' }],
+    },
+    {
+      answer: 'Do you like to read?',
+      question: '¿Te gusta leer?',
+      phrases: [{ answer: 'I read books every evening', question: 'Leo libros cada noche' }],
+    },
   ],
   'Taking Spanish on the Go - Preparing for a trip': [
-    // the passport
-    // the visa
-    // the flight
-    // to pack your luggage
+    {
+      answer: 'the passport',
+      question: 'el pasaporte',
+      phrases: [{ answer: 'I found my passport in the drawer', question: 'Encontré mi pasaporte en el cajón' }],
+    },
+    {
+      answer: 'the visa',
+      question: 'la visa',
+      phrases: [{ answer: 'Did you get your visa approved?', question: '¿Te aprobaron la visa?' }],
+    },
+    {
+      answer: 'the flight',
+      question: 'el vuelo',
+      phrases: [{ answer: 'My flight leaves at 8 AM', question: 'Mi vuelo sale a las 8 de la mañana' }],
+    },
+    {
+      answer: 'to pack your luggage',
+      question: 'empacar tu equipaje',
+      phrases: [{ answer: 'I packed my luggage yesterday', question: 'Empaqué mi equipaje ayer' }],
+    },
   ],
   'Taking Spanish on the Go - Making sense of money': [
-    // the money
-    // the bill
-    // the change
-    // the credit card
-    // the cash
+    {
+      answer: 'the money',
+      question: 'el dinero',
+      phrases: [{ answer: 'I spent all my money on vacation', question: 'Gasté todo mi dinero en las vacaciones' }],
+    },
+    {
+      answer: 'the bill',
+      question: 'la factura',
+      phrases: [{ answer: 'Can you pay the bill please?', question: '¿Puedes pagar la factura por favor?' }],
+    },
+    {
+      answer: 'the change',
+      question: 'el cambio',
+      phrases: [{ answer: 'Keep the change as a tip', question: 'Guarda el cambio como propina' }],
+    },
+    {
+      answer: 'the credit card',
+      question: 'la tarjeta de crédito',
+      phrases: [{ answer: 'I paid with my credit card', question: 'Pagué con mi tarjeta de crédito' }],
+    },
+    {
+      answer: 'the cash',
+      question: 'el efectivo',
+      phrases: [{ answer: 'Do you have any cash?', question: '¿Tienes efectivo?' }],
+    },
   ],
   'Taking Spanish on the Go - Navigating airports and travel': [],
   'Taking Spanish on the Go - Getting around with local transportation': [
-    // Where is...?
-    // the airport
-    // the bus
-    // the train station
-    // the taxi
-    // the bus station
-    // the car rental office
+    {
+      answer: 'Where is...?',
+      question: '¿Dónde está...?',
+      phrases: [{ answer: 'Where is the train station?', question: '¿Dónde está la estación de tren?' }],
+    },
+    {
+      answer: 'the airport',
+      question: 'el aeropuerto',
+      phrases: [{ answer: 'The airport is far from here', question: 'El aeropuerto está lejos de aquí' }],
+    },
+    {
+      answer: 'the bus',
+      question: 'el autobús',
+      phrases: [{ answer: 'I took the bus to work this morning', question: 'Tomé el autobús al trabajo esta mañana' }],
+    },
+    {
+      answer: 'the train station',
+      question: 'la estación de tren',
+      phrases: [{ answer: 'The train station is downtown', question: 'La estación de tren está en el centro' }],
+    },
+    {
+      answer: 'the taxi',
+      question: 'el taxi',
+      phrases: [{ answer: 'I called a taxi to get home', question: 'Llamé un taxi para ir a casa' }],
+    },
+    {
+      answer: 'the bus station',
+      question: 'la estación de autobús',
+      phrases: [
+        { answer: 'The bus station is near the market', question: 'La estación de autobús está cerca del mercado' },
+      ],
+    },
+    {
+      answer: 'the car rental office',
+      question: 'la oficina de alquiler de coches',
+      phrases: [
+        { answer: 'I rented a car at the car rental office', question: 'Alquilé un coche en la oficina de alquiler' },
+      ],
+    },
   ],
   'Taking Spanish on the Go - Securing a place to stay': [
-    // Do you have a room available?
-    // Is the room large enough for two people?
-    // Does it have a private bathroom?
-    // Does it have two beds?
-    // How much does it cost per night?
-    // Do you accept credit cards?
+    {
+      answer: 'Do you have a room available?',
+      question: '¿Tiene una habitación disponible?',
+      phrases: [
+        {
+          answer: 'I looked for a room available in the hotel',
+          question: 'Busqué una habitación disponible en el hotel',
+        },
+      ],
+    },
+    {
+      answer: 'Is the room large enough for two people?',
+      question: '¿Es la habitación lo suficientemente grande para dos personas?',
+      phrases: [
+        {
+          answer: 'The room was large enough for our family',
+          question: 'La habitación era lo suficientemente grande para nuestra familia',
+        },
+      ],
+    },
+    {
+      answer: 'Does it have a private bathroom?',
+      question: '¿Tiene un baño privado?',
+      phrases: [
+        {
+          answer: 'The room has a private bathroom with a shower',
+          question: 'La habitación tiene un baño privado con ducha',
+        },
+      ],
+    },
+    {
+      answer: 'Does it have two beds?',
+      question: '¿Tiene dos camas?',
+      phrases: [
+        {
+          answer: 'I asked if it has two beds for the guests',
+          question: 'Pregunté si tiene dos camas para los huéspedes',
+        },
+      ],
+    },
+    {
+      answer: 'How much does it cost per night?',
+      question: '¿Cuánto cuesta por noche?',
+      phrases: [{ answer: 'It costs fifty euros per night', question: 'Cuesta cincuenta euros por noche' }],
+    },
+    {
+      answer: 'Do you accept credit cards?',
+      question: '¿Aceptan tarjetas de crédito?',
+      phrases: [
+        { answer: 'We accept all types of credit cards', question: 'Aceptamos todos los tipos de tarjetas de crédito' },
+      ],
+    },
   ],
   'Taking Spanish on the Go - Taking action during emergencies': [
-    // Please help me!
+    {
+      answer: 'Please help me!',
+      question: '¡Por favor, ayúdame!',
+      phrases: [
+        { answer: 'I called for help because I was lost', question: 'Llamé pidiendo ayuda porque estaba perdido' },
+      ],
+    },
   ],
 };
 
