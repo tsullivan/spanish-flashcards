@@ -604,6 +604,162 @@ const DummiesBook: Record<string, Card[]> = {
       phrases: [{ answer: 'The garden is in front of the house', question: 'El jardín está frente a la casa' }],
     },
   ],
+  'Putting Spanish into Action - Making small talk': [
+    {
+      answer: `What's your name?`,
+      question: '¿Cómo te llamas?',
+      phrases: [
+        { answer: 'My name is Carlos', question: 'Me llamo Carlos' },
+        { answer: 'What is your full name?', question: '¿Cuál es tu nombre completo?' },
+      ],
+    },
+    {
+      answer: `Where do you live?`,
+      question: '¿Dónde vives?',
+      phrases: [
+        { answer: 'I live in Madrid', question: 'Vivo en Madrid' },
+        { answer: 'I live in a small town', question: 'Vivo en un pueblo pequeño' },
+        { answer: 'I live in America', question: 'Vivo en América' },
+        { answer: 'Do you live here?', question: '¿Vives aquí?' },
+      ],
+    },
+    {
+      answer: `What do you do for work?`,
+      question: '¿A qué te dedicas?',
+      phrases: [
+        { answer: 'I am a teacher', question: 'Soy profesor' },
+        { answer: 'What is your profession?', question: '¿Cuál es tu profesión?' },
+      ],
+    },
+    {
+      answer: 'How are you (formal)?',
+      question: '¿Cómo está usted?',
+      phrases: [
+        { answer: 'I am doing well, thank you', question: 'Estoy bien, gracias' },
+        { answer: 'How are you doing?', question: '¿Cómo le va?' },
+      ],
+    },
+    {
+      answer: `What do you (formal) do?`,
+      question: '¿Qué hace usted?',
+      phrases: [
+        { answer: 'I am a doctor', question: 'Soy médico' },
+        { answer: 'What is your job?', question: '¿Cuál es su trabajo?' },
+      ],
+    },
+    {
+      answer: `How old are you (informal)?`,
+      question: '¿Cuántos años tienes?',
+      phrases: [
+        { answer: 'I am 25 years old', question: 'Yo tengo veinticinco años' },
+        { answer: 'How old are you?', question: '¿Cuántos años tienes?' },
+      ],
+    },
+    {
+      answer: `How old are you (formal)?`,
+      question: '¿Cuántos años tiene usted?',
+      phrases: [
+        { answer: 'I am 30 years old', question: 'Tengo 30 años' },
+        { answer: 'May I ask how old you are?', question: '¿Puedo preguntar cuántos años tiene?' },
+      ],
+    },
+  ],
+  'Putting Spanish into Action - Asking for directions': [
+    // Hello, can you please tell me how to get to...?
+    {
+      answer: `Hello, can you (formal) please tell me how to get to...?`,
+      question: `Buenos días, ¿puede por favor decirme cómo llegar a...?`,
+      phrases: [],
+    },
+    // Please show me on this map.
+    { answer: `Please show me on this map.`, question: `Por favor, enséñeme en este mapa.`, phrases:
+      [] },
+    // Where are we now?
+    { answer: `Where are we now?`, question: `¿Dónde estamos ahora?`, phrases: [] },
+    // How far is it to...?
+    { answer: `How far is it to...?`, question: `¿A cuanto estámos de...?`, phrases: [] },
+  ],
+  'Putting Spanish into Action - Eating out and buying food': [
+    // I want this one
+    // restaurant
+    // market
+    // supermarket
+  ],
+  'Putting Spanish into Action - Going shopping': [
+    // the shirt
+    // the shampoo
+    // the skirt
+    // the soap
+    // the pants
+    // the toilet paper
+    // the toothpaste
+    // the toothbrush
+    // the dress
+    // the jacket
+    // the shoes
+    // the socks
+  ],
+  'Putting Spanish into Action - Heading out on the town': [
+    // to go out, to leave
+    // to invite
+  ],
+  'Putting Spanish into Action - Doing business': [
+    // the office
+    // the computer
+    // the telephone
+    // the break room
+    // the meeting
+    // the presentation
+    // the project
+    // the report
+    // the schedule
+    // the deadline
+    // the client
+    // the boss
+    // the coworker
+    // the employee
+    // the company
+  ],
+  'Putting Spanish into Action - Enjoying the great outdoors and more': [
+    // Do you like to walk (hike)?
+    // What do you like to play?
+    // Do you play chess?
+    // Do you like to read?
+  ],
+  'Taking Spanish on the Go - Preparing for a trip': [
+    // the passport
+    // the visa
+    // the flight
+    // to pack your luggage
+  ],
+  'Taking Spanish on the Go - Making sense of money': [
+    // the money
+    // the bill
+    // the change
+    // the credit card
+    // the cash
+  ],
+  'Taking Spanish on the Go - Navigating airports and travel': [],
+  'Taking Spanish on the Go - Getting around with local transportation': [
+    // Where is...?
+    // the airport
+    // the bus
+    // the train station
+    // the taxi
+    // the bus station
+    // the car rental office
+  ],
+  'Taking Spanish on the Go - Securing a place to stay': [
+    // Do you have a room available?
+    // Is the room large enough for two people?
+    // Does it have a private bathroom?
+    // Does it have two beds?
+    // How much does it cost per night?
+    // Do you accept credit cards?
+  ],
+  'Taking Spanish on the Go - Taking action during emergencies': [
+    // Please help me!
+  ],
 };
 
 const mapRecordToCards = (record: Record<string, Card[]>): AppData['cards'] => {
