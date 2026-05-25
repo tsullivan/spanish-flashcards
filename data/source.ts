@@ -1541,8 +1541,8 @@ const Chapter2: Record<string, Card[]> = {
       ],
     },
     {
-      answer: 'poder (can/to be able)',
-      question: 'yo puedo',
+      answer: 'to be able to/can',
+      question: 'poder',
       phrases: [
         { answer: 'you (informal) can', question: 'tú puedes' },
         { answer: 'he/she can', question: 'él/ella puede' },
@@ -1551,8 +1551,8 @@ const Chapter2: Record<string, Card[]> = {
       ],
     },
     {
-      answer: 'poner (to put)',
-      question: 'yo pongo',
+      answer: 'to put',
+      question: 'poner',
       phrases: [
         { answer: 'you (informal) put', question: 'tú pones' },
         { answer: 'he/she puts', question: 'él/ella pone' },
@@ -1561,8 +1561,8 @@ const Chapter2: Record<string, Card[]> = {
       ],
     },
     {
-      answer: 'querer (to want)',
-      question: 'yo quiero',
+      answer: 'to want',
+      question: 'querer',
       phrases: [
         { answer: 'you (informal) want', question: 'tú quieres' },
         { answer: 'he/she wants', question: 'él/ella quiere' },
@@ -1571,8 +1571,8 @@ const Chapter2: Record<string, Card[]> = {
       ],
     },
     {
-      answer: 'saber (to know)',
-      question: 'yo sé',
+      answer: 'to know (facts, information)',
+      question: 'saber',
       phrases: [
         { answer: 'you (informal) know', question: 'tú sabes' },
         { answer: 'he/she knows', question: 'él/ella sabe' },
@@ -1581,8 +1581,8 @@ const Chapter2: Record<string, Card[]> = {
       ],
     },
     {
-      answer: 'salir (to leave/go out)',
-      question: 'yo salgo',
+      answer: 'to leave/go out',
+      question: 'salir',
       phrases: [
         { answer: 'you (informal) leave', question: 'tú sales' },
         { answer: 'he/she leaves', question: 'él/ella sale' },
@@ -1591,8 +1591,8 @@ const Chapter2: Record<string, Card[]> = {
       ],
     },
     {
-      answer: 'ser (to be)',
-      question: 'yo soy',
+      answer: 'to be (permanent characteristics)',
+      question: 'ser',
       phrases: [
         { answer: 'you (informal) are', question: 'tú eres' },
         { answer: 'he/she is', question: 'él/ella es' },
@@ -1601,18 +1601,8 @@ const Chapter2: Record<string, Card[]> = {
       ],
     },
     {
-      answer: 'tener (to have)',
-      question: 'yo tengo',
-      phrases: [
-        { answer: 'you (informal) have', question: 'tú tienes' },
-        { answer: 'he/she has', question: 'él/ella tiene' },
-        { answer: 'we have', question: 'nosotros tenemos' },
-        { answer: 'they have', question: 'ellos tienen' },
-      ],
-    },
-    {
-      answer: 'traer (to bring)',
-      question: 'yo traigo',
+      answer: 'to bring',
+      question: 'traer',
       phrases: [
         { answer: 'you (informal) bring', question: 'tú traes' },
         { answer: 'he/she brings', question: 'él/ella trae' },
@@ -1621,8 +1611,8 @@ const Chapter2: Record<string, Card[]> = {
       ],
     },
     {
-      answer: 'venir (to come)',
-      question: 'yo vengo',
+      answer: 'to come',
+      question: 'venir',
       phrases: [
         { answer: 'you (informal) come', question: 'tú vienes' },
         { answer: 'he/she comes', question: 'él/ella viene' },
@@ -1631,13 +1621,23 @@ const Chapter2: Record<string, Card[]> = {
       ],
     },
     {
-      answer: 'ver (to see)',
-      question: 'yo veo',
+      answer: 'to see',
+      question: 'ver',
       phrases: [
         { answer: 'you (informal) see', question: 'tú ves' },
         { answer: 'he/she sees', question: 'él/ella ve' },
         { answer: 'we see', question: 'nosotros vemos' },
         { answer: 'they see', question: 'ellos ven' },
+      ],
+    },
+    {
+      answer: 'to have (auxiliary)',
+      question: 'haber',
+      phrases: [
+        { answer: 'you (informal) have', question: 'tú has' },
+        { answer: 'he/she has', question: 'él/ella ha' },
+        { answer: 'we have', question: 'nosotros hemos' },
+        { answer: 'they have', question: 'ellos han' },
       ],
     },
   ],
