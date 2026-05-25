@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { source } from '../../data/source';
 import { ref, computed } from 'vue';
+
+const { source } = await import('../../data/source');
 
 type CardState = [number, number, boolean]
 
