@@ -48,35 +48,35 @@ const Chapter1: Record<string, Card[]> = {
       ],
     },
     {
-      answer: 'you/they (formal, plural, Latin America), speak',
+      answer: 'you all (formal, plural) speak',
       question: 'Ustedes hablan',
       phrases: [
-        { answer: 'you (formal) all speak fluently', question: 'Ustedes hablan con fluidez' },
-        { answer: 'they (formal) speak the same language', question: 'Ustedes hablan el mismo idioma' },
-        { answer: 'you (formal) speak very well', question: 'Ustedes hablan muy bien' },
+        { answer: 'you all (formal) speak fluently', question: 'Ustedes hablan con fluidez' },
+        { answer: 'you all (formal) speak the same language', question: 'Ustedes hablan el mismo idioma' },
+        { answer: 'you all (formal) speak very well', question: 'Ustedes hablan muy bien' },
       ],
     },
     {
-      answer: 'they (informal) speak',
+      answer: 'they speak',
       question: 'ellos/ellas hablan',
       phrases: [
-        { answer: 'they (informal) speak loudly', question: 'ellos hablan en voz alta' },
-        { answer: 'they (informal) speak about their families', question: 'ellos hablan de sus familias' },
-        { answer: 'they (informal) always speak in Spanish', question: 'ellos siempre hablan en español' },
+        { answer: 'they speak loudly', question: 'ellos hablan en voz alta' },
+        { answer: 'they speak about their families', question: 'ellos hablan de sus familias' },
+        { answer: 'they always speak in Spanish', question: 'ellos siempre hablan en español' },
       ],
     },
   ],
   'Easing Into Common Expressions': [
     {
-      answer: 'Hello (informal)',
+      answer: 'Hello',
       question: 'Hola',
       phrases: [
-        { answer: 'Hello, how are you?', question: 'Hola, ¿cómo estás?' },
+        { answer: 'Hello, how are you (informal)?', question: 'Hola, ¿cómo estás?' },
         { answer: 'Hello, my friend', question: 'Hola, mi amigo' },
       ],
     },
     {
-      answer: 'How are you?',
+      answer: 'How are you (informal)?',
       question: '¿Cómo estás?',
       phrases: [
         { answer: 'How are you (informal) today?', question: '¿Cómo estás hoy?' },
@@ -84,26 +84,26 @@ const Chapter1: Record<string, Card[]> = {
       ],
     },
     {
-      answer: 'What is your name?',
+      answer: 'What is your (informal) name?',
       question: '¿Cómo te llamas?',
       phrases: [
-        { answer: 'What is your full name?', question: '¿Cuál es tu nombre completo?' },
+        { answer: 'What is your (informal) full name?', question: '¿Cuál es tu nombre completo?' },
         { answer: 'My name is María', question: 'Me llamo María' },
       ],
     },
     {
-      answer: 'Where are you (formal) from?',
+      answer: 'Where are you (informal) from?',
       question: '¿De dónde eres?',
       phrases: [
         { answer: 'I am from Mexico', question: 'Soy de México' },
-        { answer: 'Are you (formal) from here?', question: '¿Eres de aquí?' },
+        { answer: 'Are you (informal) from here?', question: '¿Eres de aquí?' },
       ],
     },
     {
       answer: 'Nice to meet you',
       question: 'Mucho gusto',
       phrases: [
-        { answer: 'Nice to meet you (formal) too', question: 'Igualmente, mucho gusto' },
+        { answer: 'Likewise, nice to meet you', question: 'Igualmente, mucho gusto' },
         { answer: 'The pleasure is mine', question: 'El placer es mío' },
       ],
     },
@@ -111,7 +111,7 @@ const Chapter1: Record<string, Card[]> = {
       answer: 'Thank you',
       question: 'Gracias',
       phrases: [
-        { answer: 'Thank you (formal) very much', question: 'Muchas gracias' },
+        { answer: 'Thank you very much', question: 'Muchas gracias' },
         { answer: 'Thank you (informal) for your help', question: 'Gracias por tu ayuda' },
       ],
     },
@@ -120,14 +120,14 @@ const Chapter1: Record<string, Card[]> = {
       question: 'De nada',
       phrases: [
         { answer: "It's nothing, no problem", question: 'No hay problema' },
-        { answer: "You're always welcome", question: 'Siempre eres bienvenido' },
+        { answer: "You're (informal) always welcome", question: 'Siempre eres bienvenido' },
       ],
     },
     {
       answer: `Hello, what's happening?`,
       question: 'Hola, ¿qué pasa?',
       phrases: [
-        { answer: "What's up with you?", question: '¿Qué tal contigo?' },
+        { answer: "What's up with you (informal)?", question: '¿Qué tal contigo?' },
         { answer: "What's going on?", question: '¿Qué está pasando?' },
       ],
     },
@@ -135,7 +135,7 @@ const Chapter1: Record<string, Card[]> = {
       answer: `Good-bye`,
       question: 'Adiós',
       phrases: [
-        { answer: 'See you (informal) later', question: 'Hasta luego' },
+        { answer: 'See you later', question: 'Hasta luego' },
         { answer: 'Goodbye, my friends', question: 'Adiós, mis amigos' },
       ],
     },
@@ -143,8 +143,8 @@ const Chapter1: Record<string, Card[]> = {
       answer: `Please`,
       question: 'Por favor',
       phrases: [
-        { answer: 'Please sit down', question: 'Por favor, siéntate' },
-        { answer: 'Can you (formal) help me, please?', question: '¿Puedes ayudarme, por favor?' },
+        { answer: 'Please sit down (informal command)', question: 'Por favor, siéntate' },
+        { answer: 'Can you (informal) help me, please?', question: '¿Puedes ayudarme, por favor?' },
       ],
     },
     {
@@ -153,6 +153,14 @@ const Chapter1: Record<string, Card[]> = {
       phrases: [
         { answer: 'Do you (formal) speak French?', question: '¿Habla usted francés?' },
         { answer: 'Yes, I speak English', question: 'Sí, hablo inglés' },
+      ],
+    },
+    {
+      answer: `You (informal) don't say!`,
+      question: '¡No me digas!',
+      phrases: [
+        { answer: 'I had no idea!', question: '¡No lo sabía!' },
+        { answer: 'That is surprising!', question: '¡Eso es sorprendente!' },
       ],
     },
     {
@@ -181,18 +189,10 @@ const Chapter1: Record<string, Card[]> = {
     },
     {
       answer: `Really?`,
-      question: '¿En serio? / ¿De verdas?',
+      question: '¿En serio? / ¿De veras?',
       phrases: [
-        { answer: 'Really? Are you (informal) serious?', question: '¿En serio? ¿Estás en broma?' },
+        { answer: 'Really? Are you (informal) joking?', question: '¿En serio? ¿Estás de broma?' },
         { answer: 'Is that true?', question: '¿Es eso verdad?' },
-      ],
-    },
-    {
-      answer: `You don't say!`,
-      question: '¡No me digas!',
-      phrases: [
-        { answer: 'I had no idea!', question: '¡No lo sabía!' },
-        { answer: 'That is surprising!', question: '¡Eso es sorprendente!' },
       ],
     },
   ],
@@ -463,25 +463,25 @@ const Chapter1: Record<string, Card[]> = {
   'Speaking Spanish around the House': [
     {
       answer: `the refrigerator`,
-      question: 'la nevera / el refrigerador',
+      question: 'la nevera',
       phrases: [
         { answer: 'The milk is in the refrigerator', question: 'La leche está en la nevera' },
-        { answer: 'Open the refrigerator', question: 'Abre el refrigerador' },
+        { answer: 'Open the refrigerator (informal command)', question: 'Abre la nevera' },
       ],
     },
     {
       answer: `the stove`,
-      question: 'la estufa',
+      question: 'la cocina',
       phrases: [
-        { answer: 'The stove is hot', question: 'La estufa está caliente' },
-        { answer: 'Be careful with the stove', question: 'Ten cuidado con la estufa' },
+        { answer: 'The stove is hot', question: 'La cocina está caliente' },
+        { answer: 'Be careful with the stove (informal command)', question: 'Ten cuidado con la cocina' },
       ],
     },
     {
       answer: `the sink`,
       question: 'el fregadero',
       phrases: [
-        { answer: 'Wash your hands at the sink', question: 'Lávate las manos en el fregadero' },
+        { answer: 'Wash your hands at the sink (informal command)', question: 'Lávate las manos en el fregadero' },
         { answer: 'The dishes are in the sink', question: 'Los platos están en el fregadero' },
       ],
     },
@@ -490,7 +490,7 @@ const Chapter1: Record<string, Card[]> = {
       question: 'la cama',
       phrases: [
         { answer: 'I sleep in the bed', question: 'Duermo en la cama' },
-        { answer: 'Make your bed in the morning', question: 'Haz la cama por la mañana' },
+        { answer: 'Make your bed in the morning (informal command)', question: 'Haz la cama por la mañana' },
       ],
     },
     {
@@ -516,7 +516,7 @@ const Chapter1: Record<string, Card[]> = {
       answer: `the chair`,
       question: 'la silla',
       phrases: [
-        { answer: 'Please sit in the chair', question: 'Por favor, siéntate en la silla' },
+        { answer: 'Please sit in the chair (informal command)', question: 'Por favor, siéntate en la silla' },
         { answer: 'The chair is next to the table', question: 'La silla está al lado de la mesa' },
       ],
     },
@@ -525,14 +525,14 @@ const Chapter1: Record<string, Card[]> = {
       question: 'la televisión',
       phrases: [
         { answer: 'I watch television in the evening', question: 'Veo la televisión por la noche' },
-        { answer: 'Turn off the television', question: 'Apaga la televisión' },
+        { answer: 'Turn off the television (informal command)', question: 'Apaga la televisión' },
       ],
     },
     {
       answer: `the lamp`,
       question: 'la lámpara',
       phrases: [
-        { answer: 'Turn on the lamp', question: 'Enciende la lámpara' },
+        { answer: 'Turn on the lamp (informal command)', question: 'Enciende la lámpara' },
         { answer: 'The lamp gives good light', question: 'La lámpara da buena luz' },
       ],
     },
@@ -540,7 +540,10 @@ const Chapter1: Record<string, Card[]> = {
       answer: `the microwave`,
       question: 'el microondas',
       phrases: [
-        { answer: 'Heat the food in the microwave', question: 'Calienta la comida en el microondas' },
+        {
+          answer: 'Heat the food in the microwave (informal command)',
+          question: 'Calienta la comida en el microondas',
+        },
         { answer: 'The microwave is very fast', question: 'El microondas es muy rápido' },
       ],
     },
@@ -549,7 +552,10 @@ const Chapter1: Record<string, Card[]> = {
       question: 'el mando a distancia',
       phrases: [
         { answer: 'Where is the remote control?', question: '¿Dónde está el mando a distancia?' },
-        { answer: 'Change the channel with the remote control', question: 'Cambia de canal con el mando a distancia' },
+        {
+          answer: 'Change the channel with the remote (informal command)',
+          question: 'Cambia de canal con el mando a distancia',
+        },
       ],
     },
     {
@@ -590,11 +596,11 @@ const Chapter1: Record<string, Card[]> = {
   ],
   'Putting Spanish into Action - Making small talk': [
     {
-      answer: `What's your name?`,
+      answer: `What's your (informal) name?`,
       question: '¿Cómo te llamas?',
       phrases: [
         { answer: 'My name is Carlos', question: 'Me llamo Carlos' },
-        { answer: 'What is your full name?', question: '¿Cuál es tu nombre completo?' },
+        { answer: 'What is your (informal) full name?', question: '¿Cuál es tu nombre completo?' },
       ],
     },
     {
@@ -608,11 +614,11 @@ const Chapter1: Record<string, Card[]> = {
       ],
     },
     {
-      answer: `What do you (formal) do for work?`,
+      answer: `What do you (informal) do for work?`,
       question: '¿A qué te dedicas?',
       phrases: [
         { answer: 'I am a teacher', question: 'Soy profesor' },
-        { answer: 'What is your profession?', question: '¿Cuál es tu profesión?' },
+        { answer: 'What is your (informal) profession?', question: '¿Cuál es tu profesión?' },
       ],
     },
     {
@@ -620,7 +626,7 @@ const Chapter1: Record<string, Card[]> = {
       question: '¿Cómo está usted?',
       phrases: [
         { answer: 'I am doing well, thank you', question: 'Estoy bien, gracias' },
-        { answer: 'How are you (informal) doing?', question: '¿Cómo le va?' },
+        { answer: 'How are you (formal) doing?', question: '¿Cómo le va?' },
       ],
     },
     {
@@ -790,9 +796,7 @@ const Chapter1: Record<string, Card[]> = {
     {
       answer: `the club`,
       question: `la discoteca`,
-      phrases: [
-        { answer: 'They (informal) danced at the club all night', question: 'Bailaron en la discoteca toda la noche' },
-      ],
+      phrases: [{ answer: 'They danced at the club all night', question: 'Bailaron en la discoteca toda la noche' }],
     },
     {
       answer: `the concert`,
@@ -1020,8 +1024,8 @@ const Chapter1: Record<string, Card[]> = {
     },
     {
       answer: 'the baggage claim',
-      question: 'el mostrador de equipaje',
-      phrases: [{ answer: 'My luggage is at baggage claim', question: 'Mi equipaje está en el mostrador de equipaje' }],
+      question: 'la cinta de equipajes',
+      phrases: [{ answer: 'My luggage is at baggage claim', question: 'Mi equipaje está en la cinta de equipajes' }],
     },
   ],
   'Taking Spanish on the Go - Getting around with local transportation': [
@@ -1156,7 +1160,7 @@ const Chapter2: Record<string, Card[]> = {
       answer: "The dog isn't good.",
       question: 'El perro no es bueno.',
       phrases: [{ answer: 'The dog is bad', question: 'El perro es malo' }],
-    }
+    },
   ],
   'Forming Questions: The Basics': [
     {
@@ -1171,18 +1175,18 @@ const Chapter2: Record<string, Card[]> = {
     },
     {
       answer: 'This is the door.',
-      question: 'Esto es la puerta.',
-      phrases: [{ answer: 'Is this the door?', question: '¿Esto es la puerta?' }],
+      question: 'Esta es la puerta.',
+      phrases: [{ answer: 'Is this the door?', question: '¿Es esta la puerta?' }],
     },
     {
       answer: 'Is the soup good?',
-      question: '¿Es buena la sopa?',
-      phrases: [{ answer: 'Yes, the soup is good', question: 'Sí, la sopa es buena' }],
+      question: '¿Está buena la sopa?',
+      phrases: [{ answer: 'Yes, the soup is good', question: 'Sí, la sopa está buena' }],
     },
     {
       answer: 'Is that the car?',
-      question: '¿Eso es el coche?',
-      phrases: [{ answer: 'No, that is not the car', question: 'No, eso no es el coche' }],
+      question: '¿Es ese el coche?',
+      phrases: [{ answer: 'No, that is not the car', question: 'No, ese no es el coche' }],
     },
     {
       answer: 'Is the woman beautiful?',
@@ -1193,13 +1197,13 @@ const Chapter2: Record<string, Card[]> = {
       answer: 'Is the man tall?',
       question: '¿Es alto el hombre?',
       phrases: [{ answer: 'No, the man is not tall', question: 'No, el hombre no es alto' }],
-    }
+    },
   ],
   'Meeting Subject Pronouns Face to Face': [
     {
-      answer: 'Lucy fried an egg.',
+      answer: 'Lucy fries an egg.',
       question: 'Lucy fríe un huevo.',
-      phrases: [{ answer: 'She fried an egg', question: 'Ella fríe un huevo' }],
+      phrases: [{ answer: 'She fries an egg', question: 'Ella fríe un huevo' }],
     },
     {
       answer: 'The dog is barking.',
@@ -1248,7 +1252,7 @@ const Chapter2: Record<string, Card[]> = {
       ],
     },
   ],
-  'A few words about yo / nosotros and nosotras': [
+  'Meeting Subject Pronouns Face to Face - A few words about yo / nosotros and nosotras': [
     {
       question: `(Yo) Me voy.`,
       answer: 'I am leaving.',
@@ -1265,7 +1269,7 @@ const Chapter2: Record<string, Card[]> = {
       phrases: [{ answer: 'We play tennis', question: 'Nosotros jugamos al tenis' }],
     },
   ],
-  "It's you, you know: The tù and usted distinction": [
+  "Meeting Subject Pronouns Face to Face - It's you, you know: The tú and usted distinction": [
     {
       question: `tutearse`,
       answer: 'to use the tú form',
@@ -1297,7 +1301,7 @@ const Chapter2: Record<string, Card[]> = {
       phrases: [{ answer: 'No, we (plural, informal) do not dance the tango', question: 'No, no bailamos el tango' }],
     },
   ],
-  'Ellos versus ellas': [
+  'Meeting Subject Pronouns Face to Face - Ellos versus ellas': [
     {
       answer: 'Juan and Jorge (They, group of males) listen to music.',
       question: 'Juan y Jorge (Ellos) escuchan música.',
@@ -1317,6 +1321,402 @@ const Chapter2: Record<string, Card[]> = {
       answer: 'Luz and Susana (group of females) listen.',
       question: 'Luz y Susana (Ellas) escuchan.',
       phrases: [{ answer: 'They listen', question: 'Ellas escuchan' }],
+    },
+  ],
+  'Introducing Regular Verbs, Present Tense - verbs ending in -ar': [
+    {
+      answer: 'hablar (to speak)',
+      question: 'yo hablo',
+      phrases: [
+        { answer: 'you (informal) speak', question: 'tú hablas' },
+        { answer: 'you (formal) speak', question: 'usted habla' },
+        { answer: 'he speaks', question: 'él habla' },
+        { answer: 'she speaks', question: 'ella habla' },
+        { answer: 'we speak', question: 'nosotros hablamos' },
+        { answer: 'you all (formal) speak', question: 'ustedes hablan' },
+        { answer: 'they speak', question: 'ellos hablan' },
+      ],
+    },
+    {
+      answer: 'preparar (to prepare)',
+      question: 'yo preparo',
+      phrases: [
+        { answer: 'you (informal) prepare', question: 'tú preparas' },
+        { answer: 'you (formal) prepare', question: 'usted prepara' },
+        { answer: 'he prepares', question: 'él prepara' },
+        { answer: 'she prepares', question: 'ella prepara' },
+        { answer: 'we prepare', question: 'nosotros preparamos' },
+        { answer: 'you all (formal) prepare', question: 'ustedes preparan' },
+        { answer: 'they prepare', question: 'ellos preparan' },
+      ],
+    },
+  ],
+  'Introducing Regular Verbs, Present Tense - verbs ending in -er': [
+    {
+      answer: 'comer (to eat)',
+      question: 'yo como',
+      phrases: [
+        { answer: 'you (informal) eat', question: 'tú comes' },
+        { answer: 'you (formal) eat', question: 'usted come' },
+        { answer: 'he eats', question: 'él come' },
+        { answer: 'she eats', question: 'ella come' },
+        { answer: 'we eat', question: 'nosotros comemos' },
+        { answer: 'you all (formal) eat', question: 'ustedes comen' },
+        { answer: 'they eat', question: 'ellos comen' },
+      ],
+    },
+    {
+      answer: 'entender (to understand)',
+      question: 'yo entiendo',
+      phrases: [
+        { answer: 'you (informal) understand', question: 'tú entiendes' },
+        { answer: 'you (formal) understand', question: 'usted entiende' },
+        { answer: 'he understands', question: 'él entiende' },
+        { answer: 'she understands', question: 'ella entiende' },
+        { answer: 'we understand', question: 'nosotros entendemos' },
+        { answer: 'you all (formal) understand', question: 'ustedes entienden' },
+        { answer: 'they understand', question: 'ellos entienden' },
+      ],
+    },
+  ],
+  'Introducing Regular Verbs, Present Tense - verbs ending in -ir': [
+    {
+      answer: 'vivir (to live)',
+      question: 'yo vivo',
+      phrases: [
+        { answer: 'you (informal) live', question: 'tú vives' },
+        { answer: 'you (formal) live', question: 'usted vive' },
+        { answer: 'he lives', question: 'él vive' },
+        { answer: 'she lives', question: 'ella vive' },
+        { answer: 'we live', question: 'nosotros vivimos' },
+        { answer: 'you all (formal) live', question: 'ustedes viven' },
+        { answer: 'they live', question: 'ellos viven' },
+      ],
+    },
+    {
+      answer: 'aburrir (to bore)',
+      question: 'yo aburro',
+      phrases: [
+        { answer: 'you (informal) bore', question: 'tú aburres' },
+        { answer: 'you (formal) bore', question: 'usted aburre' },
+        { answer: 'he bores', question: 'él aburre' },
+        { answer: 'she bores', question: 'ella aburre' },
+        { answer: 'we bore', question: 'nosotros aburrimos' },
+        { answer: 'you all (formal) bore', question: 'ustedes aburren' },
+        { answer: 'they bore', question: 'ellos aburren' },
+      ],
+    },
+  ],
+  'Introducing Regular Verbs - Words to know': [
+    {
+      answer: 'the dinner',
+      question: 'la cena',
+      phrases: [{ answer: 'I cooked dinner', question: 'Cociné la cena' }],
+    },
+    {
+      answer: 'the boyfriend',
+      question: 'el novio',
+      phrases: [{ answer: 'My boyfriend is here', question: 'Mi novio está aquí' }],
+    },
+    {
+      answer: 'the rice',
+      question: 'el arroz',
+      phrases: [{ answer: 'I like rice', question: 'Me gusta el arroz' }],
+    },
+    {
+      answer: 'the shrimp',
+      question: 'las gambas',
+      phrases: [{ answer: 'The shrimp are delicious', question: 'Las gambas están deliciosas' }],
+    },
+    {
+      answer: 'the onions',
+      question: 'las cebollas',
+      phrases: [{ answer: 'I added onions to the dish', question: 'Añadí cebollas al plato' }],
+    },
+    {
+      answer: 'the green beans',
+      question: 'las judías verdes',
+      phrases: [{ answer: 'The green beans are fresh', question: 'Las judías verdes son frescas' }],
+    },
+  ],
+  'Introducing Irregular Verbs, Present Tense': [
+    {
+      answer: 'conocer (to know)',
+      question: 'yo conozco',
+      phrases: [
+        { answer: 'you (informal) know', question: 'tú conoces' },
+        { answer: 'he/she knows', question: 'él/ella conoce' },
+        { answer: 'we know', question: 'nosotros conocemos' },
+        { answer: 'they know', question: 'ellos conocen' },
+      ],
+    },
+    {
+      answer: 'dar (to give)',
+      question: 'yo doy',
+      phrases: [
+        { answer: 'you (informal) give', question: 'tú das' },
+        { answer: 'he/she gives', question: 'él/ella da' },
+        { answer: 'we give', question: 'nosotros damos' },
+        { answer: 'they give', question: 'ellos dan' },
+      ],
+    },
+    {
+      answer: 'decir (to say)',
+      question: 'yo digo',
+      phrases: [
+        { answer: 'you (informal) say', question: 'tú dices' },
+        { answer: 'he/she says', question: 'él/ella dice' },
+        { answer: 'we say', question: 'nosotros decimos' },
+        { answer: 'they say', question: 'ellos dicen' },
+      ],
+    },
+    {
+      answer: 'estar (to be)',
+      question: 'yo estoy',
+      phrases: [
+        { answer: 'you (informal) are', question: 'tú estás' },
+        { answer: 'he/she is', question: 'él/ella está' },
+        { answer: 'we are', question: 'nosotros estamos' },
+        { answer: 'they are', question: 'ellos están' },
+      ],
+    },
+    {
+      answer: 'haber (to have)',
+      question: 'yo he',
+      phrases: [
+        { answer: 'you (informal) have', question: 'tú has' },
+        { answer: 'he/she has', question: 'él/ella ha' },
+        { answer: 'we have', question: 'nosotros hemos' },
+        { answer: 'they have', question: 'ellos han' },
+      ],
+    },
+    {
+      answer: 'hacer (to do/make)',
+      question: 'yo hago',
+      phrases: [
+        { answer: 'you (informal) do', question: 'tú haces' },
+        { answer: 'he/she does', question: 'él/ella hace' },
+        { answer: 'we do', question: 'nosotros hacemos' },
+        { answer: 'they do', question: 'ellos hacen' },
+      ],
+    },
+    {
+      answer: 'ir (to go)',
+      question: 'yo voy',
+      phrases: [
+        { answer: 'you (informal) go', question: 'tú vas' },
+        { answer: 'he/she goes', question: 'él/ella va' },
+        { answer: 'we go', question: 'nosotros vamos' },
+        { answer: 'they go', question: 'ellos van' },
+      ],
+    },
+    {
+      answer: 'lavarse (to wash oneself)',
+      question: 'yo me lavo',
+      phrases: [
+        { answer: 'you (informal) wash yourself', question: 'tú te lavas' },
+        { answer: 'he/she washes', question: 'él/ella se lava' },
+        { answer: 'we wash ourselves', question: 'nosotros nos lavamos' },
+        { answer: 'they wash themselves', question: 'ellos se lavan' },
+      ],
+    },
+    {
+      answer: 'leer (to read)',
+      question: 'yo leo',
+      phrases: [
+        { answer: 'you (informal) read', question: 'tú lees' },
+        { answer: 'he/she reads', question: 'él/ella lee' },
+        { answer: 'we read', question: 'nosotros leemos' },
+        { answer: 'they read', question: 'ellos leen' },
+      ],
+    },
+    {
+      answer: 'oír (to hear)',
+      question: 'yo oigo',
+      phrases: [
+        { answer: 'you (informal) hear', question: 'tú oyes' },
+        { answer: 'he/she hears', question: 'él/ella oye' },
+        { answer: 'we hear', question: 'nosotros oímos' },
+        { answer: 'they hear', question: 'ellos oyen' },
+      ],
+    },
+    {
+      answer: 'poder (can/to be able)',
+      question: 'yo puedo',
+      phrases: [
+        { answer: 'you (informal) can', question: 'tú puedes' },
+        { answer: 'he/she can', question: 'él/ella puede' },
+        { answer: 'we can', question: 'nosotros podemos' },
+        { answer: 'they can', question: 'ellos pueden' },
+      ],
+    },
+    {
+      answer: 'poner (to put)',
+      question: 'yo pongo',
+      phrases: [
+        { answer: 'you (informal) put', question: 'tú pones' },
+        { answer: 'he/she puts', question: 'él/ella pone' },
+        { answer: 'we put', question: 'nosotros ponemos' },
+        { answer: 'they put', question: 'ellos ponen' },
+      ],
+    },
+    {
+      answer: 'querer (to want)',
+      question: 'yo quiero',
+      phrases: [
+        { answer: 'you (informal) want', question: 'tú quieres' },
+        { answer: 'he/she wants', question: 'él/ella quiere' },
+        { answer: 'we want', question: 'nosotros queremos' },
+        { answer: 'they want', question: 'ellos quieren' },
+      ],
+    },
+    {
+      answer: 'saber (to know)',
+      question: 'yo sé',
+      phrases: [
+        { answer: 'you (informal) know', question: 'tú sabes' },
+        { answer: 'he/she knows', question: 'él/ella sabe' },
+        { answer: 'we know', question: 'nosotros sabemos' },
+        { answer: 'they know', question: 'ellos saben' },
+      ],
+    },
+    {
+      answer: 'salir (to leave/go out)',
+      question: 'yo salgo',
+      phrases: [
+        { answer: 'you (informal) leave', question: 'tú sales' },
+        { answer: 'he/she leaves', question: 'él/ella sale' },
+        { answer: 'we leave', question: 'nosotros salimos' },
+        { answer: 'they leave', question: 'ellos salen' },
+      ],
+    },
+    {
+      answer: 'ser (to be)',
+      question: 'yo soy',
+      phrases: [
+        { answer: 'you (informal) are', question: 'tú eres' },
+        { answer: 'he/she is', question: 'él/ella es' },
+        { answer: 'we are', question: 'nosotros somos' },
+        { answer: 'they are', question: 'ellos son' },
+      ],
+    },
+    {
+      answer: 'tener (to have)',
+      question: 'yo tengo',
+      phrases: [
+        { answer: 'you (informal) have', question: 'tú tienes' },
+        { answer: 'he/she has', question: 'él/ella tiene' },
+        { answer: 'we have', question: 'nosotros tenemos' },
+        { answer: 'they have', question: 'ellos tienen' },
+      ],
+    },
+    {
+      answer: 'traer (to bring)',
+      question: 'yo traigo',
+      phrases: [
+        { answer: 'you (informal) bring', question: 'tú traes' },
+        { answer: 'he/she brings', question: 'él/ella trae' },
+        { answer: 'we bring', question: 'nosotros traemos' },
+        { answer: 'they bring', question: 'ellos traen' },
+      ],
+    },
+    {
+      answer: 'venir (to come)',
+      question: 'yo vengo',
+      phrases: [
+        { answer: 'you (informal) come', question: 'tú vienes' },
+        { answer: 'he/she comes', question: 'él/ella viene' },
+        { answer: 'we come', question: 'nosotros venimos' },
+        { answer: 'they come', question: 'ellos vienen' },
+      ],
+    },
+    {
+      answer: 'ver (to see)',
+      question: 'yo veo',
+      phrases: [
+        { answer: 'you (informal) see', question: 'tú ves' },
+        { answer: 'he/she sees', question: 'él/ella ve' },
+        { answer: 'we see', question: 'nosotros vemos' },
+        { answer: 'they see', question: 'ellos ven' },
+      ],
+    },
+  ],
+  'Irregular Verbs - Words to know': [
+    {
+      answer: "it's been a long time",
+      question: 'hace mucho tiempo',
+      phrases: [
+        { answer: 'It has been a long time since I saw you (informal)', question: 'Hace mucho tiempo que no te veo' },
+      ],
+    },
+    {
+      answer: 'the son',
+      question: 'el hijo',
+      phrases: [{ answer: 'My son is five years old', question: 'Mi hijo tiene cinco años' }],
+    },
+    {
+      answer: 'the daughter',
+      question: 'la hija',
+      phrases: [{ answer: 'My daughter goes to school', question: 'Mi hija va al colegio' }],
+    },
+    {
+      answer: 'now',
+      question: 'ahora',
+      phrases: [{ answer: 'I am working now', question: 'Estoy trabajando ahora' }],
+    },
+    {
+      answer: 'also',
+      question: 'también',
+      phrases: [{ answer: 'I also speak French', question: 'También hablo francés' }],
+    },
+    {
+      answer: 'the age',
+      question: 'la edad',
+      phrases: [{ answer: 'What is your (informal) age?', question: '¿Cuál es tu edad?' }],
+    },
+    {
+      answer: 'the twins (female)',
+      question: 'las gemelas',
+      phrases: [{ answer: 'The twins are identical', question: 'Las gemelas son idénticas' }],
+    },
+    {
+      answer: 'precious',
+      question: 'precioso',
+      phrases: [{ answer: 'The baby is precious', question: 'El bebé es precioso' }],
+    },
+    {
+      answer: 'the husband',
+      question: 'el marido',
+      phrases: [{ answer: 'Her husband is a doctor', question: 'Su marido es médico' }],
+    },
+    {
+      answer: 'the boy',
+      question: 'el niño',
+      phrases: [{ answer: 'The boy is playing in the park', question: 'El niño está jugando en el parque' }],
+    },
+    {
+      answer: 'the girl',
+      question: 'la niña',
+      phrases: [{ answer: 'The girl is reading a book', question: 'La niña está leyendo un libro' }],
+    },
+    {
+      answer: 'content, happy',
+      question: 'contento / feliz',
+      phrases: [{ answer: 'I am very happy today', question: 'Estoy muy contento hoy' }],
+    },
+  ],
+  'Adding more description with adjectives': [
+    {
+      answer: 'tall / white / red / large / long',
+      question: 'alto / blanco / rojo / grande / largo',
+      phrases: [
+        { answer: 'I have a white car', question: 'Tengo un coche blanco' },
+        { answer: 'The girl is tall', question: 'La chica es alta' },
+        { answer: 'The women are tall', question: 'Las mujeres son altas' },
+        { answer: 'The tall men go in a red car', question: 'Los hombres altos van en un coche rojo' },
+        { answer: 'The houses are large', question: 'Las casas son grandes' },
+        { answer: 'The roads are long', question: 'Las carreteras son largas' },
+      ],
     },
   ],
 };
