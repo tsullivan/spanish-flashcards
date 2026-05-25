@@ -1721,6 +1721,185 @@ const Chapter2: Record<string, Card[]> = {
   ],
 };
 
+const Chapter3: Record<string, Card[]> = {
+  'Reflecting on Reflexive Verbs and Pronouns - Turning the subject into the object with reflexive verbs': [
+    {
+      answer: 'to become bored',
+      question: 'aburrirse',
+      phrases: [{ answer: 'I get bored at home', question: 'Me aburro en casa' }],
+    },
+    {
+      answer: 'to go to bed, to lie down',
+      question: 'acostarse',
+      phrases: [
+        { answer: `What time do the children go to bed?`, question: '¿A qué hora se acuestan los niños?' },
+        { answer: `The children go to bed at 9 o'clock`, question: 'Los niños se acuestan a las nueve' },
+        { answer: "I go to bed at 11 o'clock", question: 'Me acuesto a las once' },
+      ],
+    },
+    {
+      answer: 'to shave oneself',
+      question: 'afeitarse',
+      phrases: [{ answer: 'He shaves every morning', question: 'Se afeita cada mañana' }],
+    },
+    {
+      answer: 'to bathe oneself',
+      question: 'bañarse',
+      phrases: [{ answer: 'I bathe before sleeping', question: 'Me baño antes de dormir' }],
+    },
+    {
+      answer: 'to be silent, to be quiet',
+      question: 'callarse',
+      phrases: [{ answer: 'Be quiet (informal command), please', question: 'Cállate, por favor' }],
+    },
+    {
+      answer: 'to get married (to)',
+      question: 'casarse (con)',
+      phrases: [{ answer: 'They got married last year', question: 'Se casaron el año pasado' }],
+    },
+    {
+      answer: "to brush one's hair",
+      question: 'cepillarse el pelo',
+      phrases: [{ answer: 'I brush my hair every morning', question: 'Me cepillo el pelo cada mañana' }],
+    },
+    {
+      answer: "to brush one's teeth",
+      question: 'cepillarse los dientes',
+      phrases: [{ answer: 'I brush my teeth twice a day', question: 'Me cepillo los dientes dos veces al día' }],
+    },
+    {
+      answer: 'to wake up',
+      question: 'despertarse',
+      phrases: [{ answer: 'I wake up at seven', question: 'Me despierto a las siete' }],
+    },
+    {
+      answer: 'to get dressed',
+      question: 'vestirse',
+      phrases: [{ answer: 'She gets dressed quickly', question: 'Se viste rápidamente' }],
+    },
+    {
+      answer: 'to have fun',
+      question: 'divertirse',
+      phrases: [{ answer: 'We had fun at the party', question: 'Nos divertimos en la fiesta' }],
+    },
+    {
+      answer: 'to fall asleep',
+      question: 'dormirse',
+      phrases: [{ answer: 'He fell asleep on the sofa', question: 'Se durmió en el sofá' }],
+    },
+    {
+      answer: 'to take a shower',
+      question: 'ducharse',
+      phrases: [{ answer: 'I shower every morning', question: 'Me ducho cada mañana' }],
+    },
+    {
+      answer: 'to wash oneself',
+      question: 'lavarse',
+      phrases: [{ answer: 'I wash my hands before eating', question: 'Me lavo las manos antes de comer' }],
+    },
+    {
+      answer: 'to get up, to stand up',
+      question: 'levantarse',
+      phrases: [{ answer: 'I get up early', question: 'Me levanto temprano' }],
+    },
+    {
+      answer: 'to be located, to meet',
+      question: 'encontrarse',
+      phrases: [{ answer: 'I meet my friends downtown', question: 'Me encuentro con mis amigos en el centro' }],
+    },
+    {
+      answer: 'to get angry (with)',
+      question: 'enfadarse (con)',
+      phrases: [
+        { answer: 'I got angry with my brother', question: 'Me enfadé con mi hermano' },
+      ],
+    },
+    {
+      answer: 'to get sick',
+      question: 'ponerse enfermo',
+      phrases: [{ answer: 'He got sick last week', question: 'Se puso enfermo la semana pasada' }],
+    },
+    {
+      answer: 'to become angry',
+      question: 'enojarse',
+      phrases: [
+        { answer: 'She gets angry easily', question: 'Se enoja fácilmente' },
+        { answer: `Do you (formal) get angry often?`, question: '¿Se enfada usted a menudo?' },
+        { answer: `No, I don't get angry often`, question: 'No, no me enfado a menudo' },
+      ],
+    },
+    {
+      answer: 'to be mistaken',
+      question: 'equivocarse',
+      phrases: [{ answer: 'I made a mistake on the exam', question: 'Me equivoqué en el examen' }],
+    },
+    {
+      answer: 'to become',
+      question: 'hacerse',
+      phrases: [{ answer: 'He became a doctor', question: 'Se hizo médico' }],
+    },
+    {
+      answer: 'to go away, to leave',
+      question: 'irse',
+      phrases: [{ answer: 'I am leaving now', question: 'Me voy ahora' }],
+    },
+    {
+      answer: 'to call oneself, to be named',
+      question: 'llamarse',
+      phrases: [{ answer: 'What is your (informal) name?', question: '¿Cómo te llamas?' }],
+    },
+    {
+      answer: 'to forget (about)',
+      question: 'olvidarse (de)',
+      phrases: [{ answer: 'I forgot about the meeting', question: 'Me olvidé de la reunión' }],
+    },
+    {
+      answer: 'to get ready',
+      question: 'prepararse',
+      phrases: [{ answer: 'I get ready for work', question: 'Me preparo para el trabajo' }],
+    },
+    {
+      answer: 'to stay, to remain',
+      question: 'quedarse',
+      phrases: [{ answer: 'I am staying home today', question: 'Me quedo en casa hoy' }],
+    },
+    {
+      answer: 'to feel',
+      question: 'sentirse',
+      phrases: [{ answer: 'I feel tired today', question: 'Me siento cansado hoy' }],
+    },
+    {
+      answer: 'to worry (about)',
+      question: 'preocuparse (por)',
+      phrases: [{ answer: 'I worry about my children', question: 'Me preocupo por mis hijos' }],
+    },
+    {
+      answer: 'to complain (about)',
+      question: 'quejarse (de)',
+      phrases: [
+        { answer: `What are you (informal) complaining about?`, question: '¿De qué te quejas?' },
+        { answer: 'Me quejo de los precios', question: 'I am complaining about the prices' },
+        { answer: 'He complains about everything', question: 'Se queja de todo' },
+      ],
+    },
+    {
+      answer: 'to take off, to remove (clothing)',
+      question: 'quitarse',
+      phrases: [{ answer: 'Take off your jacket (informal command)', question: 'Quítate la chaqueta' }],
+    },
+    {
+      answer: 'to laugh (at)',
+      question: 'reírse (de)',
+      phrases: [{ answer: 'They laughed at the joke', question: 'Se rieron del chiste' }],
+    },
+    {
+      answer: 'to sit down',
+      question: 'sentarse',
+      phrases: [{ answer: 'Please sit down (informal command)', question: 'Por favor, siéntate' }],
+    },
+  ],
+};
+
 const mapRecordToCards = (prefix: string, record: Record<string, Card[]>): AppData['cards'] => {
   return Object.keys(record).flatMap((category) =>
     record[category]!.map((card) => ({ ...card, type: `${prefix} - ${category}` })),
@@ -1729,5 +1908,9 @@ const mapRecordToCards = (prefix: string, record: Record<string, Card[]>): AppDa
 
 export const source: AppData = {
   language: 'es-ES',
-  cards: [...mapRecordToCards('Chapter 1', Chapter1), ...mapRecordToCards('Chapter 2', Chapter2)],
+  cards: [
+    ...mapRecordToCards('Chapter 1', Chapter1),
+    ...mapRecordToCards('Chapter 2', Chapter2),
+    ...mapRecordToCards('Chapter 3', Chapter3),
+  ],
 };
