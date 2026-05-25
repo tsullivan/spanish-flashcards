@@ -3,12 +3,7 @@ import FlashCards from './components/FlashCards.vue';
 </script>
 
 <template>
-  <Suspense>
-    <FlashCards />
-    <template #fallback>
-      <div class="loading">Loading…</div>
-    </template>
-  </Suspense>
+  <FlashCards />
 </template>
 
 <style>
@@ -48,12 +43,6 @@ html, body, #app {
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   color: var(--color-fg);
-}
-
-.loading {
-  padding: 1.25rem 1rem;
-  font-size: 1rem;
-  color: var(--color-fg-muted);
 }
 
 .flashcards {
