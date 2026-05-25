@@ -1,6 +1,6 @@
 import type { AppData, Card } from './types';
 
-const DummiesBook: Record<string, Card[]> = {
+const Chapter1: Record<string, Card[]> = {
   'Basic Grammar': [
     {
       answer: 'I speak',
@@ -48,7 +48,7 @@ const DummiesBook: Record<string, Card[]> = {
       ],
     },
     {
-      answer: 'you/they (formal, plural), speak',
+      answer: 'you/they (formal, plural, Latin America), speak',
       question: 'Ustedes hablan',
       phrases: [
         { answer: 'you (formal) all speak fluently', question: 'Ustedes hablan con fluidez' },
@@ -652,7 +652,12 @@ const DummiesBook: Record<string, Card[]> = {
     {
       answer: `Hello, can you (formal) please tell me how to get to...?`,
       question: `Buenos días, ¿puede por favor decirme cómo llegar a...?`,
-      phrases: [ { answer: 'Can you (formal) tell me how to get to the museum?', question: '¿Puede decirme cómo llegar al museo?' } ],
+      phrases: [
+        {
+          answer: 'Can you (formal) tell me how to get to the museum?',
+          question: '¿Puede decirme cómo llegar al museo?',
+        },
+      ],
     },
     {
       answer: `Please show me on this map.`,
@@ -689,7 +694,9 @@ const DummiesBook: Record<string, Card[]> = {
     {
       answer: `the market`,
       question: `el mercado`,
-      phrases: [ { answer: 'I bought fresh vegetables at the market', question: 'Compré vegetales frescos en el mercado' } ],
+      phrases: [
+        { answer: 'I bought fresh vegetables at the market', question: 'Compré vegetales frescos en el mercado' },
+      ],
     },
     {
       answer: `the supermarket`,
@@ -783,12 +790,16 @@ const DummiesBook: Record<string, Card[]> = {
     {
       answer: `the club`,
       question: `la discoteca`,
-      phrases: [{ answer: 'They (informal) danced at the club all night', question: 'Bailaron en la discoteca toda la noche' }],
+      phrases: [
+        { answer: 'They (informal) danced at the club all night', question: 'Bailaron en la discoteca toda la noche' },
+      ],
     },
     {
       answer: `the concert`,
       question: `el concierto`,
-      phrases: [ { answer: 'I loved the concert last weekend', question: 'Me encantó el concierto el fin de semana pasado' } ],
+      phrases: [
+        { answer: 'I loved the concert last weekend', question: 'Me encantó el concierto el fin de semana pasado' },
+      ],
     },
     {
       answer: `the movie theater`,
@@ -818,7 +829,9 @@ const DummiesBook: Record<string, Card[]> = {
     {
       answer: `to invite`,
       question: `invitar`,
-      phrases: [ { answer: 'I invited my coworkers to the party', question: 'Invité a mis compañeros de trabajo a la fiesta' } ],
+      phrases: [
+        { answer: 'I invited my coworkers to the party', question: 'Invité a mis compañeros de trabajo a la fiesta' },
+      ],
     },
   ],
   'Putting Spanish into Action - Doing business': [
@@ -1040,12 +1053,16 @@ const DummiesBook: Record<string, Card[]> = {
     {
       answer: 'the bus station',
       question: 'la estación de autobús',
-      phrases: [ { answer: 'The bus station is near the market', question: 'La estación de autobús está cerca del mercado' } ],
+      phrases: [
+        { answer: 'The bus station is near the market', question: 'La estación de autobús está cerca del mercado' },
+      ],
     },
     {
       answer: 'the car rental office',
       question: 'la oficina de alquiler de coches',
-      phrases: [ { answer: 'I rented a car at the car rental office', question: 'Alquilé un coche en la oficina de alquiler' } ],
+      phrases: [
+        { answer: 'I rented a car at the car rental office', question: 'Alquilé un coche en la oficina de alquiler' },
+      ],
     },
   ],
   'Taking Spanish on the Go - Securing a place to stay': [
@@ -1097,23 +1114,220 @@ const DummiesBook: Record<string, Card[]> = {
     {
       answer: 'Do you (formal) accept credit cards?',
       question: '¿Aceptan tarjetas de crédito?',
-      phrases: [ { answer: 'We accept all types of credit cards', question: 'Aceptamos todos los tipos de tarjetas de crédito' } ],
+      phrases: [
+        { answer: 'We accept all types of credit cards', question: 'Aceptamos todos los tipos de tarjetas de crédito' },
+      ],
     },
   ],
   'Taking Spanish on the Go - Taking action during emergencies': [
     {
       answer: 'Please help me!',
       question: '¡Por favor, ayúdame!',
-      phrases: [ { answer: 'I called for help because I was lost', question: 'Llamé pidiendo ayuda porque estaba perdido' } ],
+      phrases: [
+        { answer: 'I called for help because I was lost', question: 'Llamé pidiendo ayuda porque estaba perdido' },
+      ],
     },
   ],
 };
 
-const mapRecordToCards = (record: Record<string, Card[]>): AppData['cards'] => {
-  return Object.keys(record).flatMap((category) => record[category]!.map((card) => ({ ...card, type: category })));
+const Chapter2: Record<string, Card[]> = {
+  'Breaking Down Simple Sentence Structure': [
+    {
+      answer: `The house is big.`,
+      question: 'La casa es grande.',
+      phrases: [{ answer: 'The big house is red', question: 'La casa grande es roja' }],
+    },
+    {
+      answer: 'The woman is beautiful.',
+      question: 'La mujer es hermosa.',
+      phrases: [{ answer: 'The woman is very beautiful', question: 'La mujer es muy hermosa' }],
+    },
+    {
+      answer: 'The man is tall.',
+      question: 'El hombre es alto.',
+      phrases: [{ answer: 'The man is very tall', question: 'El hombre es muy alto' }],
+    },
+    {
+      answer: "The car isn't new.",
+      question: 'El coche no es nuevo.',
+      phrases: [{ answer: 'The car is old', question: 'El coche es viejo' }],
+    },
+    {
+      answer: "The dog isn't good.",
+      question: 'El perro no es bueno.',
+      phrases: [{ answer: 'The dog is bad', question: 'El perro es malo' }],
+    }
+  ],
+  'Forming Questions: The Basics': [
+    {
+      answer: `This is...`,
+      question: 'Esto es...',
+      phrases: [{ answer: 'This is a book.', question: 'Esto es un libro.' }],
+    },
+    {
+      answer: `Is this...?`,
+      question: '¿Esto es...?',
+      phrases: [{ answer: 'Is this a pen?', question: '¿Esto es un bolígrafo?' }],
+    },
+    {
+      answer: 'This is the door.',
+      question: 'Esto es la puerta.',
+      phrases: [{ answer: 'Is this the door?', question: '¿Esto es la puerta?' }],
+    },
+    {
+      answer: 'Is the soup good?',
+      question: '¿Es buena la sopa?',
+      phrases: [{ answer: 'Yes, the soup is good', question: 'Sí, la sopa es buena' }],
+    },
+    {
+      answer: 'Is that the car?',
+      question: '¿Eso es el coche?',
+      phrases: [{ answer: 'No, that is not the car', question: 'No, eso no es el coche' }],
+    },
+    {
+      answer: 'Is the woman beautiful?',
+      question: '¿Es hermosa la mujer?',
+      phrases: [{ answer: 'No, the woman is not beautiful', question: 'No, la mujer no es hermosa' }],
+    },
+    {
+      answer: 'Is the man tall?',
+      question: '¿Es alto el hombre?',
+      phrases: [{ answer: 'No, the man is not tall', question: 'No, el hombre no es alto' }],
+    }
+  ],
+  'Meeting Subject Pronouns Face to Face': [
+    {
+      answer: 'Lucy fried an egg.',
+      question: 'Lucy fríe un huevo.',
+      phrases: [{ answer: 'She fried an egg', question: 'Ella fríe un huevo' }],
+    },
+    {
+      answer: 'The dog is barking.',
+      question: 'El perro está ladrando.',
+      phrases: [{ answer: 'It is barking', question: 'Está ladrando' }],
+    },
+    {
+      answer: 'My friend and I are going to the park.',
+      question: 'Mi amigo y yo vamos al parque.',
+      phrases: [{ answer: 'We are going to the park', question: 'Nosotros vamos al parque' }],
+    },
+    {
+      answer: 'The teacher is talking to the students.',
+      question: 'La maestra está hablando con los estudiantes.',
+      phrases: [{ answer: 'They are talking to the students', question: 'Ellos están hablando con los estudiantes' }],
+    },
+    {
+      answer: `I (1st person singular)`,
+      question: 'Yo',
+      phrases: [{ answer: 'I am learning Spanish', question: 'Yo estoy aprendiendo español' }],
+    },
+    {
+      answer: `You (familiar, 2nd person singular)`,
+      question: 'Tú',
+      phrases: [{ answer: 'You are my friend', question: 'Tú eres mi amigo' }],
+    },
+    {
+      answer: `You (formal, 2nd person singular)`,
+      question: 'Usted',
+      phrases: [{ answer: 'You are very kind', question: 'Usted es muy amable' }],
+    },
+    {
+      answer: `he / she (3rd person singular)`,
+      question: 'Él / Ella',
+      phrases: [
+        { answer: 'She is a doctor', question: 'Ella es doctora' },
+        { answer: 'He is a teacher', question: 'Él es profesor' },
+      ],
+    },
+    {
+      question: '¿Qué es?',
+      answer: 'What is it?',
+      phrases: [
+        { answer: 'What is this?', question: '¿Qué es esto?' },
+        { answer: `It is a tool`, question: 'Es una herramienta' },
+      ],
+    },
+  ],
+  'A few words about yo / nosotros and nosotras': [
+    {
+      question: `(Yo) Me voy.`,
+      answer: 'I am leaving.',
+      phrases: [{ question: 'Nosotros nos vamos.', answer: 'We are leaving.' }],
+    },
+    {
+      question: `Jorge y yo (Nosotros) vamos al cine.`,
+      answer: 'Jorge and I are going to the movies.',
+      phrases: [{ question: 'Nosotras vamos al cine.', answer: 'We (feminine) are going to the movies.' }],
+    },
+    {
+      answer: `Luz and I (We) play tennis`,
+      question: 'Luz y yo (Nosotros) jugamos al tenis',
+      phrases: [{ answer: 'We play tennis', question: 'Nosotros jugamos al tenis' }],
+    },
+  ],
+  "It's you, you know: The tù and usted distinction": [
+    {
+      question: `tutearse`,
+      answer: 'to use the tú form',
+      phrases: [{ question: 'ustedearse', answer: 'to use the usted form' }],
+    },
+    {
+      answer: `Are you (friendly, informal) coming to the party?`,
+      question: '¿Vas a venir a la fiesta?',
+      phrases: [{ answer: 'Are you (formal) coming to the party?', question: '¿Va a venir a la fiesta?' }],
+    },
+    {
+      answer: `Do you (friendly, informal) like this restaurant?`,
+      question: '¿Te gusta este restaurante?',
+      phrases: [{ answer: 'Do you (formal) like this restaurant?', question: '¿Le gusta este restaurante?' }],
+    },
+    {
+      answer: `Where do you (friendly, informal) live?`,
+      question: '¿Dónde vives?',
+      phrases: [{ answer: 'Where do you (formal) live?', question: '¿Dónde vive usted?' }],
+    },
+    {
+      answer: `You (friendly, informal) have a very beautiful home`,
+      question: 'Tienes una casa muy bonita',
+      phrases: [{ answer: `You (formal) have a very beautiful home`, question: 'Tiene una casa muy bonita' }],
+    },
+    {
+      answer: `Do you (plural, informal, Spain) dance the tango?`,
+      question: '¿Bailáis el tango?',
+      phrases: [{ answer: 'No, we (plural, informal) do not dance the tango', question: 'No, no bailamos el tango' }],
+    },
+  ],
+  'Ellos versus ellas': [
+    {
+      answer: 'Juan and Jorge (They, group of males) listen to music.',
+      question: 'Juan y Jorge (Ellos) escuchan música.',
+      phrases: [{ answer: 'They listen to music', question: 'Ellos escuchan música' }],
+    },
+    {
+      answer: 'Juan and Luz (They, combined group) listen to music.',
+      question: 'Juan y Luz (Ellos) escuchan música.',
+      phrases: [{ answer: 'They listen to music', question: 'Ellos escuchan música' }],
+    },
+    {
+      answer: 'The boy and all the girls listen.',
+      question: 'El niño y todas las niñas escuchan.',
+      phrases: [{ answer: 'They listen', question: 'Ellos escuchan' }],
+    },
+    {
+      answer: 'Luz and Susana (group of females) listen.',
+      question: 'Luz y Susana (Ellas) escuchan.',
+      phrases: [{ answer: 'They listen', question: 'Ellas escuchan' }],
+    },
+  ],
+};
+
+const mapRecordToCards = (prefix: string, record: Record<string, Card[]>): AppData['cards'] => {
+  return Object.keys(record).flatMap((category) =>
+    record[category]!.map((card) => ({ ...card, type: `${prefix} - ${category}` })),
+  );
 };
 
 export const source: AppData = {
   language: 'es-ES',
-  cards: mapRecordToCards(DummiesBook),
+  cards: [...mapRecordToCards('Chapter 1', Chapter1), ...mapRecordToCards('Chapter 2', Chapter2)],
 };
