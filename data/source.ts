@@ -1484,10 +1484,10 @@ const Chapter2: Record<string, Card[]> = {
       answer: 'to have',
       question: 'tener',
       phrases: [
-        { answer: 'you (informal) have', question: 'tú has' },
-        { answer: 'he/she has', question: 'él/ella ha' },
-        { answer: 'we have', question: 'nosotros hemos' },
-        { answer: 'they have', question: 'ellos han' },
+        { answer: 'you (informal) have', question: 'tú tienes' },
+        { answer: 'he/she has', question: 'él/ella tiene' },
+        { answer: 'we have', question: 'nosotros tenemos' },
+        { answer: 'they have', question: 'ellos tienen' },
       ],
     },
     {
