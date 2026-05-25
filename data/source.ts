@@ -15,18 +15,18 @@ const DummiesBook: Record<string, Card[]> = {
       answer: 'you (informal, singular) speak',
       question: 'tú hablas',
       phrases: [
-        { answer: 'you speak well', question: 'tú hablas bien' },
-        { answer: 'do you speak English?', question: '¿tú hablas inglés?' },
-        { answer: 'you always speak too fast', question: 'tú siempre hablas demasiado rápido' },
+        { answer: 'you (informal) speak well', question: 'tú hablas bien' },
+        { answer: 'do you (informal) speak English?', question: '¿tú hablas inglés?' },
+        { answer: 'you (informal) always speak too fast', question: 'tú siempre hablas demasiado rápido' },
       ],
     },
     {
       answer: 'you (formal, singular) speak',
       question: 'Usted habla',
       phrases: [
-        { answer: 'you speak clearly', question: 'Usted habla claramente' },
-        { answer: 'do you speak Portuguese?', question: '¿Usted habla portugués?' },
-        { answer: 'you speak with an accent', question: 'Usted habla con acento' },
+        { answer: 'you (formal) speak clearly', question: 'Usted habla claramente' },
+        { answer: 'do you (formal) speak Portuguese?', question: '¿Usted habla portugués?' },
+        { answer: 'you (formal) speak with an accent', question: 'Usted habla con acento' },
       ],
     },
     {
@@ -51,18 +51,18 @@ const DummiesBook: Record<string, Card[]> = {
       answer: 'you/they (formal, plural), speak',
       question: 'Ustedes hablan',
       phrases: [
-        { answer: 'you all speak fluently', question: 'Ustedes hablan con fluidez' },
-        { answer: 'they speak the same language', question: 'Ustedes hablan el mismo idioma' },
-        { answer: 'you speak very well', question: 'Ustedes hablan muy bien' },
+        { answer: 'you (formal) all speak fluently', question: 'Ustedes hablan con fluidez' },
+        { answer: 'they (formal) speak the same language', question: 'Ustedes hablan el mismo idioma' },
+        { answer: 'you (formal) speak very well', question: 'Ustedes hablan muy bien' },
       ],
     },
     {
       answer: 'they (informal) speak',
       question: 'ellos/ellas hablan',
       phrases: [
-        { answer: 'they speak loudly', question: 'ellos hablan en voz alta' },
-        { answer: 'they speak about their families', question: 'ellos hablan de sus familias' },
-        { answer: 'they always speak in Spanish', question: 'ellos siempre hablan en español' },
+        { answer: 'they (informal) speak loudly', question: 'ellos hablan en voz alta' },
+        { answer: 'they (informal) speak about their families', question: 'ellos hablan de sus familias' },
+        { answer: 'they (informal) always speak in Spanish', question: 'ellos siempre hablan en español' },
       ],
     },
   ],
@@ -79,8 +79,8 @@ const DummiesBook: Record<string, Card[]> = {
       answer: 'How are you?',
       question: '¿Cómo estás?',
       phrases: [
-        { answer: 'How are you today?', question: '¿Cómo estás hoy?' },
-        { answer: 'How are you feeling?', question: '¿Cómo te sientes?' },
+        { answer: 'How are you (informal) today?', question: '¿Cómo estás hoy?' },
+        { answer: 'How are you (informal) feeling?', question: '¿Cómo te sientes?' },
       ],
     },
     {
@@ -92,18 +92,18 @@ const DummiesBook: Record<string, Card[]> = {
       ],
     },
     {
-      answer: 'Where are you from?',
+      answer: 'Where are you (formal) from?',
       question: '¿De dónde eres?',
       phrases: [
         { answer: 'I am from Mexico', question: 'Soy de México' },
-        { answer: 'Are you from here?', question: '¿Eres de aquí?' },
+        { answer: 'Are you (formal) from here?', question: '¿Eres de aquí?' },
       ],
     },
     {
       answer: 'Nice to meet you',
       question: 'Mucho gusto',
       phrases: [
-        { answer: 'Nice to meet you too', question: 'Igualmente, mucho gusto' },
+        { answer: 'Nice to meet you (formal) too', question: 'Igualmente, mucho gusto' },
         { answer: 'The pleasure is mine', question: 'El placer es mío' },
       ],
     },
@@ -111,8 +111,8 @@ const DummiesBook: Record<string, Card[]> = {
       answer: 'Thank you',
       question: 'Gracias',
       phrases: [
-        { answer: 'Thank you very much', question: 'Muchas gracias' },
-        { answer: 'Thank you for your help', question: 'Gracias por tu ayuda' },
+        { answer: 'Thank you (formal) very much', question: 'Muchas gracias' },
+        { answer: 'Thank you (informal) for your help', question: 'Gracias por tu ayuda' },
       ],
     },
     {
@@ -135,7 +135,7 @@ const DummiesBook: Record<string, Card[]> = {
       answer: `Good-bye`,
       question: 'Adiós',
       phrases: [
-        { answer: 'See you later', question: 'Hasta luego' },
+        { answer: 'See you (informal) later', question: 'Hasta luego' },
         { answer: 'Goodbye, my friends', question: 'Adiós, mis amigos' },
       ],
     },
@@ -144,14 +144,14 @@ const DummiesBook: Record<string, Card[]> = {
       question: 'Por favor',
       phrases: [
         { answer: 'Please sit down', question: 'Por favor, siéntate' },
-        { answer: 'Can you help me, please?', question: '¿Puedes ayudarme, por favor?' },
+        { answer: 'Can you (formal) help me, please?', question: '¿Puedes ayudarme, por favor?' },
       ],
     },
     {
-      answer: `Do you speak English?`,
+      answer: `Do you (formal) speak English?`,
       question: '¿Habla usted inglés?',
       phrases: [
-        { answer: 'Do you speak French?', question: '¿Habla usted francés?' },
+        { answer: 'Do you (formal) speak French?', question: '¿Habla usted francés?' },
         { answer: 'Yes, I speak English', question: 'Sí, hablo inglés' },
       ],
     },
@@ -183,7 +183,7 @@ const DummiesBook: Record<string, Card[]> = {
       answer: `Really?`,
       question: '¿En serio? / ¿De verdas?',
       phrases: [
-        { answer: 'Really? Are you serious?', question: '¿En serio? ¿Estás en broma?' },
+        { answer: 'Really? Are you (informal) serious?', question: '¿En serio? ¿Estás en broma?' },
         { answer: 'Is that true?', question: '¿Es eso verdad?' },
       ],
     },
@@ -202,7 +202,7 @@ const DummiesBook: Record<string, Card[]> = {
       question: '¿Qué día?',
       phrases: [
         { answer: 'What day is it?', question: '¿Qué día es hoy?' },
-        { answer: 'What day were you born?', question: '¿Qué día naciste?' },
+        { answer: 'What day were you (informal) born?', question: '¿Qué día naciste?' },
       ],
     },
     {
@@ -210,7 +210,7 @@ const DummiesBook: Record<string, Card[]> = {
       question: '¿Qué hora es?',
       phrases: [
         { answer: 'What time is it now?', question: '¿Qué hora es ahora?' },
-        { answer: 'Do you know what time it is?', question: '¿Sabes qué hora es?' },
+        { answer: 'Do you (informal) know what time it is?', question: '¿Sabes qué hora es?' },
       ],
     },
     {
@@ -218,7 +218,7 @@ const DummiesBook: Record<string, Card[]> = {
       question: 'hoy',
       phrases: [
         { answer: 'Today is a beautiful day', question: 'Hoy es un día hermoso' },
-        { answer: 'What do you want to do today?', question: '¿Qué quieres hacer hoy?' },
+        { answer: 'What do you (informal) want to do today?', question: '¿Qué quieres hacer hoy?' },
       ],
     },
     {
@@ -226,7 +226,7 @@ const DummiesBook: Record<string, Card[]> = {
       question: 'mañana',
       phrases: [
         { answer: 'Tomorrow is Friday', question: 'Mañana es viernes' },
-        { answer: 'See you tomorrow', question: 'Hasta mañana' },
+        { answer: 'See you (informal) tomorrow', question: 'Hasta mañana' },
       ],
     },
     {
@@ -289,7 +289,7 @@ const DummiesBook: Record<string, Card[]> = {
       answer: `one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve`,
       question: 'uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez, once, doce',
       phrases: [
-        { answer: 'Can you count to twelve?', question: '¿Puedes contar hasta doce?' },
+        { answer: 'Can you (informal) count to twelve?', question: '¿Puedes contar hasta doce?' },
         { answer: 'There are twelve months in a year', question: 'Hay doce meses en un año' },
       ],
     },
@@ -598,17 +598,17 @@ const DummiesBook: Record<string, Card[]> = {
       ],
     },
     {
-      answer: `Where do you live?`,
+      answer: `Where do you (informal) live?`,
       question: '¿Dónde vives?',
       phrases: [
         { answer: 'I live in Madrid', question: 'Vivo en Madrid' },
         { answer: 'I live in a small town', question: 'Vivo en un pueblo pequeño' },
         { answer: 'I live in America', question: 'Vivo en América' },
-        { answer: 'Do you live here?', question: '¿Vives aquí?' },
+        { answer: 'Do you (informal) live here?', question: '¿Vives aquí?' },
       ],
     },
     {
-      answer: `What do you do for work?`,
+      answer: `What do you (formal) do for work?`,
       question: '¿A qué te dedicas?',
       phrases: [
         { answer: 'I am a teacher', question: 'Soy profesor' },
@@ -620,7 +620,7 @@ const DummiesBook: Record<string, Card[]> = {
       question: '¿Cómo está usted?',
       phrases: [
         { answer: 'I am doing well, thank you', question: 'Estoy bien, gracias' },
-        { answer: 'How are you doing?', question: '¿Cómo le va?' },
+        { answer: 'How are you (informal) doing?', question: '¿Cómo le va?' },
       ],
     },
     {
@@ -644,7 +644,7 @@ const DummiesBook: Record<string, Card[]> = {
       question: '¿Cuántos años tiene usted?',
       phrases: [
         { answer: 'I am 30 years old', question: 'Tengo 30 años' },
-        { answer: 'May I ask how old you are?', question: '¿Puedo preguntar cuántos años tiene?' },
+        { answer: 'May I ask how old you (formal) are?', question: '¿Puedo preguntar cuántos años tiene?' },
       ],
     },
   ],
@@ -653,7 +653,7 @@ const DummiesBook: Record<string, Card[]> = {
       answer: `Hello, can you (formal) please tell me how to get to...?`,
       question: `Buenos días, ¿puede por favor decirme cómo llegar a...?`,
       phrases: [
-        { answer: 'Can you tell me how to get to the museum?', question: '¿Puede decirme cómo llegar al museo?' },
+        { answer: 'Can you (formal) tell me how to get to the museum?', question: '¿Puede decirme cómo llegar al museo?' },
       ],
     },
     {
@@ -787,7 +787,7 @@ const DummiesBook: Record<string, Card[]> = {
     {
       answer: `the club`,
       question: `la discoteca`,
-      phrases: [{ answer: 'They danced at the club all night', question: 'Bailaron en la discoteca toda la noche' }],
+      phrases: [{ answer: 'They (informal) danced at the club all night', question: 'Bailaron en la discoteca toda la noche' }],
     },
     {
       answer: `the concert`,
@@ -868,7 +868,7 @@ const DummiesBook: Record<string, Card[]> = {
     {
       answer: 'the report',
       question: 'el informe',
-      phrases: [{ answer: 'Did you read the report?', question: '¿Leíste el informe?' }],
+      phrases: [{ answer: 'Did you (informal) read the report?', question: '¿Leíste el informe?' }],
     },
     {
       answer: 'the schedule',
@@ -913,22 +913,22 @@ const DummiesBook: Record<string, Card[]> = {
   ],
   'Putting Spanish into Action - Enjoying the great outdoors and more': [
     {
-      answer: 'Do you like to walk or hike?',
+      answer: 'Do you (informal) like to walk or hike?',
       question: '¿Te gusta caminar o hacer senderismo?',
       phrases: [{ answer: 'I liked to hike in the mountains', question: 'Me gustaba caminar en las montañas' }],
     },
     {
-      answer: 'What games do you like to play?',
+      answer: 'What games do you (informal) like to play?',
       question: '¿Qué juegos te gusta jugar?',
       phrases: [{ answer: 'I used to play soccer', question: 'Solía jugar fútbol' }],
     },
     {
-      answer: 'Do you play chess?',
+      answer: 'Do you (informal) play chess?',
       question: '¿Juegas al ajedrez?',
       phrases: [{ answer: 'I played chess when I was younger', question: 'Jugaba al ajedrez cuando era más joven' }],
     },
     {
-      answer: 'Do you like to read?',
+      answer: 'Do you (informal) like to read?',
       question: '¿Te gusta leer?',
       phrases: [{ answer: 'I read books every evening', question: 'Leo libros cada noche' }],
     },
@@ -942,7 +942,7 @@ const DummiesBook: Record<string, Card[]> = {
     {
       answer: 'the visa',
       question: 'la visa',
-      phrases: [{ answer: 'Did you get your visa approved?', question: '¿Te aprobaron la visa?' }],
+      phrases: [{ answer: 'Did you (informal) get your visa approved?', question: '¿Te aprobaron la visa?' }],
     },
     {
       answer: 'the flight',
@@ -964,7 +964,7 @@ const DummiesBook: Record<string, Card[]> = {
     {
       answer: 'the bill',
       question: 'la factura',
-      phrases: [{ answer: 'Can you pay the bill please?', question: '¿Puedes pagar la factura por favor?' }],
+      phrases: [{ answer: 'Can you (informal) pay the bill please?', question: '¿Puedes pagar la factura por favor?' }],
     },
     {
       answer: 'the change',
@@ -979,7 +979,7 @@ const DummiesBook: Record<string, Card[]> = {
     {
       answer: 'the cash',
       question: 'el efectivo',
-      phrases: [{ answer: 'Do you have any cash?', question: '¿Tienes efectivo?' }],
+      phrases: [{ answer: 'Do you (informal) have any cash?', question: '¿Tienes efectivo?' }],
     },
   ],
   'Taking Spanish on the Go - Navigating airports and travel': [],
@@ -1026,7 +1026,7 @@ const DummiesBook: Record<string, Card[]> = {
   ],
   'Taking Spanish on the Go - Securing a place to stay': [
     {
-      answer: 'Do you have a room available?',
+      answer: 'Do you (formal) have a room available?',
       question: '¿Tiene una habitación disponible?',
       phrases: [
         {
@@ -1071,7 +1071,7 @@ const DummiesBook: Record<string, Card[]> = {
       phrases: [{ answer: 'It costs fifty euros per night', question: 'Cuesta cincuenta euros por noche' }],
     },
     {
-      answer: 'Do you accept credit cards?',
+      answer: 'Do you (formal) accept credit cards?',
       question: '¿Aceptan tarjetas de crédito?',
       phrases: [
         { answer: 'We accept all types of credit cards', question: 'Aceptamos todos los tipos de tarjetas de crédito' },
