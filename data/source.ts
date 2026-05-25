@@ -1726,7 +1726,11 @@ const Chapter3: Record<string, Card[]> = {
     {
       answer: 'to become bored',
       question: 'aburrirse',
-      phrases: [{ answer: 'I get bored at home', question: 'Me aburro en casa' }],
+      phrases: [
+        { answer: 'I get bored at home', question: 'Me aburro en casa' },
+        { answer: `Do you (informal) get bored at work?`, question: '¿Te aburres en el trabajo?' },
+        { answer: `No, I don't get bored at work`, question: 'No, no me aburro en el trabajo' },
+      ],
     },
     {
       answer: 'to go to bed, to lie down',
@@ -1740,12 +1744,20 @@ const Chapter3: Record<string, Card[]> = {
     {
       answer: 'to shave oneself',
       question: 'afeitarse',
-      phrases: [{ answer: 'He shaves every morning', question: 'Se afeita cada mañana' }],
+      phrases: [
+        { answer: 'He shaves every morning', question: 'Se afeita cada mañana' },
+        { answer: `Do you (formal) shave every day?`, question: '¿Se afeita usted cada día?' },
+        { answer: `No, I don't shave every day`, question: 'No, no me afeito cada día' },
+      ],
     },
     {
       answer: 'to bathe oneself',
       question: 'bañarse',
-      phrases: [{ answer: 'I bathe before sleeping', question: 'Me baño antes de dormir' }],
+      phrases: [
+        { answer: 'I bathe before sleeping', question: 'Me baño antes de dormir' },
+        { answer: `Do you (informal) bathe in the morning?`, question: '¿Te bañas por la mañana?' },
+        { answer: `No, I don't bathe in the morning`, question: 'No, no me baño por la mañana' },
+      ],
     },
     {
       answer: 'to be silent, to be quiet',
@@ -1755,7 +1767,11 @@ const Chapter3: Record<string, Card[]> = {
     {
       answer: 'to get married (to)',
       question: 'casarse (con)',
-      phrases: [{ answer: 'They got married last year', question: 'Se casaron el año pasado' }],
+      phrases: [
+        { answer: 'They got married last year', question: 'Se casaron el año pasado' },
+        { answer: `Do you (informal) want to get married soon?`, question: '¿Quieres casarte pronto?' },
+        { answer: `No, I don't want to get married soon`, question: 'No, no quiero casarme pronto' },
+      ],
     },
     {
       answer: "to brush one's hair",
@@ -1765,7 +1781,11 @@ const Chapter3: Record<string, Card[]> = {
     {
       answer: "to brush one's teeth",
       question: 'cepillarse los dientes',
-      phrases: [{ answer: 'I brush my teeth twice a day', question: 'Me cepillo los dientes dos veces al día' }],
+      phrases: [
+        { answer: 'I brush my teeth twice a day', question: 'Me cepillo los dientes dos veces al día' },
+        { answer: `Do you (informal) brush your teeth at night?`, question: '¿Te cepillas los dientes por la noche?' },
+        { answer: `No, I don't brush my teeth at night`, question: 'No, no me cepillo los dientes por la noche' },
+      ],
     },
     {
       answer: 'to wake up',
@@ -1780,17 +1800,29 @@ const Chapter3: Record<string, Card[]> = {
     {
       answer: 'to have fun',
       question: 'divertirse',
-      phrases: [{ answer: 'We had fun at the party', question: 'Nos divertimos en la fiesta' }],
+      phrases: [
+        { answer: 'We had fun at the party', question: 'Nos divertimos en la fiesta' },
+        { answer: `Are you (informal) having fun at the party?`, question: '¿Te diviertes en la fiesta?' },
+        { answer: `No, I'm not having fun at the party`, question: 'No, no me divierto en la fiesta' },
+      ],
     },
     {
       answer: 'to fall asleep',
       question: 'dormirse',
-      phrases: [{ answer: 'He fell asleep on the sofa', question: 'Se durmió en el sofá' }],
+      phrases: [
+        { answer: 'He fell asleep on the sofa', question: 'Se durmió en el sofá' },
+        { answer: `Do you (formal) fall asleep easily?`, question: '¿Se duerme usted fácilmente?' },
+        { answer: `No, I don't fall asleep easily`, question: 'No, no me duermo fácilmente' },
+      ],
     },
     {
       answer: 'to take a shower',
       question: 'ducharse',
-      phrases: [{ answer: 'I shower every morning', question: 'Me ducho cada mañana' }],
+      phrases: [
+        { answer: 'I shower every morning', question: 'Me ducho cada mañana' },
+        { answer: `Do you (informal) shower at night?`, question: '¿Te duchas por la noche?' },
+        { answer: `No, I don't shower at night`, question: 'No, no me ducho por la noche' },
+      ],
     },
     {
       answer: 'to wash oneself',
@@ -1831,7 +1863,11 @@ const Chapter3: Record<string, Card[]> = {
     {
       answer: 'to be mistaken',
       question: 'equivocarse',
-      phrases: [{ answer: 'I made a mistake on the exam', question: 'Me equivoqué en el examen' }],
+      phrases: [
+        { answer: 'I made a mistake on the exam', question: 'Me equivoqué en el examen' },
+        { answer: `Are you (informal) mistaken about the address?`, question: '¿Te equivocas de dirección?' },
+        { answer: `No, I am not mistaken about the address`, question: 'No, no me equivoco de dirección' },
+      ],
     },
     {
       answer: 'to become',
@@ -1851,7 +1887,11 @@ const Chapter3: Record<string, Card[]> = {
     {
       answer: 'to forget (about)',
       question: 'olvidarse (de)',
-      phrases: [{ answer: 'I forgot about the meeting', question: 'Me olvidé de la reunión' }],
+      phrases: [
+        { answer: 'I forgot about the meeting', question: 'Me olvidé de la reunión' },
+        { answer: `Did you (informal) forget the keys?`, question: '¿Te olvidaste de las llaves?' },
+        { answer: `No, I didn't forget the keys`, question: 'No, no me olvidé de las llaves' },
+      ],
     },
     {
       answer: 'to get ready',
@@ -1871,7 +1911,11 @@ const Chapter3: Record<string, Card[]> = {
     {
       answer: 'to worry (about)',
       question: 'preocuparse (por)',
-      phrases: [{ answer: 'I worry about my children', question: 'Me preocupo por mis hijos' }],
+      phrases: [
+        { answer: 'I worry about my children', question: 'Me preocupo por mis hijos' },
+        { answer: `Do you (formal) worry about money?`, question: '¿Se preocupa usted por el dinero?' },
+        { answer: `No, I don't worry about money`, question: 'No, no me preocupo por el dinero' },
+      ],
     },
     {
       answer: 'to complain (about)',
@@ -1890,7 +1934,11 @@ const Chapter3: Record<string, Card[]> = {
     {
       answer: 'to laugh (at)',
       question: 'reírse (de)',
-      phrases: [{ answer: 'They laughed at the joke', question: 'Se rieron del chiste' }],
+      phrases: [
+        { answer: 'They laughed at the joke', question: 'Se rieron del chiste' },
+        { answer: `Are they laughing at you (informal)?`, question: '¿Se ríen de ti?' },
+        { answer: `No, they are not laughing at me`, question: 'No, no se ríen de mí' },
+      ],
     },
     {
       answer: 'to sit down',
