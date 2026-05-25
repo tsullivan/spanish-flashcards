@@ -652,9 +652,7 @@ const DummiesBook: Record<string, Card[]> = {
     {
       answer: `Hello, can you (formal) please tell me how to get to...?`,
       question: `Buenos días, ¿puede por favor decirme cómo llegar a...?`,
-      phrases: [
-        { answer: 'Can you (formal) tell me how to get to the museum?', question: '¿Puede decirme cómo llegar al museo?' },
-      ],
+      phrases: [ { answer: 'Can you (formal) tell me how to get to the museum?', question: '¿Puede decirme cómo llegar al museo?' } ],
     },
     {
       answer: `Please show me on this map.`,
@@ -691,9 +689,7 @@ const DummiesBook: Record<string, Card[]> = {
     {
       answer: `the market`,
       question: `el mercado`,
-      phrases: [
-        { answer: 'I bought fresh vegetables at the market', question: 'Compré vegetales frescos en el mercado' },
-      ],
+      phrases: [ { answer: 'I bought fresh vegetables at the market', question: 'Compré vegetales frescos en el mercado' } ],
     },
     {
       answer: `the supermarket`,
@@ -792,9 +788,7 @@ const DummiesBook: Record<string, Card[]> = {
     {
       answer: `the concert`,
       question: `el concierto`,
-      phrases: [
-        { answer: 'I loved the concert last weekend', question: 'Me encantó el concierto el fin de semana pasado' },
-      ],
+      phrases: [ { answer: 'I loved the concert last weekend', question: 'Me encantó el concierto el fin de semana pasado' } ],
     },
     {
       answer: `the movie theater`,
@@ -824,9 +818,7 @@ const DummiesBook: Record<string, Card[]> = {
     {
       answer: `to invite`,
       question: `invitar`,
-      phrases: [
-        { answer: 'I invited my coworkers to the party', question: 'Invité a mis compañeros de trabajo a la fiesta' },
-      ],
+      phrases: [ { answer: 'I invited my coworkers to the party', question: 'Invité a mis compañeros de trabajo a la fiesta' } ],
     },
   ],
   'Putting Spanish into Action - Doing business': [
@@ -837,8 +829,8 @@ const DummiesBook: Record<string, Card[]> = {
     },
     {
       answer: 'the computer',
-      question: 'la computadora',
-      phrases: [{ answer: 'The computer is broken', question: 'La computadora está rota' }],
+      question: 'el ordenador',
+      phrases: [{ answer: 'The computer is broken', question: 'El ordenador está roto' }],
     },
     {
       answer: 'the telephone',
@@ -941,8 +933,8 @@ const DummiesBook: Record<string, Card[]> = {
     },
     {
       answer: 'the visa',
-      question: 'la visa',
-      phrases: [{ answer: 'Did you (informal) get your visa approved?', question: '¿Te aprobaron la visa?' }],
+      question: 'el visado',
+      phrases: [{ answer: 'Did you (informal) get your visa approved?', question: '¿Te aprobaron el visado?' }],
     },
     {
       answer: 'the flight',
@@ -951,8 +943,8 @@ const DummiesBook: Record<string, Card[]> = {
     },
     {
       answer: 'to pack your luggage',
-      question: 'empacar tu equipaje',
-      phrases: [{ answer: 'I packed my luggage yesterday', question: 'Empaqué mi equipaje ayer' }],
+      question: 'hacer las maletas',
+      phrases: [{ answer: 'I packed my luggage yesterday', question: 'Hice las maletas ayer' }],
     },
   ],
   'Taking Spanish on the Go - Making sense of money': [
@@ -982,7 +974,43 @@ const DummiesBook: Record<string, Card[]> = {
       phrases: [{ answer: 'Do you (informal) have any cash?', question: '¿Tienes efectivo?' }],
     },
   ],
-  'Taking Spanish on the Go - Navigating airports and travel': [],
+  'Taking Spanish on the Go - Navigating airports and travel': [
+    {
+      answer: 'the airport',
+      question: 'el aeropuerto',
+      phrases: [{ answer: 'I arrived at the airport early', question: 'Llegué al aeropuerto temprano' }],
+    },
+    {
+      answer: 'the terminal',
+      question: 'la terminal',
+      phrases: [{ answer: 'Which terminal is my flight?', question: '¿De qué terminal es mi vuelo?' }],
+    },
+    {
+      answer: 'the food court',
+      question: 'la zona de comidas',
+      phrases: [{ answer: 'I ate lunch at the food court', question: 'Comí en la zona de comidas' }],
+    },
+    {
+      answer: 'the boarding pass',
+      question: 'la tarjeta de embarque',
+      phrases: [{ answer: 'Where is my boarding pass?', question: '¿Dónde está mi tarjeta de embarque?' }],
+    },
+    {
+      answer: 'the security checkpoint',
+      question: 'el control de seguridad',
+      phrases: [{ answer: 'I went through security', question: 'Pasé por el control de seguridad' }],
+    },
+    {
+      answer: 'customs',
+      question: 'la aduana',
+      phrases: [{ answer: 'I declared my items at customs', question: 'Declaré mis artículos en la aduana' }],
+    },
+    {
+      answer: 'the baggage claim',
+      question: 'el mostrador de equipaje',
+      phrases: [{ answer: 'My luggage is at baggage claim', question: 'Mi equipaje está en el mostrador de equipaje' }],
+    },
+  ],
   'Taking Spanish on the Go - Getting around with local transportation': [
     {
       answer: 'Where is...?',
@@ -1012,16 +1040,12 @@ const DummiesBook: Record<string, Card[]> = {
     {
       answer: 'the bus station',
       question: 'la estación de autobús',
-      phrases: [
-        { answer: 'The bus station is near the market', question: 'La estación de autobús está cerca del mercado' },
-      ],
+      phrases: [ { answer: 'The bus station is near the market', question: 'La estación de autobús está cerca del mercado' } ],
     },
     {
       answer: 'the car rental office',
       question: 'la oficina de alquiler de coches',
-      phrases: [
-        { answer: 'I rented a car at the car rental office', question: 'Alquilé un coche en la oficina de alquiler' },
-      ],
+      phrases: [ { answer: 'I rented a car at the car rental office', question: 'Alquilé un coche en la oficina de alquiler' } ],
     },
   ],
   'Taking Spanish on the Go - Securing a place to stay': [
@@ -1073,18 +1097,14 @@ const DummiesBook: Record<string, Card[]> = {
     {
       answer: 'Do you (formal) accept credit cards?',
       question: '¿Aceptan tarjetas de crédito?',
-      phrases: [
-        { answer: 'We accept all types of credit cards', question: 'Aceptamos todos los tipos de tarjetas de crédito' },
-      ],
+      phrases: [ { answer: 'We accept all types of credit cards', question: 'Aceptamos todos los tipos de tarjetas de crédito' } ],
     },
   ],
   'Taking Spanish on the Go - Taking action during emergencies': [
     {
       answer: 'Please help me!',
       question: '¡Por favor, ayúdame!',
-      phrases: [
-        { answer: 'I called for help because I was lost', question: 'Llamé pidiendo ayuda porque estaba perdido' },
-      ],
+      phrases: [ { answer: 'I called for help because I was lost', question: 'Llamé pidiendo ayuda porque estaba perdido' } ],
     },
   ],
 };
