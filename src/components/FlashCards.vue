@@ -50,7 +50,7 @@ const returnToPrevious = () => {
   if (back.value.length > 0) {
     forward.value.push(captureState());
     restoreState(back.value.pop()!);
-    step.value = 1;
+    step.value = 0;
   }
 };
 
