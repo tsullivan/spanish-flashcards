@@ -82,18 +82,25 @@ loadNewCard();
 
     <main class="content">
       <h2>
-        {{ currentCard[showQuestionFirst ? 'question' : 'answer'] }}{{ step > 0 ? ` - ${currentCard[showQuestionFirst ? 'answer' : 'question']}` : '' }}
-        <button v-if="speechSupported && step > 0" class="speaker" @click="speak(currentCard.question)" aria-label="Play question audio">🔊</button>
+        <template v-if="showQuestionFirst">
+          <a v-if="speechSupported" class="speak-link" href="#" @click.prevent="speak(currentCard.question)">{{ currentCard.question }}</a>
+          <template v-else>{{ currentCard.question }}</template>
+          <template v-if="step > 0"> - {{ currentCard.answer }}</template>
+        </template>
+        <template v-else>
+          {{ currentCard.answer }}
+          <template v-if="step > 0"> - <a v-if="speechSupported" class="speak-link" href="#" @click.prevent="speak(currentCard.question)">{{ currentCard.question }}</a><template v-else>{{ currentCard.question }}</template></template>
+        </template>
       </h2>
 
       <p v-if="step > 1">
-        {{ currentPhrase[showQuestionFirst ? 'question' : 'answer'] }}
-        <button v-if="speechSupported && showQuestionFirst" class="speaker" @click="speak(currentPhrase.question)" aria-label="Play question audio">🔊</button>
+        <a v-if="speechSupported && showQuestionFirst" class="speak-link" href="#" @click.prevent="speak(currentPhrase.question)">{{ currentPhrase.question }}</a>
+        <template v-else>{{ currentPhrase[showQuestionFirst ? 'question' : 'answer'] }}</template>
       </p>
 
       <p v-if="step > 2">
-        {{ currentPhrase[showQuestionFirst ? 'answer' : 'question'] }}
-        <button v-if="speechSupported && !showQuestionFirst" class="speaker" @click="speak(currentPhrase.question)" aria-label="Play question audio">🔊</button>
+        <a v-if="speechSupported && !showQuestionFirst" class="speak-link" href="#" @click.prevent="speak(currentPhrase.question)">{{ currentPhrase.question }}</a>
+        <template v-else>{{ currentPhrase[showQuestionFirst ? 'answer' : 'question'] }}</template>
       </p>
     </main>
 

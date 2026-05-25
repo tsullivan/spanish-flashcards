@@ -22,6 +22,7 @@ import FlashCards from './components/FlashCards.vue';
   --color-button-bg:        white;
   --color-button-hover-bg:  #f2f2f2;
   --color-button-active-bg: #e6e6e6;
+  --color-link:             #1a5fa8;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,6 +35,7 @@ import FlashCards from './components/FlashCards.vue';
     --color-button-bg:        #2a2d34;
     --color-button-hover-bg:  #353940;
     --color-button-active-bg: #424650;
+    --color-link:             #7dc4f5;
   }
 }
 
@@ -129,22 +131,14 @@ button:active {
   background-color: var(--color-button-active-bg);
 }
 
-.speaker {
-  background: none;
-  border: none;
-  padding: 0 0.25rem;
-  margin-left: 0.4rem;
-  font-size: 1rem;
+.speak-link {
+  font-weight: 700;
+  color: var(--color-link);
+  text-decoration: none;
   cursor: pointer;
-  vertical-align: middle;
 }
 
-.speaker:hover {
-  opacity: 0.7;
-  background: none;
-}
-
-.speaker:active {
-  background: none;
+.speak-link:hover {
+  text-decoration: underline;
 }
 </style>
