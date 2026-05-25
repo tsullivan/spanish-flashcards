@@ -1325,8 +1325,8 @@ const Chapter2: Record<string, Card[]> = {
   ],
   'Introducing Regular Verbs, Present Tense - verbs ending in -ar': [
     {
-      answer: 'hablar (to speak)',
-      question: 'yo hablo',
+      answer: 'to speak',
+      question: 'hablar',
       phrases: [
         { answer: 'you (informal) speak', question: 'tú hablas' },
         { answer: 'you (formal) speak', question: 'usted habla' },
@@ -1338,8 +1338,8 @@ const Chapter2: Record<string, Card[]> = {
       ],
     },
     {
-      answer: 'preparar (to prepare)',
-      question: 'yo preparo',
+      answer: 'to prepare',
+      question: 'preparar',
       phrases: [
         { answer: 'you (informal) prepare', question: 'tú preparas' },
         { answer: 'you (formal) prepare', question: 'usted prepara' },
@@ -1353,8 +1353,8 @@ const Chapter2: Record<string, Card[]> = {
   ],
   'Introducing Regular Verbs, Present Tense - verbs ending in -er': [
     {
-      answer: 'comer (to eat)',
-      question: 'yo como',
+      answer: 'to eat',
+      question: 'comer',
       phrases: [
         { answer: 'you (informal) eat', question: 'tú comes' },
         { answer: 'you (formal) eat', question: 'usted come' },
@@ -1366,8 +1366,8 @@ const Chapter2: Record<string, Card[]> = {
       ],
     },
     {
-      answer: 'entender (to understand)',
-      question: 'yo entiendo',
+      answer: 'to understand',
+      question: 'entender',
       phrases: [
         { answer: 'you (informal) understand', question: 'tú entiendes' },
         { answer: 'you (formal) understand', question: 'usted entiende' },
@@ -1381,8 +1381,8 @@ const Chapter2: Record<string, Card[]> = {
   ],
   'Introducing Regular Verbs, Present Tense - verbs ending in -ir': [
     {
-      answer: 'vivir (to live)',
-      question: 'yo vivo',
+      answer: 'to live',
+      question: 'vivir',
       phrases: [
         { answer: 'you (informal) live', question: 'tú vives' },
         { answer: 'you (formal) live', question: 'usted vive' },
@@ -1394,8 +1394,8 @@ const Chapter2: Record<string, Card[]> = {
       ],
     },
     {
-      answer: 'aburrir (to bore)',
-      question: 'yo aburro',
+      answer: 'to bore',
+      question: 'aburrir',
       phrases: [
         { answer: 'you (informal) bore', question: 'tú aburres' },
         { answer: 'you (formal) bore', question: 'usted aburre' },
@@ -1441,8 +1441,8 @@ const Chapter2: Record<string, Card[]> = {
   ],
   'Introducing Irregular Verbs, Present Tense': [
     {
-      answer: 'conocer (to know)',
-      question: 'yo conozco',
+      answer: 'to know (people, places, things)',
+      question: 'conocer',
       phrases: [
         { answer: 'you (informal) know', question: 'tú conoces' },
         { answer: 'he/she knows', question: 'él/ella conoce' },
@@ -1451,8 +1451,8 @@ const Chapter2: Record<string, Card[]> = {
       ],
     },
     {
-      answer: 'dar (to give)',
-      question: 'yo doy',
+      answer: 'to give',
+      question: 'dar',
       phrases: [
         { answer: 'you (informal) give', question: 'tú das' },
         { answer: 'he/she gives', question: 'él/ella da' },
@@ -1461,8 +1461,8 @@ const Chapter2: Record<string, Card[]> = {
       ],
     },
     {
-      answer: 'decir (to say)',
-      question: 'yo digo',
+      answer: 'to say/tell',
+      question: 'decir',
       phrases: [
         { answer: 'you (informal) say', question: 'tú dices' },
         { answer: 'he/she says', question: 'él/ella dice' },
@@ -1471,8 +1471,8 @@ const Chapter2: Record<string, Card[]> = {
       ],
     },
     {
-      answer: 'estar (to be)',
-      question: 'yo estoy',
+      answer: 'to be (temporary states/locations)',
+      question: 'estar',
       phrases: [
         { answer: 'you (informal) are', question: 'tú estás' },
         { answer: 'he/she is', question: 'él/ella está' },
@@ -1481,8 +1481,8 @@ const Chapter2: Record<string, Card[]> = {
       ],
     },
     {
-      answer: 'haber (to have)',
-      question: 'yo he',
+      answer: 'to have',
+      question: 'tener',
       phrases: [
         { answer: 'you (informal) have', question: 'tú has' },
         { answer: 'he/she has', question: 'él/ella ha' },
@@ -1491,8 +1491,8 @@ const Chapter2: Record<string, Card[]> = {
       ],
     },
     {
-      answer: 'hacer (to do/make)',
-      question: 'yo hago',
+      answer: 'to do/make',
+      question: 'hacer',
       phrases: [
         { answer: 'you (informal) do', question: 'tú haces' },
         { answer: 'he/she does', question: 'él/ella hace' },
@@ -1501,8 +1501,8 @@ const Chapter2: Record<string, Card[]> = {
       ],
     },
     {
-      answer: 'ir (to go)',
-      question: 'yo voy',
+      answer: 'to go',
+      question: 'ir',
       phrases: [
         { answer: 'you (informal) go', question: 'tú vas' },
         { answer: 'he/she goes', question: 'él/ella va' },
@@ -1511,8 +1511,8 @@ const Chapter2: Record<string, Card[]> = {
       ],
     },
     {
-      answer: 'lavarse (to wash oneself)',
-      question: 'yo me lavo',
+      answer: 'to wash oneself',
+      question: 'lavarse',
       phrases: [
         { answer: 'you (informal) wash yourself', question: 'tú te lavas' },
         { answer: 'he/she washes', question: 'él/ella se lava' },
@@ -1521,8 +1521,8 @@ const Chapter2: Record<string, Card[]> = {
       ],
     },
     {
-      answer: 'leer (to read)',
-      question: 'yo leo',
+      answer: 'to read',
+      question: 'leer',
       phrases: [
         { answer: 'you (informal) read', question: 'tú lees' },
         { answer: 'he/she reads', question: 'él/ella lee' },
@@ -1531,8 +1531,8 @@ const Chapter2: Record<string, Card[]> = {
       ],
     },
     {
-      answer: 'oír (to hear)',
-      question: 'yo oigo',
+      answer: 'to hear',
+      question: 'oír',
       phrases: [
         { answer: 'you (informal) hear', question: 'tú oyes' },
         { answer: 'he/she hears', question: 'él/ella oye' },
