@@ -141,10 +141,13 @@ export const useFlashcardsStore = defineStore('flashcards', () => {
   const currentChapter  = computed(() => state.value.current.chapterKey);
   const currentSection  = computed(() => state.value.current.sectionKey);
   const currentSubTitle = computed(() => currentGroup.value.subTitle);
-  const canGoPrevious     = computed(() => state.value.back.length > 0);
-  const allChapters       = computed(() => Object.keys(source.cards));
-  const allSections       = computed(() => allSectionKeys());
-  const isEmpty           = computed(() => state.value.enabledSections.length === 0);
+  const canGoPrevious   = computed(() => state.value.back.length > 0);
+  const allChapters     = computed(() => Object.keys(source.cards));
+  const allSections     = computed(() => allSectionKeys());
+  const isEmpty         = computed(() => state.value.enabledSections.length === 0);
+  const canEditFilter   = computed(() =>
+    state.value.step === 0 && state.value.back.length === 0 && state.value.forward.length === 0
+  );
 
   const advance = () => {
     if (state.value.enabledSections.length === 0) return;
@@ -176,6 +179,7 @@ export const useFlashcardsStore = defineStore('flashcards', () => {
     currentSection,
     currentSubTitle,
     canGoPrevious,
+    canEditFilter,
     allChapters,
     allSections,
     isEmpty,
