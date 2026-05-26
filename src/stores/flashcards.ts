@@ -148,6 +148,10 @@ export const useFlashcardsStore = defineStore('flashcards', () => {
   const canEditFilter   = computed(() =>
     state.value.step === 0 && state.value.back.length === 0 && state.value.forward.length === 0
   );
+  // allow restart if this is not an empty state
+  const canRestart       = computed(() =>
+    state.value.step > 0 || state.value.back.length > 0 || state.value.forward.length > 0
+  );
 
   const advance = () => {
     if (state.value.enabledSections.length === 0) return;
@@ -180,6 +184,7 @@ export const useFlashcardsStore = defineStore('flashcards', () => {
     currentSubTitle,
     canGoPrevious,
     canEditFilter,
+    canRestart,
     allChapters,
     allSections,
     isEmpty,

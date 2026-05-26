@@ -66,17 +66,6 @@ body {
   border-bottom: 1px solid var(--color-border);
 }
 
-.gear-button {
-  position: absolute;
-  left: 0.85rem;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 0.4rem 0.7rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .header h1 {
   margin: 0;
   font-size: 1.25rem;
