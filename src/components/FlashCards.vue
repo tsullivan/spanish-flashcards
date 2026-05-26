@@ -14,11 +14,9 @@ const {
   currentSection,
   currentSubTitle,
   canGoPrevious,
-  canEditFilter,
-  canRestart,
   isEmpty,
 } = storeToRefs(store);
-const { advance, previous, restart } = store;
+const { advance, previous } = store;
 
 const showSettings = ref(false);
 
@@ -97,7 +95,7 @@ const speak = (text: string) => {
 
     <footer class="bar footer">
       <div class="nav-buttons">
-        <button v-if="canEditFilter" aria-label="Settings" @click="showSettings = true">
+        <button aria-label="Settings" @click="showSettings = true">
           <svg
             viewBox="0 0 24 24"
             width="20"
@@ -114,7 +112,6 @@ const speak = (text: string) => {
             />
           </svg>
         </button>
-        <button v-if="canRestart" @click="restart">Restart</button>
       </div>
       <div v-if="!isEmpty" class="nav-buttons">
         <button v-if="canGoPrevious" @click="previous">Previous</button>

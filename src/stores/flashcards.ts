@@ -61,13 +61,13 @@ export const reducer = (state: State, action: Action): State => {
         forward: [],
       };
     case 'SET_ENABLED_SECTIONS':
-      // Only allowed when both navigation stacks are empty (i.e. after a fresh Restart).
-      if (state.back.length > 0 || state.forward.length > 0) return state;
       return {
         ...state,
         enabledSections: action.enabledSections,
         current: action.newEntry ?? state.current,
         step: 0,
+        back: [],
+        forward: [],
       };
   }
 };
@@ -145,10 +145,6 @@ export const useFlashcardsStore = defineStore('flashcards', () => {
   const allChapters     = computed(() => Object.keys(getSource().cards));
   const allSections     = computed(() => allSectionKeys());
   const isEmpty         = computed(() => state.value.enabledSections.length === 0);
-  const canEditFilter   = computed(() =>
-    state.value.step === 0 && state.value.back.length === 0 && state.value.forward.length === 0
-  );
-  // allow restart if this is not an empty state
   const canRestart       = computed(() =>
     state.value.step > 0 || state.value.back.length > 0 || state.value.forward.length > 0
   );
@@ -168,8 +164,6 @@ export const useFlashcardsStore = defineStore('flashcards', () => {
   };
 
   const setEnabledSections = (keys: string[]) => {
-    const s = state.value;
-    if (s.back.length > 0 || s.forward.length > 0) return;
     const newEntry = keys.length > 0 ? randomEntry(keys) : undefined;
     dispatch({ type: 'SET_ENABLED_SECTIONS', enabledSections: keys, newEntry });
     saveEnabledSections(keys);
@@ -183,7 +177,6 @@ export const useFlashcardsStore = defineStore('flashcards', () => {
     currentSection,
     currentSubTitle,
     canGoPrevious,
-    canEditFilter,
     canRestart,
     allChapters,
     allSections,

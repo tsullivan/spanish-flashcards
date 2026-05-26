@@ -129,7 +129,7 @@ describe('SettingsPanel', () => {
     expect((first.element as HTMLInputElement).checked).toBe(true);
   });
 
-  it('"Save and close" calls store.setEnabledSections with the current selection and emits close', async () => {
+  it('shows "Save and close" in fresh state and calls setEnabledSections with selection and emits close', async () => {
     const spy = vi.spyOn(store, 'setEnabledSections');
     const wrapper = mount(SettingsPanel);
     const first = wrapper.findAll('input[type="checkbox"]')[0]!;
@@ -144,5 +144,30 @@ describe('SettingsPanel', () => {
     expect(called).not.toContain(allSectionKeys()[0]!);
     expect(called.length).toBe(allSectionKeys().length - 1);
     expect(wrapper.emitted('close')).toBeTruthy();
+  });
+
+  it('shows "Save and restart" when canRestart is true', async () => {
+    store.advance();
+    const wrapper = mount(SettingsPanel);
+    await wrapper.vm.$nextTick();
+    expect(wrapper.findAll('button').some(b => b.text() === 'Save and restart')).toBe(true);
+    expect(wrapper.findAll('button').some(b => b.text() === 'Save and close')).toBe(false);
+  });
+
+  it('"Save and restart" calls setEnabledSections, emits close, and resets navigation state', async () => {
+    store.advance(); // step 0 → 1; canRestart becomes true
+    const spy = vi.spyOn(store, 'setEnabledSections');
+    const wrapper = mount(SettingsPanel);
+    await wrapper.vm.$nextTick();
+
+    const restartBtn = wrapper.findAll('button').find(b => b.text() === 'Save and restart');
+    expect(restartBtn).toBeDefined();
+    await restartBtn!.trigger('click');
+
+    expect(spy).toHaveBeenCalledOnce();
+    expect(wrapper.emitted('close')).toBeTruthy();
+    expect(store.state.step).toBe(0);
+    expect(store.state.back).toEqual([]);
+    expect(store.state.forward).toEqual([]);
   });
 });

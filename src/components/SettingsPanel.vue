@@ -5,7 +5,7 @@ import { useFlashcardsStore } from '../stores/flashcards';
 import { getSource } from '../datasource';
 
 const store = useFlashcardsStore();
-const { state } = storeToRefs(store);
+const { state, canRestart } = storeToRefs(store);
 const emit = defineEmits<{ close: [] }>();
 
 const chapters = Object.entries(getSource().cards).map(([key, chapter]) => ({
@@ -67,7 +67,9 @@ const close = () => {
       </div>
     </div>
     <div class="settings-footer">
-      <button @click="close">Save and close</button>
+      <button @click="close">
+        {{ canRestart ? 'Save and restart' : 'Save and close' }}
+      </button>
     </div>
   </div>
 </template>

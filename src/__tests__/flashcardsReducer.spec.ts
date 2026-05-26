@@ -182,7 +182,7 @@ describe('reducer — RESTART', () => {
 });
 
 describe('reducer — SET_ENABLED_SECTIONS', () => {
-  it('updates enabledSections and replaces current with newEntry when stacks are empty', () => {
+  it('updates enabledSections, replaces current with newEntry, and resets step to 0', () => {
     const original = entry('Basic Grammar', 0, 0, true);
     const newSections = ['Numbers and Time', 'Common Expressions'];
     const s = setSections(mkState({ current: original, step: 2 }), newSections, newEntry);
@@ -191,14 +191,15 @@ describe('reducer — SET_ENABLED_SECTIONS', () => {
     expect(s.step).toBe(0);
   });
 
-  it('returns the same state when back is non-empty (precondition fail)', () => {
-    const s = mkState({ back: [entry()] });
-    expect(setSections(s, ['Numbers and Time'], newEntry)).toBe(s);
-  });
-
-  it('returns the same state when forward is non-empty (precondition fail)', () => {
-    const s = mkState({ forward: [entry()] });
-    expect(setSections(s, ['Numbers and Time'], newEntry)).toBe(s);
+  it('clears back and forward stacks even when non-empty', () => {
+    const s = mkState({
+      back: [entry('Basic Grammar', 1, 0, true)],
+      forward: [entry('Numbers and Time', 2, 0, false)],
+    });
+    const result = setSections(s, ['Numbers and Time'], newEntry);
+    expect(result.back).toEqual([]);
+    expect(result.forward).toEqual([]);
+    expect(result.enabledSections).toEqual(['Numbers and Time']);
   });
 
   it('accepts an empty enabledSections array (empty state)', () => {

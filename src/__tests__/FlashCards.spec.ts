@@ -33,13 +33,6 @@ describe('FlashCards', () => {
     expect(mountFlashCards().find('button[aria-label="Settings"]').exists()).toBe(true);
   });
 
-  it('hides the Settings button after advancing', async () => {
-    const wrapper = mountFlashCards();
-    store.advance();
-    await wrapper.vm.$nextTick();
-    expect(wrapper.find('button[aria-label="Settings"]').exists()).toBe(false);
-  });
-
   it('mounts the SettingsPanel after clicking the Settings button', async () => {
     const wrapper = mountFlashCards();
     expect(wrapper.findComponent(SettingsPanelStub).exists()).toBe(false);
@@ -100,15 +93,4 @@ describe('FlashCards', () => {
     expect(headerH2.text().length).toBeGreaterThan(0);
   });
 
-  it('hides the Restart button in fresh state (canRestart is false)', () => {
-    const wrapper = mountFlashCards();
-    expect(wrapper.findAll('button').some(b => b.text() === 'Restart')).toBe(false);
-  });
-
-  it('shows the Restart button after advancing (canRestart becomes true)', async () => {
-    const wrapper = mountFlashCards();
-    store.advance();
-    await wrapper.vm.$nextTick();
-    expect(wrapper.findAll('button').some(b => b.text() === 'Restart')).toBe(true);
-  });
 });
