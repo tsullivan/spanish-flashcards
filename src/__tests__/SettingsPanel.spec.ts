@@ -3,7 +3,9 @@ import { mount } from '@vue/test-utils';
 import { createPinia, setActivePinia } from 'pinia';
 import SettingsPanel from '../components/SettingsPanel.vue';
 import { useFlashcardsStore } from '../stores/flashcards';
-import { source } from '../../data';
+import { getSource } from '../datasource';
+
+const source = getSource();
 
 const allSectionKeys = (): string[] =>
   Object.values(source.cards).flatMap(ch => Object.keys(ch));

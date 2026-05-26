@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 import { storeToRefs } from 'pinia';
 import { useFlashcardsStore } from '../stores/flashcards';
-import { source } from '../../data';
+import { getSource } from '../datasource';
 import SettingsPanel from './SettingsPanel.vue';
 
 const store = useFlashcardsStore();
@@ -28,7 +28,7 @@ const speak = (text: string) => {
   if (!speechSupported) return;
   window.speechSynthesis.cancel();
   const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = source.language;
+  utterance.lang = getSource().language;
   window.speechSynthesis.speak(utterance);
 };
 </script>

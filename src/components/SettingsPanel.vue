@@ -2,13 +2,13 @@
 import { ref } from 'vue';
 import { storeToRefs } from 'pinia';
 import { useFlashcardsStore } from '../stores/flashcards';
-import { source } from '../../data';
+import { getSource } from '../datasource';
 
 const store = useFlashcardsStore();
 const { state } = storeToRefs(store);
 const emit = defineEmits<{ close: [] }>();
 
-const chapters = Object.entries(source.cards).map(([key, chapter]) => ({
+const chapters = Object.entries(getSource().cards).map(([key, chapter]) => ({
   key,
   sections: Object.entries(chapter).map(([sectionKey, groups]) => ({
     key: sectionKey,

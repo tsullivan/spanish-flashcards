@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia';
 import { ref, computed } from 'vue';
-import { source } from '../../data';
+import { getSource } from '../datasource';
 
 type HistoryEntry = {
   chapterKey: string;
@@ -74,10 +74,10 @@ export const reducer = (state: State, action: Action): State => {
 
 // Layer 2 — impurity quarantined here.
 const allSectionKeys = (): string[] =>
-  Object.values(source.cards).flatMap(chapter => Object.keys(chapter));
+  Object.values(getSource().cards).flatMap(chapter => Object.keys(chapter));
 
 const chapterForSection = (sectionKey: string): string => {
-  for (const [chapterKey, chapter] of Object.entries(source.cards)) {
+  for (const [chapterKey, chapter] of Object.entries(getSource().cards)) {
     if (sectionKey in chapter) return chapterKey;
   }
   throw new Error(`Section not found: ${sectionKey}`);
@@ -87,7 +87,7 @@ const randomEntry = (enabledSections: string[]): HistoryEntry => {
   const pool = enabledSections.length > 0 ? enabledSections : allSectionKeys();
   const sectionKey = pool[Math.floor(Math.random() * pool.length)]!;
   const chapterKey = chapterForSection(sectionKey);
-  const groups = source.cards[chapterKey]![sectionKey]!;
+  const groups = getSource().cards[chapterKey]![sectionKey]!;
   const groupIndex = Math.floor(Math.random() * groups.length);
   const groupCards = groups[groupIndex]!.cards;
   const cardIndex = Math.floor(Math.random() * groupCards.length);
@@ -135,14 +135,14 @@ export const useFlashcardsStore = defineStore('flashcards', () => {
     state.value = reducer(state.value, action);
   };
 
-  const currentGroup    = computed(() => source.cards[state.value.current.chapterKey]![state.value.current.sectionKey]![state.value.current.groupIndex]!);
+  const currentGroup    = computed(() => getSource().cards[state.value.current.chapterKey]![state.value.current.sectionKey]![state.value.current.groupIndex]!);
   const currentCard     = computed(() => currentGroup.value.cards[state.value.current.cardIndex]!);
   const currentPhrase   = computed(() => currentCard.value.phrases[state.value.current.phrasesIndex]!);
   const currentChapter  = computed(() => state.value.current.chapterKey);
   const currentSection  = computed(() => state.value.current.sectionKey);
   const currentSubTitle = computed(() => currentGroup.value.subTitle);
   const canGoPrevious   = computed(() => state.value.back.length > 0);
-  const allChapters     = computed(() => Object.keys(source.cards));
+  const allChapters     = computed(() => Object.keys(getSource().cards));
   const allSections     = computed(() => allSectionKeys());
   const isEmpty         = computed(() => state.value.enabledSections.length === 0);
   const canEditFilter   = computed(() =>
