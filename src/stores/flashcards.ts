@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia';
 import { ref, computed } from 'vue';
-import { source } from '../../data/source';
+import { source } from '../../data';
 
 type HistoryEntry = {
   chapterKey: string;

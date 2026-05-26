@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia';
 import { useFlashcardsStore } from '../stores/flashcards';
-import { source } from '../../data/source';
+import { source } from '../../data';
 
 const store = useFlashcardsStore();
 const { state, currentCard, currentPhrase, currentChapter, currentSection, currentSubTitle, canGoPrevious, isEmpty } = storeToRefs(store);
