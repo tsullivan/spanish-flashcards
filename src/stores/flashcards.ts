@@ -35,7 +35,7 @@ export const reducer = (state: State, action: Action): State => {
         return {
           ...state,
           current: state.forward[state.forward.length - 1]!,
-          step: 1,
+          step: 0,
           back,
           forward: state.forward.slice(0, -1),
         };

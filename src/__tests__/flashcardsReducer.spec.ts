@@ -63,12 +63,12 @@ describe('reducer — ADVANCE', () => {
     expect(s.current).toEqual(newEntry);
   });
 
-  it('at step 3 with non-empty forward: pops forward, pushes current to back, sets step to 1', () => {
+  it('at step 3 with non-empty forward: pops forward, pushes current to back, resets step to 0', () => {
     const forward1 = entry('Basic Grammar', 7, 0, true);
     const forward2 = entry('Numbers and Time', 8, 0, false);
     const original = entry('Basic Grammar', 1, 2, true);
     const s = advance(mkState({ current: original, step: 3, forward: [forward1, forward2] }));
-    expect(s.step).toBe(1);
+    expect(s.step).toBe(0);
     expect(s.current).toEqual(forward2);
     expect(s.back).toEqual([original]);
     expect(s.forward).toEqual([forward1]);
@@ -233,7 +233,7 @@ describe('reducer — navigation flows', () => {
     expect(s.back).toEqual([]);
   });
 
-  it('going back then forward (advance at step 3) restores the forward entry at step 1', () => {
+  it('going back then forward (advance at step 3) restores the forward entry at step 0', () => {
     const first = entry('Basic Grammar', 0, 0, true);
     const second = entry('Numbers and Time', 1, 0, false);
 
@@ -247,7 +247,7 @@ describe('reducer — navigation flows', () => {
 
     s = advance(mkState({ current: second, step: 3, back: [first], forward: [newEntry] }));
     expect(s.current).toEqual(newEntry);
-    expect(s.step).toBe(1);
+    expect(s.step).toBe(0);
     expect(s.back).toEqual([first, second]);
     expect(s.forward).toEqual([]);
   });
