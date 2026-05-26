@@ -170,10 +170,38 @@ button:active {
   margin-bottom: 1rem;
 }
 
-.settings-chapter h3 {
-  margin: 0 0 0.5rem;
+.settings-chapter-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.settings-chapter-header h3 {
+  margin: 0;
   font-size: 1rem;
   font-weight: 700;
+}
+
+.settings-chapter-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.settings-link {
+  color: var(--color-link);
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-family: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.settings-link:hover {
+  text-decoration: underline;
 }
 
 .settings-row {
@@ -182,6 +210,22 @@ button:active {
   gap: 0.5rem;
   padding: 0.25rem 0;
   cursor: pointer;
+}
+
+.settings-section {
+  margin-bottom: 0.25rem;
+}
+
+.settings-subtitles {
+  margin: 0.1rem 0 0.4rem 1.75rem;
+  padding: 0;
+  list-style: none;
+  color: var(--color-fg-muted);
+  font-size: 0.85rem;
+}
+
+.settings-subtitles li::before {
+  content: '– ';
 }
 
 .settings-footer {
