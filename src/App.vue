@@ -76,6 +76,11 @@ body {
   font-size: 1.1rem;
   font-weight: 700;
 }
+.header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
 
 .content {
   flex: 1;

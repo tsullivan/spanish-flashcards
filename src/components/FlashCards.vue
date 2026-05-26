@@ -42,8 +42,9 @@ const speak = (text: string) => {
       </h1>
       <h2>
         <template v-if="isEmpty">&nbsp;</template>
-        <template v-else>{{ currentSection }} {{ currentSubTitle ? ` - ${currentSubTitle}` : '' }}</template>
+        <template v-else>{{ currentSection }}</template>
       </h2>
+      <h3 v-if="!isEmpty && currentSubTitle">{{ currentSubTitle }}</h3>
     </header>
 
     <main class="content">
