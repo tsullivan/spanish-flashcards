@@ -1,7 +1,7 @@
 import type { AppData } from './types';
-import { Chapter1 } from './source1';
-import { Chapter2 } from './source2';
-import { Chapter3 } from './source3';
+import { Chapter1 } from './chapter1';
+import { Chapter2 } from './chapter2';
+import { Chapter3 } from './chapter3';
 
 export const source: AppData = {
   language: 'es-ES',
