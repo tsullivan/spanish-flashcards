@@ -726,7 +726,7 @@ export const Chapter3: CardCollection = {
           ],
         },
       ],
-    }
+    },
   ],
   'Speaking about Speaking: The Verb Hablar': [
     {
@@ -768,6 +768,24 @@ export const Chapter3: CardCollection = {
           ],
         },
       ],
+    },
+    {
+      cards: [
+        {
+          answer: `At the café, you hear talk about speaking`,
+          question: `En el café, oyes hablar de hablar`,
+          conversation: [
+            { answer: `Antonia: Do you speak Spanish?`, question: `Antonia: ¿Hablas español?` },
+            { answer: `Reynaldo: Yes, What languages do you speak?`, question: `Reynaldo: Sí, ¿qué idiomas hablas?` },
+            { answer: `Antonia: I speak English and French`, question: `Antonia: Hablo inglés y francés` },
+            { answer: `Reynaldo: It is very difficult to speak English?`, question: `Reynaldo: ¿Es muy difícil hablar inglés?` },
+            { answer: `Antonia: No, it's very easy!`, question: `Antonia: ¡No, es muy fácil!` },
+            { answer: `Reynaldo: And is it difficult to speak French?`, question: `Reynaldo: ¿Y es difícil hablar francés?` },
+            { answer: `Antonia: No, it's not at all difficult`, question: `Antonia: No, no es nada difícil` },
+          ],
+        },
+      ],
+      subTitle: `Talkin' the Talk`,
     },
     {
       cards: [

@@ -10,6 +10,7 @@ const {
   state,
   currentCard,
   currentPhrase,
+  currentConversation,
   currentChapter,
   currentSection,
   currentSubTitle,
@@ -48,7 +49,49 @@ const speak = (text: string) => {
     <main class="content">
       <p v-if="isEmpty" class="empty-state">Select at least one section to begin.</p>
 
-      <template v-else>
+      <template v-else-if="currentConversation">
+        <h2>
+          <template v-if="state.current.showQuestionFirst">
+            <a v-if="speechSupported" class="speak-link" href="#" @click.prevent="speak(currentCard.question)">{{
+              currentCard.question
+            }}</a>
+            <template v-else>{{ currentCard.question }}</template>
+            <template v-if="state.step >= 1"> - {{ currentCard.answer }}</template>
+          </template>
+          <template v-else>
+            {{ currentCard.answer }}
+            <template v-if="state.step >= 1">
+              -
+              <a v-if="speechSupported" class="speak-link" href="#" @click.prevent="speak(currentCard.question)">{{
+                currentCard.question
+              }}</a
+              ><template v-else>{{ currentCard.question }}</template></template
+            >
+          </template>
+        </h2>
+
+        <p v-for="(item, i) in currentConversation.slice(0, Math.floor(state.step / 2))" :key="i">
+          <template v-if="state.current.showQuestionFirst">
+            <a v-if="speechSupported" class="speak-link" href="#" @click.prevent="speak(item.question)">{{
+              item.question
+            }}</a>
+            <template v-else>{{ item.question }}</template>
+            <template v-if="state.step >= 2 * (i + 1) + 1"> - {{ item.answer }}</template>
+          </template>
+          <template v-else>
+            {{ item.answer }}
+            <template v-if="state.step >= 2 * (i + 1) + 1">
+              -
+              <a v-if="speechSupported" class="speak-link" href="#" @click.prevent="speak(item.question)">{{
+                item.question
+              }}</a
+              ><template v-else>{{ item.question }}</template></template
+            >
+          </template>
+        </p>
+      </template>
+
+      <template v-else-if="currentPhrase">
         <h2>
           <template v-if="state.current.showQuestionFirst">
             <a v-if="speechSupported" class="speak-link" href="#" @click.prevent="speak(currentCard.question)">{{

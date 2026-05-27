@@ -7,7 +7,7 @@ type HistoryEntry = {
   sectionKey: string;
   groupIndex: number;
   cardIndex: number;
-  phrasesIndex: number;
+  phrasesIndex?: number;
   showQuestionFirst: boolean;
 };
 
@@ -20,7 +20,7 @@ type State = {
 };
 
 type Action =
-  | { type: 'ADVANCE'; newEntry: HistoryEntry }
+  | { type: 'ADVANCE'; newEntry: HistoryEntry; maxStep: number }
   | { type: 'PREVIOUS' }
   | { type: 'RESTART'; newEntry?: HistoryEntry }
   | { type: 'SET_ENABLED_SECTIONS'; enabledSections: string[]; newEntry?: HistoryEntry };
@@ -29,7 +29,7 @@ type Action =
 export const reducer = (state: State, action: Action): State => {
   switch (action.type) {
     case 'ADVANCE': {
-      if (state.step < 3) return { ...state, step: state.step + 1 };
+      if (state.step < action.maxStep) return { ...state, step: state.step + 1 };
       const back = [...state.back, state.current];
       if (state.forward.length > 0) {
         return {
@@ -91,7 +91,8 @@ const randomEntry = (enabledSections: string[]): HistoryEntry => {
   const groupIndex = Math.floor(Math.random() * groups.length);
   const groupCards = groups[groupIndex]!.cards;
   const cardIndex = Math.floor(Math.random() * groupCards.length);
-  const phrasesIndex = Math.floor(Math.random() * groupCards[cardIndex]!.phrases.length);
+  const card = groupCards[cardIndex]!;
+  const phrasesIndex = 'phrases' in card ? Math.floor(Math.random() * card.phrases.length) : undefined;
   const showQuestionFirst = Math.random() < 0.5;
   return { chapterKey, sectionKey, groupIndex, cardIndex, phrasesIndex, showQuestionFirst };
 };
@@ -135,23 +136,33 @@ export const useFlashcardsStore = defineStore('flashcards', () => {
     state.value = reducer(state.value, action);
   };
 
-  const currentGroup    = computed(() => getSource().cards[state.value.current.chapterKey]![state.value.current.sectionKey]![state.value.current.groupIndex]!);
-  const currentCard     = computed(() => currentGroup.value.cards[state.value.current.cardIndex]!);
-  const currentPhrase   = computed(() => currentCard.value.phrases[state.value.current.phrasesIndex]!);
-  const currentChapter  = computed(() => state.value.current.chapterKey);
-  const currentSection  = computed(() => state.value.current.sectionKey);
+  const currentGroup = computed(() => getSource().cards[state.value.current.chapterKey]![state.value.current.sectionKey]![state.value.current.groupIndex]!);
+  const currentCard = computed(() => currentGroup.value.cards[state.value.current.cardIndex]!);
+  const currentPhrase = computed(() => {
+    const card = currentCard.value;
+    const idx = state.value.current.phrasesIndex;
+    return 'phrases' in card && idx !== undefined ? card.phrases[idx] : undefined;
+  });
+  const currentConversation = computed(() => {
+    const card = currentCard.value;
+    return 'conversation' in card ? card.conversation : undefined;
+  });
+  const currentChapter = computed(() => state.value.current.chapterKey);
+  const currentSection = computed(() => state.value.current.sectionKey);
   const currentSubTitle = computed(() => currentGroup.value.subTitle);
-  const canGoPrevious   = computed(() => state.value.back.length > 0);
-  const allChapters     = computed(() => Object.keys(getSource().cards));
-  const allSections     = computed(() => allSectionKeys());
-  const isEmpty         = computed(() => state.value.enabledSections.length === 0);
-  const canRestart       = computed(() =>
+  const canGoPrevious = computed(() => state.value.back.length > 0);
+  const allChapters = computed(() => Object.keys(getSource().cards));
+  const allSections = computed(() => allSectionKeys());
+  const isEmpty = computed(() => state.value.enabledSections.length === 0);
+  const canRestart = computed(() =>
     state.value.step > 0 || state.value.back.length > 0 || state.value.forward.length > 0
   );
 
   const advance = () => {
     if (state.value.enabledSections.length === 0) return;
-    dispatch({ type: 'ADVANCE', newEntry: randomEntry(state.value.enabledSections) });
+    const card = currentCard.value;
+    const maxStep = 'conversation' in card ? 2 * card.conversation.length + 1 : 3;
+    dispatch({ type: 'ADVANCE', newEntry: randomEntry(state.value.enabledSections), maxStep });
   };
 
   const previous = () => dispatch({ type: 'PREVIOUS' });
@@ -173,6 +184,7 @@ export const useFlashcardsStore = defineStore('flashcards', () => {
     state,
     currentCard,
     currentPhrase,
+    currentConversation,
     currentChapter,
     currentSection,
     currentSubTitle,

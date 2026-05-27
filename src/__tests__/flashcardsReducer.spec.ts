@@ -23,7 +23,7 @@ const mkState = (overrides: Partial<State> = {}): State => ({
   ...overrides,
 });
 
-const advance = (state: State): State => reducer(state, { type: 'ADVANCE', newEntry });
+const advance = (state: State, maxStep = 3): State => reducer(state, { type: 'ADVANCE', newEntry, maxStep });
 const previous = (state: State): State => reducer(state, { type: 'PREVIOUS' });
 const restart = (state: State, entry?: Entry): State => reducer(state, { type: 'RESTART', newEntry: entry });
 const setSections = (state: State, sections: string[], entry?: Entry): State =>
@@ -90,9 +90,36 @@ describe('reducer — ADVANCE', () => {
   it('does not mutate the original state object', () => {
     const original = mkState({ step: 0 });
     const frozen = Object.freeze({ ...original, back: Object.freeze([...original.back]) });
-    const result = reducer(frozen as State, { type: 'ADVANCE', newEntry });
+    const result = reducer(frozen as State, { type: 'ADVANCE', newEntry, maxStep: 3 });
     expect(result).not.toBe(frozen);
     expect(result.step).toBe(1);
+  });
+
+  it('honors a custom maxStep: increments while step < maxStep, then loads new entry at step == maxStep', () => {
+    let s = mkState({ step: 0 });
+    s = advance(s, 7);
+    expect(s.step).toBe(1);
+    s = advance({ ...s, step: 6 }, 7);
+    expect(s.step).toBe(7);
+    s = advance({ ...s, step: 7 }, 7);
+    expect(s.step).toBe(0);
+    expect(s.current).toEqual(newEntry);
+  });
+
+  it('conversation walkthrough (2N+1 steps for N items): step 0..2N reveal pieces, step 2N+1 advances to next card', () => {
+    // Two conversation items -> maxStep = 2*2 + 1 = 5
+    // step 0: scene side A, 1: scene both, 2: item[0] side A, 3: item[0] both,
+    // 4: item[1] side A, 5: item[1] both, next advance loads new card.
+    const maxStep = 5;
+    let s = mkState({ step: 0 });
+    for (let expected = 1; expected <= maxStep; expected++) {
+      s = advance(s, maxStep);
+      expect(s.step).toBe(expected);
+      expect(s.current).toEqual(entry()); // still on the same card
+    }
+    s = advance(s, maxStep);
+    expect(s.step).toBe(0);
+    expect(s.current).toEqual(newEntry);
   });
 });
 
