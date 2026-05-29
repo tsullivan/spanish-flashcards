@@ -730,18 +730,238 @@ export const Chapter4: CardCollection = {
         {
           answer: 'spring',
           question: 'primavera',
-          phrases: [{ answer: 'I like to see the flowers in the spring', question: 'Me gusta ver las flores en la primavera' }],
+          phrases: [
+            { answer: 'I like to see the flowers in the spring', question: 'Me gusta ver las flores en la primavera' },
+          ],
         },
         {
           answer: 'summer',
           question: 'verano',
-          phrases: [{ answer: 'I like to go to the beach in the summer', question: 'Me gusta ir a la playa en el verano' }],
+          phrases: [
+            { answer: 'I like to go to the beach in the summer', question: 'Me gusta ir a la playa en el verano' },
+          ],
         },
         {
           answer: 'fall / autumn',
           question: 'otoño',
           phrases: [
-            { answer: 'I like to see the leaves change color in the fall', question: 'Me gusta ver las hojas cambiar de color en el otoño' },
+            {
+              answer: 'I like to see the leaves change color in the fall',
+              question: 'Me gusta ver las hojas cambiar de color en el otoño',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      subTitle: 'Expressing dates in the proper format',
+      cards: [
+        {
+          answer: 'What is the date today?',
+          question: '¿Cuál es la fecha de hoy?',
+          phrases: [{ answer: 'Today is January 1st', question: 'Hoy es el primero de enero' }],
+        },
+
+        {
+          answer: 'Today is Friday, April 15th, 2025',
+          question: 'Hoy es viernes, el quince de abril de dos mil veinticinco',
+          phrases: [
+            {
+              answer: 'Tomorrow is Saturday, April 16th, 2025',
+              question: 'Mañana es sábado, el dieciséis de abril de dos mil veinticinco',
+            },
+          ],
+        },
+        {
+          answer: 'January 1st',
+          question: 'el primero de enero',
+          phrases: [{ answer: 'January 2nd', question: 'el dos de enero' }],
+        },
+        {
+          answer: 'January 7th',
+          question: 'el siete de enero',
+          phrases: [{ answer: 'January 8th', question: 'el ocho de enero' }],
+        },
+        {
+          answer: 'October 30th',
+          question: 'el treinta de octubre',
+          phrases: [{ answer: 'October 31st', question: 'el treinta y uno de octubre' }],
+        },
+        {
+          answer: 'We leave on October 11th',
+          question: 'Partimos el once de octubre',
+          phrases: [
+            {
+              answer: 'We return on October 20th',
+              question: 'Regresamos el veinte de octubre',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      subTitle: 'Communicating Dates',
+      cards: [
+        {
+          answer: 'a day',
+          question: 'un día',
+          phrases: [{ answer: 'I will call you in a day', question: 'Te llamaré en un día' }],
+        },
+        {
+          answer: 'a week',
+          question: 'una semana',
+          phrases: [{ answer: 'I am going camping for a week', question: 'Voy a acampar por una semana' }],
+        },
+        {
+          answer: 'a month',
+          question: 'un mes',
+          phrases: [{ answer: 'I will be on vacation for a month', question: 'Estaré de vacaciones por un mes' }],
+        },
+        {
+          answer: 'a year',
+          question: 'un año',
+          phrases: [
+            {
+              answer: 'I will be studying abroad for a year',
+              question: 'Estaré estudiando en el extranjero por un año',
+            },
+          ],
+        },
+        {
+          answer: 'ago',
+          question: 'hace',
+          phrases: [{ answer: 'I moved here two years ago', question: 'Me mudé aquí hace dos años' }],
+        },
+        {
+          answer: 'in',
+          question: 'por',
+          phrases: [{ answer: 'I will call you in an hour', question: 'Te llamaré por una hora' }],
+        },
+        {
+          answer: 'during',
+          question: 'durante',
+          phrases: [{ answer: 'I will be busy during the week', question: 'Estaré ocupado durante la semana' }],
+        },
+        {
+          answer: 'next',
+          question: 'próximo',
+          phrases: [{ answer: 'I will see you next week', question: 'Te veré la próxima semana' }],
+        },
+        {
+          answer: 'last',
+          question: 'pasado',
+          phrases: [{ answer: 'I saw that movie last week', question: 'Vi esa película la semana pasada' }],
+        },
+        {
+          answer: 'eve',
+          question: 'víspera',
+          phrases: [
+            {
+              answer: 'We will have a party on Christmas Eve',
+              question: 'Tendremos una fiesta en la víspera de Navidad',
+            },
+          ],
+        },
+        {
+          answer: 'last',
+          question: 'último',
+          phrases: [
+            {
+              answer: 'This is the last episode of the season',
+              question: 'Este es el último episodio de la temporada',
+            },
+          ],
+        },
+        {
+          answer: 'even',
+          question: 'incluso',
+          phrases: [{ answer: 'Even last week was busy', question: 'Incluso la semana pasada fue ocupada' }],
+        },
+        {
+          answer: 'day before yesterday',
+          question: 'anteayer',
+          phrases: [{ answer: 'I went to the park the day before yesterday', question: 'Fui al parque anteayer' }],
+        },
+        {
+          answer: 'yesterday',
+          question: 'ayer',
+          phrases: [{ answer: 'I had a meeting yesterday', question: 'Tuve una reunión ayer' }],
+        },
+        { answer: 'today', question: 'hoy', phrases: [{ answer: 'I am busy today', question: 'Estoy ocupado hoy' }] },
+        {
+          answer: 'tomorrow',
+          question: 'mañana',
+          phrases: [{ answer: 'I have a meeting tomorrow', question: 'Tengo una reunión mañana' }],
+        },
+        {
+          answer: 'day after tomorrow',
+          question: 'pasado mañana',
+          phrases: [
+            { answer: 'I will be on vacation the day after tomorrow', question: 'Estaré de vacaciones pasado mañana' },
+          ],
+        },
+        {
+          answer: 'tomorrow morning',
+          question: 'mañana por la mañana',
+          phrases: [
+            { answer: 'I have a meeting tomorrow morning', question: 'Tengo una reunión mañana por la mañana' },
+          ],
+        },
+        {
+          answer: 'tomorrow afternoon',
+          question: 'mañana por la tarde',
+          phrases: [{ answer: 'I have a class tomorrow afternoon', question: 'Tengo una clase mañana por la tarde' }],
+        },
+        {
+          answer: 'tomorrow evening',
+          question: 'mañana por la noche',
+          phrases: [{ answer: 'I have dinner tomorrow evening', question: 'Ceno mañana por la noche' }],
+        },
+        {
+          answer: 'day after tomorrow',
+          question: 'pasado mañana',
+          phrases: [{ answer: `I'm staying until the day after tomorrow`, question: 'Me quedo hasta pasado mañana' }],
+        },
+        {
+          answer: 'from',
+          question: 'desde',
+          phrases: [
+            { answer: `They're open from 9:00 to 5:00`, question: 'Están abiertos desde las 9:00 hasta las 5:00' },
+          ],
+        },
+        {
+          answer: 'a week from today',
+          question: 'en una semana a partir de hoy',
+          phrases: [{ answer: 'I will call you a week from today', question: 'Te llamaré en una semana a partir de hoy' }],
+        },
+        {
+          answer: 'two weeks from tomorrow',
+          question: 'en dos semanas a partir de mañana',
+          phrases: [
+            {
+              answer: `My vacation starts two weeks from tomorrow`,
+              question: 'Mis vacaciones comienzan dos semanas a partir de mañana',
+            },
+          ],
+        },
+        {
+          answer: 'within one week',
+          question: 'dentro de una semana',
+          phrases: [
+            {
+              answer: `I will finish this project within one week`,
+              question: 'Terminaré este proyecto dentro de una semana',
+            },
+          ],
+        },
+        {
+          answer: 'within two weeks',
+          question: 'dentro de dos semanas',
+          phrases: [
+            {
+              answer: `You need to submit the application within two weeks`,
+              question: 'Necesitas enviar la solicitud dentro de dos semanas',
+            },
           ],
         },
       ],
