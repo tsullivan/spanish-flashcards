@@ -932,7 +932,9 @@ export const Chapter4: CardCollection = {
         {
           answer: 'a week from today',
           question: 'en una semana a partir de hoy',
-          phrases: [{ answer: 'I will call you a week from today', question: 'Te llamaré en una semana a partir de hoy' }],
+          phrases: [
+            { answer: 'I will call you a week from today', question: 'Te llamaré en una semana a partir de hoy' },
+          ],
         },
         {
           answer: 'two weeks from tomorrow',
@@ -961,6 +963,292 @@ export const Chapter4: CardCollection = {
             {
               answer: `You need to submit the application within two weeks`,
               question: 'Necesitas enviar la solicitud dentro de dos semanas',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      subTitle: "Talkin' the Talk",
+      cards: [
+        {
+          answer: 'Cruz tells her friend Talia about her vacation plans',
+          question: 'Cruz le cuenta a su amiga Talia sobre sus planes de vacaciones',
+          conversation: [
+            {
+              answer: `Cruz: We're going on vacation to Puerto Rico in a month!`,
+              question: `Cruz: ¡Vamos de vacaciones a Puerto Rico en un mes!`,
+            },
+            {
+              answer: `Talia: You're so lucky! We've had a terrible winter here.`,
+              question: `Talia: ¡Qué suerte tienes! Hemos pasado un invierno terrible aquí.`,
+            },
+            {
+              answer: `Cruz: Yes, I know. The month of February is especially difficult for me every year. It's a short month, but for me it's long.`,
+              question: `Cruz: Sí, yo sé. El mes de febrero es especialmente difícil para mí cada año. Es un mes corto, pero para mí es largo.`,
+            },
+            {
+              answer: `Talia: I agree with you. It's almost always very bad weather in the month of February. What day do you leave?`,
+              question: `Talia: Estoy de acuerdo. Casi siempre hace muy mal tiempo en el mes de febrero. ¿En qué día salen?`,
+            },
+            {
+              answer: `Cruz: We leave April 5th. It's a Saturday`,
+              question: `Cruz: Salimos el cinco de abril. Es un sábado`,
+            },
+            {
+              answer: `Talia: What time does your flight leave?`,
+              question: `Talia: ¿A qué hora sale tu vuelo?`,
+            },
+            {
+              answer: `Cruz: At 5:30 a.m. It's very early, but then we can go to the beach in the afternoon.`,
+              question: `Cruz: A las cinco y media de la mañana. Es muy temprano, pero entonces podemos ir a la playa por la tarde.`,
+            },
+            {
+              answer: `Talia: You guys are certainly going to have an excellent time in Puerto Rico!`,
+              question: `Talia: ¡Seguramente Uds. van a pasar un tiempo excelente en Puerto Rico!`,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      subTitle: 'Words to know',
+      cards: [
+        {
+          answer: 'the month',
+          question: 'el mes',
+          phrases: [{ answer: `We get paid once a month`, question: 'Nos pagan una vez al mes' }],
+        },
+        {
+          answer: 'February',
+          question: 'febrero',
+          phrases: [
+            { answer: 'February is the second month of the year', question: 'Febrero es el segundo mes del año' },
+          ],
+        },
+        {
+          answer: "You're so lucky!",
+          question: '¡Qué suerte tienes!',
+          phrases: [
+            {
+              answer: "You're so lucky to have such a great job!",
+              question: '¡Qué suerte tienes de tener un trabajo tan bueno!',
+            },
+          ],
+        },
+        {
+          answer: 'the winter',
+          question: 'el invierno',
+          phrases: [{ answer: 'It gets very cold in the winter', question: 'Hace mucho frío en el invierno' }],
+        },
+        {
+          answer: 'the year',
+          question: 'el año',
+          phrases: [{ answer: 'There are twelve months in the year', question: 'Hay doce meses en el año' }],
+        },
+        {
+          answer: "it's very bad weather",
+          question: 'hace muy mal tiempo',
+          phrases: [{ answer: "It's very bad weather today", question: 'Hace muy mal tiempo hoy' }],
+        },
+        {
+          answer: 'April',
+          question: 'abril',
+          phrases: [{ answer: 'She was born in April', question: 'Ella nació en abril' }],
+        },
+        {
+          answer: 'Saturday',
+          question: 'sábado',
+          phrases: [{ answer: 'I have to work on Saturday', question: 'Tengo que trabajar el sábado' }],
+        },
+      ],
+    },
+  ],
+  'Familiarizing Yourself with the Metric System': [
+    {
+      subTitle: 'Units of weight and volume',
+      cards: [
+        {
+          answer: 'a gram',
+          question: 'un gramo',
+          phrases: [
+            {
+              answer: 'This recipe calls for 200 grams of flour',
+              question: 'Esta receta requiere 200 gramos de harina',
+            },
+          ],
+        },
+        {
+          answer: 'a kilogram',
+          question: 'un kilogramo',
+          phrases: [{ answer: 'I bought a kilogram of apples', question: 'Compré un kilogramo de manzanas' }],
+        },
+        {
+          answer: 'a liter',
+          question: 'un litro',
+          phrases: [{ answer: 'I need a liter of milk', question: 'Necesito un litro de leche' }],
+        },
+        {
+          answer: 'a milliliter',
+          question: 'un mililitro',
+          phrases: [
+            {
+              answer: 'This medicine comes in a 10 milliliter bottle',
+              question: 'Este medicamento viene en un frasco de 10 mililitros',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      subTitle: `Talkin' the Talk`,
+      cards: [
+        {
+          answer: 'Amalia bargains with a vendor over oranges at a fruit and vegetable stand',
+          question: 'Amalia regatea con un vendedor por las naranjas en un puesto de frutas y verduras',
+          conversation: [
+            {
+              answer: `Amalia: How much for the oranges?`,
+              question: `Amalia: A cuánto están las naranjas?`,
+            },
+            {
+              answer: `Vendor: Ten pesos for 25`,
+              question: `Vendedor: A diez pesos por veinticinco`,
+            },
+            {
+              answer: `Cruz: How much for the avocados?`,
+              question: `Cruz: A cuánto los aguacates?`,
+            },
+            {
+              answer: `Vendor: Fifteen pesos for one kilo`,
+              question: `Vendedor: Quince pesos el kilo`,
+            },
+            {
+              answer: `Amalia: It's very expensive.`,
+              question: `Amalia: Es muy caro!`,
+            },
+            {
+              answer: `Vendor: It's cheaper than yesterday.`,
+              question: `Vendedor: Es más barato que ayer.`,
+            },
+            {
+              answer: `Amalia: Do you have bananas?`,
+              question: `Amalia: ¿Tiene bananas?`,
+            },
+            {
+              answer: `Vendor: Yes, which kind?`,
+              question: `Vendedor: Sí, ¿de cuáles?`,
+            },
+            {
+              answer: `Amalia: Those. How much are they?`,
+              question: `Amalia: De esas. ¿Cuánto son?`,
+            },
+            {
+              answer: `Vendor: Three pesos per kilo.`,
+              question: `Vendedor: Tres pesos el kilo.`,
+            },
+            {
+              answer: `Amalia: A half kilo, please. How much is the garlic?`,
+              question: `Amalia: Medio kilo, por favor. ¿A cuánto los ajos?`,
+            },
+            {
+              answer: `Vendor: Five pesos per bunch (of heads).`,
+              question: `Vendedor: Cinco pesos el ramillete.`,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      subTitle: 'Words to know',
+      cards: [
+        {
+          answer: 'the oranges',
+          question: 'las naranjas',
+          phrases: [{ answer: 'I bought a bag of oranges', question: 'Compré una bolsa de naranjas' }],
+        },
+        {
+          answer: 'the avocados',
+          question: 'los aguacates',
+          phrases: [
+            { answer: 'I need two avocados for this recipe', question: 'Necesito dos aguacates para esta receta' },
+          ],
+        },
+        {
+          answer: 'expensive',
+          question: 'caro',
+          phrases: [{ answer: 'This restaurant is very expensive', question: 'Este restaurante es muy caro' }],
+        },
+        {
+          answer: 'cheaper',
+          question: 'barato',
+          phrases: [
+            { answer: 'This store is cheaper than the other one', question: 'Esta tienda es más barata que la otra' },
+          ],
+        },
+        {
+          answer: 'the bananas',
+          question: 'las bananas',
+          phrases: [{ answer: 'I bought a bunch of bananas', question: 'Compré un racimo de bananas' }],
+        },
+        {
+          answer: 'which kind?',
+          question: '¿de cuáles?',
+          phrases: [{ answer: 'Which kind of apples do you want?', question: '¿De cuáles manzanas quieres?' }],
+        },
+        {
+          answer: 'those',
+          question: 'esas',
+          phrases: [{ answer: 'I want those oranges', question: 'Quiero esas naranjas' }],
+        },
+        {
+          answer: 'the garlic',
+          question: 'el ajo',
+          phrases: [{ answer: 'I need a head of garlic', question: 'Necesito una cabeza de ajo' }],
+        },
+        {
+          answer: 'a bunch',
+          question: 'un ramillete',
+          phrases: [{ answer: 'I bought a bunch of garlic', question: 'Compré un ramillete de ajos' }],
+        },
+      ],
+    },
+    {
+      subTitle: 'Linear measurements',
+      cards: [
+        {
+          answer: 'a centimeter',
+          question: 'un centímetro',
+          phrases: [
+            { answer: 'An inch is about 2.5 centimeters', question: 'Una pulgada es aproximadamente 2.5 centímetros' },
+          ],
+        },
+        {
+          answer: 'a meter',
+          question: 'un metro',
+          phrases: [
+            {
+              answer: 'A meter is a little longer than a yard',
+              question: 'Un metro es un poco más largo que una yarda',
+            },
+          ],
+        },
+        {
+          answer: 'a millimeter',
+          question: 'un milímetro',
+          phrases: [
+            { answer: 'The paper is 0.1 millimeters thick', question: 'El papel tiene 0.1 milímetros de grosor' },
+            { answer: 'A quarter of an inch is about 6 millimeters', question: 'Un cuarto de pulgada es aproximadamente 6 milímetros' },
+          ],
+        },
+        {
+          answer: 'a kilometer',
+          question: 'un kilómetro',
+          phrases: [
+            { answer: 'A mile is about 1.6 kilometers', question: 'Una milla es aproximadamente 1.6 kilómetros' },
+            {
+              answer: '60 miles per hour is about 100 kilometers per hour',
+              question: '60 millas por hora es aproximadamente 100 kilómetros por hora',
             },
           ],
         },
