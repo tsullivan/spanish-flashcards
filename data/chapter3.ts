@@ -354,6 +354,10 @@ export const Chapter3: CardCollection = {
           phrases: [{ question: '¡Mucho gusto!', answer: 'Nice to meet you!' }],
         },
         { question: 'igualmente', answer: 'likewise', phrases: [{ question: '¡Igualmente!', answer: 'Likewise!' }] },
+        { question: 'encantado / encantada', answer: 'delighted (to meet you)', phrases: [{ question: '¡Encantado de conocerte!', answer: 'Delighted to meet you!' }] },
+        { question: 'es un placer conocerle', answer: 'it is a pleasure to meet you (formal)', phrases: [{ question: 'Es un placer conocerte', answer: 'It is a pleasure to meet you (informal)' }] },
+        { question: 'es un placer conocerte', answer: 'it is a pleasure to meet you (informal)', phrases: [{ question: 'Es un placer conocerle', answer: 'It is a pleasure to meet you (formal)' }] },
+        { question: 'el gusto es mío', answer: 'the pleasure is mine', phrases: [{ question: 'El gusto es mío, señor', answer: 'The pleasure is mine, sir' }] },
       ],
     },
     {
@@ -788,6 +792,7 @@ export const Chapter3: CardCollection = {
       subTitle: `Talkin' the Talk`,
     },
     {
+      subTitle: `Words to know`,
       cards: [
         {
           question: 'el idioma',
@@ -834,8 +839,17 @@ export const Chapter3: CardCollection = {
             { question: 'No estoy de acuerdo en absoluto', answer: "I don't agree at all" },
           ],
         },
+        { question: 'llevar tiempo', answer: 'to take time', phrases: [{ question: 'Aprender un idioma lleva tiempo', answer: 'Learning a language takes time' }] },
+        {
+          question: 'hablar rápido',
+          answer: 'to speak fast',
+          phrases: [
+            { question: 'Hablar rápido es difícil', answer: 'Speaking fast is difficult' },
+            { question: 'No hablo tan rápido', answer: "I don't speak that fast" },
+            { question: '¿Puedes hablar más rápido?', answer: 'Can you speak faster? (informal)' },
+          ],
+        }
       ],
-      subTitle: `Words to know`,
     },
   ],
 };
