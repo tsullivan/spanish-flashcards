@@ -3,7 +3,7 @@ export interface CardPair {
   answer: string;
 }
 
-export type Card = CardPair & ({ phrases: CardPair[] } | { conversation: CardPair[] });
+export type Card = CardPair & ({ phrases: CardPair[] });
 
 interface CollectionSet {
   [chapter: string]: CardCollection;

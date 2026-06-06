@@ -992,7 +992,7 @@ export const Chapter1: CardCollection = {
         {
           answer: 'What games do you (informal) like to play?',
           question: '¿Qué juegos te gusta jugar?',
-          phrases: [{ answer: 'I used to play soccer', question: 'Solía jugar fútbol' }],
+          phrases: [{ answer: 'I used to play soccer', question: 'Solía jugar al fútbol' }],
         },
         {
           answer: 'Do you (informal) play chess?',

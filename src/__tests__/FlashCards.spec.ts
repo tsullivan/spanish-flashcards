@@ -75,7 +75,7 @@ describe('FlashCards', () => {
 
   it('shows the Previous button after navigating to a second card', async () => {
     const wrapper = mountFlashCards();
-    // Step count per card depends on type (phrase: 4 advances, conversation: 2N+2).
+    // Step count per card depends on type (phrase: 4 advances).
     // Loop until back has an entry so the test is robust to whichever card was picked.
     let safety = 100;
     while (!store.canGoPrevious && --safety > 0) store.advance();

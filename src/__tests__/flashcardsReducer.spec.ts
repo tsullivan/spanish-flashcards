@@ -105,22 +105,6 @@ describe('reducer — ADVANCE', () => {
     expect(s.step).toBe(0);
     expect(s.current).toEqual(newEntry);
   });
-
-  it('conversation walkthrough (2N+1 steps for N items): step 0..2N reveal pieces, step 2N+1 advances to next card', () => {
-    // Two conversation items -> maxStep = 2*2 + 1 = 5
-    // step 0: scene side A, 1: scene both, 2: item[0] side A, 3: item[0] both,
-    // 4: item[1] side A, 5: item[1] both, next advance loads new card.
-    const maxStep = 5;
-    let s = mkState({ step: 0 });
-    for (let expected = 1; expected <= maxStep; expected++) {
-      s = advance(s, maxStep);
-      expect(s.step).toBe(expected);
-      expect(s.current).toEqual(entry()); // still on the same card
-    }
-    s = advance(s, maxStep);
-    expect(s.step).toBe(0);
-    expect(s.current).toEqual(newEntry);
-  });
 });
 
 describe('reducer — PREVIOUS', () => {

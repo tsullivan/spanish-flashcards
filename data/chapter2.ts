@@ -288,7 +288,7 @@ export const Chapter2: CardCollection = {
           answer: 'to live',
           question: 'vivir',
           phrases: [
-            { answer: 'I live', question: "TEMP" }, // FIXME
+            { answer: 'I live', question: 'yo vivo' },
             { answer: 'you (informal) live', question: 'tú vives' },
             { answer: 'you (formal) live', question: 'usted vive' },
             { answer: 'he lives', question: 'él vive' },
@@ -302,7 +302,7 @@ export const Chapter2: CardCollection = {
           answer: 'to bore',
           question: 'aburrir',
           phrases: [
-            { answer: 'I bore', question: "TEMP" }, // FIXME
+            { answer: 'I bore', question: 'yo aburro' },
             { answer: 'you (informal) bore', question: 'tú aburres' },
             { answer: 'you (formal) bore', question: 'usted aburre' },
             { answer: 'he bores', question: 'él aburre' },
@@ -371,7 +371,7 @@ export const Chapter2: CardCollection = {
           answer: 'to know (people, places, things)',
           question: 'conocer',
           phrases: [
-            { answer: 'I know', question: "TEMP" }, // FIXME
+            { answer: 'I know', question: 'yo conozco' },
             { answer: 'you (informal) know', question: 'tú conoces' },
             { answer: 'he/she knows', question: 'él/ella conoce' },
             { answer: 'we know', question: 'nosotros conocemos' },
@@ -382,7 +382,7 @@ export const Chapter2: CardCollection = {
           answer: 'to give',
           question: 'dar',
           phrases: [
-            { answer: 'I give', question: "TEMP" },
+            { answer: 'I give', question: 'yo doy' },
             { answer: 'you (informal) give', question: 'tú das' },
             { answer: 'he/she gives', question: 'él/ella da' },
             { answer: 'we give', question: 'nosotros damos' },
@@ -393,7 +393,7 @@ export const Chapter2: CardCollection = {
           answer: 'to say/tell',
           question: 'decir',
           phrases: [
-            { answer: 'I say', question: "TEMP" }, // FIXME
+            { answer: 'I say', question: 'yo digo' },
             { answer: 'you (informal) say', question: 'tú dices' },
             { answer: 'he/she says', question: 'él/ella dice' },
             { answer: 'we say', question: 'nosotros decimos' },
@@ -404,7 +404,7 @@ export const Chapter2: CardCollection = {
           answer: 'to be (temporary states/locations)',
           question: 'estar',
           phrases: [
-            { answer: 'I am', question: "TEMP" },
+            { answer: 'I am', question: 'yo estoy' },
             { answer: 'you (informal) are', question: 'tú estás' },
             { answer: 'he/she is', question: 'él/ella está' },
             { answer: 'we are', question: 'nosotros estamos' },
@@ -415,7 +415,7 @@ export const Chapter2: CardCollection = {
           answer: 'to have',
           question: 'tener',
           phrases: [
-            { answer: 'I have', question: "TEMP" },
+            { answer: 'I have', question: 'yo tengo' },
             { answer: 'you (informal) have', question: 'tú tienes' },
             { answer: 'he/she has', question: 'él/ella tiene' },
             { answer: 'we have', question: 'nosotros tenemos' },
@@ -426,7 +426,7 @@ export const Chapter2: CardCollection = {
           answer: 'to do/make',
           question: 'hacer',
           phrases: [
-            { answer: 'I do', question: "TEMP" },
+            { answer: 'I do', question: 'yo hago' },
             { answer: 'you (informal) do', question: 'tú haces' },
             { answer: 'he/she does', question: 'él/ella hace' },
             { answer: 'we do', question: 'nosotros hacemos' },
@@ -437,7 +437,7 @@ export const Chapter2: CardCollection = {
           answer: 'to go',
           question: 'ir',
           phrases: [
-            { answer: 'I go', question: "TEMP" },
+            { answer: 'I go', question: 'yo voy' },
             { answer: 'you (informal) go', question: 'tú vas' },
             { answer: 'he/she goes', question: 'él/ella va' },
             { answer: 'we go', question: 'nosotros vamos' },
@@ -448,7 +448,7 @@ export const Chapter2: CardCollection = {
           answer: 'to wash oneself',
           question: 'lavarse',
           phrases: [
-            { answer: 'I wash myself', question: "TEMP" },
+            { answer: 'I wash myself', question: 'yo me lavo' },
             { answer: 'you (informal) wash yourself', question: 'tú te lavas' },
             { answer: 'he/she washes', question: 'él/ella se lava' },
             { answer: 'we wash ourselves', question: 'nosotros nos lavamos' },
@@ -459,7 +459,7 @@ export const Chapter2: CardCollection = {
           answer: 'to read',
           question: 'leer',
           phrases: [
-            { answer: 'I read', question: "TEMP" },
+            { answer: 'I read', question: 'yo leo' },
             { answer: 'you (informal) read', question: 'tú lees' },
             { answer: 'he/she reads', question: 'él/ella lee' },
             { answer: 'we read', question: 'nosotros leemos' },
@@ -470,7 +470,7 @@ export const Chapter2: CardCollection = {
           answer: 'to hear',
           question: 'oír',
           phrases: [
-            { answer: 'I hear', question: "TEMP" },
+            { answer: 'I hear', question: 'yo oigo' },
             { answer: 'you (informal) hear', question: 'tú oyes' },
             { answer: 'he/she hears', question: 'él/ella oye' },
             { answer: 'we hear', question: 'nosotros oímos' },
@@ -481,7 +481,7 @@ export const Chapter2: CardCollection = {
           answer: 'to be able to/can',
           question: 'poder',
           phrases: [
-            { answer: 'I can', question: "TEMP" },
+            { answer: 'I can', question: 'yo puedo' },
             { answer: 'you (informal) can', question: 'tú puedes' },
             { answer: 'he/she can', question: 'él/ella puede' },
             { answer: 'we can', question: 'nosotros podemos' },
@@ -492,7 +492,7 @@ export const Chapter2: CardCollection = {
           answer: 'to put',
           question: 'poner',
           phrases: [
-            { answer: 'I put', question: "TEMP" },
+            { answer: 'I put', question: 'yo pongo' },
             { answer: 'you (informal) put', question: 'tú pones' },
             { answer: 'he/she puts', question: 'él/ella pone' },
             { answer: 'we put', question: 'nosotros ponemos' },
@@ -514,7 +514,7 @@ export const Chapter2: CardCollection = {
           answer: 'to know (facts, information)',
           question: 'saber',
           phrases: [
-            { answer: 'I know', question: "TEMP" },
+            { answer: 'I know', question: 'yo sé' },
             { answer: 'you (informal) know', question: 'tú sabes' },
             { answer: 'he/she knows', question: 'él/ella sabe' },
             { answer: 'we know', question: 'nosotros sabemos' },
@@ -525,7 +525,7 @@ export const Chapter2: CardCollection = {
           answer: 'to leave/go out',
           question: 'salir',
           phrases: [
-            { answer: 'I leave', question: "TEMP" },
+            { answer: 'I leave', question: 'yo salgo' },
             { answer: 'you (informal) leave', question: 'tú sales' },
             { answer: 'he/she leaves', question: 'él/ella sale' },
             { answer: 'we leave', question: 'nosotros salimos' },
@@ -536,7 +536,7 @@ export const Chapter2: CardCollection = {
           answer: 'to be (permanent characteristics)',
           question: 'ser',
           phrases: [
-            { answer: 'I am', question: "TEMP" },
+            { answer: 'I am', question: 'yo soy' },
             { answer: 'you (informal) are', question: 'tú eres' },
             { answer: 'he/she is', question: 'él/ella es' },
             { answer: 'we are', question: 'nosotros somos' },
@@ -547,7 +547,7 @@ export const Chapter2: CardCollection = {
           answer: 'to bring',
           question: 'traer',
           phrases: [
-            { answer: 'I bring', question: "TEMP" },
+            { answer: 'I bring', question: 'yo traigo' },
             { answer: 'you (informal) bring', question: 'tú traes' },
             { answer: 'he/she brings', question: 'él/ella trae' },
             { answer: 'we bring', question: 'nosotros traemos' },
@@ -558,7 +558,7 @@ export const Chapter2: CardCollection = {
           answer: 'to come',
           question: 'venir',
           phrases: [
-            { answer: 'I come', question: "TEMP" },
+            { answer: 'I come', question: 'yo vengo' },
             { answer: 'you (informal) come', question: 'tú vienes' },
             { answer: 'he/she comes', question: 'él/ella viene' },
             { answer: 'we come', question: 'nosotros venimos' },
@@ -569,7 +569,7 @@ export const Chapter2: CardCollection = {
           answer: 'to see',
           question: 'ver',
           phrases: [
-            { answer: 'I see', question: "TEMP" },
+            { answer: 'I see', question: 'yo veo' },
             { answer: 'you (informal) see', question: 'tú ves' },
             { answer: 'he/she sees', question: 'él/ella ve' },
             { answer: 'we see', question: 'nosotros vemos' },
@@ -580,7 +580,7 @@ export const Chapter2: CardCollection = {
           answer: 'to have (auxiliary)',
           question: 'haber',
           phrases: [
-            { answer: 'I have', question: "TEMP" },
+            { answer: 'I have', question: 'yo he' },
             { answer: 'you (informal) have', question: 'tú has' },
             { answer: 'he/she has', question: 'él/ella ha' },
             { answer: 'we have', question: 'nosotros hemos' },
@@ -677,25 +677,6 @@ export const Chapter2: CardCollection = {
             { answer: 'The tall men go in a red car', question: 'Los hombres altos van en un coche rojo' },
             { answer: 'The houses are large', question: 'Las casas son grandes' },
             { answer: 'The roads are long', question: 'Las carreteras son largas' },
-          ],
-        },
-      ],
-    },
-    {
-      subTitle: `Talkin' the Talk`,
-      cards: [
-        {
-          answer: `Rosario is on the phone with her friend Lupe`,
-          question: `Rosario está al teléfono con su amiga Lupe`,
-          conversation: [
-            { answer: `Rosario: Hello`, question: `Rosario: Hola` },
-            { answer: `Lupe: Hello Rosario. It's Lupe. What are you doing?`, question: `Lupe: Hola Rosario. Soy Lupe. ¿Qué haces?` },
-            { answer: `Rosario: I'm preparing a romantic dinner for my boyfriend Alejandro.`, question: `Rosario: Preparo una cena romántica para mi novio Alejandro.` },
-            { answer: `Lupe: What are you preparing?`, question: `Lupe: ¿Qué preparas?` },
-            { answer: `Rosario: I'm preparing a special paella with rice, shrimp, onions, and green beans.`, question: `Rosario: Preparo una paella especial con arroz, camarones, cebollas y judías verdes.` },
-            { answer: `Lupe: Excellent! It's very special and very romantic.`, question: `Lupe: ¡Excelente! Es muy especial y muy romántico.` },
-            { answer: `Rosario: Well, good-bye. I need to finish preparing dinner.`, question: `Rosario: Pues, adiós. Necesito terminar de preparar la cena.` },
-            { answer: `See you tomorrow.`, question: `Hasta mañana.` },
           ],
         },
       ],

@@ -240,7 +240,7 @@ export const Chapter4: CardCollection = {
           question: 'cien / ciento',
           phrases: [
             { answer: 'I got one hundred on the test', question: 'Saqué cien en el examen' },
-            { answer: 'One hundred percent agree', question: 'Ciento por ciento de acuerdo' },
+            { answer: 'One hundred percent agree', question: 'Cien por cien de acuerdo' },
           ],
         },
         { answer: 'a dozen', question: 'una docena', phrases: [{ answer: 'half a dozen', question: 'media docena' }] },
@@ -456,10 +456,10 @@ export const Chapter4: CardCollection = {
         },
         {
           answer: `at night`,
-          question: `en la noche`,
+          question: `de noche`,
           phrases: [
-            { answer: `I work at night`, question: `Trabajo en la noche` },
-            { answer: `I like to read at night`, question: `Me gusta leer en la noche` },
+            { answer: `I work at night`, question: `Trabajo de noche` },
+            { answer: `I like to read at night`, question: `Me gusta leer de noche` },
           ],
         },
         {
@@ -834,8 +834,8 @@ export const Chapter4: CardCollection = {
         },
         {
           answer: 'in',
-          question: 'por',
-          phrases: [{ answer: 'I will call you in an hour', question: 'Te llamaré por una hora' }],
+          question: 'en',
+          phrases: [{ answer: 'I will call you in an hour', question: 'Te llamaré en una hora' }],
         },
         {
           answer: 'during',
@@ -969,49 +969,6 @@ export const Chapter4: CardCollection = {
       ],
     },
     {
-      subTitle: "Talkin' the Talk",
-      cards: [
-        {
-          answer: 'Cruz tells her friend Talia about her vacation plans',
-          question: 'Cruz le cuenta a su amiga Talia sobre sus planes de vacaciones',
-          conversation: [
-            {
-              answer: `Cruz: We're going on vacation to Puerto Rico in a month!`,
-              question: `Cruz: ¡Vamos de vacaciones a Puerto Rico en un mes!`,
-            },
-            {
-              answer: `Talia: You're so lucky! We've had a terrible winter here.`,
-              question: `Talia: ¡Qué suerte tienes! Hemos pasado un invierno terrible aquí.`,
-            },
-            {
-              answer: `Cruz: Yes, I know. The month of February is especially difficult for me every year. It's a short month, but for me it's long.`,
-              question: `Cruz: Sí, yo sé. El mes de febrero es especialmente difícil para mí cada año. Es un mes corto, pero para mí es largo.`,
-            },
-            {
-              answer: `Talia: I agree with you. It's almost always very bad weather in the month of February. What day do you leave?`,
-              question: `Talia: Estoy de acuerdo. Casi siempre hace muy mal tiempo en el mes de febrero. ¿En qué día salen?`,
-            },
-            {
-              answer: `Cruz: We leave April 5th. It's a Saturday`,
-              question: `Cruz: Salimos el cinco de abril. Es un sábado`,
-            },
-            {
-              answer: `Talia: What time does your flight leave?`,
-              question: `Talia: ¿A qué hora sale tu vuelo?`,
-            },
-            {
-              answer: `Cruz: At 5:30 a.m. It's very early, but then we can go to the beach in the afternoon.`,
-              question: `Cruz: A las cinco y media de la mañana. Es muy temprano, pero entonces podemos ir a la playa por la tarde.`,
-            },
-            {
-              answer: `Talia: You guys are certainly going to have an excellent time in Puerto Rico!`,
-              question: `Talia: ¡Seguramente Uds. van a pasar un tiempo excelente en Puerto Rico!`,
-            },
-          ],
-        },
-      ],
-    },
-    {
       subTitle: 'Words to know',
       cards: [
         {
@@ -1114,65 +1071,6 @@ export const Chapter4: CardCollection = {
       ],
     },
     {
-      subTitle: `Talkin' the Talk`,
-      cards: [
-        {
-          answer: 'Amalia bargains with a vendor over oranges at a fruit and vegetable stand',
-          question: 'Amalia regatea con un vendedor por las naranjas en un puesto de frutas y verduras',
-          conversation: [
-            {
-              answer: `Amalia: How much for the oranges?`,
-              question: `Amalia: A cuánto están las naranjas?`,
-            },
-            {
-              answer: `Vendor: Ten pesos for 25`,
-              question: `Vendedor: A diez pesos por veinticinco`,
-            },
-            {
-              answer: `Cruz: How much for the avocados?`,
-              question: `Cruz: A cuánto los aguacates?`,
-            },
-            {
-              answer: `Vendor: Fifteen pesos for one kilo`,
-              question: `Vendedor: Quince pesos el kilo`,
-            },
-            {
-              answer: `Amalia: It's very expensive.`,
-              question: `Amalia: Es muy caro!`,
-            },
-            {
-              answer: `Vendor: It's cheaper than yesterday.`,
-              question: `Vendedor: Es más barato que ayer.`,
-            },
-            {
-              answer: `Amalia: Do you have bananas?`,
-              question: `Amalia: ¿Tiene bananas?`,
-            },
-            {
-              answer: `Vendor: Yes, which kind?`,
-              question: `Vendedor: Sí, ¿de cuáles?`,
-            },
-            {
-              answer: `Amalia: Those. How much are they?`,
-              question: `Amalia: De esas. ¿Cuánto son?`,
-            },
-            {
-              answer: `Vendor: Three pesos per kilo.`,
-              question: `Vendedor: Tres pesos el kilo.`,
-            },
-            {
-              answer: `Amalia: A half kilo, please. How much is the garlic?`,
-              question: `Amalia: Medio kilo, por favor. ¿A cuánto los ajos?`,
-            },
-            {
-              answer: `Vendor: Five pesos per bunch (of heads).`,
-              question: `Vendedor: Cinco pesos el ramillete.`,
-            },
-          ],
-        },
-      ],
-    },
-    {
       subTitle: 'Words to know',
       cards: [
         {
@@ -1201,8 +1099,8 @@ export const Chapter4: CardCollection = {
         },
         {
           answer: 'the bananas',
-          question: 'las bananas',
-          phrases: [{ answer: 'I bought a bunch of bananas', question: 'Compré un racimo de bananas' }],
+          question: 'los plátanos',
+          phrases: [{ answer: 'I bought a bunch of bananas', question: 'Compré un racimo de plátanos' }],
         },
         {
           answer: 'which kind?',
@@ -1221,8 +1119,8 @@ export const Chapter4: CardCollection = {
         },
         {
           answer: 'a bunch',
-          question: 'un ramillete',
-          phrases: [{ answer: 'I bought a bunch of garlic', question: 'Compré un ramillete de ajos' }],
+          question: 'una ristra',
+          phrases: [{ answer: 'I bought a bunch of garlic', question: 'Compré una ristra de ajos' }],
         },
       ],
     },

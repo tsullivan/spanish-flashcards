@@ -143,10 +143,6 @@ export const useFlashcardsStore = defineStore('flashcards', () => {
     const idx = state.value.current.phrasesIndex;
     return 'phrases' in card && idx !== undefined ? card.phrases[idx] : undefined;
   });
-  const currentConversation = computed(() => {
-    const card = currentCard.value;
-    return 'conversation' in card ? card.conversation : undefined;
-  });
   const currentChapter = computed(() => state.value.current.chapterKey);
   const currentSection = computed(() => state.value.current.sectionKey);
   const currentSubTitle = computed(() => currentGroup.value.subTitle);
@@ -160,8 +156,7 @@ export const useFlashcardsStore = defineStore('flashcards', () => {
 
   const advance = () => {
     if (state.value.enabledSections.length === 0) return;
-    const card = currentCard.value;
-    const maxStep = 'conversation' in card ? 2 * card.conversation.length + 1 : 3;
+    const maxStep = 3;
     dispatch({ type: 'ADVANCE', newEntry: randomEntry(state.value.enabledSections), maxStep });
   };
 
@@ -184,7 +179,6 @@ export const useFlashcardsStore = defineStore('flashcards', () => {
     state,
     currentCard,
     currentPhrase,
-    currentConversation,
     currentChapter,
     currentSection,
     currentSubTitle,

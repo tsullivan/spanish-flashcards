@@ -16,8 +16,8 @@ export const Chapter5: CardCollection = {
         },
         {
           answer: 'the lamp',
-          question: 'la lampara',
-          phrases: [{ answer: 'The lamp is on the table', question: 'La lampara está en la mesa' }],
+          question: 'la lámpara',
+          phrases: [{ answer: 'The lamp is on the table', question: 'La lámpara está en la mesa' }],
         },
         {
           answer: 'the wall',
@@ -90,18 +90,18 @@ export const Chapter5: CardCollection = {
         },
         {
           answer: 'the trash can',
-          question: 'el basurero',
-          phrases: [{ answer: 'The trash can is full', question: 'El basurero está lleno' }],
+          question: 'el cubo de la basura',
+          phrases: [{ answer: 'The trash can is full', question: 'El cubo de la basura está lleno' }],
         },
         {
           answer: 'the hand mixer',
-          question: 'el batido manual',
-          phrases: [{ answer: 'The hand mixer is in the drawer', question: 'El batido manual está en el cajón' }],
+          question: 'la batidora de varillas',
+          phrases: [{ answer: 'The hand mixer is in the drawer', question: 'La batidora de varillas está en el cajón' }],
         },
         {
           answer: 'the pot',
-          question: 'el caldero',
-          phrases: [{ answer: 'The pot is on the stove', question: 'El caldero está en la estufa' }],
+          question: 'la olla',
+          phrases: [{ answer: 'The pot is on the stove', question: 'La olla está en la cocina' }],
         },
         {
           answer: 'the freezer',
@@ -110,8 +110,8 @@ export const Chapter5: CardCollection = {
         },
         {
           answer: 'the bottle opener',
-          question: 'el destapador',
-          phrases: [{ answer: 'The bottle opener is on the counter', question: 'El destapador está en la encimera' }],
+          question: 'el abrebotellas',
+          phrases: [{ answer: 'The bottle opener is on the counter', question: 'El abrebotellas está en la encimera' }],
         },
         {
           answer: 'the colander',
@@ -130,8 +130,8 @@ export const Chapter5: CardCollection = {
         },
         {
           answer: 'the cabinet',
-          question: 'el gabinete',
-          phrases: [{ answer: 'The cabinet is open', question: 'El gabinete está abierto' }],
+          question: 'el armario',
+          phrases: [{ answer: 'The cabinet is open', question: 'El armario está abierto' }],
         },
         {
           answer: 'the oven',
@@ -147,8 +147,8 @@ export const Chapter5: CardCollection = {
         },
         {
           answer: 'the dishwasher',
-          question: 'el lavaplatos',
-          phrases: [{ answer: 'The dishwasher is full', question: 'El lavaplatos está lleno' }],
+          question: 'el lavavajillas',
+          phrases: [{ answer: 'The dishwasher is full', question: 'El lavavajillas está lleno' }],
         },
         {
           answer: 'the grater',
@@ -164,8 +164,8 @@ export const Chapter5: CardCollection = {
         },
         {
           answer: 'the toaster',
-          question: 'el tostador',
-          phrases: [{ answer: 'The toaster is on the counter', question: 'El tostador está en la encimera' }],
+          question: 'la tostadora',
+          phrases: [{ answer: 'The toaster is on the counter', question: 'La tostadora está en la encimera' }],
         },
         {
           answer: 'the automatic drip coffee maker',
@@ -184,13 +184,13 @@ export const Chapter5: CardCollection = {
         },
         {
           answer: 'the spatula',
-          question: 'la espatula',
-          phrases: [{ answer: 'The spatula is in the drawer', question: 'La espatula está en el cajón' }],
+          question: 'la espátula',
+          phrases: [{ answer: 'The spatula is in the drawer', question: 'La espátula está en el cajón' }],
         },
         {
           answer: 'the stove',
-          question: 'la estufa',
-          phrases: [{ answer: 'The stove is on', question: 'La estufa está encendida' }],
+          question: 'la cocina',
+          phrases: [{ answer: 'The stove is on', question: 'La cocina está encendida' }],
         },
         {
           answer: 'the air fryer',
@@ -206,8 +206,8 @@ export const Chapter5: CardCollection = {
         },
         {
           answer: 'the blender',
-          question: 'la licuadora',
-          phrases: [{ answer: 'The blender is on the counter', question: 'La licuadora está en la encimera' }],
+          question: 'la batidora de vaso',
+          phrases: [{ answer: 'The blender is on the counter', question: 'La batidora de vaso está en la encimera' }],
         },
         {
           answer: 'the refrigerator',
@@ -216,8 +216,8 @@ export const Chapter5: CardCollection = {
         },
         {
           answer: 'the frying pan',
-          question: 'la sarten',
-          phrases: [{ answer: 'The frying pan is on the stove', question: 'La sartén está en la estufa' }],
+          question: 'la sartén',
+          phrases: [{ answer: 'The frying pan is on the stove', question: 'La sartén está en la cocina' }],
         },
         {
           answer: 'the cutting board',
@@ -229,7 +229,7 @@ export const Chapter5: CardCollection = {
         {
           answer: 'the lid',
           question: 'la tapa',
-          phrases: [{ answer: 'The lid is on the pot', question: 'La tapa está en el caldero' }],
+          phrases: [{ answer: 'The lid is on the pot', question: 'La tapa está en la olla' }],
         },
         {
           answer: 'the measuring spoons',
@@ -382,7 +382,7 @@ export const Chapter5: CardCollection = {
         },
         {
           answer: 'the bowl',
-          question: 'el tazon',
+          question: 'el tazón',
           phrases: [{ answer: 'The bowl is full of soup', question: 'El tazón está lleno de sopa' }],
         },
         {
@@ -596,8 +596,8 @@ export const Chapter5: CardCollection = {
         },
         {
           answer: 'the blanket',
-          question: 'la cobija',
-          phrases: [{ answer: 'The blanket is warm', question: 'La cobija es cálida' }],
+          question: 'la manta',
+          phrases: [{ answer: 'The blanket is warm', question: 'La manta es cálida' }],
         },
         {
           answer: 'the alarm clock',
@@ -606,8 +606,8 @@ export const Chapter5: CardCollection = {
         },
         {
           answer: 'the dresser',
-          question: 'el gavetero',
-          phrases: [{ answer: 'The dresser is full of clothes', question: 'El gavetero está lleno de ropa' }],
+          question: 'la cómoda',
+          phrases: [{ answer: 'The dresser is full of clothes', question: 'La cómoda está llena de ropa' }],
         },
         {
           answer: 'the nightstand',
@@ -742,8 +742,8 @@ export const Chapter5: CardCollection = {
         },
         {
           answer: 'the toilet',
-          question: 'el excusado',
-          phrases: [{ answer: 'The toilet is clean', question: 'El excusado está limpio' }],
+          question: 'el váter',
+          phrases: [{ answer: 'The toilet is clean', question: 'El váter está limpio' }],
         },
         {
           answer: 'the soap',
@@ -752,8 +752,8 @@ export const Chapter5: CardCollection = {
         },
         {
           answer: 'the sink',
-          question: 'el lavamanos',
-          phrases: [{ answer: 'The sink is clean', question: 'El lavamanos está limpio' }],
+          question: 'el lavabo',
+          phrases: [{ answer: 'The sink is clean', question: 'El lavabo está limpio' }],
         },
         {
           answer: 'the toilet paper',
@@ -815,8 +815,8 @@ export const Chapter5: CardCollection = {
         },
         {
           answer: 'the clothes hanger',
-          question: 'el gancho',
-          phrases: [{ answer: 'The clothes hanger is in the closet', question: 'El gancho está en el armario' }],
+          question: 'la percha',
+          phrases: [{ answer: 'The clothes hanger is in the closet', question: 'La percha está en el armario' }],
         },
         {
           answer: 'the bleach',
@@ -927,13 +927,13 @@ export const Chapter5: CardCollection = {
         },
         {
           answer: 'the copier',
-          question: 'el copiador',
-          phrases: [{ answer: 'The copier is in the office', question: 'El copiador está en la oficina' }],
+          question: 'la fotocopiadora',
+          phrases: [{ answer: 'The copier is in the office', question: 'La fotocopiadora está en la oficina' }],
         },
         {
           answer: 'the computer',
-          question: 'la computadora',
-          phrases: [{ answer: 'The computer is on the desk', question: 'La computadora está en el escritorio' }],
+          question: 'el ordenador',
+          phrases: [{ answer: 'The computer is on the desk', question: 'El ordenador está en el escritorio' }],
         },
         {
           answer: 'the stapler',
@@ -966,7 +966,7 @@ export const Chapter5: CardCollection = {
           phrases: [
             {
               answer: 'The office supplies are in the cabinet',
-              question: 'El material de oficina está en el gabinete',
+              question: 'El material de oficina está en el armario',
             },
           ],
         },
@@ -1047,60 +1047,6 @@ export const Chapter5: CardCollection = {
       ],
     },
     {
-      subTitle: `Talkin' the Talk`,
-      cards: [
-        {
-          answer:
-            'Valeria has just moved into her new house. She has asked her friends Javier and Manolo to help. She has promised to prepare them dinner in her new kitchen to repay for their help.',
-          question:
-            'Valeria se acaba de mudar a su nueva casa. Ha pedido a sus amigos Javier y Manolo que la ayuden. Ella les ha prometido prepararles la cena en su nueva cocina para recompensar su ayuda.',
-          conversation: [
-            {
-              answer: 'Valeria: Hello Javier and Manolo. Thank you for coming to help me.',
-              question: 'Valeria: Hola Javier y Manolo. Gracias por venir a ayudarme.',
-            },
-            {
-              answer: 'Javier: No problem. We are always happy to work for a free meal.',
-              question: 'Javier: No es ningún problema. Siempre estamos contentos de trabajar por una comida gratis.',
-            },
-            { answer: 'Manolo: Well, where should we start?', question: 'Manolo: Pues, ¿dónde debemos empezar?' },
-            {
-              answer: 'Valeria: First we can take my bed, dresser, and this desk upstairs to the bedroom.',
-              question: 'Valeria: Primero podemos llevar mi cama, mi gavetero, y este escritorio arriba al dormitorio.',
-            },
-            { answer: 'Javier: Where is the bedroom?', question: 'Javier: ¿Dónde está el dormitorio?' },
-            {
-              answer: 'Valeria: Go up the stairs and down the hall.',
-              question: 'Valeria: Suben por las escaleras y pasan por el pasillo.',
-            },
-            {
-              answer:
-                'Manolo: Then we just need to move the sofa, the two side tables, the recliner, and the TV to the living room.',
-              question:
-                'Manolo: Entonces solamente necesitamos mover el sofá, las dos mesitas, el sillón reclinable, y la tele al salón.',
-            },
-            { answer: 'Valeria: Fantastic!', question: 'Valeria: ¡Fantástico!' },
-            {
-              answer: 'Javier: Is the small room next to the kitchen the laundry room?',
-              question: 'Javier: ¿Es el cuarto pequeño que está al lado de la cocina la lavandería?',
-            },
-            {
-              answer: 'Valeria: Yes, you are right. The washer and dryer go there.',
-              question: 'Valeria: Sí, tienes razón. La lavadora y la secadora van allí.',
-            },
-            {
-              answer:
-                'Valeria: Now we need to move the table and chairs to the kitchen, and then I can unpack the dishes and cooking utensils.',
-              question:
-                'Valeria: Ahora necesitamos mover la mesa y las sillas a la cocina, y entonces puedo desempacar los platos y los utensilios de cocina.',
-            },
-            { answer: 'Valeria: And soon we can eat!', question: 'Valeria: ¡Y pronto podemos comer!' },
-            { answer: 'Manolo: That is an excellent idea!', question: 'Manolo: ¡Eso es una idea excelente!' },
-          ],
-        },
-      ],
-    },
-    {
       subTitle: 'Words to Know',
       cards: [
         {
@@ -1157,11 +1103,11 @@ export const Chapter5: CardCollection = {
         },
         {
           answer: 'to unpack',
-          question: 'desempacar',
+          question: 'desembalar',
           phrases: [
             {
               answer: 'Then I can unpack the dishes and cooking utensils',
-              question: 'Entonces puedo desempacar los platos y los utensilios de cocina',
+              question: 'Entonces puedo desembalar los platos y los utensilios de cocina',
             },
           ],
         },

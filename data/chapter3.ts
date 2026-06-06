@@ -218,7 +218,7 @@ export const Chapter3: CardCollection = {
           question: 'quejarse (de)',
           phrases: [
             { answer: `What are you (informal) complaining about?`, question: '¿De qué te quejas?' },
-            { answer: 'Me quejo de los precios', question: 'I am complaining about the prices' },
+            { answer: 'I am complaining about the prices', question: 'Me quejo de los precios' },
             { answer: 'He complains about everything', question: 'Se queja de todo' },
           ],
         },
@@ -772,24 +772,6 @@ export const Chapter3: CardCollection = {
           ],
         },
       ],
-    },
-    {
-      cards: [
-        {
-          answer: `At the café, you hear talk about speaking`,
-          question: `En el café, oyes hablar de hablar`,
-          conversation: [
-            { answer: `Antonia: Do you speak Spanish?`, question: `Antonia: ¿Habla usted español?` },
-            { answer: `Reynaldo: Yes, What languages do you speak?`, question: `Reynaldo: Sí, ¿qué idiomas habla usted?` },
-            { answer: `Antonia: I speak English and French`, question: `Antonia: Yo hablo inglés y francés` },
-            { answer: `Reynaldo: It is very difficult to speak English?`, question: `Reynaldo: ¿Es muy difícil hablar inglés?` },
-            { answer: `Antonia: No, it's very easy!`, question: `Antonia: ¡No, es muy fácil!` },
-            { answer: `Reynaldo: And is it difficult to speak French?`, question: `Reynaldo: ¿Y es difícil hablar francés?` },
-            { answer: `Antonia: No, it's not at all difficult`, question: `Antonia: No, no es en absoluto difícil` },
-          ],
-        },
-      ],
-      subTitle: `Talkin' the Talk`,
     },
     {
       subTitle: `Words to know`,
