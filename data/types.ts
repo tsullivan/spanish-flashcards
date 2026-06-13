@@ -10,7 +10,7 @@ interface CollectionSet {
 }
 
 export interface AppData {
-  language: 'es-ES';
+  language: 'es-ES' | 'vi-VN';
   cards: CollectionSet;
 }
 

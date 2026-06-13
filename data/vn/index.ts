@@ -2,7 +2,7 @@ import type { AppData } from '../types';
 import { Part1 } from './part1';
 
 export const source: AppData = {
-  language: 'es-ES',
+  language: 'vi-VN',
   cards: {
     'Part 1: Common Expressions and Keywords': Part1,
     // 'Part 2: Numbers, Dates, and Time': Part2,
