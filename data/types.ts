@@ -1,6 +1,7 @@
 export interface CardPair {
   question: string;
   answer: string;
+  // TODO: optional pronunciation, maybe an audio file or something
 }
 
 export type Card = CardPair & ({ phrases: CardPair[] });
