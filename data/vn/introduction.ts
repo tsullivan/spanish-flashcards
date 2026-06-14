@@ -559,6 +559,7 @@ export const Introduction: CardCollection = {
         {
           question: 'g',
           answer: 'as in "get" but softer',
+          pronunciation: 'In the Northern dialects, "gi" is pronounced like "zee" with a falling tone in the question word "gì" (what), and prounounced "z" in other words that begin with "gi", such as "gia", "giờ", and "giấy". In the Southern dialects, "gi" is pronounced like "yee" with a falling tone in the question word "gì", and pronounced "y" in other words that begin with "gi".',
           phrases: [
             { answer: 'station', question: 'ga' },
             { answer: 'chicken', question: 'gà' },
@@ -760,6 +761,7 @@ export const Introduction: CardCollection = {
         {
           question: '-c',
           answer: 'as in "back" but unreleased',
+          pronunciation: 'When the letter "a" is followed by a final "c", it doesn\'t change its quality',
           phrases: [
             { answer: 'plural marker', question: 'các' },
             { answer: 'to study', question: 'học' },
@@ -810,6 +812,7 @@ export const Introduction: CardCollection = {
         {
           question: '-ch',
           answer: 'as in "back" but unreleased',
+          pronunciation: 'When the letter "a" is followed by a final "ch", it is pronounced like "ai."',
           phrases: [
             { answer: 'book', question: 'sách' },
             { answer: 'guest', question: 'khách' },
@@ -830,6 +833,7 @@ export const Introduction: CardCollection = {
         {
           question: '-nh',
           answer: '"ng" as in "long"',
+          pronunciation: 'When "a" is followed by a final "nh", it is pronounced like "ai."',
           phrases: [
             { answer: 'be born', question: 'sanh' },
             { answer: 'older brother', question: 'anh' },
