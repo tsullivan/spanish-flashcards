@@ -4,7 +4,7 @@ export interface CardPair {
   // TODO: optional pronunciation, maybe an audio file or something
 }
 
-export type Card = CardPair & ({ phrases: CardPair[] });
+export type Card = CardPair & { phrases: [CardPair, ...CardPair[]] };
 
 interface CollectionSet {
   [chapter: string]: CardCollection;

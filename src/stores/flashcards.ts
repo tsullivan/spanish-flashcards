@@ -15,7 +15,7 @@ type CardLocation = {
 // The card currently on screen, plus the per-view choices (which phrase, which
 // side first) that are re-rolled every time a card is shown.
 type HistoryEntry = CardLocation & {
-  phrasesIndex?: number;
+  phrasesIndex: number;
   showQuestionFirst: boolean;
 };
 
@@ -101,11 +101,11 @@ const cardAt = (loc: CardLocation) =>
   getSource().cards[loc.chapterKey]![loc.sectionKey]![loc.groupIndex]!.cards[loc.cardIndex]!;
 
 // Turn a deck location into a displayable entry, re-rolling the phrase and the
-// question/answer orientation for this viewing.
+// question/answer orientation for this viewing. Every card is guaranteed at least
+// one phrase by the Card type, so the index is always valid.
 const rollEntry = (loc: CardLocation): HistoryEntry => {
   const card = cardAt(loc);
-  const phraseCount = 'phrases' in card ? card.phrases.length : 0;
-  const phrasesIndex = phraseCount > 0 ? Math.floor(Math.random() * phraseCount) : undefined;
+  const phrasesIndex = Math.floor(Math.random() * card.phrases.length);
   return { ...loc, phrasesIndex, showQuestionFirst: Math.random() < 0.5 };
 };
 
@@ -154,11 +154,7 @@ export const useFlashcardsStore = defineStore('flashcards', () => {
 
   const currentGroup = computed(() => getSource().cards[state.value.current.chapterKey]![state.value.current.sectionKey]![state.value.current.groupIndex]!);
   const currentCard = computed(() => currentGroup.value.cards[state.value.current.cardIndex]!);
-  const currentPhrase = computed(() => {
-    const card = currentCard.value;
-    const idx = state.value.current.phrasesIndex;
-    return 'phrases' in card && idx !== undefined ? card.phrases[idx] : undefined;
-  });
+  const currentPhrase = computed(() => currentCard.value.phrases[state.value.current.phrasesIndex]!);
   const currentChapter = computed(() => state.value.current.chapterKey);
   const currentSection = computed(() => state.value.current.sectionKey);
   const currentSubTitle = computed(() => currentGroup.value.subTitle);
