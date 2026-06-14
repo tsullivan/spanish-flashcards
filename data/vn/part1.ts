@@ -215,7 +215,265 @@ export const Part1: CardCollection = {
       { answer: 'Very pleased to meet you (the much younger person) too.', question: 'Chú cũng rất vui được gặp cháu.' },
     ] },
   ] }],
-  // 'Common Questions and Suggested Responses': [{ cards: [] }],
-  // 'Common Expressions and Phrases': [{ cards: [] }],
+  'Common Questions and Suggested Responses': [{ cards: [
+    // subTitle: Names
+    // What's your name? (To a female peer)
+    // What's your name? (To a male peer)
+    // What's your name? (To a younger person)
+    // What's your name? (To a person older than your parents)
+    // What's your name? (To a female person younger than your parents)
+    // What's your name? (To a male person younger than your parents)
+
+    // subTitle: Nationality
+    // country - nước
+    // person - người
+    // which? - nào?
+    // Where are you from, Tom?
+    // Where are you from, Penny?
+
+    // subTitle: Countries
+    // America
+    // Australia
+    // Canada
+    // China
+    // Denmark
+    // England
+    // France
+    // Germany
+    // Holland
+    // India
+    // Indonesia
+    // Ireland
+    // Italy
+    // Japan
+    // Malaysia
+    // Mexico
+    // North Korea
+    // Norway
+    // Philippines
+    // Russia
+    // Singapore
+    // South Korea
+    // Spain
+    // Sweden
+    // Switzerland
+    // Thailand
+    // Vietnam
+    // I'm American
+    // I'm French
+    // I'm Japanese
+    // I'm Australian, mate
+    // I'm Malay, lah
+    // I'm Vietnamese
+
+    // subTitle: Talking About Family
+    // children - con (pronunciation: kawn)
+    // family - gia đình
+    // have - có
+    // husband - chồng
+    // wife - vợ
+    // son - con trai
+    // daughter - con gái
+    // yet? - chưa? (pronunciation: chuh-a?)
+    // Are you married, Kim?
+    // Are you married, Ken?
+    // Do you have a husband yet, Kim?
+    // Do you have a husband yet, Ken?
+    // Do you have children yet? (To a married couple) - Anh chị đã có con chưa?
+    // I'm still single. (To a female peer)
+    // I'm still single. (To a male peer)
+    // I'm still single. (To a younger person)
+    // I'm still single. (To a person older than your parents)
+    // No, I'm not married yet. (To a female peer)
+    // No, I'm not married yet. (To a male peer)
+    // No, I'm not married yet. (To a younger person)
+    // No, I'm not married yet. (To a person older than your parents)
+    // Yes, I'm married. (To a female peer)
+    // Yes, I'm married. (To a male peer)
+    // Yes, I'm married. (To a younger person)
+    // Yes, I'm married. (To a person older than your parents)
+    // Yes, I have a husband already. (To a female peer)
+    // Yes, I have a husband already. (To a younger person)
+    // Yes, I have a husband already. (To a person older than your parents)
+    // Yes, I have a wife already. (To a male peer)
+    // Yes, I have a wife already. (To a younger person)
+    // Yes, I have a wife already. (To a person older than your parents)
+    // Yes, we have children already. (To a female peer)
+    // Yes, we have children already. (To a male peer)
+    // Yes, we have children already. (To a younger person)
+    // Yes, we have children already. (To a person older than your parents)
+    // Not yet. We don't have any children yet. (To a female peer)
+    // Not yet. We don't have any children yet. (To a male peer)
+    // Not yet. We don't have any children yet. (To a younger person)
+    // Not yet. We don't have any children yet. (To a person older than your parents)
+
+    // subTitle: What Would You Like to Drink?
+    // What would you like to drink? - Bạn muốn uống gì?
+    // drink - uống
+    // want, would like - muốn
+    // What would you like to drink, Joyce? - Bạn muốn uống gì, Joyce?
+    // What would you like to drink, Nick? - Bạn muốn uống gì, Nick?
+    // ask, please - xin (pronounciation: seen)
+    // cold water - nước lạnh
+    // iced water - nước đá
+    // no, not - không
+    // tea - trà
+    // thank - cảm ơn
+    // thirsty - khát nước
+    // water - nước
+    // Please give me some iced water. - Xin cho tôi nước đá.
+    // Please give me some tea. - Xin cho tôi trà.
+    // No, thanks. I'm not thirsty. - Cảm ơn, tôi không khát nước.
+    // Thank you. (To a female peer) - Cảm ơn chị.
+    // Thank you. (To a male peer) - Cảm ơn anh.
+    // Thank you. (To a person older than your parents) - Cảm ơn bác.
+    // Thank you. (To a younger person) - Cảm ơn em.
+
+    // subTitle: How Are You?
+    // How are you? (To a female peer) - Chị khỏe không?
+    // How are you? (To a male peer) - Anh khỏe không?
+    // How are you? (To a person older than your parents) - Bác khỏe không?
+    // How are you? (To a younger person) - Em khỏe không?
+    // I'm fine. Thank you, Ron. - Tôi khỏe. Cảm ơn, Ron.
+    // I'm fine. Thank you, Auntie Lien. - Cháu khỏe. Cảm ơn, dì Liên.
+
+    // subTitle: Introducing Others
+    // excuse me - xin lỗi
+    // introduce - giới thiệu
+    // who - ai (pronunciation: ai)
+    // Who is this? - Đây là ai?
+    // This is Khoa - Đây là Khoa. (pronunciation: Day làh Khwah.)
+    // Excuse me. May I introduce my husband? - Xin lỗi. Tôi xin giới thiệu chồng tôi? (pronunciation: "Chồng tôi" (my husband) is the short form of "chồng của tôi" (the husband of mine), with "của" meaning "of". In everyday speech, "của" is often omitted when the meaning is clear. When in doubt, always use "của".)
+    // my husband - chồng tôi
+    // my wife - vợ của tôi
+  ] }],
+  // 'Common Expressions and Phrases': [{ cards: [
+    // a little - một chút, một ít (pronunciation: moht choot, moht eet)
+    // come in - vào
+    // currently (happening) - đang
+    // difficult - khó
+    // easier, more easily - dễ hơn
+    // easy - dễ
+    // English language - tiếng Anh
+    // explain - giải thích
+    // follow - đi theo
+    // go - đi
+    // in (a language) - bằng
+    // invite - mời
+    // know, can - biết
+    // language - tiếng
+    // like, enjoy - thích
+    // mean (verb) - nghĩa
+    // more slowly - chậm hơn
+    // need - cần
+    // only - chỉ
+    // repeat, say again - nói lại
+    // sentence - câu
+    // sit - ngồi
+    // slow, slowly - chậm
+    // speak - nói
+    // understand - hiểu
+    // Please speak more slowly. - Xin nói chậm hơn.
+    // I don't understand. - Tôi không hiểu.
+    // study, learn - học
+    // translate into - dịch sang
+    // understand - hiểu
+    // very - lắm, rất
+    // Vietnamese language - tiếng Việt
+    // word - chữ
+    // Please come in. - Xin mời vào.
+    // Please sit down - Xin mời chị ngồi.
+    // Please follow me. - Xin mời anh đi theo tôi.
+    // I'm sorry. I don't understand - Xin lỗi. Tôi không hiểu.
+    // Please speak more slowly. - Xin nói chậm lại.
+    // Please say it again. - Xin nói lại.
+    // I can only speak a little Vietnamese. - Tôi chỉ biết nói một chút tiếng Việt.
+    // I'm studying Vietnamese. - Tôi đang học tiếng Việt.
+    // Vietnamese is very difficult. - Tiếng Việt khó lắm. / Tiếng Việt rất khó. (pronunciation: Both "rất" and "lắm" mean "very" and can be used interchangeably in Vietnamese. Remember that "rất" precedes the word it modifies, while "lắm" follows it. In addition, "lắm" sounds more informal than "rất."
+    // English is easier - Tiếng Anh dễ hơn.
+    // I really enjoy studying Vietnamese. - Tôi rất thích học tiếng Việt.
+    // Please explain it in English. - Xin giải thích bằng tiếng Anh.
+    // Please translate this word into English. - Xin dịch chữ này sang tiếng Anh.
+    // Please translate this sentence into English. - Xin dịch câu này sang tiếng Anh.
+    // What does this word mean? - Chữ này nghĩa là gì?
+    // What does this sentence mean? - Câu này nghĩa là gì?
+
   // 'Key Words (Titles, Family, Occupations)': [{ cards: [] }],
+    // subTitle: Forms of Address
+    // Mrs. - bà (pronunciation: bah)
+    // Mr. - ông (pronunciation: ohng)
+    // Miss - cô (pronunciation: koh)
+    // you (female peer) - chị (pronunciation: chee)
+    // you (a male peer) - anh (pronunciation: aing)
+    // you (a younger person) - em (pronunciation: em)
+    // you (a person older than your parents) - bác (pronunciation: báhk)
+    // you (a female person younger than your parents) - cô (pronunciation: koh)
+    // you (a male person younger than your parents) - chú (pronunciation: choo)
+    // you (a younger person) - em (pronunciation: em)
+    // you (a person as young as your own nieces/nephews) - cháu (pronunciation: chow)
+    // you (a female teacher) - cô (pronunciation: koh)
+    // you (a male teacher) - thầy (pronunciation: thay)
+
+    // subTitle: Family Members and Loved Ones
+    // best friend - bạn thân nhất (pronunciation: bahn thun nyut)
+    // boyfriend - (pronunciation: bahn jai)
+    // children - (pronunciation: kawn)
+    // close friend - (pronunciation: bahn thun)
+    // cousins - (pronunciation: aing chee em haw)
+    // daughter - con gái (pronunciation: kawn gai)
+    // family - gia đình (pronunciation: zah/yah deeng))
+    // father - cha, ba, bo (chah, bah, boh)
+    // girlfriend - bạn gái (pronunciation: bahn gai)
+    // granddaughter - cháu gái (pronunciation: chah-oo gai)
+    // grandfather - chau trai (pronunciation: chah-oo jai)
+    // husband - chồng (pronunciation: chohng)
+    // maternal grandfather - ông nội (pronunciation: ohng ngwai)
+    // maternal grandmother - bà nội (pronunciation: bàh ngwai)
+    // mother - mẹ, má, mạ (pronunciation: meh, mah, mah)
+    // nephew - cháu trai (pronunciation: chah-oo jai)
+    // niece - cháu gái (pronunciation: chah-oo gai)
+    // older brother - anh (pronunciation: aing)
+    // older sister - chị (pronunciation: chee)
+    // paternal grandfather - ông noi (pronunciation: ohng noh-ee)
+    // paternal grandmother - bà noi (pronunciation: bàh noh-ee)
+    // son - con trai (pronunciation: kawn jai)
+    // sweetheart - người yêu (pronunciation: nguh-a-ee yew)
+    // wife - vợ (pronunciation: vuh)
+    // younger brother - em trai (pronunciation: em jai)
+    // younger sister - em gái (pronunciation: em gai)
+
+    // subTitle: Occupations
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
 };
