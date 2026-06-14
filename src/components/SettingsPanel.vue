@@ -24,6 +24,7 @@ const toggle = (k: string) => {
     ? selected.value.filter(s => s !== k)
     : [...selected.value, k];
 };
+// FIXME: checkAll should clear the localStorage and reset to default. By default (with no stored setting), all options should be checked.
 const checkAll   = () => { selected.value = [...allKeys]; };
 const uncheckAll = () => { selected.value = []; };
 const checkChapter = (chapterKey: string) => {
