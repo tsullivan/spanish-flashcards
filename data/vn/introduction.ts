@@ -65,7 +65,7 @@ export const Introduction: CardCollection = {
         // a - as in calm
         {
           question: 'a',
-          answer: 'as in calm',
+          answer: 'as in "calm"',
           phrases: [
             { answer: 'grandmother; she (older woman)', question: 'bà' },
             { answer: 'to be', question: 'là' },
@@ -75,7 +75,7 @@ export const Introduction: CardCollection = {
         // ă - as in hot
         {
           question: 'ă',
-          answer: 'as in hot',
+          answer: 'as in "hot"',
           phrases: [
             { answer: 'to eat', question: 'ăn' },
             { answer: 'blanket', question: 'chăn' },
@@ -85,7 +85,7 @@ export const Introduction: CardCollection = {
         // â - as in run
         {
           question: 'â',
-          answer: 'as in run',
+          answer: 'as in "run"',
           phrases: [
             { answer: 'foot, leg', question: 'chân' },
             { answer: 'near', question: 'gần' },
@@ -95,7 +95,7 @@ export const Introduction: CardCollection = {
         // e - as in bed
         {
           question: 'e',
-          answer: 'as in bed',
+          answer: 'as in "bed"',
           phrases: [
             { answer: 'younger sibling', question: 'em' },
             { answer: 'vehicle', question: 'xe' },
@@ -105,7 +105,7 @@ export const Introduction: CardCollection = {
         // ê - as in day
         {
           question: 'ê',
-          answer: 'as in day',
+          answer: 'as in "day"',
           phrases: [
             { answer: 'goat', question: 'dê' },
             { answer: 'to come', question: 'đến' },
@@ -115,7 +115,7 @@ export const Introduction: CardCollection = {
         // i - as in need
         {
           question: 'i',
-          answer: 'as in need',
+          answer: 'as in "need"',
           phrases: [
             { answer: 'to go', question: 'đi' },
             { answer: 'when', question: 'khi' },
@@ -125,7 +125,7 @@ export const Introduction: CardCollection = {
         // o as in lawn
         {
           question: 'o',
-          answer: 'as in lawn',
+          answer: 'as in "lawn"',
           phrases: [
             { answer: 'to have', question: 'có' },
             { answer: 'child; classifier for animals', question: 'con' },
@@ -135,7 +135,7 @@ export const Introduction: CardCollection = {
         // ô - as in oh
         {
           question: 'ô',
-          answer: 'as in oh',
+          answer: 'as in "oh"',
           phrases: [
             { answer: 'aunt; Miss', question: 'cô' },
             { answer: 'number', question: 'số' },
@@ -145,7 +145,7 @@ export const Introduction: CardCollection = {
         // ơ - as in sofa
         {
           question: 'ơ',
-          answer: 'as in sofa',
+          answer: 'as in "sofa"',
           phrases: [
             { answer: 'to dream', question: 'mơ' },
             { answer: 'butter, avocado', question: 'bơ' },
@@ -155,7 +155,7 @@ export const Introduction: CardCollection = {
         // u - as in food
         {
           question: 'u',
-          answer: 'as in food',
+          answer: 'as in "food"',
           phrases: [
             { answer: 'to sleep', question: 'ngủ' },
             { answer: 'autumn', question: 'thu' },
@@ -165,7 +165,7 @@ export const Introduction: CardCollection = {
         // ư - as in huh
         {
           question: 'ư',
-          answer: 'as in huh',
+          answer: 'as in "huh"',
           phrases: [
             { answer: 'letter (correspondence)', question: 'thư' },
             { answer: 'fourth; private', question: 'tư' },
@@ -175,7 +175,7 @@ export const Introduction: CardCollection = {
         // y - as in need
         {
           question: 'y',
-          answer: 'as in need',
+          answer: 'as in "need"',
           phrases: [
             { answer: 'America', question: 'Mỹ' },
             { answer: 'to sign', question: 'ký' },
@@ -321,7 +321,7 @@ export const Introduction: CardCollection = {
         // oi - as in "toy"
         {
           question: 'oi',
-          answer: 'as in toy',
+          answer: 'as in "toy"',
           phrases: [
             { answer: 'to say', question: 'nói' },
             { answer: 'to ask', question: 'hỏi' },
