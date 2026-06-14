@@ -2,72 +2,62 @@ import { defineStore } from 'pinia';
 import { ref, computed } from 'vue';
 import { getSource } from '../datasource';
 
-type HistoryEntry = {
+// A position in the data source. The deck is a shuffled list of these — one per
+// eligible card — so every card has an equal chance regardless of how many peers
+// its section has.
+type CardLocation = {
   chapterKey: string;
   sectionKey: string;
   groupIndex: number;
   cardIndex: number;
+};
+
+// The card currently on screen, plus the per-view choices (which phrase, which
+// side first) that are re-rolled every time a card is shown.
+type HistoryEntry = CardLocation & {
   phrasesIndex?: number;
   showQuestionFirst: boolean;
 };
 
 type State = {
+  deck: CardLocation[];
+  cursor: number;
   current: HistoryEntry;
   step: number;
-  back: HistoryEntry[];
-  forward: HistoryEntry[];
   enabledSections: string[];
 };
 
 type Action =
-  | { type: 'ADVANCE'; newEntry: HistoryEntry; maxStep: number }
-  | { type: 'PREVIOUS' }
-  | { type: 'RESTART'; newEntry?: HistoryEntry }
-  | { type: 'SET_ENABLED_SECTIONS'; enabledSections: string[]; newEntry?: HistoryEntry };
+  | { type: 'ADVANCE'; maxStep: number; deck: CardLocation[]; cursor: number; current: HistoryEntry }
+  | { type: 'PREVIOUS'; current: HistoryEntry }
+  | { type: 'RESTART'; deck: CardLocation[]; current: HistoryEntry }
+  | { type: 'SET_ENABLED_SECTIONS'; enabledSections: string[]; deck: CardLocation[]; current: HistoryEntry };
 
 // Layer 1 — pure. No closure access. Exported for direct testability.
+// Impure choices (shuffled decks, re-rolled entries) are computed by the action
+// creators and handed in, so transitions here stay deterministic.
 export const reducer = (state: State, action: Action): State => {
   switch (action.type) {
     case 'ADVANCE': {
+      // Each card is revealed in steps; only once the steps are exhausted do we
+      // move the cursor to the next card in the deck.
       if (state.step < action.maxStep) return { ...state, step: state.step + 1 };
-      const back = [...state.back, state.current];
-      if (state.forward.length > 0) {
-        return {
-          ...state,
-          current: state.forward[state.forward.length - 1]!,
-          step: 0,
-          back,
-          forward: state.forward.slice(0, -1),
-        };
-      }
-      return { ...state, current: action.newEntry, step: 0, back, forward: [] };
+      return { ...state, deck: action.deck, cursor: action.cursor, current: action.current, step: 0 };
     }
     case 'PREVIOUS': {
-      if (state.back.length === 0) return state;
-      return {
-        ...state,
-        current: state.back[state.back.length - 1]!,
-        step: 0,
-        back: state.back.slice(0, -1),
-        forward: [...state.forward, state.current],
-      };
+      if (state.cursor === 0) return state;
+      return { ...state, cursor: state.cursor - 1, current: action.current, step: 0 };
     }
     case 'RESTART':
-      return {
-        ...state,
-        current: action.newEntry ?? state.current,
-        step: 0,
-        back: [],
-        forward: [],
-      };
+      return { ...state, deck: action.deck, cursor: 0, current: action.current, step: 0 };
     case 'SET_ENABLED_SECTIONS':
       return {
         ...state,
         enabledSections: action.enabledSections,
-        current: action.newEntry ?? state.current,
+        deck: action.deck,
+        cursor: 0,
+        current: action.current,
         step: 0,
-        back: [],
-        forward: [],
       };
   }
 };
@@ -76,25 +66,47 @@ export const reducer = (state: State, action: Action): State => {
 const allSectionKeys = (): string[] =>
   Object.values(getSource().cards).flatMap(chapter => Object.keys(chapter));
 
-const chapterForSection = (sectionKey: string): string => {
+// Flatten every card in the enabled sections into a flat list of locations.
+// Enumerating per-card (rather than picking section → group → card at random) is
+// what gives each card uniform probability.
+const eligibleCards = (enabledSections: string[]): CardLocation[] => {
+  const enabled = new Set(enabledSections);
+  const out: CardLocation[] = [];
   for (const [chapterKey, chapter] of Object.entries(getSource().cards)) {
-    if (sectionKey in chapter) return chapterKey;
+    for (const [sectionKey, groups] of Object.entries(chapter)) {
+      if (!enabled.has(sectionKey)) continue;
+      groups.forEach((group, groupIndex) => {
+        group.cards.forEach((_card, cardIndex) => {
+          out.push({ chapterKey, sectionKey, groupIndex, cardIndex });
+        });
+      });
+    }
   }
-  throw new Error(`Section not found: ${sectionKey}`);
+  return out;
 };
 
-const randomEntry = (enabledSections: string[]): HistoryEntry => {
-  const pool = enabledSections.length > 0 ? enabledSections : allSectionKeys();
-  const sectionKey = pool[Math.floor(Math.random() * pool.length)]!;
-  const chapterKey = chapterForSection(sectionKey);
-  const groups = getSource().cards[chapterKey]![sectionKey]!;
-  const groupIndex = Math.floor(Math.random() * groups.length);
-  const groupCards = groups[groupIndex]!.cards;
-  const cardIndex = Math.floor(Math.random() * groupCards.length);
-  const card = groupCards[cardIndex]!;
-  const phrasesIndex = 'phrases' in card ? Math.floor(Math.random() * card.phrases.length) : undefined;
-  const showQuestionFirst = Math.random() < 0.5;
-  return { chapterKey, sectionKey, groupIndex, cardIndex, phrasesIndex, showQuestionFirst };
+// Fisher–Yates: unbiased in-place shuffle on a copy.
+const shuffle = <T>(items: readonly T[]): T[] => {
+  const a = [...items];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j]!, a[i]!];
+  }
+  return a;
+};
+
+const buildDeck = (enabledSections: string[]): CardLocation[] => shuffle(eligibleCards(enabledSections));
+
+const cardAt = (loc: CardLocation) =>
+  getSource().cards[loc.chapterKey]![loc.sectionKey]![loc.groupIndex]!.cards[loc.cardIndex]!;
+
+// Turn a deck location into a displayable entry, re-rolling the phrase and the
+// question/answer orientation for this viewing.
+const rollEntry = (loc: CardLocation): HistoryEntry => {
+  const card = cardAt(loc);
+  const phraseCount = 'phrases' in card ? card.phrases.length : 0;
+  const phrasesIndex = phraseCount > 0 ? Math.floor(Math.random() * phraseCount) : undefined;
+  return { ...loc, phrasesIndex, showQuestionFirst: Math.random() < 0.5 };
 };
 
 const LS_KEY = 'flashcards.enabledSections';
@@ -124,11 +136,15 @@ const saveEnabledSections = (keys: string[]): void => {
 // live in action creators.
 export const useFlashcardsStore = defineStore('flashcards', () => {
   const initialEnabled = loadEnabledSections();
+  const initialDeck = buildDeck(initialEnabled);
+  // Always seed `current` with a real card so the getters render even when no
+  // sections are enabled (the UI hides it via isEmpty).
+  const initialLocation = initialDeck[0] ?? eligibleCards(allSectionKeys())[0]!;
   const state = ref<State>({
-    current: randomEntry(initialEnabled),
+    deck: initialDeck,
+    cursor: 0,
+    current: rollEntry(initialLocation),
     step: 0,
-    back: [],
-    forward: [],
     enabledSections: initialEnabled,
   });
 
@@ -146,32 +162,44 @@ export const useFlashcardsStore = defineStore('flashcards', () => {
   const currentChapter = computed(() => state.value.current.chapterKey);
   const currentSection = computed(() => state.value.current.sectionKey);
   const currentSubTitle = computed(() => currentGroup.value.subTitle);
-  const canGoPrevious = computed(() => state.value.back.length > 0);
+  const canGoPrevious = computed(() => state.value.cursor > 0);
   const allChapters = computed(() => Object.keys(getSource().cards));
   const allSections = computed(() => allSectionKeys());
   const isEmpty = computed(() => state.value.enabledSections.length === 0);
-  const canRestart = computed(() =>
-    state.value.step > 0 || state.value.back.length > 0 || state.value.forward.length > 0
-  );
+  const canRestart = computed(() => state.value.step > 0 || state.value.cursor > 0);
 
   const advance = () => {
-    if (state.value.enabledSections.length === 0) return;
+    const s = state.value;
+    if (s.deck.length === 0) return;
     const maxStep = 3;
-    dispatch({ type: 'ADVANCE', newEntry: randomEntry(state.value.enabledSections), maxStep });
+    // Only the "move to the next card" branch needs a fresh entry (and possibly a
+    // reshuffle); during a step increment the reducer ignores these, so skip the
+    // work — mirrors the reducer's own step guard.
+    const moving = s.step >= maxStep;
+    const nextCursor = s.cursor + 1;
+    const wrap = nextCursor >= s.deck.length;
+    const deck = moving && wrap ? buildDeck(s.enabledSections) : s.deck;
+    const cursor = wrap ? 0 : nextCursor;
+    const current = moving ? rollEntry(deck[cursor]!) : s.current;
+    dispatch({ type: 'ADVANCE', maxStep, deck, cursor, current });
   };
 
-  const previous = () => dispatch({ type: 'PREVIOUS' });
+  const previous = () => {
+    const s = state.value;
+    if (s.cursor === 0) return;
+    dispatch({ type: 'PREVIOUS', current: rollEntry(s.deck[s.cursor - 1]!) });
+  };
 
   const restart = () => {
-    const newEntry = state.value.enabledSections.length > 0
-      ? randomEntry(state.value.enabledSections)
-      : undefined;
-    dispatch({ type: 'RESTART', newEntry });
+    const deck = buildDeck(state.value.enabledSections);
+    const current = deck.length > 0 ? rollEntry(deck[0]!) : state.value.current;
+    dispatch({ type: 'RESTART', deck, current });
   };
 
   const setEnabledSections = (keys: string[]) => {
-    const newEntry = keys.length > 0 ? randomEntry(keys) : undefined;
-    dispatch({ type: 'SET_ENABLED_SECTIONS', enabledSections: keys, newEntry });
+    const deck = buildDeck(keys);
+    const current = deck.length > 0 ? rollEntry(deck[0]!) : state.value.current;
+    dispatch({ type: 'SET_ENABLED_SECTIONS', enabledSections: keys, deck, current });
     saveEnabledSections(keys);
   };
 

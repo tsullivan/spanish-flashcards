@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import FlashCards from './components/FlashCards.vue';
+// instantiate event-based logger?
 </script>
 
 <template>

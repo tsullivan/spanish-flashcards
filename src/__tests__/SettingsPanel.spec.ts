@@ -167,7 +167,6 @@ describe('SettingsPanel', () => {
     expect(spy).toHaveBeenCalledOnce();
     expect(wrapper.emitted('close')).toBeTruthy();
     expect(store.state.step).toBe(0);
-    expect(store.state.back).toEqual([]);
-    expect(store.state.forward).toEqual([]);
+    expect(store.state.cursor).toBe(0);
   });
 });
