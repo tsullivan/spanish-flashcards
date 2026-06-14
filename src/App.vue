@@ -1,6 +1,9 @@
 <script setup lang="ts">
+import { onMounted } from 'vue';
 import FlashCards from './components/FlashCards.vue';
-// instantiate event-based logger?
+import { logger } from './logger';
+
+onMounted(() => logger.info('app mounted'));
 </script>
 
 <template>

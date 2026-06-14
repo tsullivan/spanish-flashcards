@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia';
 import { ref, computed } from 'vue';
 import { getSource } from '../datasource';
+import { logger } from '../logger';
 
 // A position in the data source. The deck is a shuffled list of these — one per
 // eligible card — so every card has an equal chance regardless of how many peers
@@ -123,7 +124,8 @@ const loadEnabledSections = (): string[] => {
     if (!Array.isArray(parsed)) return allSectionKeys();
     const valid = new Set(allSectionKeys());
     return parsed.filter((k): k is string => typeof k === 'string' && valid.has(k));
-  } catch {
+  } catch (error) {
+    logger.warn('failed to load enabled sections from localStorage; falling back to all sections', error);
     return allSectionKeys();
   }
 };
@@ -131,8 +133,9 @@ const loadEnabledSections = (): string[] => {
 const saveEnabledSections = (keys: string[]): void => {
   try {
     localStorage.setItem(LS_KEY, JSON.stringify(keys));
-  } catch {
-    // localStorage unavailable (private mode, quota, etc.) — silently fail
+  } catch (error) {
+    // localStorage unavailable (private mode, quota, etc.) — non-fatal
+    logger.warn('failed to persist enabled sections to localStorage', error);
   }
 };
 
@@ -141,6 +144,8 @@ const saveEnabledSections = (keys: string[]): void => {
 export const useFlashcardsStore = defineStore('flashcards', () => {
   const initialEnabled = loadEnabledSections();
   const initialDeck = buildDeck(initialEnabled);
+  logger.info(`initializing flashcards store with ${initialDeck.length} eligible cards across ${initialEnabled.length} enabled sections`);
+
   // Always seed `current` with a real card so the getters render even when no
   // sections are enabled (the UI hides it via isEmpty).
   const initialLocation = initialDeck[0] ?? eligibleCards(allSectionKeys())[0]!;
