@@ -814,6 +814,9 @@ export const Introduction: CardCollection = {
           answer: 'as in "back" but unreleased',
           pronunciation: 'When the letter "a" is followed by a final "ch", it is pronounced like "ai."',
           phrases: [
+            // examples where a final "ch" that does not follow "a"
+            { answer: 'to eat', question: 'ăn' }, // FIXME
+            { answer: 'to eat', question: 'ăn' }, // FIXME
             { answer: 'book', question: 'sách' },
             { answer: 'guest', question: 'khách' },
             { answer: 'way, method', question: 'cách' },
