@@ -18,3 +18,4 @@ export const source: AppData = {
   },
 };
 
+console.log('Source data loaded:', source);
