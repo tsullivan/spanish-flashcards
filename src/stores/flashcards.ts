@@ -97,16 +97,20 @@ const shuffle = <T>(items: readonly T[]): T[] => {
 
 const buildDeck = (enabledSections: string[]): CardLocation[] => shuffle(eligibleCards(enabledSections));
 
-const cardAt = (loc: CardLocation) =>
-  getSource().cards[loc.chapterKey]![loc.sectionKey]![loc.groupIndex]!.cards[loc.cardIndex]!;
+const groupAt = (loc: CardLocation) =>
+  getSource().cards[loc.chapterKey]![loc.sectionKey]![loc.groupIndex]!;
 
 // Turn a deck location into a displayable entry, re-rolling the phrase and the
 // question/answer orientation for this viewing. Every card is guaranteed at least
-// one phrase by the Card type, so the index is always valid.
+// one phrase by the Card type, so the index is always valid. A section may pin the
+// orientation via `showQuestionFirstAlways` (e.g. pronunciation drills that only
+// read correctly question-first); otherwise the side is chosen at random.
 const rollEntry = (loc: CardLocation): HistoryEntry => {
-  const card = cardAt(loc);
+  const group = groupAt(loc);
+  const card = group.cards[loc.cardIndex]!;
   const phrasesIndex = Math.floor(Math.random() * card.phrases.length);
-  return { ...loc, phrasesIndex, showQuestionFirst: Math.random() < 0.5 };
+  const showQuestionFirst = group.showQuestionFirstAlways === true || Math.random() < 0.5;
+  return { ...loc, phrasesIndex, showQuestionFirst };
 };
 
 const LS_KEY = 'flashcards.enabledSections';

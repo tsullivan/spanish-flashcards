@@ -59,6 +59,7 @@ export const Introduction: CardCollection = {
   ],
   'The Vowel System': [
     {
+      showQuestionFirstAlways: true,
       subTitle: 'Single Vowels',
       cards: [
         // a - as in calm
@@ -184,6 +185,7 @@ export const Introduction: CardCollection = {
       ],
     },
     {
+      showQuestionFirstAlways: true,
       subTitle: 'Vowel Combinations',
       cards: [
         // ai - as in "Thailand" or "eye"
@@ -515,6 +517,7 @@ export const Introduction: CardCollection = {
   ],
   'The Consonant System': [
     {
+      showQuestionFirstAlways: true,
       subTitle: 'Initial Consonants: Single Consonants',
       cards: [
         {
@@ -664,6 +667,7 @@ export const Introduction: CardCollection = {
       ],
     },
     {
+      showQuestionFirstAlways: true,
       subTitle: 'Initial Consonants: Consonant Combinations',
       cards: [
         // ch - as in "chain" or "cheese"
@@ -749,6 +753,7 @@ export const Introduction: CardCollection = {
       ],
     },
     {
+      showQuestionFirstAlways: true,
       subTitle: 'Final Consonants',
       cards: [
         // -c (final consonant) - as in "back" but unreleased

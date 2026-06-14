@@ -17,6 +17,9 @@ export interface AppData {
 
 export interface CardCollection {
   [section: string]: {
+    // When true, every card in this group is shown question-first instead of a
+    // random side (e.g. pronunciation drills).
+    showQuestionFirstAlways?: boolean;
     subTitle?: string;
     cards: Card[];
   }[];
