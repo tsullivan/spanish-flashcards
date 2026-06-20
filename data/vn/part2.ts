@@ -9,9 +9,9 @@ export const Part2: CardCollection = {
       cards: [
         { answer: 'one', question: 'một', phrases: [
           { answer: 'I count to one.', question: 'Tôi đếm đến một.' },
-          { answer: 'I have one dollars.', question: 'Tôi có một đô.' },
-          { answer: 'There are one people.', question: 'Có một người.' },
-          { answer: 'This book has one pages.', question: 'Cuốn sách này có một trang.' },
+          { answer: 'I have one dollar.', question: 'Tôi có một đô.' },
+          { answer: 'There is one person.', question: 'Có một người.' },
+          { answer: 'This book has one page.', question: 'Cuốn sách này có một trang.' },
           { answer: 'It costs one dong.', question: 'Cái này giá một đồng.' },
         ] },
         { answer: 'two', question: 'hai', phrases: [
