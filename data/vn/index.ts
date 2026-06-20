@@ -21,5 +21,3 @@ export const source: AppData = {
     // 'Part 7: Key Names and Signs': Part7,
   },
 };
-
-console.log('Source data loaded:', source);
