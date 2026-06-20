@@ -1,7 +1,11 @@
 /**
  * 1. Import `source` from ../data/index.ts
- * 2. Walk through the `source` object and extract all text content from the cards.
- * 3. Stream each card text to a console logger.
+ * 2. Create a function `collectLogs` that iterates through the `source.cards` object and collects logs in a structured format.
+ * 3. For each card, log the card name, subTitle (if exists), answer, question, and phrases in a tabular format.
+ * 4. Return the collected logs as an array of arrays of strings.
+ * 5. Finally, print the collected logs in a readable format (e.g., using console.log).
+ *
+ * The expected output should be a tab-separated string where each row represents a card and its details, including subTitle, answer, question, and phrases.
  */
 
 import { source } from '../data';
@@ -19,27 +23,28 @@ function collectLogs() {
     cellLogs.push(row);
   }
 
-  for (const [cardName, cardData] of Object.entries(source.cards)) {
-    cellLogger([[cardName, 1]]);
-    if (cardData && typeof cardData === 'object') {
-      for (const [_key, value] of Object.entries(cardData)) {
-        for (const item of value) {
+  for (const [partName, partData] of Object.entries(source.cards)) {
+    cellLogger([['# ' + partName, 1]]);
+    if (partData && typeof partData === 'object') {
+      for (const [sectionName, sectionData] of Object.entries(partData)) {
+        cellLogger([['## ' + sectionName, 1]]);
+        for (const item of sectionData) {
           // log the item subTitle, if exists
           if (item.subTitle) {
-            cellLogger([[item.subTitle, 2]]);
+            cellLogger([['### ' + item.subTitle, 1]]);
           }
           // log the answer and question of each card
           for (const card of item.cards) {
             cellLogger([
-              [card.answer, 3],
-              [card.question, 4],
+              [card.answer, 2],
+              [card.question, 3],
             ]);
 
             // log each phrase in the card
             for (const phrase of card.phrases) {
               cellLogger([
-                [phrase.answer, 3],
-                [phrase.question, 4],
+                [phrase.answer, 4],
+                [phrase.question, 5],
               ]);
             }
           }
@@ -47,9 +52,12 @@ function collectLogs() {
       }
     }
   }
+
   return cellLogs;
 }
 
-const logs = collectLogs();
-
-console.log(logs.map((row) => row.join('\t')).join('\n'));
+console.log(
+  collectLogs()
+    .map((row) => row.join('\t'))
+    .join('\n'),
+);
