@@ -2789,16 +2789,65 @@ export const Part5: CardCollection = {
       { answer: 'Where is the opera house?', question: 'Nhà hát lớn ở đâu?' },
       { answer: 'The opera house is old.', question: 'Nhà hát lớn cổ.' },
     ] },
-    // together - cung, cung nhau
-    // weekend - cuoi tuan
-    // I want to go have an ice cream. - Toi muon di an kem.
-    // I want to go see a movie. - Toi muon di xem xi-ne.
-    // I want to go have a coffee. - Toi muon di uong ca phe.
-    // I have 3 tickets to the opera house this weekend. - Toi co ba ve nha hat lon vao cuoi tuan nay.
-    // Let's go find a karaoke bar. - Chung ta di tim mot quan karaoke di.
-    // We're going to a nightclub. - Chung toi dang di den mot hop dem.
-    // Are you free, Hoa? - Anh Hoaa ca ranh khong?
-    // Do you want to come with us, Kim? - Chi Kim co muon di cung chung toi khong?
-    // Let's go together. It will be fun! - Chung ta cung di di. Vui lam!
+    { answer: 'together', question: 'cùng, cùng nhau', phrases: [
+      { answer: "Let's go together.", question: 'Chúng ta đi cùng nhau đi.' },
+      { answer: 'We work together.', question: 'Chúng tôi làm việc cùng nhau.' },
+      { answer: 'They live together.', question: 'Họ sống cùng nhau.' },
+      { answer: 'We eat dinner together.', question: 'Chúng tôi ăn tối cùng nhau.' },
+      { answer: 'Come with me.', question: 'Đi cùng tôi.' },
+    ] },
+    { answer: 'weekend', question: 'cuối tuần', phrases: [
+      { answer: 'What are you doing this weekend?', question: 'Cuối tuần này anh làm gì?' },
+      { answer: 'I am free on the weekend.', question: 'Tôi rảnh vào cuối tuần.' },
+      { answer: 'See you this weekend.', question: 'Hẹn gặp cuối tuần này.' },
+      { answer: 'We are going out this weekend.', question: 'Cuối tuần này chúng tôi đi chơi.' },
+      { answer: 'Have a nice weekend.', question: 'Chúc cuối tuần vui vẻ.' },
+    ] },
+    { answer: 'I want to go have an ice cream.', question: 'Tôi muốn đi ăn kem.', phrases: [
+      { answer: 'an ice cream', question: 'ăn kem' },
+      { answer: 'I want to go', question: 'Tôi muốn đi' },
+      { answer: 'I want to go have an ice cream.', question: 'Tôi muốn đi ăn kem.' },
+    ] },
+    { answer: 'I want to go see a movie.', question: 'Tôi muốn đi xem xi-nê.', phrases: [
+      { answer: 'see a movie', question: 'xem xi-nê' },
+      { answer: 'I want to go', question: 'Tôi muốn đi' },
+      { answer: 'I want to go see a movie.', question: 'Tôi muốn đi xem xi-nê.' },
+    ] },
+    { answer: 'I want to go have a coffee.', question: 'Tôi muốn đi uống cà phê.', phrases: [
+      { answer: 'have a coffee', question: 'uống cà phê' },
+      { answer: 'I want to go', question: 'Tôi muốn đi' },
+      { answer: 'I want to go have a coffee.', question: 'Tôi muốn đi uống cà phê.' },
+    ] },
+    { answer: 'I have 3 tickets to the opera house this weekend.', question: 'Tôi có ba vé nhà hát lớn vào cuối tuần này.', phrases: [
+      { answer: 'three tickets', question: 'ba vé' },
+      { answer: 'this weekend', question: 'cuối tuần này' },
+      { answer: 'three tickets to the opera house', question: 'ba vé nhà hát lớn' },
+      { answer: 'I have 3 tickets to the opera house this weekend.', question: 'Tôi có ba vé nhà hát lớn vào cuối tuần này.' },
+    ] },
+    { answer: "Let's go find a karaoke bar.", question: 'Chúng ta đi tìm một quán karaoke đi.', phrases: [
+      { answer: 'a karaoke bar', question: 'một quán karaoke' },
+      { answer: 'go find', question: 'đi tìm' },
+      { answer: "Let's go find a karaoke bar.", question: 'Chúng ta đi tìm một quán karaoke đi.' },
+    ] },
+    { answer: "We're going to a nightclub.", question: 'Chúng tôi đang đi đến một hộp đêm.', phrases: [
+      { answer: 'a nightclub', question: 'một hộp đêm' },
+      { answer: 'we are going', question: 'chúng tôi đang đi' },
+      { answer: "We're going to a nightclub.", question: 'Chúng tôi đang đi đến một hộp đêm.' },
+    ] },
+    { answer: 'Are you free, Hoa?', question: 'Anh Hoa có rảnh không?', phrases: [
+      { answer: 'free', question: 'rảnh' },
+      { answer: 'Are you free?', question: 'Anh có rảnh không?' },
+      { answer: 'Are you free, Hoa?', question: 'Anh Hoa có rảnh không?' },
+    ] },
+    { answer: 'Do you want to come with us, Kim?', question: 'Chị Kim có muốn đi cùng chúng tôi không?', phrases: [
+      { answer: 'with us', question: 'cùng chúng tôi' },
+      { answer: 'do you want to go', question: 'chị có muốn đi không' },
+      { answer: 'Do you want to come with us, Kim?', question: 'Chị Kim có muốn đi cùng chúng tôi không?' },
+    ] },
+    { answer: "Let's go together. It will be fun!", question: 'Chúng ta cùng đi đi. Vui lắm!', phrases: [
+      { answer: 'fun', question: 'vui' },
+      { answer: "Let's go together.", question: 'Chúng ta cùng đi đi.' },
+      { answer: "Let's go together. It will be fun!", question: 'Chúng ta cùng đi đi. Vui lắm!' },
+    ] },
   ] }],
 };
