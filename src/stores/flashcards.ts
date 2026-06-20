@@ -13,10 +13,13 @@ type CardLocation = {
   cardIndex: number;
 };
 
-// The card currently on screen, plus the per-view choices (which phrase, which
-// side first) that are re-rolled every time a card is shown.
+// The card currently on screen, plus the per-view choices (in which order to
+// page the phrases, which side first) that are re-rolled every time a card is
+// shown. `phraseOrder` is a shuffled permutation of the card's phrase indices;
+// `phrasePos` is the cursor into it that the ◀ ▶ pager moves.
 type HistoryEntry = CardLocation & {
-  phrasesIndex: number;
+  phraseOrder: number[];
+  phrasePos: number;
   showQuestionFirst: boolean;
 };
 
@@ -32,7 +35,9 @@ type Action =
   | { type: 'ADVANCE'; maxStep: number; deck: CardLocation[]; cursor: number; current: HistoryEntry }
   | { type: 'PREVIOUS'; current: HistoryEntry }
   | { type: 'RESTART'; deck: CardLocation[]; current: HistoryEntry }
-  | { type: 'SET_ENABLED_SECTIONS'; enabledSections: string[]; deck: CardLocation[]; current: HistoryEntry };
+  | { type: 'SET_ENABLED_SECTIONS'; enabledSections: string[]; deck: CardLocation[]; current: HistoryEntry }
+  | { type: 'NEXT_PHRASE' }
+  | { type: 'PREV_PHRASE' };
 
 // Layer 1 — pure. No closure access. Exported for direct testability.
 // Impure choices (shuffled decks, re-rolled entries) are computed by the action
@@ -60,6 +65,15 @@ export const reducer = (state: State, action: Action): State => {
         current: action.current,
         step: 0,
       };
+    case 'NEXT_PHRASE': {
+      // Paging stops at the ends — no wrap; the UI disables the arrow here.
+      if (state.current.phrasePos >= state.current.phraseOrder.length - 1) return state;
+      return { ...state, current: { ...state.current, phrasePos: state.current.phrasePos + 1 } };
+    }
+    case 'PREV_PHRASE': {
+      if (state.current.phrasePos <= 0) return state;
+      return { ...state, current: { ...state.current, phrasePos: state.current.phrasePos - 1 } };
+    }
   }
 };
 
@@ -101,17 +115,18 @@ const buildDeck = (enabledSections: string[]): CardLocation[] => shuffle(eligibl
 const groupAt = (loc: CardLocation) =>
   getSource().cards[loc.chapterKey]![loc.sectionKey]![loc.groupIndex]!;
 
-// Turn a deck location into a displayable entry, re-rolling the phrase and the
-// question/answer orientation for this viewing. Every card is guaranteed at least
-// one phrase by the Card type, so the index is always valid. A section may pin the
-// orientation via `showQuestionFirstAlways` (e.g. pronunciation drills that only
-// read correctly question-first); otherwise the side is chosen at random.
+// Turn a deck location into a displayable entry, re-rolling the phrase paging
+// order and the question/answer orientation for this viewing. Every card is
+// guaranteed at least one phrase by the Card type, so `phraseOrder` is non-empty
+// and `phrasePos` 0 is always valid. A section may pin the orientation via
+// `showQuestionFirstAlways` (e.g. pronunciation drills that only read correctly
+// question-first); otherwise the side is chosen at random.
 const rollEntry = (loc: CardLocation): HistoryEntry => {
   const group = groupAt(loc);
   const card = group.cards[loc.cardIndex]!;
-  const phrasesIndex = Math.floor(Math.random() * card.phrases.length);
+  const phraseOrder = shuffle([...card.phrases.keys()]);
   const showQuestionFirst = group.showQuestionFirstAlways === true || Math.random() < 0.5;
-  return { ...loc, phrasesIndex, showQuestionFirst };
+  return { ...loc, phraseOrder, phrasePos: 0, showQuestionFirst };
 };
 
 const LS_KEY = 'flashcards.enabledSections';
@@ -163,7 +178,13 @@ export const useFlashcardsStore = defineStore('flashcards', () => {
 
   const currentGroup = computed(() => getSource().cards[state.value.current.chapterKey]![state.value.current.sectionKey]![state.value.current.groupIndex]!);
   const currentCard = computed(() => currentGroup.value.cards[state.value.current.cardIndex]!);
-  const currentPhrase = computed(() => currentCard.value.phrases[state.value.current.phrasesIndex]!);
+  const currentPhrase = computed(
+    () => currentCard.value.phrases[state.value.current.phraseOrder[state.value.current.phrasePos]!]!,
+  );
+  const canPreviousPhrase = computed(() => state.value.current.phrasePos > 0);
+  const canNextPhrase = computed(
+    () => state.value.current.phrasePos < state.value.current.phraseOrder.length - 1,
+  );
   const currentChapter = computed(() => state.value.current.chapterKey);
   const currentSection = computed(() => state.value.current.sectionKey);
   const currentSubTitle = computed(() => currentGroup.value.subTitle);
@@ -208,6 +229,9 @@ export const useFlashcardsStore = defineStore('flashcards', () => {
     saveEnabledSections(keys);
   };
 
+  const nextPhrase = () => dispatch({ type: 'NEXT_PHRASE' });
+  const previousPhrase = () => dispatch({ type: 'PREV_PHRASE' });
+
   return {
     state,
     currentCard,
@@ -217,6 +241,8 @@ export const useFlashcardsStore = defineStore('flashcards', () => {
     currentSubTitle,
     canGoPrevious,
     canRestart,
+    canPreviousPhrase,
+    canNextPhrase,
     allChapters,
     allSections,
     isEmpty,
@@ -224,5 +250,7 @@ export const useFlashcardsStore = defineStore('flashcards', () => {
     previous,
     restart,
     setEnabledSections,
+    nextPhrase,
+    previousPhrase,
   };
 });

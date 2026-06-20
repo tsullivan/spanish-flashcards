@@ -107,6 +107,30 @@ body {
   font-style: italic;
 }
 
+.phrase-pager {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.phrase-text {
+  flex: 1;
+}
+
+.phrase-arrow {
+  flex-shrink: 0;
+  padding: 0.5rem 0.9rem;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.phrase-arrow:disabled,
+.phrase-arrow:disabled:hover {
+  opacity: 0.3;
+  background-color: var(--color-button-bg);
+  cursor: default;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;

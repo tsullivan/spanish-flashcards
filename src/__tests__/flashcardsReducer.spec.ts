@@ -12,9 +12,16 @@ const loc = (sectionKey = 'Basic Grammar', cardIndex = 0): Loc => ({
   cardIndex,
 });
 
-const entry = (sectionKey = 'Basic Grammar', cardIndex = 0, phrasesIndex = 0, showQuestionFirst = true): Entry => ({
+const entry = (
+  sectionKey = 'Basic Grammar',
+  cardIndex = 0,
+  phraseOrder: number[] = [0],
+  phrasePos = 0,
+  showQuestionFirst = true,
+): Entry => ({
   ...loc(sectionKey, cardIndex),
-  phrasesIndex,
+  phraseOrder,
+  phrasePos,
   showQuestionFirst,
 });
 
@@ -22,7 +29,7 @@ const entry = (sectionKey = 'Basic Grammar', cardIndex = 0, phrasesIndex = 0, sh
 const deck: Loc[] = [loc('Basic Grammar', 0), loc('Basic Grammar', 1), loc('Numbers and Time', 0)];
 // A fresh deck handed to RESTART / SET_ENABLED_SECTIONS / a reshuffle on wrap.
 const newDeck: Loc[] = [loc('Numbers and Time', 5), loc('Common Expressions', 0)];
-const newEntry = entry('Numbers and Time', 5, 1, false);
+const newEntry = entry('Numbers and Time', 5, [1, 0], 0, false);
 
 const mkState = (overrides: Partial<State> = {}): State => ({
   deck,
@@ -73,7 +80,7 @@ describe('reducer — ADVANCE', () => {
   });
 
   it('at step 3: moves the cursor forward, loads the new entry, resets step to 0', () => {
-    const s = advance(mkState({ current: entry('Basic Grammar', 0, 0, true), step: 3, cursor: 0 }), 3, {
+    const s = advance(mkState({ current: entry('Basic Grammar', 0, [0], 0, true), step: 3, cursor: 0 }), 3, {
       cursor: 1,
       current: newEntry,
     });
@@ -129,7 +136,7 @@ describe('reducer — PREVIOUS', () => {
   });
 
   it('decrements the cursor, loads the provided entry, resets step to 0', () => {
-    const restored = entry('Basic Grammar', 0, 0, true);
+    const restored = entry('Basic Grammar', 0, [0], 0, true);
     const s = previous(mkState({ current: newEntry, step: 2, cursor: 1 }), restored);
     expect(s.step).toBe(0);
     expect(s.cursor).toBe(0);
@@ -153,7 +160,7 @@ describe('reducer — PREVIOUS', () => {
 
 describe('reducer — RESTART', () => {
   it('installs the new deck, resets cursor and step to 0, loads the new entry', () => {
-    const s = restart(mkState({ current: entry('Basic Grammar', 1, 2, true), step: 3, cursor: 2 }));
+    const s = restart(mkState({ current: entry('Basic Grammar', 1, [2], 0, true), step: 3, cursor: 2 }));
     expect(s.deck).toBe(newDeck);
     expect(s.cursor).toBe(0);
     expect(s.current).toEqual(newEntry);
@@ -170,7 +177,7 @@ describe('reducer — RESTART', () => {
 describe('reducer — SET_ENABLED_SECTIONS', () => {
   it('updates enabledSections, installs the new deck, resets cursor and step, loads new entry', () => {
     const newSections = ['Numbers and Time', 'Common Expressions'];
-    const s = setSections(mkState({ current: entry('Basic Grammar', 0, 0, true), step: 2, cursor: 1 }), newSections);
+    const s = setSections(mkState({ current: entry('Basic Grammar', 0, [0], 0, true), step: 2, cursor: 1 }), newSections);
     expect(s.enabledSections).toEqual(newSections);
     expect(s.deck).toBe(newDeck);
     expect(s.cursor).toBe(0);
@@ -179,7 +186,7 @@ describe('reducer — SET_ENABLED_SECTIONS', () => {
   });
 
   it('accepts an empty enabledSections array (empty state)', () => {
-    const s = setSections(mkState(), [], [], entry('Basic Grammar', 0, 0, true));
+    const s = setSections(mkState(), [], [], entry('Basic Grammar', 0, [0], 0, true));
     expect(s.enabledSections).toEqual([]);
     expect(s.deck).toEqual([]);
     expect(s.cursor).toBe(0);
@@ -196,7 +203,7 @@ describe('reducer — SET_ENABLED_SECTIONS', () => {
 
 describe('reducer — navigation flows', () => {
   it('advancing through the steps then once more moves the cursor; previous restores it at step 0', () => {
-    let s = mkState({ current: entry('Basic Grammar', 0, 0, true), step: 0, cursor: 0 });
+    let s = mkState({ current: entry('Basic Grammar', 0, [0], 0, true), step: 0, cursor: 0 });
     s = advance(s); // 0 → 1
     s = advance({ ...s, step: 1 }); // 1 → 2
     s = advance({ ...s, step: 2 }); // 2 → 3
@@ -205,10 +212,51 @@ describe('reducer — navigation flows', () => {
     expect(s.cursor).toBe(1);
     expect(s.current).toEqual(newEntry);
 
-    const restored = entry('Basic Grammar', 0, 0, true);
+    const restored = entry('Basic Grammar', 0, [0], 0, true);
     s = previous(s, restored);
     expect(s.cursor).toBe(0);
     expect(s.step).toBe(0);
     expect(s.current).toEqual(restored);
+  });
+});
+
+describe('reducer — phrase paging', () => {
+  const nextPhrase = (state: State): State => reducer(state, { type: 'NEXT_PHRASE' });
+  const prevPhrase = (state: State): State => reducer(state, { type: 'PREV_PHRASE' });
+
+  it('advances phrasePos through phraseOrder, stopping at the last phrase', () => {
+    let s = mkState({ current: entry('Basic Grammar', 0, [2, 0, 1], 0) });
+    s = nextPhrase(s);
+    expect(s.current.phrasePos).toBe(1);
+    s = nextPhrase(s);
+    expect(s.current.phrasePos).toBe(2);
+    // At the end — no wrap, state is returned unchanged.
+    const atEnd = nextPhrase(s);
+    expect(atEnd.current.phrasePos).toBe(2);
+    expect(atEnd).toBe(s);
+  });
+
+  it('moves phrasePos back, stopping at the first phrase', () => {
+    let s = mkState({ current: entry('Basic Grammar', 0, [2, 0, 1], 2) });
+    s = prevPhrase(s);
+    expect(s.current.phrasePos).toBe(1);
+    s = prevPhrase(s);
+    expect(s.current.phrasePos).toBe(0);
+    const atStart = prevPhrase(s);
+    expect(atStart.current.phrasePos).toBe(0);
+    expect(atStart).toBe(s);
+  });
+
+  it('treats a single-phrase card as pinned at both ends', () => {
+    const s = mkState({ current: entry('Basic Grammar', 0, [0], 0) });
+    expect(nextPhrase(s)).toBe(s);
+    expect(prevPhrase(s)).toBe(s);
+  });
+
+  it('does not mutate the original state when paging', () => {
+    const original = mkState({ current: entry('Basic Grammar', 0, [0, 1], 0) });
+    const result = nextPhrase(original);
+    expect(result).not.toBe(original);
+    expect(original.current.phrasePos).toBe(0);
   });
 });

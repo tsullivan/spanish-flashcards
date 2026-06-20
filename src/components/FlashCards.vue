@@ -14,9 +14,11 @@ const {
   currentSection,
   currentSubTitle,
   canGoPrevious,
+  canPreviousPhrase,
+  canNextPhrase,
   isEmpty,
 } = storeToRefs(store);
-const { advance, previous } = store;
+const { advance, previous, nextPhrase, previousPhrase } = store;
 
 const showSettings = ref(false);
 
@@ -69,27 +71,43 @@ const speak = (text: string) => {
           </template>
         </h2>
 
-        <p v-if="state.step > 0">
-          <a
-            v-if="speechSupported && state.current.showQuestionFirst"
-            class="speak-link"
-            href="#"
-            @click.prevent="speak(currentPhrase.question)"
-            >{{ currentPhrase.question }}</a
+        <div v-if="state.step > 0" class="phrase-pager">
+          <button
+            class="phrase-arrow"
+            aria-label="Previous phrase"
+            :disabled="!canPreviousPhrase"
+            @click="previousPhrase"
           >
-          <template v-else>{{ currentPhrase[state.current.showQuestionFirst ? 'question' : 'answer'] }}</template>
-        </p>
+            &#9664;
+          </button>
 
-        <p v-if="state.step > 0">
-          <a
-            v-if="speechSupported && !state.current.showQuestionFirst"
-            class="speak-link"
-            href="#"
-            @click.prevent="speak(currentPhrase.question)"
-            >{{ currentPhrase.question }}</a
-          >
-          <template v-else>{{ currentPhrase[state.current.showQuestionFirst ? 'answer' : 'question'] }}</template>
-        </p>
+          <div class="phrase-text">
+            <p>
+              <a
+                v-if="speechSupported && state.current.showQuestionFirst"
+                class="speak-link"
+                href="#"
+                @click.prevent="speak(currentPhrase.question)"
+                >{{ currentPhrase.question }}</a
+              >
+              <template v-else>{{ currentPhrase[state.current.showQuestionFirst ? 'question' : 'answer'] }}</template>
+            </p>
+            <p>
+              <a
+                v-if="speechSupported && !state.current.showQuestionFirst"
+                class="speak-link"
+                href="#"
+                @click.prevent="speak(currentPhrase.question)"
+                >{{ currentPhrase.question }}</a
+              >
+              <template v-else>{{ currentPhrase[state.current.showQuestionFirst ? 'answer' : 'question'] }}</template>
+            </p>
+          </div>
+
+          <button class="phrase-arrow" aria-label="Next phrase" :disabled="!canNextPhrase" @click="nextPhrase">
+            &#9654;
+          </button>
+        </div>
       </template>
     </main>
 
