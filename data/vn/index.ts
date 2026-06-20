@@ -5,7 +5,7 @@ import { Part2 } from './part2';
 import { Part3 } from './part3';
 import { Part4 } from './part4';
 import { Part5 } from './part5';
-// import { Part6 } from './part6';
+import { Part6 } from './part6';
 // import { Part7 } from './part7';
 
 export const source: AppData = {
@@ -17,7 +17,7 @@ export const source: AppData = {
     'Part 3: Getting Around': Part3,
     'Part 4: Emergencies and Essentials': Part4,
     'Part 5: Out and About (WIP)': Part5,
-    // 'Part 6: Exploriung Vietnam': Part6,
+    'Part 6: Exploring Vietnam': Part6,
     // 'Part 7: Key Names and Signs': Part7,
   },
 };
