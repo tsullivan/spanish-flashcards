@@ -17,7 +17,7 @@ export const source: AppData = {
     'Part 2: Numbers, Dates, and Time': Part2,
     'Part 3: Getting Around': Part3,
     'Part 4: Emergencies and Essentials': Part4,
-    'Part 5: Out and About (WIP)': Part5,
+    'Part 5: Out and About': Part5,
     'Part 6: Exploring Vietnam': Part6,
     'Part 7: Key Names and Signs': Part7,
     'Supplemental': Supplemental,
