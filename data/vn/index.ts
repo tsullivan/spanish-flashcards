@@ -4,6 +4,9 @@ import { Part1 } from './part1';
 import { Part2 } from './part2';
 import { Part3 } from './part3';
 import { Part4 } from './part4';
+// import { Part5 } from './part5';
+// import { Part6 } from './part6';
+// import { Part7 } from './part7';
 
 export const source: AppData = {
   language: 'vi-VN',
@@ -16,8 +19,6 @@ export const source: AppData = {
     // 'Part 5: Out and About': Part5,
     // 'Part 6: Exploriung Vietnam': Part6,
     // 'Part 7: Key Names and Signs': Part7,
-    // 'Part 8: The Internet and Social Media': Part8,
-    // 'Part 9: Additional Vocabulary': Part9,
   },
 };
 
