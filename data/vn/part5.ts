@@ -5,441 +5,2790 @@ import type { CardCollection } from '../types';
  */
 export const Part5: CardCollection = {
   'At the Restaurant': [{ cards: [
-    // another - mot...hkac
-    // appetizer - mon khai vi
-    // bring - mang
-    // check (in a restaurant) - giay tinh tien
-    // crabmeat soup - xup cua
-    // delicious - ngon
-    // drink - uong
-    // eat - an
-    // egg roll - cha gio
-    // fried rice - com chien
-    // ice cream - kem
-    // menu - thuc don
-    // order - dat mon
-    // rice noodles - bun
-    // seafood buffet - buffet hai san
-    // soup - xup
-    // more - nua, them
-    // napkin - khan an
-    // orange juice - nuoc cam
-    // order (verb) - goi
-    // pair of chopsticks - doi dua
-    // spoon - thi muoi
-    // table - ban
-    // fork - dia
-    // knife - dao
-    // mess - do an, mon an
-    // paper napkin - khan giay
-    // restaurant (cheap) - tiem an
-    // restaurant (fancy) - nha hang
-    // salty - man
-    // spicy - cay
-    // vegetarian dish - mon chay
-    // water - nuoc
-    // waiter - phuc vu vien
-    // waitress - phuc vu nu
-    // Which restaurant is the best here? - O day nha hang nao ngon nhat?
-    // We'd like a table by the window - Chung toi muon mot ban o gan cua so
-    // Could we have the menu, please? - Cho chung toi xem thuc don voi
-    // Could we have a few more minutes? - Cho chung toi vai phut nua?
-    // We're ready to order now. - Chúng tôi đã sẵn sàng để gọi.
-    // I'll have egg rolls for an appetizer. - Tôi muon goi cha gio lam mon khai vi.
-    // I'll have this vegetarian dish. - Tôi muon goi mon chay nay.
-    // Could I have another pair of chopsticks? - Cho toi xin mot doi dua khac?
-    // I'd like a crabmeat soup and a fried rice. - Cho toi xup cua va com chien.
-    // This soup is too salty. - Xup nay man qua.
-    // Do you have spicy food? - Ban co mon an cay khong?
-    // I can't eat spicy food. - Toi khong an cay duoc.
-    // I'd like a glass of orange juice. - Toi muon mot coc nuoc cam.
-    // Bring me two bottles of water, please. - Mang cho toi hai chai nuoc.
-    // Bring us some more paper napkins, please. - Mang cho chung toi them mot vai khan giay.
-    // Bring me an ice cream, please. - Mang cho toi mot coc kem.
-    // It's so delicious! - Ngon qua!
-    // And an orange juice for me, please. - Va mot ly nuoc cam cho toi.
-    // I'm full. - Toi no roi.
-    // Bring us the check, please. - Mang cho chung toi giay tinh tien.
+    { answer: 'another', question: 'khác', phrases: [
+      { answer: 'I want another one.', question: 'Tôi muốn một cái khác.' },
+      { answer: 'Bring me another one.', question: 'Mang cho tôi một cái khác.' },
+      { answer: 'Do you have another color?', question: 'Bạn có màu khác không?' },
+      { answer: 'I want another cup.', question: 'Tôi muốn một cốc khác.' },
+      { answer: 'This is another dish.', question: 'Đây là một món khác.' },
+    ] },
+    { answer: 'appetizer', question: 'món khai vị', phrases: [
+      { answer: 'I will have an appetizer.', question: 'Tôi sẽ gọi món khai vị.' },
+      { answer: 'What appetizers do you have?', question: 'Bạn có món khai vị gì?' },
+      { answer: 'The appetizer is delicious.', question: 'Món khai vị ngon.' },
+      { answer: 'I would like egg rolls for an appetizer.', question: 'Tôi muốn chả giò làm món khai vị.' },
+      { answer: 'We do not want an appetizer.', question: 'Chúng tôi không muốn món khai vị.' },
+    ] },
+    { answer: 'bring', question: 'mang', phrases: [
+      { answer: 'Bring me water, please.', question: 'Mang cho tôi nước.' },
+      { answer: 'Bring us the menu.', question: 'Mang cho chúng tôi thực đơn.' },
+      { answer: 'Please bring the check.', question: 'Mang cho tôi giấy tính tiền.' },
+      { answer: 'Bring me a spoon.', question: 'Mang cho tôi một cái muỗng.' },
+      { answer: 'Bring us two coffees.', question: 'Mang cho chúng tôi hai ly cà phê.' },
+    ] },
+    { answer: 'check (in a restaurant)', question: 'giấy tính tiền', phrases: [
+      { answer: 'Bring us the check, please.', question: 'Mang cho chúng tôi giấy tính tiền.' },
+      { answer: 'Can I have the check?', question: 'Cho tôi giấy tính tiền được không?' },
+      { answer: 'The check, please.', question: 'Giấy tính tiền, làm ơn.' },
+      { answer: 'How much is the check?', question: 'Giấy tính tiền bao nhiêu?' },
+      { answer: 'Is the check correct?', question: 'Giấy tính tiền có đúng không?' },
+    ] },
+    { answer: 'crabmeat soup', question: 'súp cua', phrases: [
+      { answer: 'I would like a crabmeat soup.', question: 'Cho tôi một súp cua.' },
+      { answer: 'This crabmeat soup is delicious.', question: 'Súp cua này ngon.' },
+      { answer: 'Do you have crabmeat soup?', question: 'Bạn có súp cua không?' },
+      { answer: 'I want to order crabmeat soup.', question: 'Tôi muốn gọi súp cua.' },
+      { answer: 'The crabmeat soup is hot.', question: 'Súp cua nóng.' },
+    ] },
+    { answer: 'delicious', question: 'ngon', phrases: [
+      { answer: 'This food is delicious.', question: 'Món này ngon.' },
+      { answer: 'The soup is very delicious.', question: 'Súp rất ngon.' },
+      { answer: 'It is so delicious!', question: 'Ngon quá!' },
+      { answer: 'This restaurant is delicious.', question: 'Nhà hàng này ngon.' },
+      { answer: 'Is it delicious?', question: 'Có ngon không?' },
+    ] },
+    { answer: 'drink', question: 'uống', phrases: [
+      { answer: 'I want to drink water.', question: 'Tôi muốn uống nước.' },
+      { answer: 'What would you like to drink?', question: 'Bạn muốn uống gì?' },
+      { answer: 'I drink coffee every morning.', question: 'Tôi uống cà phê mỗi sáng.' },
+      { answer: 'Do you want to drink tea?', question: 'Bạn muốn uống trà không?' },
+      { answer: 'I do not drink alcohol.', question: 'Tôi không uống rượu.' },
+    ] },
+    { answer: 'eat', question: 'ăn', phrases: [
+      { answer: 'I want to eat.', question: 'Tôi muốn ăn.' },
+      { answer: 'What do you want to eat?', question: 'Bạn muốn ăn gì?' },
+      { answer: 'I cannot eat spicy food.', question: 'Tôi không ăn cay được.' },
+      { answer: "Let's eat.", question: 'Ăn thôi.' },
+      { answer: 'I already ate.', question: 'Tôi ăn rồi.' },
+    ] },
+    { answer: 'egg roll', question: 'chả giò', phrases: [
+      { answer: 'I would like egg rolls.', question: 'Cho tôi chả giò.' },
+      { answer: 'These egg rolls are delicious.', question: 'Chả giò này ngon.' },
+      { answer: 'Do you have egg rolls?', question: 'Bạn có chả giò không?' },
+      { answer: 'I want to order egg rolls.', question: 'Tôi muốn gọi chả giò.' },
+      { answer: 'Egg rolls are my favorite.', question: 'Chả giò là món tôi thích nhất.' },
+    ] },
+    { answer: 'fried rice', question: 'cơm chiên', phrases: [
+      { answer: 'I would like fried rice.', question: 'Cho tôi cơm chiên.' },
+      { answer: 'This fried rice is delicious.', question: 'Cơm chiên này ngon.' },
+      { answer: 'Do you have fried rice?', question: 'Bạn có cơm chiên không?' },
+      { answer: 'I want to order fried rice.', question: 'Tôi muốn gọi cơm chiên.' },
+      { answer: 'The fried rice is a little salty.', question: 'Cơm chiên hơi mặn.' },
+    ] },
+    { answer: 'ice cream', question: 'kem', phrases: [
+      { answer: 'I would like an ice cream.', question: 'Cho tôi một cốc kem.' },
+      { answer: 'This ice cream is delicious.', question: 'Kem này ngon.' },
+      { answer: 'Do you have ice cream?', question: 'Bạn có kem không?' },
+      { answer: 'I want chocolate ice cream.', question: 'Tôi muốn kem sô cô la.' },
+      { answer: 'Children love ice cream.', question: 'Trẻ con thích kem.' },
+    ] },
+    { answer: 'menu', question: 'thực đơn', phrases: [
+      { answer: 'Could we have the menu, please?', question: 'Cho chúng tôi xem thực đơn với.' },
+      { answer: 'The menu, please.', question: 'Cho tôi thực đơn.' },
+      { answer: 'What is on the menu?', question: 'Thực đơn có gì?' },
+      { answer: 'Is there an English menu?', question: 'Có thực đơn tiếng Anh không?' },
+      { answer: 'The menu is on the table.', question: 'Thực đơn ở trên bàn.' },
+    ] },
+    { answer: 'order', question: 'đặt món', phrases: [
+      { answer: 'I want to order.', question: 'Tôi muốn đặt món.' },
+      { answer: 'We are ready to order.', question: 'Chúng tôi sẵn sàng đặt món.' },
+      { answer: 'Can I order now?', question: 'Tôi đặt món được không?' },
+      { answer: 'What do you want to order?', question: 'Bạn muốn đặt món gì?' },
+      { answer: 'I already ordered.', question: 'Tôi đã đặt món rồi.' },
+    ] },
+    { answer: 'rice noodles', question: 'bún', phrases: [
+      { answer: 'I would like rice noodles.', question: 'Cho tôi bún.' },
+      { answer: 'These rice noodles are delicious.', question: 'Bún này ngon.' },
+      { answer: 'Do you have rice noodles?', question: 'Bạn có bún không?' },
+      { answer: 'I want to order rice noodles.', question: 'Tôi muốn gọi bún.' },
+      { answer: 'Rice noodles with beef, please.', question: 'Bún bò, làm ơn.' },
+    ] },
+    { answer: 'seafood buffet', question: 'buffet hải sản', phrases: [
+      { answer: 'I would like the seafood buffet.', question: 'Cho tôi buffet hải sản.' },
+      { answer: 'The seafood buffet is delicious.', question: 'Buffet hải sản ngon.' },
+      { answer: 'Do you have a seafood buffet?', question: 'Bạn có buffet hải sản không?' },
+      { answer: 'How much is the seafood buffet?', question: 'Buffet hải sản giá bao nhiêu?' },
+      { answer: 'I love the seafood buffet.', question: 'Tôi thích buffet hải sản.' },
+    ] },
+    { answer: 'soup', question: 'súp', phrases: [
+      { answer: 'I would like some soup.', question: 'Cho tôi súp.' },
+      { answer: 'This soup is delicious.', question: 'Súp này ngon.' },
+      { answer: 'This soup is too salty.', question: 'Súp này mặn quá.' },
+      { answer: 'Do you have soup?', question: 'Bạn có súp không?' },
+      { answer: 'The soup is hot.', question: 'Súp nóng.' },
+    ] },
+    { answer: 'more', question: 'nữa, thêm', phrases: [
+      { answer: 'I want more.', question: 'Tôi muốn thêm.' },
+      { answer: 'Bring me more water.', question: 'Mang cho tôi thêm nước.' },
+      { answer: 'A little more, please.', question: 'Thêm một chút.' },
+      { answer: 'Do you want more rice?', question: 'Bạn muốn thêm cơm không?' },
+      { answer: 'One more cup of coffee.', question: 'Thêm một ly cà phê.' },
+    ] },
+    { answer: 'napkin', question: 'khăn ăn', phrases: [
+      { answer: 'Please give me a napkin.', question: 'Cho tôi một cái khăn ăn.' },
+      { answer: 'Do you have napkins?', question: 'Bạn có khăn ăn không?' },
+      { answer: 'Bring us more napkins.', question: 'Mang cho chúng tôi thêm khăn ăn.' },
+      { answer: 'The napkin is on the table.', question: 'Khăn ăn ở trên bàn.' },
+      { answer: 'I need a clean napkin.', question: 'Tôi cần một cái khăn ăn sạch.' },
+    ] },
+    { answer: 'orange juice', question: 'nước cam', phrases: [
+      { answer: 'I would like a glass of orange juice.', question: 'Tôi muốn một cốc nước cam.' },
+      { answer: 'Do you have orange juice?', question: 'Bạn có nước cam không?' },
+      { answer: 'This orange juice is fresh.', question: 'Nước cam này tươi.' },
+      { answer: 'I want cold orange juice.', question: 'Tôi muốn nước cam lạnh.' },
+      { answer: 'Two orange juices, please.', question: 'Hai ly nước cam, làm ơn.' },
+    ] },
+    { answer: 'order (verb)', question: 'gọi', phrases: [
+      { answer: 'I want to order this dish.', question: 'Tôi muốn gọi món này.' },
+      { answer: 'What do you want to order?', question: 'Bạn muốn gọi gì?' },
+      { answer: 'We are ready to order.', question: 'Chúng tôi sẵn sàng để gọi.' },
+      { answer: 'I will order egg rolls.', question: 'Tôi sẽ gọi chả giò.' },
+      { answer: 'Can I order now?', question: 'Tôi gọi món được không?' },
+    ] },
+    { answer: 'pair of chopsticks', question: 'đôi đũa', phrases: [
+      { answer: 'Could I have another pair of chopsticks?', question: 'Cho tôi xin một đôi đũa khác?' },
+      { answer: 'Please give me a pair of chopsticks.', question: 'Cho tôi một đôi đũa.' },
+      { answer: 'Do you have chopsticks?', question: 'Bạn có đũa không?' },
+      { answer: 'This pair of chopsticks is dirty.', question: 'Đôi đũa này bẩn.' },
+      { answer: 'I need a pair of chopsticks.', question: 'Tôi cần một đôi đũa.' },
+    ] },
+    { answer: 'spoon', question: 'muỗng', phrases: [
+      { answer: 'Could I have a spoon?', question: 'Cho tôi xin một cái muỗng?' },
+      { answer: 'Please give me a spoon.', question: 'Cho tôi một cái muỗng.' },
+      { answer: 'This spoon is dirty.', question: 'Cái muỗng này bẩn.' },
+      { answer: 'Bring me a clean spoon.', question: 'Mang cho tôi một cái muỗng sạch.' },
+      { answer: 'I need a spoon.', question: 'Tôi cần một cái muỗng.' },
+    ] },
+    { answer: 'table', question: 'bàn', phrases: [
+      { answer: "We'd like a table by the window.", question: 'Chúng tôi muốn một bàn ở gần cửa sổ.' },
+      { answer: 'Do you have a table for two?', question: 'Bạn có bàn cho hai người không?' },
+      { answer: 'This table is dirty.', question: 'Cái bàn này bẩn.' },
+      { answer: 'The food is on the table.', question: 'Thức ăn ở trên bàn.' },
+      { answer: 'I want a table for four.', question: 'Tôi muốn một bàn cho bốn người.' },
+    ] },
+    { answer: 'fork', question: 'nĩa', phrases: [
+      { answer: 'Could I have a fork?', question: 'Cho tôi xin một cái nĩa?' },
+      { answer: 'Please give me a fork.', question: 'Cho tôi một cái nĩa.' },
+      { answer: 'This fork is dirty.', question: 'Cái nĩa này bẩn.' },
+      { answer: 'Bring me a fork.', question: 'Mang cho tôi một cái nĩa.' },
+      { answer: 'I need a fork.', question: 'Tôi cần một cái nĩa.' },
+    ] },
+    { answer: 'knife', question: 'dao', phrases: [
+      { answer: 'Could I have a knife?', question: 'Cho tôi xin một con dao?' },
+      { answer: 'Please give me a knife.', question: 'Cho tôi một con dao.' },
+      { answer: 'This knife is sharp.', question: 'Con dao này bén.' },
+      { answer: 'Bring me a knife.', question: 'Mang cho tôi một con dao.' },
+      { answer: 'I need a knife.', question: 'Tôi cần một con dao.' },
+    ] },
+    { answer: 'food, dish', question: 'đồ ăn, món ăn', phrases: [
+      { answer: 'The food is delicious.', question: 'Đồ ăn ngon.' },
+      { answer: 'What food do you like?', question: 'Bạn thích món ăn gì?' },
+      { answer: 'This dish is too salty.', question: 'Món ăn này mặn quá.' },
+      { answer: 'Vietnamese food is delicious.', question: 'Đồ ăn Việt Nam ngon.' },
+      { answer: 'I like spicy food.', question: 'Tôi thích món ăn cay.' },
+    ] },
+    { answer: 'paper napkin', question: 'khăn giấy', phrases: [
+      { answer: 'Bring us some more paper napkins, please.', question: 'Mang cho chúng tôi thêm một vài khăn giấy.' },
+      { answer: 'Do you have paper napkins?', question: 'Bạn có khăn giấy không?' },
+      { answer: 'Please give me a paper napkin.', question: 'Cho tôi một cái khăn giấy.' },
+      { answer: 'The paper napkins are on the table.', question: 'Khăn giấy ở trên bàn.' },
+      { answer: 'I need more paper napkins.', question: 'Tôi cần thêm khăn giấy.' },
+    ] },
+    { answer: 'restaurant (cheap)', question: 'tiệm ăn', phrases: [
+      { answer: 'This is a cheap restaurant.', question: 'Đây là một tiệm ăn.' },
+      { answer: 'Is there a cheap restaurant near here?', question: 'Có tiệm ăn nào gần đây không?' },
+      { answer: 'I like this restaurant.', question: 'Tôi thích tiệm ăn này.' },
+      { answer: 'The restaurant is crowded.', question: 'Tiệm ăn đông người.' },
+      { answer: "Let's go to that restaurant.", question: 'Đi đến tiệm ăn đó đi.' },
+    ] },
+    { answer: 'restaurant (fancy)', question: 'nhà hàng', phrases: [
+      { answer: 'This is a fancy restaurant.', question: 'Đây là một nhà hàng sang trọng.' },
+      { answer: 'Which restaurant is the best here?', question: 'Ở đây nhà hàng nào ngon nhất?' },
+      { answer: 'The restaurant is expensive.', question: 'Nhà hàng đắt.' },
+      { answer: "Let's go to a restaurant.", question: 'Đi đến nhà hàng đi.' },
+      { answer: 'I booked a restaurant.', question: 'Tôi đã đặt nhà hàng.' },
+    ] },
+    { answer: 'salty', question: 'mặn', phrases: [
+      { answer: 'This soup is too salty.', question: 'Súp này mặn quá.' },
+      { answer: 'The food is a little salty.', question: 'Món ăn hơi mặn.' },
+      { answer: 'I do not like salty food.', question: 'Tôi không thích đồ ăn mặn.' },
+      { answer: 'Is it salty?', question: 'Có mặn không?' },
+      { answer: 'This dish is very salty.', question: 'Món này rất mặn.' },
+    ] },
+    { answer: 'spicy', question: 'cay', phrases: [
+      { answer: 'Do you have spicy food?', question: 'Bạn có món ăn cay không?' },
+      { answer: 'I cannot eat spicy food.', question: 'Tôi không ăn cay được.' },
+      { answer: 'This dish is too spicy.', question: 'Món này cay quá.' },
+      { answer: 'I like spicy food.', question: 'Tôi thích đồ ăn cay.' },
+      { answer: 'Is it spicy?', question: 'Có cay không?' },
+    ] },
+    { answer: 'vegetarian dish', question: 'món chay', phrases: [
+      { answer: 'I will have this vegetarian dish.', question: 'Tôi muốn gọi món chay này.' },
+      { answer: 'Do you have vegetarian dishes?', question: 'Bạn có món chay không?' },
+      { answer: 'This vegetarian dish is delicious.', question: 'Món chay này ngon.' },
+      { answer: 'I am a vegetarian.', question: 'Tôi ăn chay.' },
+      { answer: 'I want to order a vegetarian dish.', question: 'Tôi muốn gọi một món chay.' },
+    ] },
+    { answer: 'water', question: 'nước', phrases: [
+      { answer: 'Bring me two bottles of water, please.', question: 'Mang cho tôi hai chai nước.' },
+      { answer: 'I want a glass of water.', question: 'Tôi muốn một cốc nước.' },
+      { answer: 'Do you have cold water?', question: 'Bạn có nước lạnh không?' },
+      { answer: 'Please give me water.', question: 'Cho tôi nước.' },
+      { answer: 'I am thirsty, I need water.', question: 'Tôi khát nước, tôi cần nước.' },
+    ] },
+    { answer: 'waiter', question: 'phục vụ viên', phrases: [
+      { answer: 'The waiter is friendly.', question: 'Phục vụ viên thân thiện.' },
+      { answer: 'Please call the waiter.', question: 'Xin gọi phục vụ viên.' },
+      { answer: 'The waiter brought the menu.', question: 'Phục vụ viên mang thực đơn.' },
+      { answer: 'Ask the waiter.', question: 'Hỏi phục vụ viên.' },
+      { answer: 'The waiter is busy.', question: 'Phục vụ viên bận.' },
+    ] },
+    { answer: 'waitress', question: 'phục vụ nữ', phrases: [
+      { answer: 'The waitress is friendly.', question: 'Phục vụ nữ thân thiện.' },
+      { answer: 'Please call the waitress.', question: 'Xin gọi phục vụ nữ.' },
+      { answer: 'The waitress brought the food.', question: 'Phục vụ nữ mang thức ăn.' },
+      { answer: 'Ask the waitress.', question: 'Hỏi phục vụ nữ.' },
+      { answer: 'The waitress is busy.', question: 'Phục vụ nữ bận.' },
+    ] },
+    { answer: 'Which restaurant is the best here?', question: 'Ở đây nhà hàng nào ngon nhất?', phrases: [
+      { answer: 'here', question: 'ở đây' },
+      { answer: 'restaurant', question: 'nhà hàng' },
+      { answer: 'which', question: 'nào' },
+      { answer: 'the best', question: 'ngon nhất' },
+      { answer: 'Which restaurant is the best here?', question: 'Ở đây nhà hàng nào ngon nhất?' },
+    ] },
+    { answer: "We'd like a table by the window", question: 'Chúng tôi muốn một bàn ở gần cửa sổ.', phrases: [
+      { answer: 'we', question: 'chúng tôi' },
+      { answer: 'to want', question: 'muốn' },
+      { answer: 'a table', question: 'một bàn' },
+      { answer: 'by the window', question: 'ở gần cửa sổ' },
+      { answer: "We'd like a table by the window.", question: 'Chúng tôi muốn một bàn ở gần cửa sổ.' },
+    ] },
+    { answer: 'Could we have the menu, please?', question: 'Cho chúng tôi xem thực đơn với.', phrases: [
+      { answer: 'please give us', question: 'cho chúng tôi' },
+      { answer: 'to look at', question: 'xem' },
+      { answer: 'menu', question: 'thực đơn' },
+      { answer: 'Could we have the menu, please?', question: 'Cho chúng tôi xem thực đơn với.' },
+    ] },
+    { answer: 'Could we have a few more minutes?', question: 'Cho chúng tôi vài phút nữa?', phrases: [
+      { answer: 'please give us', question: 'cho chúng tôi' },
+      { answer: 'a few minutes', question: 'vài phút' },
+      { answer: 'more', question: 'nữa' },
+      { answer: 'Could we have a few more minutes?', question: 'Cho chúng tôi vài phút nữa?' },
+    ] },
+    { answer: "We're ready to order now.", question: 'Chúng tôi đã sẵn sàng để gọi.', phrases: [
+      { answer: 'we', question: 'chúng tôi' },
+      { answer: 'ready', question: 'sẵn sàng' },
+      { answer: 'to order', question: 'gọi' },
+      { answer: "We're ready to order now.", question: 'Chúng tôi đã sẵn sàng để gọi.' },
+    ] },
+    { answer: "I'll have egg rolls for an appetizer.", question: 'Tôi muốn gọi chả giò làm món khai vị.', phrases: [
+      { answer: 'I want to order', question: 'tôi muốn gọi' },
+      { answer: 'egg rolls', question: 'chả giò' },
+      { answer: 'as an appetizer', question: 'làm món khai vị' },
+      { answer: "I'll have egg rolls for an appetizer.", question: 'Tôi muốn gọi chả giò làm món khai vị.' },
+    ] },
+    { answer: "I'll have this vegetarian dish.", question: 'Tôi muốn gọi món chay này.', phrases: [
+      { answer: 'I want to order', question: 'tôi muốn gọi' },
+      { answer: 'vegetarian dish', question: 'món chay' },
+      { answer: 'this', question: 'này' },
+      { answer: "I'll have this vegetarian dish.", question: 'Tôi muốn gọi món chay này.' },
+    ] },
+    { answer: 'Could I have another pair of chopsticks?', question: 'Cho tôi xin một đôi đũa khác?', phrases: [
+      { answer: 'please give me', question: 'cho tôi xin' },
+      { answer: 'a pair of chopsticks', question: 'một đôi đũa' },
+      { answer: 'another', question: 'khác' },
+      { answer: 'Could I have another pair of chopsticks?', question: 'Cho tôi xin một đôi đũa khác?' },
+    ] },
+    { answer: "I'd like a crabmeat soup and a fried rice.", question: 'Cho tôi súp cua và cơm chiên.', phrases: [
+      { answer: 'please give me', question: 'cho tôi' },
+      { answer: 'crabmeat soup', question: 'súp cua' },
+      { answer: 'and', question: 'và' },
+      { answer: 'fried rice', question: 'cơm chiên' },
+      { answer: "I'd like a crabmeat soup and a fried rice.", question: 'Cho tôi súp cua và cơm chiên.' },
+    ] },
+    { answer: 'This soup is too salty.', question: 'Súp này mặn quá.', phrases: [
+      { answer: 'soup', question: 'súp' },
+      { answer: 'this', question: 'này' },
+      { answer: 'salty', question: 'mặn' },
+      { answer: 'too', question: 'quá' },
+      { answer: 'This soup is too salty.', question: 'Súp này mặn quá.' },
+    ] },
+    { answer: 'Do you have spicy food?', question: 'Bạn có món ăn cay không?', phrases: [
+      { answer: 'you', question: 'bạn' },
+      { answer: 'to have', question: 'có' },
+      { answer: 'spicy food', question: 'món ăn cay' },
+      { answer: 'Do you have spicy food?', question: 'Bạn có món ăn cay không?' },
+    ] },
+    { answer: "I can't eat spicy food.", question: 'Tôi không ăn cay được.', phrases: [
+      { answer: 'I', question: 'tôi' },
+      { answer: 'cannot', question: 'không ... được' },
+      { answer: 'to eat', question: 'ăn' },
+      { answer: 'spicy', question: 'cay' },
+      { answer: "I can't eat spicy food.", question: 'Tôi không ăn cay được.' },
+    ] },
+    { answer: "I'd like a glass of orange juice.", question: 'Tôi muốn một cốc nước cam.', phrases: [
+      { answer: 'I want', question: 'tôi muốn' },
+      { answer: 'a glass', question: 'một cốc' },
+      { answer: 'orange juice', question: 'nước cam' },
+      { answer: "I'd like a glass of orange juice.", question: 'Tôi muốn một cốc nước cam.' },
+    ] },
+    { answer: 'Bring me two bottles of water, please.', question: 'Mang cho tôi hai chai nước.', phrases: [
+      { answer: 'bring me', question: 'mang cho tôi' },
+      { answer: 'two bottles', question: 'hai chai' },
+      { answer: 'water', question: 'nước' },
+      { answer: 'Bring me two bottles of water, please.', question: 'Mang cho tôi hai chai nước.' },
+    ] },
+    { answer: 'Bring us some more paper napkins, please.', question: 'Mang cho chúng tôi thêm một vài khăn giấy.', phrases: [
+      { answer: 'bring us', question: 'mang cho chúng tôi' },
+      { answer: 'more', question: 'thêm' },
+      { answer: 'paper napkins', question: 'khăn giấy' },
+      { answer: 'Bring us some more paper napkins, please.', question: 'Mang cho chúng tôi thêm một vài khăn giấy.' },
+    ] },
+    { answer: 'Bring me an ice cream, please.', question: 'Mang cho tôi một cốc kem.', phrases: [
+      { answer: 'bring me', question: 'mang cho tôi' },
+      { answer: 'an ice cream', question: 'một cốc kem' },
+      { answer: 'Bring me an ice cream, please.', question: 'Mang cho tôi một cốc kem.' },
+    ] },
+    { answer: "It's so delicious!", question: 'Ngon quá!', phrases: [
+      { answer: 'delicious', question: 'ngon' },
+      { answer: 'so, too', question: 'quá' },
+      { answer: "It's so delicious!", question: 'Ngon quá!' },
+    ] },
+    { answer: 'And an orange juice for me, please.', question: 'Và một ly nước cam cho tôi.', phrases: [
+      { answer: 'and', question: 'và' },
+      { answer: 'a glass of orange juice', question: 'một ly nước cam' },
+      { answer: 'for me', question: 'cho tôi' },
+      { answer: 'And an orange juice for me, please.', question: 'Và một ly nước cam cho tôi.' },
+    ] },
+    { answer: "I'm full.", question: 'Tôi no rồi.', phrases: [
+      { answer: 'I', question: 'tôi' },
+      { answer: 'full', question: 'no' },
+      { answer: 'already', question: 'rồi' },
+      { answer: "I'm full.", question: 'Tôi no rồi.' },
+    ] },
+    { answer: 'Bring us the check, please.', question: 'Mang cho chúng tôi giấy tính tiền.', phrases: [
+      { answer: 'bring us', question: 'mang cho chúng tôi' },
+      { answer: 'the check', question: 'giấy tính tiền' },
+      { answer: 'Bring us the check, please.', question: 'Mang cho chúng tôi giấy tính tiền.' },
+    ] },
   ] }],
   'At the Coffee Shop': [{ cards: [
-    // black coffee - ca phe den
-    // coffee - ca phe
-    // coffee shop - quan ca phe
-    // cream - sua
-    // espresso - ca phe espresso
-    // latte - ca phe sua
-    // milk - sua
-    // mocha - ca phe mocha
-    // sugar - duong
-    // tea - tra
-    // tea with milk - tra sua
-    // tea with sugar - tra duong
-    // tea with lemon - tra chanh
-    // condensed milk - sua dac
-    // cup - tach, coc
-    // heat up - ham nong, lam nong
-    // ice - da
-    // lukewarm - nguoi, am ap
-    // with - voi
-    // without - khong
-    // croissant - banh mi
-    // biscuit - banh quy
-    // cookie - banh
-    // cheesecake - banh pho mai
-    // coffee cake - banh ca phe
-    // pastry - banh ngot
-    // sandwich - banh mi
-    // I'll have a cup of black coffee with sugar. - Cho toi mot tach ca phe den voi duong.
-    // Could I have a cup of black coffee without sugar, please? - Cho toi mot tach ca phe den khong duong?
-    // I'd like a glass of iced coffee with milk. - Cho toi mot ly ca phe da voi sua.
-    // I'd like a hot coffee with milk. - Cho toi ca phe sua nong.
-    // I'd like more milk. - Cho toi them sua.
-    // My coffee is lukewarm. - Ca phe cua toi hoi nguoi.
-    // Could you heat it up for me? - Ham nong cho toi duoc khong?
-    // Could I have some more sugar, please? - Cho toi xin them chut duong?
-    // Could I have another spoon? - Cho toi xin mot cai thi muoi khac?
+    { answer: 'black coffee', question: 'cà phê đen', phrases: [
+      { answer: 'I would like black coffee.', question: 'Cho tôi cà phê đen.' },
+      { answer: 'Do you have black coffee?', question: 'Bạn có cà phê đen không?' },
+      { answer: 'This black coffee is delicious.', question: 'Cà phê đen này ngon.' },
+      { answer: 'I want to order black coffee.', question: 'Tôi muốn gọi cà phê đen.' },
+      { answer: 'I like black coffee.', question: 'Tôi thích cà phê đen.' },
+    ] },
+    { answer: 'coffee', question: 'cà phê', phrases: [
+      { answer: 'I would like coffee.', question: 'Cho tôi cà phê.' },
+      { answer: 'Do you have coffee?', question: 'Bạn có cà phê không?' },
+      { answer: 'This coffee is delicious.', question: 'Cà phê này ngon.' },
+      { answer: 'I drink coffee every morning.', question: 'Tôi uống cà phê mỗi sáng.' },
+      { answer: 'I like coffee.', question: 'Tôi thích cà phê.' },
+    ] },
+    { answer: 'coffee shop', question: 'quán cà phê', phrases: [
+      { answer: 'I am at the coffee shop.', question: 'Tôi đang ở quán cà phê.' },
+      { answer: 'Is there a coffee shop near here?', question: 'Có quán cà phê nào gần đây không?' },
+      { answer: 'This coffee shop is nice.', question: 'Quán cà phê này đẹp.' },
+      { answer: "Let's go to a coffee shop.", question: 'Đi đến quán cà phê đi.' },
+      { answer: 'I work at a coffee shop.', question: 'Tôi làm việc ở quán cà phê.' },
+    ] },
+    { answer: 'cream', question: 'kem', phrases: [
+      { answer: 'Coffee with cream, please.', question: 'Cà phê với kem.' },
+      { answer: 'Do you have cream?', question: 'Bạn có kem không?' },
+      { answer: 'I would like some cream.', question: 'Cho tôi một chút kem.' },
+      { answer: 'I do not want cream.', question: 'Tôi không muốn kem.' },
+      { answer: 'I like cream in my coffee.', question: 'Tôi thích kem trong cà phê.' },
+    ] },
+    { answer: 'espresso', question: 'cà phê espresso', phrases: [
+      { answer: 'I would like an espresso.', question: 'Cho tôi cà phê espresso.' },
+      { answer: 'Do you have espresso?', question: 'Bạn có cà phê espresso không?' },
+      { answer: 'This espresso is delicious.', question: 'Cà phê espresso này ngon.' },
+      { answer: 'I want to order an espresso.', question: 'Tôi muốn gọi cà phê espresso.' },
+      { answer: 'I like espresso.', question: 'Tôi thích cà phê espresso.' },
+    ] },
+    { answer: 'latte', question: 'cà phê sữa', phrases: [
+      { answer: 'I would like a latte.', question: 'Cho tôi cà phê sữa.' },
+      { answer: 'Do you have lattes?', question: 'Bạn có cà phê sữa không?' },
+      { answer: 'This latte is delicious.', question: 'Cà phê sữa này ngon.' },
+      { answer: 'I want to order a latte.', question: 'Tôi muốn gọi cà phê sữa.' },
+      { answer: 'I like a hot latte.', question: 'Tôi thích cà phê sữa nóng.' },
+    ] },
+    { answer: 'milk', question: 'sữa', phrases: [
+      { answer: 'Coffee with milk, please.', question: 'Cà phê với sữa.' },
+      { answer: 'Do you have milk?', question: 'Bạn có sữa không?' },
+      { answer: 'I would like more milk.', question: 'Cho tôi thêm sữa.' },
+      { answer: 'I do not want milk.', question: 'Tôi không muốn sữa.' },
+      { answer: 'Children drink milk.', question: 'Trẻ con uống sữa.' },
+    ] },
+    { answer: 'mocha', question: 'cà phê mocha', phrases: [
+      { answer: 'I would like a mocha.', question: 'Cho tôi cà phê mocha.' },
+      { answer: 'Do you have mochas?', question: 'Bạn có cà phê mocha không?' },
+      { answer: 'This mocha is delicious.', question: 'Cà phê mocha này ngon.' },
+      { answer: 'I want to order a mocha.', question: 'Tôi muốn gọi cà phê mocha.' },
+      { answer: 'I like mocha.', question: 'Tôi thích cà phê mocha.' },
+    ] },
+    { answer: 'sugar', question: 'đường', phrases: [
+      { answer: 'I would like some sugar.', question: 'Cho tôi một chút đường.' },
+      { answer: 'Do you have sugar?', question: 'Bạn có đường không?' },
+      { answer: 'Coffee with sugar, please.', question: 'Cà phê với đường.' },
+      { answer: 'I do not want sugar.', question: 'Tôi không muốn đường.' },
+      { answer: 'Could I have more sugar?', question: 'Cho tôi thêm đường được không?' },
+    ] },
+    { answer: 'tea', question: 'trà', phrases: [
+      { answer: 'I would like tea.', question: 'Cho tôi trà.' },
+      { answer: 'Do you have tea?', question: 'Bạn có trà không?' },
+      { answer: 'This tea is delicious.', question: 'Trà này ngon.' },
+      { answer: 'I want to order tea.', question: 'Tôi muốn gọi trà.' },
+      { answer: 'I like tea.', question: 'Tôi thích trà.' },
+    ] },
+    { answer: 'tea with milk', question: 'trà sữa', phrases: [
+      { answer: 'I would like tea with milk.', question: 'Cho tôi trà sữa.' },
+      { answer: 'Do you have tea with milk?', question: 'Bạn có trà sữa không?' },
+      { answer: 'This tea with milk is delicious.', question: 'Trà sữa này ngon.' },
+      { answer: 'I want to order tea with milk.', question: 'Tôi muốn gọi trà sữa.' },
+      { answer: 'I like tea with milk.', question: 'Tôi thích trà sữa.' },
+    ] },
+    { answer: 'tea with sugar', question: 'trà đường', phrases: [
+      { answer: 'I would like tea with sugar.', question: 'Cho tôi trà đường.' },
+      { answer: 'Do you have tea with sugar?', question: 'Bạn có trà đường không?' },
+      { answer: 'This tea with sugar is sweet.', question: 'Trà đường này ngọt.' },
+      { answer: 'I want to order tea with sugar.', question: 'Tôi muốn gọi trà đường.' },
+      { answer: 'I like tea with sugar.', question: 'Tôi thích trà đường.' },
+    ] },
+    { answer: 'tea with lemon', question: 'trà chanh', phrases: [
+      { answer: 'I would like tea with lemon.', question: 'Cho tôi trà chanh.' },
+      { answer: 'Do you have tea with lemon?', question: 'Bạn có trà chanh không?' },
+      { answer: 'This tea with lemon is delicious.', question: 'Trà chanh này ngon.' },
+      { answer: 'I want to order tea with lemon.', question: 'Tôi muốn gọi trà chanh.' },
+      { answer: 'I like tea with lemon.', question: 'Tôi thích trà chanh.' },
+    ] },
+    { answer: 'condensed milk', question: 'sữa đặc', phrases: [
+      { answer: 'Coffee with condensed milk, please.', question: 'Cà phê với sữa đặc.' },
+      { answer: 'Do you have condensed milk?', question: 'Bạn có sữa đặc không?' },
+      { answer: 'I would like condensed milk.', question: 'Cho tôi sữa đặc.' },
+      { answer: 'Vietnamese coffee uses condensed milk.', question: 'Cà phê Việt Nam dùng sữa đặc.' },
+      { answer: 'I like condensed milk.', question: 'Tôi thích sữa đặc.' },
+    ] },
+    { answer: 'cup', question: 'tách, cốc', phrases: [
+      { answer: 'A cup of coffee, please.', question: 'Cho tôi một tách cà phê.' },
+      { answer: 'This cup is dirty.', question: 'Cái tách này bẩn.' },
+      { answer: 'Could I have another cup?', question: 'Cho tôi một tách khác?' },
+      { answer: 'The cup is on the table.', question: 'Cái cốc ở trên bàn.' },
+      { answer: 'I need a clean cup.', question: 'Tôi cần một cái cốc sạch.' },
+    ] },
+    { answer: 'heat up', question: 'hâm nóng, làm nóng', phrases: [
+      { answer: 'Could you heat it up for me?', question: 'Hâm nóng cho tôi được không?' },
+      { answer: 'Please heat up the coffee.', question: 'Xin hâm nóng cà phê.' },
+      { answer: 'I want to heat up the soup.', question: 'Tôi muốn hâm nóng súp.' },
+      { answer: 'Can you heat this up?', question: 'Bạn làm nóng cái này được không?' },
+      { answer: 'Please heat up the food.', question: 'Xin hâm nóng thức ăn.' },
+    ] },
+    { answer: 'ice', question: 'đá', phrases: [
+      { answer: 'Coffee with ice, please.', question: 'Cà phê với đá.' },
+      { answer: 'Do you have ice?', question: 'Bạn có đá không?' },
+      { answer: 'I want more ice.', question: 'Tôi muốn thêm đá.' },
+      { answer: 'No ice, please.', question: 'Không đá, làm ơn.' },
+      { answer: 'The ice is melting.', question: 'Đá đang tan.' },
+    ] },
+    { answer: 'lukewarm', question: 'nguội, âm ấm', phrases: [
+      { answer: 'My coffee is lukewarm.', question: 'Cà phê của tôi hơi nguội.' },
+      { answer: 'The water is lukewarm.', question: 'Nước hơi nguội.' },
+      { answer: 'The soup is lukewarm.', question: 'Súp hơi nguội.' },
+      { answer: 'I do not like lukewarm coffee.', question: 'Tôi không thích cà phê nguội.' },
+      { answer: 'It is only lukewarm.', question: 'Nó chỉ âm ấm.' },
+    ] },
+    { answer: 'with', question: 'với', phrases: [
+      { answer: 'Coffee with milk, please.', question: 'Cà phê với sữa.' },
+      { answer: 'Tea with sugar.', question: 'Trà với đường.' },
+      { answer: 'I want coffee with ice.', question: 'Tôi muốn cà phê với đá.' },
+      { answer: 'Rice with vegetables.', question: 'Cơm với rau.' },
+      { answer: 'I go with my friend.', question: 'Tôi đi với bạn tôi.' },
+    ] },
+    { answer: 'without', question: 'không', phrases: [
+      { answer: 'Coffee without sugar, please.', question: 'Cà phê không đường.' },
+      { answer: 'Tea without milk.', question: 'Trà không sữa.' },
+      { answer: 'I want it without ice.', question: 'Tôi muốn không đá.' },
+      { answer: 'Coffee without milk, please.', question: 'Cà phê không sữa.' },
+      { answer: 'Soup without salt.', question: 'Súp không muối.' },
+    ] },
+    { answer: 'croissant', question: 'bánh sừng bò', phrases: [
+      { answer: 'I would like a croissant.', question: 'Cho tôi một cái bánh sừng bò.' },
+      { answer: 'Do you have croissants?', question: 'Bạn có bánh sừng bò không?' },
+      { answer: 'This croissant is delicious.', question: 'Bánh sừng bò này ngon.' },
+      { answer: 'I want a croissant with my coffee.', question: 'Tôi muốn một cái bánh sừng bò với cà phê.' },
+      { answer: 'I like croissants.', question: 'Tôi thích bánh sừng bò.' },
+    ] },
+    { answer: 'biscuit', question: 'bánh quy', phrases: [
+      { answer: 'I would like a biscuit.', question: 'Cho tôi một cái bánh quy.' },
+      { answer: 'Do you have biscuits?', question: 'Bạn có bánh quy không?' },
+      { answer: 'These biscuits are delicious.', question: 'Bánh quy này ngon.' },
+      { answer: 'I want to buy biscuits.', question: 'Tôi muốn mua bánh quy.' },
+      { answer: 'I like biscuits.', question: 'Tôi thích bánh quy.' },
+    ] },
+    { answer: 'cookie', question: 'bánh', phrases: [
+      { answer: 'I would like a cookie.', question: 'Cho tôi một cái bánh.' },
+      { answer: 'Do you have cookies?', question: 'Bạn có bánh không?' },
+      { answer: 'These cookies are delicious.', question: 'Bánh này ngon.' },
+      { answer: 'I want to buy cookies.', question: 'Tôi muốn mua bánh.' },
+      { answer: 'Children love cookies.', question: 'Trẻ con thích bánh.' },
+    ] },
+    { answer: 'cheesecake', question: 'bánh phô mai', phrases: [
+      { answer: 'I would like cheesecake.', question: 'Cho tôi bánh phô mai.' },
+      { answer: 'Do you have cheesecake?', question: 'Bạn có bánh phô mai không?' },
+      { answer: 'This cheesecake is delicious.', question: 'Bánh phô mai này ngon.' },
+      { answer: 'I want to order cheesecake.', question: 'Tôi muốn gọi bánh phô mai.' },
+      { answer: 'I like cheesecake.', question: 'Tôi thích bánh phô mai.' },
+    ] },
+    { answer: 'coffee cake', question: 'bánh cà phê', phrases: [
+      { answer: 'I would like coffee cake.', question: 'Cho tôi bánh cà phê.' },
+      { answer: 'Do you have coffee cake?', question: 'Bạn có bánh cà phê không?' },
+      { answer: 'This coffee cake is delicious.', question: 'Bánh cà phê này ngon.' },
+      { answer: 'I want to order coffee cake.', question: 'Tôi muốn gọi bánh cà phê.' },
+      { answer: 'I like coffee cake.', question: 'Tôi thích bánh cà phê.' },
+    ] },
+    { answer: 'pastry', question: 'bánh ngọt', phrases: [
+      { answer: 'I would like a pastry.', question: 'Cho tôi một cái bánh ngọt.' },
+      { answer: 'Do you have pastries?', question: 'Bạn có bánh ngọt không?' },
+      { answer: 'This pastry is delicious.', question: 'Bánh ngọt này ngon.' },
+      { answer: 'I want to buy a pastry.', question: 'Tôi muốn mua một cái bánh ngọt.' },
+      { answer: 'I like pastries.', question: 'Tôi thích bánh ngọt.' },
+    ] },
+    { answer: 'sandwich', question: 'bánh mì', phrases: [
+      { answer: 'I would like a sandwich.', question: 'Cho tôi một cái bánh mì.' },
+      { answer: 'Do you have sandwiches?', question: 'Bạn có bánh mì không?' },
+      { answer: 'This sandwich is delicious.', question: 'Bánh mì này ngon.' },
+      { answer: 'I want to order a sandwich.', question: 'Tôi muốn gọi một cái bánh mì.' },
+      { answer: 'I like sandwiches.', question: 'Tôi thích bánh mì.' },
+    ] },
+    { answer: "I'll have a cup of black coffee with sugar.", question: 'Cho tôi một tách cà phê đen với đường.', phrases: [
+      { answer: 'please give me', question: 'cho tôi' },
+      { answer: 'a cup', question: 'một tách' },
+      { answer: 'black coffee', question: 'cà phê đen' },
+      { answer: 'with sugar', question: 'với đường' },
+      { answer: "I'll have a cup of black coffee with sugar.", question: 'Cho tôi một tách cà phê đen với đường.' },
+    ] },
+    { answer: 'Could I have a cup of black coffee without sugar, please?', question: 'Cho tôi một tách cà phê đen không đường?', phrases: [
+      { answer: 'please give me', question: 'cho tôi' },
+      { answer: 'a cup', question: 'một tách' },
+      { answer: 'black coffee', question: 'cà phê đen' },
+      { answer: 'without sugar', question: 'không đường' },
+      { answer: 'Could I have a cup of black coffee without sugar, please?', question: 'Cho tôi một tách cà phê đen không đường?' },
+    ] },
+    { answer: "I'd like a glass of iced coffee with milk.", question: 'Cho tôi một ly cà phê đá với sữa.', phrases: [
+      { answer: 'please give me', question: 'cho tôi' },
+      { answer: 'a glass', question: 'một ly' },
+      { answer: 'iced coffee', question: 'cà phê đá' },
+      { answer: 'with milk', question: 'với sữa' },
+      { answer: "I'd like a glass of iced coffee with milk.", question: 'Cho tôi một ly cà phê đá với sữa.' },
+    ] },
+    { answer: "I'd like a hot coffee with milk.", question: 'Cho tôi cà phê sữa nóng.', phrases: [
+      { answer: 'please give me', question: 'cho tôi' },
+      { answer: 'coffee with milk', question: 'cà phê sữa' },
+      { answer: 'hot', question: 'nóng' },
+      { answer: "I'd like a hot coffee with milk.", question: 'Cho tôi cà phê sữa nóng.' },
+    ] },
+    { answer: "I'd like more milk.", question: 'Cho tôi thêm sữa.', phrases: [
+      { answer: 'please give me', question: 'cho tôi' },
+      { answer: 'more', question: 'thêm' },
+      { answer: 'milk', question: 'sữa' },
+      { answer: "I'd like more milk.", question: 'Cho tôi thêm sữa.' },
+    ] },
+    { answer: 'My coffee is lukewarm.', question: 'Cà phê của tôi hơi nguội.', phrases: [
+      { answer: 'my coffee', question: 'cà phê của tôi' },
+      { answer: 'a little', question: 'hơi' },
+      { answer: 'lukewarm', question: 'nguội' },
+      { answer: 'My coffee is lukewarm.', question: 'Cà phê của tôi hơi nguội.' },
+    ] },
+    { answer: 'Could you heat it up for me?', question: 'Hâm nóng cho tôi được không?', phrases: [
+      { answer: 'to heat up', question: 'hâm nóng' },
+      { answer: 'for me', question: 'cho tôi' },
+      { answer: 'Could you heat it up for me?', question: 'Hâm nóng cho tôi được không?' },
+    ] },
+    { answer: 'Could I have some more sugar, please?', question: 'Cho tôi xin thêm chút đường?', phrases: [
+      { answer: 'please give me', question: 'cho tôi xin' },
+      { answer: 'more', question: 'thêm' },
+      { answer: 'a little sugar', question: 'chút đường' },
+      { answer: 'Could I have some more sugar, please?', question: 'Cho tôi xin thêm chút đường?' },
+    ] },
+    { answer: 'Could I have another spoon?', question: 'Cho tôi xin một cái muỗng khác?', phrases: [
+      { answer: 'please give me', question: 'cho tôi xin' },
+      { answer: 'a spoon', question: 'một cái muỗng' },
+      { answer: 'another', question: 'khác' },
+      { answer: 'Could I have another spoon?', question: 'Cho tôi xin một cái muỗng khác?' },
+    ] },
   ] }],
-  'Shopping': [{ cards: [
-    // subTitle: Goods and Produce
-    // banana - trai chuoi
-    // ceramics - do gom
-    // conical hat - non la
-    // embroidered painting - buc tranh theu
-    // gift - qua tang
-    // laquered box - hop son mai
-    // lacquered painting - buc tranh son mai
-    // lacquered vase - binh son mai
-    // mango - trai xoai
-    // oil painting - buc tranh son dau
-    // painting - buc tranh
-    // pineapple - trai thom
-    // silk scarf - khan lua
-    // rambutan - trai chom chom
-    // scarf - khan quang co
-    // sculptured products - hang dieu khac
-    // silk fabric - vai lua
-    // souvenir - qua luu niem
-    // figurine - tuong nho
-    // toy - do choi
-    // coloring book - sach to mau
-    // magazine - tap chi
-    // postcard - buc thu, buc phong su
-    // refrigerator magnet - nam cham tu lanh
-    // magnet - nam cham
-    // eyebrow threading - lam long may
-    // ear piercing - xam khuyen tai
-    // Do you have any souvenirs? - Ban co qua luu niem khong?
-    // Do you have any silk scarves? - Ban co khan lua khong?
-    // I'd like to buy a silk scarf. - Toi muon mua mot cai khan lua.
-    // I'd like to buy some fresh fruit. - Toi muon mua mot vai trai cay tuoi.
-    // Do you do ear piercing? - Ban co xam khuyen tai khong?
-    // Do you do eyebrow threading? - Ban co lam long may khong?
-
-    // subTitle: Purchasing
-    // buy - mua
-    // cheap - re
-    // discount - giam gia
-    // dozen - chuc
-    // beautiful - dep
-    // expensive - mac, dat
-    // fresh - tuoi
-    // good - tot
-    // green, unripe - con xanh
-    // hand-embroidered - theu tay
-    // kilo - ky
-    // look at - xem
-    // market - cho
-    // quality - chat luong
-    // refund - hoan tien
-    // return - tra
-    // ripe - chin
-    // sell - ban
-    // that, there - kia
-    // I'd like to buy some souvenirs. - Toi muon mua vai mon qua luu niem.
-    // How much is this painting? - Buc tranh nay bao nhieu tien?
-    // This is a gift for my mother. - Day la qua tang cho me toi.
-    // I don't want this lacquered box. - Toi khong muon cai hop son mai nay.
-    // I want that one. - Toi muon cai kia.
-    // This lacquered vase is beautiful. How much is it? - Cai binh son mai nay ray dep. Gia bao nhieu?
-    // I want to return this scarf. Here is my receipt. - Toi muon tra cai khan quang co nay. Bien lai cua toi day.
-    // Could I look at that conical hat? - Cho toi xem cai non la kia?
-    // I'd like to buy 2 kilos of rambutans. - Toi muon mua hai ky trai chom chom.
-    // I'd like to buy a dozen mangoes. - Toi muon mua mot chuc xoai.
-    // How much is a pineapple? - Mot trai thom gia bao nhieu?
-    // This one is still green. - Trai nay con xanh.
-    // I'd like to buy some ripe bananas. - Toi muon mua trai chuoi chin.
-
-    // subTitle: Bargaining
-    // come down - bot
-    // more, -er - hon
-    // OK (reluctantly agreeing to a price) - thoi cung duoc
-    // That's much too expensive! - Mac qua!
-    // Won't you come down a little? - Bot mot chut duoc khong?
-    // Come down a little more. - Bot mot chut nua.
-    // Find me a cheaper one. - Tim cho toi mot cai re hon.
-    // OK. Please wrap it up for me. - Thoi cung duoc. Goi cho toi.
-    // How much is that altogether? - Tong cong la bao nhieu?
-  ] }],
+  'Shopping': [
+    {
+      subTitle: 'Goods and Produce',
+      cards: [
+        { answer: 'banana', question: 'trái chuối', phrases: [
+          { answer: 'I would like to buy a banana.', question: 'Tôi muốn mua trái chuối.' },
+          { answer: 'Do you have bananas?', question: 'Bạn có trái chuối không?' },
+          { answer: 'How much is a banana?', question: 'Trái chuối giá bao nhiêu?' },
+          { answer: 'These bananas are ripe.', question: 'Trái chuối này chín.' },
+          { answer: 'Where can I buy bananas?', question: 'Tôi có thể mua trái chuối ở đâu?' },
+        ] },
+        { answer: 'ceramics', question: 'đồ gốm', phrases: [
+          { answer: 'I would like to buy ceramics.', question: 'Tôi muốn mua đồ gốm.' },
+          { answer: 'Do you have ceramics?', question: 'Bạn có đồ gốm không?' },
+          { answer: 'How much are these ceramics?', question: 'Đồ gốm giá bao nhiêu?' },
+          { answer: 'These ceramics are beautiful.', question: 'Đồ gốm này đẹp.' },
+          { answer: 'Where can I buy ceramics?', question: 'Tôi có thể mua đồ gốm ở đâu?' },
+        ] },
+        { answer: 'conical hat', question: 'nón lá', phrases: [
+          { answer: 'I would like to buy a conical hat.', question: 'Tôi muốn mua nón lá.' },
+          { answer: 'Do you have conical hats?', question: 'Bạn có nón lá không?' },
+          { answer: 'How much is a conical hat?', question: 'Nón lá giá bao nhiêu?' },
+          { answer: 'This conical hat is beautiful.', question: 'Nón lá này đẹp.' },
+          { answer: 'Where can I buy a conical hat?', question: 'Tôi có thể mua nón lá ở đâu?' },
+        ] },
+        { answer: 'embroidered painting', question: 'bức tranh thêu', phrases: [
+          { answer: 'I would like to buy an embroidered painting.', question: 'Tôi muốn mua bức tranh thêu.' },
+          { answer: 'Do you have embroidered paintings?', question: 'Bạn có bức tranh thêu không?' },
+          { answer: 'How much is an embroidered painting?', question: 'Bức tranh thêu giá bao nhiêu?' },
+          { answer: 'This embroidered painting is beautiful.', question: 'Bức tranh thêu này đẹp.' },
+          { answer: 'Where can I buy an embroidered painting?', question: 'Tôi có thể mua bức tranh thêu ở đâu?' },
+        ] },
+        { answer: 'gift', question: 'quà tặng', phrases: [
+          { answer: 'I would like to buy a gift.', question: 'Tôi muốn mua quà tặng.' },
+          { answer: 'Do you have gifts?', question: 'Bạn có quà tặng không?' },
+          { answer: 'This is a gift for my mother.', question: 'Đây là quà tặng cho mẹ tôi.' },
+          { answer: 'This gift is beautiful.', question: 'Quà tặng này đẹp.' },
+          { answer: 'Where can I buy a gift?', question: 'Tôi có thể mua quà tặng ở đâu?' },
+        ] },
+        { answer: 'lacquered box', question: 'hộp sơn mài', phrases: [
+          { answer: 'I would like to buy a lacquered box.', question: 'Tôi muốn mua hộp sơn mài.' },
+          { answer: 'Do you have lacquered boxes?', question: 'Bạn có hộp sơn mài không?' },
+          { answer: 'How much is a lacquered box?', question: 'Hộp sơn mài giá bao nhiêu?' },
+          { answer: 'This lacquered box is beautiful.', question: 'Hộp sơn mài này đẹp.' },
+          { answer: 'Where can I buy a lacquered box?', question: 'Tôi có thể mua hộp sơn mài ở đâu?' },
+        ] },
+        { answer: 'lacquered painting', question: 'bức tranh sơn mài', phrases: [
+          { answer: 'I would like to buy a lacquered painting.', question: 'Tôi muốn mua bức tranh sơn mài.' },
+          { answer: 'Do you have lacquered paintings?', question: 'Bạn có bức tranh sơn mài không?' },
+          { answer: 'How much is a lacquered painting?', question: 'Bức tranh sơn mài giá bao nhiêu?' },
+          { answer: 'This lacquered painting is beautiful.', question: 'Bức tranh sơn mài này đẹp.' },
+          { answer: 'Where can I buy a lacquered painting?', question: 'Tôi có thể mua bức tranh sơn mài ở đâu?' },
+        ] },
+        { answer: 'lacquered vase', question: 'bình sơn mài', phrases: [
+          { answer: 'I would like to buy a lacquered vase.', question: 'Tôi muốn mua bình sơn mài.' },
+          { answer: 'Do you have lacquered vases?', question: 'Bạn có bình sơn mài không?' },
+          { answer: 'How much is a lacquered vase?', question: 'Bình sơn mài giá bao nhiêu?' },
+          { answer: 'This lacquered vase is beautiful.', question: 'Bình sơn mài này đẹp.' },
+          { answer: 'Where can I buy a lacquered vase?', question: 'Tôi có thể mua bình sơn mài ở đâu?' },
+        ] },
+        { answer: 'mango', question: 'trái xoài', phrases: [
+          { answer: 'I would like to buy a mango.', question: 'Tôi muốn mua trái xoài.' },
+          { answer: 'Do you have mangoes?', question: 'Bạn có trái xoài không?' },
+          { answer: 'How much is a mango?', question: 'Trái xoài giá bao nhiêu?' },
+          { answer: 'This mango is ripe.', question: 'Trái xoài này chín.' },
+          { answer: 'Where can I buy mangoes?', question: 'Tôi có thể mua trái xoài ở đâu?' },
+        ] },
+        { answer: 'oil painting', question: 'bức tranh sơn dầu', phrases: [
+          { answer: 'I would like to buy an oil painting.', question: 'Tôi muốn mua bức tranh sơn dầu.' },
+          { answer: 'Do you have oil paintings?', question: 'Bạn có bức tranh sơn dầu không?' },
+          { answer: 'How much is an oil painting?', question: 'Bức tranh sơn dầu giá bao nhiêu?' },
+          { answer: 'This oil painting is beautiful.', question: 'Bức tranh sơn dầu này đẹp.' },
+          { answer: 'Where can I buy an oil painting?', question: 'Tôi có thể mua bức tranh sơn dầu ở đâu?' },
+        ] },
+        { answer: 'painting', question: 'bức tranh', phrases: [
+          { answer: 'I would like to buy a painting.', question: 'Tôi muốn mua bức tranh.' },
+          { answer: 'Do you have paintings?', question: 'Bạn có bức tranh không?' },
+          { answer: 'How much is this painting?', question: 'Bức tranh này giá bao nhiêu?' },
+          { answer: 'This painting is beautiful.', question: 'Bức tranh này đẹp.' },
+          { answer: 'Where can I buy a painting?', question: 'Tôi có thể mua bức tranh ở đâu?' },
+        ] },
+        { answer: 'pineapple', question: 'trái thơm', phrases: [
+          { answer: 'I would like to buy a pineapple.', question: 'Tôi muốn mua trái thơm.' },
+          { answer: 'Do you have pineapples?', question: 'Bạn có trái thơm không?' },
+          { answer: 'How much is a pineapple?', question: 'Trái thơm giá bao nhiêu?' },
+          { answer: 'This pineapple is ripe.', question: 'Trái thơm này chín.' },
+          { answer: 'Where can I buy a pineapple?', question: 'Tôi có thể mua trái thơm ở đâu?' },
+        ] },
+        { answer: 'silk scarf', question: 'khăn lụa', phrases: [
+          { answer: 'I would like to buy a silk scarf.', question: 'Tôi muốn mua khăn lụa.' },
+          { answer: 'Do you have silk scarves?', question: 'Bạn có khăn lụa không?' },
+          { answer: 'How much is a silk scarf?', question: 'Khăn lụa giá bao nhiêu?' },
+          { answer: 'This silk scarf is beautiful.', question: 'Khăn lụa này đẹp.' },
+          { answer: 'Where can I buy a silk scarf?', question: 'Tôi có thể mua khăn lụa ở đâu?' },
+        ] },
+        { answer: 'rambutan', question: 'trái chôm chôm', phrases: [
+          { answer: 'I would like to buy rambutans.', question: 'Tôi muốn mua trái chôm chôm.' },
+          { answer: 'Do you have rambutans?', question: 'Bạn có trái chôm chôm không?' },
+          { answer: 'How much are rambutans?', question: 'Trái chôm chôm giá bao nhiêu?' },
+          { answer: 'These rambutans are ripe.', question: 'Trái chôm chôm này chín.' },
+          { answer: 'Where can I buy rambutans?', question: 'Tôi có thể mua trái chôm chôm ở đâu?' },
+        ] },
+        { answer: 'scarf', question: 'khăn quàng cổ', phrases: [
+          { answer: 'I would like to buy a scarf.', question: 'Tôi muốn mua khăn quàng cổ.' },
+          { answer: 'Do you have scarves?', question: 'Bạn có khăn quàng cổ không?' },
+          { answer: 'How much is a scarf?', question: 'Khăn quàng cổ giá bao nhiêu?' },
+          { answer: 'This scarf is beautiful.', question: 'Khăn quàng cổ này đẹp.' },
+          { answer: 'I want to return this scarf.', question: 'Tôi muốn trả khăn quàng cổ này.' },
+        ] },
+        { answer: 'sculptured products', question: 'hàng điêu khắc', phrases: [
+          { answer: 'I would like to buy sculptured products.', question: 'Tôi muốn mua hàng điêu khắc.' },
+          { answer: 'Do you have sculptured products?', question: 'Bạn có hàng điêu khắc không?' },
+          { answer: 'How much are these sculptured products?', question: 'Hàng điêu khắc giá bao nhiêu?' },
+          { answer: 'These sculptured products are beautiful.', question: 'Hàng điêu khắc này đẹp.' },
+          { answer: 'Where can I buy sculptured products?', question: 'Tôi có thể mua hàng điêu khắc ở đâu?' },
+        ] },
+        { answer: 'silk fabric', question: 'vải lụa', phrases: [
+          { answer: 'I would like to buy silk fabric.', question: 'Tôi muốn mua vải lụa.' },
+          { answer: 'Do you have silk fabric?', question: 'Bạn có vải lụa không?' },
+          { answer: 'How much is silk fabric?', question: 'Vải lụa giá bao nhiêu?' },
+          { answer: 'This silk fabric is soft.', question: 'Vải lụa này mềm.' },
+          { answer: 'Where can I buy silk fabric?', question: 'Tôi có thể mua vải lụa ở đâu?' },
+        ] },
+        { answer: 'souvenir', question: 'quà lưu niệm', phrases: [
+          { answer: 'I would like to buy a souvenir.', question: 'Tôi muốn mua quà lưu niệm.' },
+          { answer: 'Do you have souvenirs?', question: 'Bạn có quà lưu niệm không?' },
+          { answer: 'How much is this souvenir?', question: 'Quà lưu niệm này giá bao nhiêu?' },
+          { answer: 'This is a beautiful souvenir.', question: 'Đây là một món quà lưu niệm đẹp.' },
+          { answer: 'Where can I buy souvenirs?', question: 'Tôi có thể mua quà lưu niệm ở đâu?' },
+        ] },
+        { answer: 'figurine', question: 'tượng nhỏ', phrases: [
+          { answer: 'I would like to buy a figurine.', question: 'Tôi muốn mua tượng nhỏ.' },
+          { answer: 'Do you have figurines?', question: 'Bạn có tượng nhỏ không?' },
+          { answer: 'How much is this figurine?', question: 'Tượng nhỏ này giá bao nhiêu?' },
+          { answer: 'This figurine is beautiful.', question: 'Tượng nhỏ này đẹp.' },
+          { answer: 'Where can I buy a figurine?', question: 'Tôi có thể mua tượng nhỏ ở đâu?' },
+        ] },
+        { answer: 'toy', question: 'đồ chơi', phrases: [
+          { answer: 'I would like to buy a toy.', question: 'Tôi muốn mua đồ chơi.' },
+          { answer: 'Do you have toys?', question: 'Bạn có đồ chơi không?' },
+          { answer: 'How much is this toy?', question: 'Đồ chơi này giá bao nhiêu?' },
+          { answer: 'Children love toys.', question: 'Trẻ con thích đồ chơi.' },
+          { answer: 'Where can I buy toys?', question: 'Tôi có thể mua đồ chơi ở đâu?' },
+        ] },
+        { answer: 'coloring book', question: 'sách tô màu', phrases: [
+          { answer: 'I would like to buy a coloring book.', question: 'Tôi muốn mua sách tô màu.' },
+          { answer: 'Do you have coloring books?', question: 'Bạn có sách tô màu không?' },
+          { answer: 'How much is this coloring book?', question: 'Sách tô màu này giá bao nhiêu?' },
+          { answer: 'Children love coloring books.', question: 'Trẻ con thích sách tô màu.' },
+          { answer: 'Where can I buy a coloring book?', question: 'Tôi có thể mua sách tô màu ở đâu?' },
+        ] },
+        { answer: 'magazine', question: 'tạp chí', phrases: [
+          { answer: 'I would like to buy a magazine.', question: 'Tôi muốn mua tạp chí.' },
+          { answer: 'Do you have magazines?', question: 'Bạn có tạp chí không?' },
+          { answer: 'How much is this magazine?', question: 'Tạp chí này giá bao nhiêu?' },
+          { answer: 'I like to read magazines.', question: 'Tôi thích đọc tạp chí.' },
+          { answer: 'Where can I buy a magazine?', question: 'Tôi có thể mua tạp chí ở đâu?' },
+        ] },
+        { answer: 'postcard', question: 'bưu thiếp', phrases: [
+          { answer: 'I would like to buy a postcard.', question: 'Tôi muốn mua bưu thiếp.' },
+          { answer: 'Do you have postcards?', question: 'Bạn có bưu thiếp không?' },
+          { answer: 'How much is this postcard?', question: 'Bưu thiếp này giá bao nhiêu?' },
+          { answer: 'I want to send a postcard.', question: 'Tôi muốn gửi bưu thiếp.' },
+          { answer: 'Where can I buy postcards?', question: 'Tôi có thể mua bưu thiếp ở đâu?' },
+        ] },
+        { answer: 'refrigerator magnet', question: 'nam châm tủ lạnh', phrases: [
+          { answer: 'I would like to buy a refrigerator magnet.', question: 'Tôi muốn mua nam châm tủ lạnh.' },
+          { answer: 'Do you have refrigerator magnets?', question: 'Bạn có nam châm tủ lạnh không?' },
+          { answer: 'How much is a refrigerator magnet?', question: 'Nam châm tủ lạnh giá bao nhiêu?' },
+          { answer: 'This refrigerator magnet is a souvenir.', question: 'Nam châm tủ lạnh này là quà lưu niệm.' },
+          { answer: 'Where can I buy a refrigerator magnet?', question: 'Tôi có thể mua nam châm tủ lạnh ở đâu?' },
+        ] },
+        { answer: 'magnet', question: 'nam châm', phrases: [
+          { answer: 'I would like to buy a magnet.', question: 'Tôi muốn mua nam châm.' },
+          { answer: 'Do you have magnets?', question: 'Bạn có nam châm không?' },
+          { answer: 'How much is this magnet?', question: 'Nam châm này giá bao nhiêu?' },
+          { answer: 'This magnet is strong.', question: 'Nam châm này mạnh.' },
+          { answer: 'Where can I buy a magnet?', question: 'Tôi có thể mua nam châm ở đâu?' },
+        ] },
+        { answer: 'eyebrow threading', question: 'làm lông mày', phrases: [
+          { answer: 'Do you do eyebrow threading?', question: 'Bạn có làm lông mày không?' },
+          { answer: 'I want eyebrow threading.', question: 'Tôi muốn làm lông mày.' },
+          { answer: 'How much is eyebrow threading?', question: 'Làm lông mày giá bao nhiêu?' },
+          { answer: 'Where can I get eyebrow threading?', question: 'Tôi có thể làm lông mày ở đâu?' },
+          { answer: 'She does eyebrow threading.', question: 'Cô ấy làm lông mày.' },
+        ] },
+        { answer: 'ear piercing', question: 'xỏ khuyên tai', phrases: [
+          { answer: 'Do you do ear piercing?', question: 'Bạn có xỏ khuyên tai không?' },
+          { answer: 'I want an ear piercing.', question: 'Tôi muốn xỏ khuyên tai.' },
+          { answer: 'How much is an ear piercing?', question: 'Xỏ khuyên tai giá bao nhiêu?' },
+          { answer: 'Where can I get an ear piercing?', question: 'Tôi có thể xỏ khuyên tai ở đâu?' },
+          { answer: 'Does an ear piercing hurt?', question: 'Xỏ khuyên tai có đau không?' },
+        ] },
+        { answer: 'Do you have any souvenirs?', question: 'Bạn có quà lưu niệm không?', phrases: [
+          { answer: 'you', question: 'bạn' },
+          { answer: 'to have', question: 'có' },
+          { answer: 'souvenir', question: 'quà lưu niệm' },
+          { answer: 'Do you have any souvenirs?', question: 'Bạn có quà lưu niệm không?' },
+        ] },
+        { answer: 'Do you have any silk scarves?', question: 'Bạn có khăn lụa không?', phrases: [
+          { answer: 'you', question: 'bạn' },
+          { answer: 'to have', question: 'có' },
+          { answer: 'silk scarf', question: 'khăn lụa' },
+          { answer: 'Do you have any silk scarves?', question: 'Bạn có khăn lụa không?' },
+        ] },
+        { answer: "I'd like to buy a silk scarf.", question: 'Tôi muốn mua một cái khăn lụa.', phrases: [
+          { answer: 'I want to buy', question: 'tôi muốn mua' },
+          { answer: 'one, a', question: 'một cái' },
+          { answer: 'silk scarf', question: 'khăn lụa' },
+          { answer: "I'd like to buy a silk scarf.", question: 'Tôi muốn mua một cái khăn lụa.' },
+        ] },
+        { answer: "I'd like to buy some fresh fruit.", question: 'Tôi muốn mua một vài trái cây tươi.', phrases: [
+          { answer: 'I want to buy', question: 'tôi muốn mua' },
+          { answer: 'some', question: 'một vài' },
+          { answer: 'fruit', question: 'trái cây' },
+          { answer: 'fresh', question: 'tươi' },
+          { answer: "I'd like to buy some fresh fruit.", question: 'Tôi muốn mua một vài trái cây tươi.' },
+        ] },
+        { answer: 'Do you do ear piercing?', question: 'Bạn có xỏ khuyên tai không?', phrases: [
+          { answer: 'you', question: 'bạn' },
+          { answer: 'to do/have', question: 'có' },
+          { answer: 'ear piercing', question: 'xỏ khuyên tai' },
+          { answer: 'Do you do ear piercing?', question: 'Bạn có xỏ khuyên tai không?' },
+        ] },
+        { answer: 'Do you do eyebrow threading?', question: 'Bạn có làm lông mày không?', phrases: [
+          { answer: 'you', question: 'bạn' },
+          { answer: 'to do/have', question: 'có' },
+          { answer: 'eyebrow threading', question: 'làm lông mày' },
+          { answer: 'Do you do eyebrow threading?', question: 'Bạn có làm lông mày không?' },
+        ] },
+      ],
+    },
+    {
+      subTitle: 'Purchasing',
+      cards: [
+        { answer: 'buy', question: 'mua', phrases: [
+          { answer: 'I want to buy a gift.', question: 'Tôi muốn mua một món quà.' },
+          { answer: 'Where can I buy fruit?', question: 'Tôi có thể mua trái cây ở đâu?' },
+          { answer: 'I will buy this.', question: 'Tôi sẽ mua cái này.' },
+          { answer: 'I do not want to buy it.', question: 'Tôi không muốn mua nó.' },
+          { answer: 'What do you want to buy?', question: 'Bạn muốn mua gì?' },
+        ] },
+        { answer: 'cheap', question: 'rẻ', phrases: [
+          { answer: 'This is very cheap.', question: 'Cái này rất rẻ.' },
+          { answer: 'Do you have a cheaper one?', question: 'Bạn có cái rẻ hơn không?' },
+          { answer: 'Fruit is cheap at the market.', question: 'Trái cây ở chợ rẻ.' },
+          { answer: 'It is cheap and good.', question: 'Nó rẻ và tốt.' },
+          { answer: 'I want a cheap one.', question: 'Tôi muốn một cái rẻ.' },
+        ] },
+        { answer: 'discount', question: 'giảm giá', phrases: [
+          { answer: 'Can you give me a discount?', question: 'Bạn giảm giá cho tôi được không?' },
+          { answer: 'Is there a discount?', question: 'Có giảm giá không?' },
+          { answer: 'I want a discount.', question: 'Tôi muốn giảm giá.' },
+          { answer: 'They are having a discount.', question: 'Họ đang giảm giá.' },
+          { answer: 'Please give me a discount.', question: 'Xin giảm giá cho tôi.' },
+        ] },
+        { answer: 'dozen', question: 'chục', phrases: [
+          { answer: 'I would like a dozen mangoes.', question: 'Tôi muốn mua một chục xoài.' },
+          { answer: 'How much is a dozen?', question: 'Một chục giá bao nhiêu?' },
+          { answer: 'I want two dozen.', question: 'Tôi muốn hai chục.' },
+          { answer: 'A dozen eggs, please.', question: 'Một chục trứng.' },
+          { answer: 'I bought a dozen bananas.', question: 'Tôi đã mua một chục chuối.' },
+        ] },
+        { answer: 'beautiful', question: 'đẹp', phrases: [
+          { answer: 'This painting is beautiful.', question: 'Bức tranh này đẹp.' },
+          { answer: 'She is very beautiful.', question: 'Cô ấy rất đẹp.' },
+          { answer: 'What a beautiful scarf!', question: 'Khăn đẹp quá!' },
+          { answer: 'This is a beautiful gift.', question: 'Đây là một món quà đẹp.' },
+          { answer: 'The vase is beautiful.', question: 'Cái bình đẹp.' },
+        ] },
+        { answer: 'expensive', question: 'mắc, đắt', phrases: [
+          { answer: 'This is too expensive.', question: 'Cái này đắt quá.' },
+          { answer: 'That painting is expensive.', question: 'Bức tranh đó mắc.' },
+          { answer: 'Is it expensive?', question: 'Có đắt không?' },
+          { answer: 'It is too expensive for me.', question: 'Nó đắt quá với tôi.' },
+          { answer: 'Why is it so expensive?', question: 'Sao đắt vậy?' },
+        ] },
+        { answer: 'fresh', question: 'tươi', phrases: [
+          { answer: 'Is this fruit fresh?', question: 'Trái cây này có tươi không?' },
+          { answer: 'I want fresh fruit.', question: 'Tôi muốn trái cây tươi.' },
+          { answer: 'These bananas are fresh.', question: 'Chuối này tươi.' },
+          { answer: 'The fish is very fresh.', question: 'Cá rất tươi.' },
+          { answer: 'Is the seafood fresh?', question: 'Hải sản có tươi không?' },
+        ] },
+        { answer: 'good', question: 'tốt', phrases: [
+          { answer: 'The quality is good.', question: 'Chất lượng tốt.' },
+          { answer: 'This is a good price.', question: 'Đây là giá tốt.' },
+          { answer: 'It is good and cheap.', question: 'Nó tốt và rẻ.' },
+          { answer: 'Is this one good?', question: 'Cái này có tốt không?' },
+          { answer: 'This is good quality.', question: 'Đây là chất lượng tốt.' },
+        ] },
+        { answer: 'green, unripe', question: 'còn xanh', phrases: [
+          { answer: 'This one is still green.', question: 'Trái này còn xanh.' },
+          { answer: 'These bananas are still green.', question: 'Chuối này còn xanh.' },
+          { answer: 'It is still unripe.', question: 'Nó còn xanh.' },
+          { answer: 'Do not buy the green ones.', question: 'Đừng mua trái còn xanh.' },
+          { answer: 'This mango is unripe.', question: 'Trái xoài này còn xanh.' },
+        ] },
+        { answer: 'hand-embroidered', question: 'thêu tay', phrases: [
+          { answer: 'This is hand-embroidered.', question: 'Cái này thêu tay.' },
+          { answer: 'Is it hand-embroidered?', question: 'Nó có thêu tay không?' },
+          { answer: 'I want a hand-embroidered scarf.', question: 'Tôi muốn một cái khăn thêu tay.' },
+          { answer: 'Hand-embroidered paintings are expensive.', question: 'Tranh thêu tay đắt.' },
+          { answer: 'This scarf is hand-embroidered.', question: 'Cái khăn này thêu tay.' },
+        ] },
+        { answer: 'kilo', question: 'ký', phrases: [
+          { answer: 'I would like two kilos.', question: 'Tôi muốn hai ký.' },
+          { answer: 'How much is one kilo?', question: 'Một ký giá bao nhiêu?' },
+          { answer: 'I want a kilo of mangoes.', question: 'Tôi muốn một ký xoài.' },
+          { answer: 'Two kilos, please.', question: 'Hai ký, làm ơn.' },
+          { answer: 'How many kilos do you want?', question: 'Bạn muốn mấy ký?' },
+        ] },
+        { answer: 'look at', question: 'xem', phrases: [
+          { answer: 'Could I look at that hat?', question: 'Cho tôi xem cái nón đó?' },
+          { answer: 'I want to look at this painting.', question: 'Tôi muốn xem bức tranh này.' },
+          { answer: 'Let me look at it.', question: 'Cho tôi xem nó.' },
+          { answer: 'Can I look at this?', question: 'Tôi xem cái này được không?' },
+          { answer: 'I am just looking.', question: 'Tôi chỉ xem thôi.' },
+        ] },
+        { answer: 'market', question: 'chợ', phrases: [
+          { answer: 'I am going to the market.', question: 'Tôi đi chợ.' },
+          { answer: 'The market is crowded.', question: 'Chợ đông người.' },
+          { answer: 'Fruit is cheap at the market.', question: 'Trái cây ở chợ rẻ.' },
+          { answer: 'Where is the market?', question: 'Chợ ở đâu?' },
+          { answer: 'I buy vegetables at the market.', question: 'Tôi mua rau ở chợ.' },
+        ] },
+        { answer: 'quality', question: 'chất lượng', phrases: [
+          { answer: 'The quality is good.', question: 'Chất lượng tốt.' },
+          { answer: 'I want good quality.', question: 'Tôi muốn chất lượng tốt.' },
+          { answer: 'The quality is poor.', question: 'Chất lượng kém.' },
+          { answer: 'Is the quality good?', question: 'Chất lượng có tốt không?' },
+          { answer: 'This has high quality.', question: 'Cái này chất lượng cao.' },
+        ] },
+        { answer: 'refund', question: 'hoàn tiền', phrases: [
+          { answer: 'Can I get a refund?', question: 'Tôi được hoàn tiền không?' },
+          { answer: 'I want a refund.', question: 'Tôi muốn hoàn tiền.' },
+          { answer: 'Do you give refunds?', question: 'Bạn có hoàn tiền không?' },
+          { answer: 'Please give me a refund.', question: 'Xin hoàn tiền cho tôi.' },
+          { answer: 'There is no refund.', question: 'Không hoàn tiền.' },
+        ] },
+        { answer: 'return', question: 'trả', phrases: [
+          { answer: 'I want to return this.', question: 'Tôi muốn trả cái này.' },
+          { answer: 'Can I return it?', question: 'Tôi trả lại được không?' },
+          { answer: 'I want to return this scarf.', question: 'Tôi muốn trả cái khăn này.' },
+          { answer: 'Here is my receipt to return it.', question: 'Biên lai để trả của tôi đây.' },
+          { answer: 'Can I return this shirt?', question: 'Tôi trả cái áo này được không?' },
+        ] },
+        { answer: 'ripe', question: 'chín', phrases: [
+          { answer: 'I want ripe bananas.', question: 'Tôi muốn chuối chín.' },
+          { answer: 'Is this mango ripe?', question: 'Trái xoài này chín chưa?' },
+          { answer: 'These are ripe.', question: 'Trái này chín.' },
+          { answer: 'I would like some ripe fruit.', question: 'Tôi muốn trái cây chín.' },
+          { answer: 'This pineapple is ripe.', question: 'Trái thơm này chín.' },
+        ] },
+        { answer: 'sell', question: 'bán', phrases: [
+          { answer: 'Do you sell souvenirs?', question: 'Bạn có bán quà lưu niệm không?' },
+          { answer: 'How much do you sell this for?', question: 'Bạn bán cái này bao nhiêu?' },
+          { answer: 'They sell fruit here.', question: 'Họ bán trái cây ở đây.' },
+          { answer: 'Do you sell silk scarves?', question: 'Bạn có bán khăn lụa không?' },
+          { answer: 'I want to sell this.', question: 'Tôi muốn bán cái này.' },
+        ] },
+        { answer: 'that, there', question: 'kia', phrases: [
+          { answer: 'I want that one.', question: 'Tôi muốn cái kia.' },
+          { answer: 'Could I look at that hat?', question: 'Cho tôi xem cái nón kia?' },
+          { answer: 'That one is beautiful.', question: 'Cái kia đẹp.' },
+          { answer: 'How much is that one?', question: 'Cái kia giá bao nhiêu?' },
+          { answer: 'I like that one over there.', question: 'Tôi thích cái kia.' },
+        ] },
+        { answer: "I'd like to buy some souvenirs.", question: 'Tôi muốn mua vài món quà lưu niệm.', phrases: [
+          { answer: 'I want to buy', question: 'tôi muốn mua' },
+          { answer: 'some', question: 'vài' },
+          { answer: 'souvenirs', question: 'món quà lưu niệm' },
+          { answer: "I'd like to buy some souvenirs.", question: 'Tôi muốn mua vài món quà lưu niệm.' },
+        ] },
+        { answer: 'How much is this painting?', question: 'Bức tranh này bao nhiêu tiền?', phrases: [
+          { answer: 'painting', question: 'bức tranh' },
+          { answer: 'this', question: 'này' },
+          { answer: 'how much', question: 'bao nhiêu tiền' },
+          { answer: 'How much is this painting?', question: 'Bức tranh này bao nhiêu tiền?' },
+        ] },
+        { answer: 'This is a gift for my mother.', question: 'Đây là quà tặng cho mẹ tôi.', phrases: [
+          { answer: 'this is', question: 'đây là' },
+          { answer: 'gift', question: 'quà tặng' },
+          { answer: 'for my mother', question: 'cho mẹ tôi' },
+          { answer: 'This is a gift for my mother.', question: 'Đây là quà tặng cho mẹ tôi.' },
+        ] },
+        { answer: "I don't want this lacquered box.", question: 'Tôi không muốn cái hộp sơn mài này.', phrases: [
+          { answer: 'I do not want', question: 'tôi không muốn' },
+          { answer: 'lacquered box', question: 'hộp sơn mài' },
+          { answer: 'this', question: 'này' },
+          { answer: "I don't want this lacquered box.", question: 'Tôi không muốn cái hộp sơn mài này.' },
+        ] },
+        { answer: 'I want that one.', question: 'Tôi muốn cái kia.', phrases: [
+          { answer: 'I want', question: 'tôi muốn' },
+          { answer: 'that one', question: 'cái kia' },
+          { answer: 'I want that one.', question: 'Tôi muốn cái kia.' },
+        ] },
+        { answer: 'This lacquered vase is beautiful. How much is it?', question: 'Cái bình sơn mài này rất đẹp. Giá bao nhiêu?', phrases: [
+          { answer: 'lacquered vase', question: 'bình sơn mài' },
+          { answer: 'beautiful', question: 'đẹp' },
+          { answer: 'how much', question: 'giá bao nhiêu' },
+          { answer: 'This lacquered vase is beautiful. How much is it?', question: 'Cái bình sơn mài này rất đẹp. Giá bao nhiêu?' },
+        ] },
+        { answer: 'I want to return this scarf. Here is my receipt.', question: 'Tôi muốn trả cái khăn quàng cổ này. Biên lai của tôi đây.', phrases: [
+          { answer: 'to return', question: 'trả' },
+          { answer: 'scarf', question: 'khăn quàng cổ' },
+          { answer: 'receipt', question: 'biên lai' },
+          { answer: 'I want to return this scarf. Here is my receipt.', question: 'Tôi muốn trả cái khăn quàng cổ này. Biên lai của tôi đây.' },
+        ] },
+        { answer: 'Could I look at that conical hat?', question: 'Cho tôi xem cái nón lá kia?', phrases: [
+          { answer: 'please let me', question: 'cho tôi' },
+          { answer: 'to look at', question: 'xem' },
+          { answer: 'conical hat', question: 'nón lá' },
+          { answer: 'that, there', question: 'kia' },
+          { answer: 'Could I look at that conical hat?', question: 'Cho tôi xem cái nón lá kia?' },
+        ] },
+        { answer: "I'd like to buy 2 kilos of rambutans.", question: 'Tôi muốn mua hai ký trái chôm chôm.', phrases: [
+          { answer: 'I want to buy', question: 'tôi muốn mua' },
+          { answer: 'two kilos', question: 'hai ký' },
+          { answer: 'rambutan', question: 'trái chôm chôm' },
+          { answer: "I'd like to buy 2 kilos of rambutans.", question: 'Tôi muốn mua hai ký trái chôm chôm.' },
+        ] },
+        { answer: "I'd like to buy a dozen mangoes.", question: 'Tôi muốn mua một chục xoài.', phrases: [
+          { answer: 'I want to buy', question: 'tôi muốn mua' },
+          { answer: 'a dozen', question: 'một chục' },
+          { answer: 'mango', question: 'xoài' },
+          { answer: "I'd like to buy a dozen mangoes.", question: 'Tôi muốn mua một chục xoài.' },
+        ] },
+        { answer: 'How much is a pineapple?', question: 'Một trái thơm giá bao nhiêu?', phrases: [
+          { answer: 'a pineapple', question: 'một trái thơm' },
+          { answer: 'how much', question: 'giá bao nhiêu' },
+          { answer: 'How much is a pineapple?', question: 'Một trái thơm giá bao nhiêu?' },
+        ] },
+        { answer: 'This one is still green.', question: 'Trái này còn xanh.', phrases: [
+          { answer: 'this one (fruit)', question: 'trái này' },
+          { answer: 'still green, unripe', question: 'còn xanh' },
+          { answer: 'This one is still green.', question: 'Trái này còn xanh.' },
+        ] },
+        { answer: "I'd like to buy some ripe bananas.", question: 'Tôi muốn mua trái chuối chín.', phrases: [
+          { answer: 'I want to buy', question: 'tôi muốn mua' },
+          { answer: 'banana', question: 'trái chuối' },
+          { answer: 'ripe', question: 'chín' },
+          { answer: "I'd like to buy some ripe bananas.", question: 'Tôi muốn mua trái chuối chín.' },
+        ] },
+      ],
+    },
+    {
+      subTitle: 'Bargaining',
+      cards: [
+        { answer: 'come down', question: 'bớt', phrases: [
+          { answer: "Won't you come down a little?", question: 'Bớt một chút được không?' },
+          { answer: 'Come down a little more.', question: 'Bớt một chút nữa.' },
+          { answer: 'Please come down on the price.', question: 'Xin bớt giá.' },
+          { answer: 'Can you come down?', question: 'Bạn bớt được không?' },
+          { answer: 'Come down a bit, please.', question: 'Bớt một chút đi.' },
+        ] },
+        { answer: 'more, -er', question: 'hơn', phrases: [
+          { answer: 'Find me a cheaper one.', question: 'Tìm cho tôi một cái rẻ hơn.' },
+          { answer: 'Do you have a bigger one?', question: 'Bạn có cái lớn hơn không?' },
+          { answer: 'I want a better one.', question: 'Tôi muốn một cái tốt hơn.' },
+          { answer: 'This is more beautiful.', question: 'Cái này đẹp hơn.' },
+          { answer: 'Do you have a smaller one?', question: 'Bạn có cái nhỏ hơn không?' },
+        ] },
+        { answer: 'OK (reluctantly agreeing to a price)', question: 'thôi cũng được', phrases: [
+          { answer: 'OK, I will take it.', question: 'Thôi cũng được, tôi lấy.' },
+          { answer: 'OK, please wrap it up.', question: 'Thôi cũng được. Gói cho tôi.' },
+          { answer: 'OK, that is fine.', question: 'Thôi cũng được.' },
+          { answer: 'OK, I agree.', question: 'Thôi cũng được, tôi đồng ý.' },
+          { answer: 'OK, give it to me.', question: 'Thôi cũng được, đưa cho tôi.' },
+        ] },
+        { answer: "That's much too expensive!", question: 'Mắc quá!', phrases: [
+          { answer: 'expensive', question: 'mắc' },
+          { answer: 'too, so', question: 'quá' },
+          { answer: "That's much too expensive!", question: 'Mắc quá!' },
+        ] },
+        { answer: "Won't you come down a little?", question: 'Bớt một chút được không?', phrases: [
+          { answer: 'to come down', question: 'bớt' },
+          { answer: 'a little', question: 'một chút' },
+          { answer: "Won't you come down a little?", question: 'Bớt một chút được không?' },
+        ] },
+        { answer: 'Come down a little more.', question: 'Bớt một chút nữa.', phrases: [
+          { answer: 'to come down', question: 'bớt' },
+          { answer: 'a little', question: 'một chút' },
+          { answer: 'more', question: 'nữa' },
+          { answer: 'Come down a little more.', question: 'Bớt một chút nữa.' },
+        ] },
+        { answer: 'Find me a cheaper one.', question: 'Tìm cho tôi một cái rẻ hơn.', phrases: [
+          { answer: 'find for me', question: 'tìm cho tôi' },
+          { answer: 'cheaper', question: 'rẻ hơn' },
+          { answer: 'Find me a cheaper one.', question: 'Tìm cho tôi một cái rẻ hơn.' },
+        ] },
+        { answer: 'OK. Please wrap it up for me.', question: 'Thôi cũng được. Gói cho tôi.', phrases: [
+          { answer: 'OK (reluctantly)', question: 'thôi cũng được' },
+          { answer: 'to wrap up', question: 'gói' },
+          { answer: 'for me', question: 'cho tôi' },
+          { answer: 'OK. Please wrap it up for me.', question: 'Thôi cũng được. Gói cho tôi.' },
+        ] },
+        { answer: 'How much is that altogether?', question: 'Tổng cộng là bao nhiêu?', phrases: [
+          { answer: 'altogether, total', question: 'tổng cộng' },
+          { answer: 'how much', question: 'bao nhiêu' },
+          { answer: 'How much is that altogether?', question: 'Tổng cộng là bao nhiêu?' },
+        ] },
+      ],
+    },
+  ],
   'At the Clothing Store': [{ cards: [
-    // fit (verb) - vua van
-    // fitting room - phong thu do
-    // pair of high heels - doi giay cao got
-    // pair of shoes - doi giay
-    // pants - quan
-    // shirt - ao so mi
-    // sunglasses - kinh ram
-    // hat - mu, non
-    // tie - ca vat
-    // belt - that lung
-    // socks - tat
-    // necklace - day chuyen
-    // bracelet - lac tay
-    // earrings - hoa tai
-    // watch (noun) - dong ho
-    // skirt - vay dam
-    // ring (noun) - nhan
-    // suit (noun) - bo com le
-    // suit (verb) - hop
-    // try on (clothes) - mac thu
-    // try on (hats) - doi thu
-    // try on (shoes) - mang thu
-    // dress - vay
-    // jeans - quan jean
-    // jacket - ao khoac
-    // blouse - ao nu
-    // coat - ao mang
-    // sweater - ao len
-    // leather - da
-    // soft - mem
-    // fabric - vai
-    // plastic - nhua
-    // I'd like to try on this suit. - Toi muon mac thu bo com le nay.
-    // Do you have a fitting room? - Ban co phong thu do khong?
-    // This shirt doesn't fit me. - Ao so mi nay khong vua toi.
-    // Do you have this jacket in a size medium? - Ban co ao khoac nay size trung khong?
-    // I'd like to try on these shoes. - Toi muon mang thu doi giay nay.
-    // Do you have this skirt in a size small? - Ban co vay dam nay size nho khong?
-    // This dress is too big for me. - Cai vay nay to qua voi toi.
-    // Do you have this sweater in a size large? - Ban co ao len nay size lon khong?
-    // Do you have earrings like these? - Ban co hoa tai nhu the nay khong?
-    // Do you have rings like this? - Ban co nhan nhu the nay khong?
-
-    // subTitle: Colors
-    // beige - mau be
-    // black - mau den
-    // blue - mau xanh duong
-    // brown - mau nau
-    // color - mau
-    // gray - mau xam
-    // green - mau xanh la cay
-    // orange - mau cam
-    // pink - mau hong
-    // purple - mau tim
-    // red - mau do
-    // white - mau trang
-    // yellow - mau vang
-    // What color do you want? - Ban muon mau gi?
-    // I want a red shirt. - Toi muon mot cai ao so mi mau do.
-    // Do you have this coat in white? - Ban co ao mang nay mau trang khong?
-    // I'd like to try on this blue sweater. - Toi muon mac thu cai ao len mau xanh duong nay.
-    // I don't like this pink skirt. - Toi khong thich cai vay dam mau hong nay.
-    // Do you have this hat in green? - Ban co cai mu nay mau xanh la cay khong?
-    // I want to buy a pair of black sunglasses. - Toi muon mua mot doi kinh ram mau den.
-    // I like this purple tie. - Toi thich cai ca vat mau tim nay.
-
-    // subTitle: Measurements and Sizes
-    // big - rong, to
-    // extra-large - lon nhat, cuc lon
-    // height - chieu cao
-    // large - lon
-    // medium - trung
-    // small - nho
-    // size - size, kich co
-    // extra-small - nho nhat, cuc nho
-    // measurement - do luong
-    // meter - met
-    // short - ngan
-    // size - co
-    // weight - trong luong
-    // width - chieu rong
-    // What size do you want? - Ban muon size gi?
-    // These jackets come in three sizes: small, medium, and large. - Nhung chiec ao khoac nay co ba co: nho, trung, va lon.
-    // I want to buy the small one. - Toi muon mua chiec ao nho.
-    // I'd like to try on these pants. - Toi muon mac thu chiec quan nay.
-    // Where's the fitting room? - Phong thu do o dau?
-    // Does this color suit me? - Mau nay co hop toi khong?
-    // How much are these high heels? - Doi giay cao got nay gia bao nhieu?
-    // These shoes are one size too big. Do you have them in a size 8? - Doi giay nay hoi rong. Anh co so tahm khong? // NOTE: a size 8 in the US is a size 39 in Vietnam
-    // These high heels fit perfectly. - Doi giay cao got nay rat vua van.
-    // I always wear brown shoes. - Toi luon mang giay mau nau.
-    // I like the gray suit. - Toi thich bo com le mau xam.
-    // I don't like the green shirt. - Toi khong thich chiec ao so mi mau xanh la cay.
-    // Give me a discount on this sweater, will you? - Giam gia chiec ao len nay cho toi, duoc khong?
-  ] }],
+    { answer: 'fit (verb)', question: 'vừa vặn', phrases: [
+      { answer: 'This shirt fits me.', question: 'Áo sơ mi này vừa tôi.' },
+      { answer: 'These shoes fit perfectly.', question: 'Đôi giày này rất vừa vặn.' },
+      { answer: 'This does not fit me.', question: 'Cái này không vừa tôi.' },
+      { answer: 'Does it fit?', question: 'Có vừa không?' },
+      { answer: 'The pants fit well.', question: 'Quần vừa vặn.' },
+    ] },
+    { answer: 'fitting room', question: 'phòng thử đồ', phrases: [
+      { answer: 'Do you have a fitting room?', question: 'Bạn có phòng thử đồ không?' },
+      { answer: 'Where is the fitting room?', question: 'Phòng thử đồ ở đâu?' },
+      { answer: 'I want to use the fitting room.', question: 'Tôi muốn dùng phòng thử đồ.' },
+      { answer: 'The fitting room is over there.', question: 'Phòng thử đồ ở đằng kia.' },
+      { answer: 'Is the fitting room free?', question: 'Phòng thử đồ có trống không?' },
+    ] },
+    { answer: 'pair of high heels', question: 'đôi giày cao gót', phrases: [
+      { answer: 'I want to buy a pair of high heels.', question: 'Tôi muốn mua một đôi giày cao gót.' },
+      { answer: 'Do you have high heels?', question: 'Bạn có giày cao gót không?' },
+      { answer: 'How much are these high heels?', question: 'Đôi giày cao gót này giá bao nhiêu?' },
+      { answer: 'These high heels fit perfectly.', question: 'Đôi giày cao gót này rất vừa vặn.' },
+      { answer: 'I like high heels.', question: 'Tôi thích giày cao gót.' },
+    ] },
+    { answer: 'pair of shoes', question: 'đôi giày', phrases: [
+      { answer: 'I want to buy a pair of shoes.', question: 'Tôi muốn mua một đôi giày.' },
+      { answer: 'Do you have shoes?', question: 'Bạn có giày không?' },
+      { answer: 'How much is this pair of shoes?', question: 'Đôi giày này giá bao nhiêu?' },
+      { answer: 'I would like to try on these shoes.', question: 'Tôi muốn mang thử đôi giày này.' },
+      { answer: 'These shoes are too big.', question: 'Đôi giày này to quá.' },
+    ] },
+    { answer: 'pants', question: 'quần', phrases: [
+      { answer: 'I want to buy pants.', question: 'Tôi muốn mua quần.' },
+      { answer: 'Do you have pants?', question: 'Bạn có quần không?' },
+      { answer: 'I would like to try on these pants.', question: 'Tôi muốn mặc thử chiếc quần này.' },
+      { answer: 'These pants are too big.', question: 'Chiếc quần này to quá.' },
+      { answer: 'I like these pants.', question: 'Tôi thích chiếc quần này.' },
+    ] },
+    { answer: 'shirt', question: 'áo sơ mi', phrases: [
+      { answer: 'I want to buy a shirt.', question: 'Tôi muốn mua một cái áo sơ mi.' },
+      { answer: 'Do you have shirts?', question: 'Bạn có áo sơ mi không?' },
+      { answer: 'This shirt does not fit me.', question: 'Áo sơ mi này không vừa tôi.' },
+      { answer: 'I want a red shirt.', question: 'Tôi muốn một cái áo sơ mi màu đỏ.' },
+      { answer: 'How much is this shirt?', question: 'Áo sơ mi này giá bao nhiêu?' },
+    ] },
+    { answer: 'sunglasses', question: 'kính râm', phrases: [
+      { answer: 'I want to buy sunglasses.', question: 'Tôi muốn mua kính râm.' },
+      { answer: 'Do you have sunglasses?', question: 'Bạn có kính râm không?' },
+      { answer: 'How much are these sunglasses?', question: 'Kính râm này giá bao nhiêu?' },
+      { answer: 'I want black sunglasses.', question: 'Tôi muốn kính râm màu đen.' },
+      { answer: 'These sunglasses are beautiful.', question: 'Kính râm này đẹp.' },
+    ] },
+    { answer: 'hat', question: 'mũ, nón', phrases: [
+      { answer: 'I want to buy a hat.', question: 'Tôi muốn mua một cái mũ.' },
+      { answer: 'Do you have hats?', question: 'Bạn có mũ không?' },
+      { answer: 'How much is this hat?', question: 'Cái mũ này giá bao nhiêu?' },
+      { answer: 'Do you have this hat in green?', question: 'Bạn có cái mũ này màu xanh lá cây không?' },
+      { answer: 'I like this hat.', question: 'Tôi thích cái mũ này.' },
+    ] },
+    { answer: 'tie', question: 'cà vạt', phrases: [
+      { answer: 'I want to buy a tie.', question: 'Tôi muốn mua một cái cà vạt.' },
+      { answer: 'Do you have ties?', question: 'Bạn có cà vạt không?' },
+      { answer: 'How much is this tie?', question: 'Cái cà vạt này giá bao nhiêu?' },
+      { answer: 'I like this purple tie.', question: 'Tôi thích cái cà vạt màu tím này.' },
+      { answer: 'This tie is beautiful.', question: 'Cái cà vạt này đẹp.' },
+    ] },
+    { answer: 'belt', question: 'thắt lưng', phrases: [
+      { answer: 'I want to buy a belt.', question: 'Tôi muốn mua một cái thắt lưng.' },
+      { answer: 'Do you have belts?', question: 'Bạn có thắt lưng không?' },
+      { answer: 'How much is this belt?', question: 'Cái thắt lưng này giá bao nhiêu?' },
+      { answer: 'This belt is leather.', question: 'Cái thắt lưng này bằng da.' },
+      { answer: 'I like this belt.', question: 'Tôi thích cái thắt lưng này.' },
+    ] },
+    { answer: 'socks', question: 'tất', phrases: [
+      { answer: 'I want to buy socks.', question: 'Tôi muốn mua tất.' },
+      { answer: 'Do you have socks?', question: 'Bạn có tất không?' },
+      { answer: 'How much are these socks?', question: 'Tất này giá bao nhiêu?' },
+      { answer: 'These socks are warm.', question: 'Tất này ấm.' },
+      { answer: 'I need new socks.', question: 'Tôi cần tất mới.' },
+    ] },
+    { answer: 'necklace', question: 'dây chuyền', phrases: [
+      { answer: 'I want to buy a necklace.', question: 'Tôi muốn mua một cái dây chuyền.' },
+      { answer: 'Do you have necklaces?', question: 'Bạn có dây chuyền không?' },
+      { answer: 'How much is this necklace?', question: 'Cái dây chuyền này giá bao nhiêu?' },
+      { answer: 'This necklace is beautiful.', question: 'Cái dây chuyền này đẹp.' },
+      { answer: 'I like this necklace.', question: 'Tôi thích cái dây chuyền này.' },
+    ] },
+    { answer: 'bracelet', question: 'lắc tay', phrases: [
+      { answer: 'I want to buy a bracelet.', question: 'Tôi muốn mua một cái lắc tay.' },
+      { answer: 'Do you have bracelets?', question: 'Bạn có lắc tay không?' },
+      { answer: 'How much is this bracelet?', question: 'Cái lắc tay này giá bao nhiêu?' },
+      { answer: 'This bracelet is beautiful.', question: 'Cái lắc tay này đẹp.' },
+      { answer: 'I like this bracelet.', question: 'Tôi thích cái lắc tay này.' },
+    ] },
+    { answer: 'earrings', question: 'hoa tai', phrases: [
+      { answer: 'I want to buy earrings.', question: 'Tôi muốn mua hoa tai.' },
+      { answer: 'Do you have earrings like these?', question: 'Bạn có hoa tai như thế này không?' },
+      { answer: 'How much are these earrings?', question: 'Hoa tai này giá bao nhiêu?' },
+      { answer: 'These earrings are beautiful.', question: 'Hoa tai này đẹp.' },
+      { answer: 'I like these earrings.', question: 'Tôi thích hoa tai này.' },
+    ] },
+    { answer: 'watch (noun)', question: 'đồng hồ', phrases: [
+      { answer: 'I want to buy a watch.', question: 'Tôi muốn mua một cái đồng hồ.' },
+      { answer: 'Do you have watches?', question: 'Bạn có đồng hồ không?' },
+      { answer: 'How much is this watch?', question: 'Cái đồng hồ này giá bao nhiêu?' },
+      { answer: 'This watch is beautiful.', question: 'Cái đồng hồ này đẹp.' },
+      { answer: 'My watch is broken.', question: 'Đồng hồ của tôi bị hỏng.' },
+    ] },
+    { answer: 'skirt', question: 'váy đầm', phrases: [
+      { answer: 'I want to buy a skirt.', question: 'Tôi muốn mua một cái váy đầm.' },
+      { answer: 'Do you have this skirt in a size small?', question: 'Bạn có váy đầm này size nhỏ không?' },
+      { answer: 'How much is this skirt?', question: 'Cái váy đầm này giá bao nhiêu?' },
+      { answer: 'I do not like this pink skirt.', question: 'Tôi không thích cái váy đầm màu hồng này.' },
+      { answer: 'This skirt is beautiful.', question: 'Cái váy đầm này đẹp.' },
+    ] },
+    { answer: 'ring (noun)', question: 'nhẫn', phrases: [
+      { answer: 'I want to buy a ring.', question: 'Tôi muốn mua một cái nhẫn.' },
+      { answer: 'Do you have rings like this?', question: 'Bạn có nhẫn như thế này không?' },
+      { answer: 'How much is this ring?', question: 'Cái nhẫn này giá bao nhiêu?' },
+      { answer: 'This ring is beautiful.', question: 'Cái nhẫn này đẹp.' },
+      { answer: 'I like this ring.', question: 'Tôi thích cái nhẫn này.' },
+    ] },
+    { answer: 'suit (noun)', question: 'bộ com lê', phrases: [
+      { answer: 'I want to buy a suit.', question: 'Tôi muốn mua một bộ com lê.' },
+      { answer: 'Do you have suits?', question: 'Bạn có com lê không?' },
+      { answer: 'How much is this suit?', question: 'Bộ com lê này giá bao nhiêu?' },
+      { answer: 'I would like to try on this suit.', question: 'Tôi muốn mặc thử bộ com lê này.' },
+      { answer: 'I like the gray suit.', question: 'Tôi thích bộ com lê màu xám.' },
+    ] },
+    { answer: 'suit (verb)', question: 'hợp', phrases: [
+      { answer: 'Does this color suit me?', question: 'Màu này có hợp tôi không?' },
+      { answer: 'This suits you.', question: 'Cái này hợp bạn.' },
+      { answer: 'Red suits me.', question: 'Màu đỏ hợp tôi.' },
+      { answer: 'This hat does not suit me.', question: 'Cái mũ này không hợp tôi.' },
+      { answer: 'Does this suit me?', question: 'Cái này có hợp tôi không?' },
+    ] },
+    { answer: 'try on (clothes)', question: 'mặc thử', phrases: [
+      { answer: 'I would like to try on this suit.', question: 'Tôi muốn mặc thử bộ com lê này.' },
+      { answer: 'Can I try this on?', question: 'Tôi mặc thử cái này được không?' },
+      { answer: 'I want to try on this shirt.', question: 'Tôi muốn mặc thử cái áo sơ mi này.' },
+      { answer: 'Where can I try it on?', question: 'Tôi mặc thử ở đâu?' },
+      { answer: 'I would like to try on these pants.', question: 'Tôi muốn mặc thử chiếc quần này.' },
+    ] },
+    { answer: 'try on (hats)', question: 'đội thử', phrases: [
+      { answer: 'I want to try on this hat.', question: 'Tôi muốn đội thử cái mũ này.' },
+      { answer: 'Can I try on this hat?', question: 'Tôi đội thử cái mũ này được không?' },
+      { answer: 'I would like to try on that hat.', question: 'Tôi muốn đội thử cái mũ kia.' },
+      { answer: 'May I try it on?', question: 'Tôi đội thử được không?' },
+      { answer: 'Try on this hat.', question: 'Đội thử cái mũ này đi.' },
+    ] },
+    { answer: 'try on (shoes)', question: 'mang thử', phrases: [
+      { answer: 'I would like to try on these shoes.', question: 'Tôi muốn mang thử đôi giày này.' },
+      { answer: 'Can I try on these shoes?', question: 'Tôi mang thử đôi giày này được không?' },
+      { answer: 'I want to try on the high heels.', question: 'Tôi muốn mang thử giày cao gót.' },
+      { answer: 'May I try them on?', question: 'Tôi mang thử được không?' },
+      { answer: 'Try on these shoes.', question: 'Mang thử đôi giày này đi.' },
+    ] },
+    { answer: 'dress', question: 'váy', phrases: [
+      { answer: 'I want to buy a dress.', question: 'Tôi muốn mua một cái váy.' },
+      { answer: 'Do you have dresses?', question: 'Bạn có váy không?' },
+      { answer: 'This dress is too big for me.', question: 'Cái váy này to quá với tôi.' },
+      { answer: 'How much is this dress?', question: 'Cái váy này giá bao nhiêu?' },
+      { answer: 'This dress is beautiful.', question: 'Cái váy này đẹp.' },
+    ] },
+    { answer: 'jeans', question: 'quần jean', phrases: [
+      { answer: 'I want to buy jeans.', question: 'Tôi muốn mua quần jean.' },
+      { answer: 'Do you have jeans?', question: 'Bạn có quần jean không?' },
+      { answer: 'How much are these jeans?', question: 'Quần jean này giá bao nhiêu?' },
+      { answer: 'I would like to try on these jeans.', question: 'Tôi muốn mặc thử quần jean này.' },
+      { answer: 'I like these jeans.', question: 'Tôi thích quần jean này.' },
+    ] },
+    { answer: 'jacket', question: 'áo khoác', phrases: [
+      { answer: 'I want to buy a jacket.', question: 'Tôi muốn mua một cái áo khoác.' },
+      { answer: 'Do you have this jacket in a size medium?', question: 'Bạn có áo khoác này size trung không?' },
+      { answer: 'How much is this jacket?', question: 'Cái áo khoác này giá bao nhiêu?' },
+      { answer: 'This jacket is warm.', question: 'Cái áo khoác này ấm.' },
+      { answer: 'I like this jacket.', question: 'Tôi thích cái áo khoác này.' },
+    ] },
+    { answer: 'blouse', question: 'áo nữ', phrases: [
+      { answer: 'I want to buy a blouse.', question: 'Tôi muốn mua một cái áo nữ.' },
+      { answer: 'Do you have blouses?', question: 'Bạn có áo nữ không?' },
+      { answer: 'How much is this blouse?', question: 'Cái áo nữ này giá bao nhiêu?' },
+      { answer: 'This blouse is beautiful.', question: 'Cái áo nữ này đẹp.' },
+      { answer: 'I like this blouse.', question: 'Tôi thích cái áo nữ này.' },
+    ] },
+    { answer: 'coat', question: 'áo măng tô', phrases: [
+      { answer: 'I want to buy a coat.', question: 'Tôi muốn mua một cái áo măng tô.' },
+      { answer: 'Do you have this coat in white?', question: 'Bạn có áo măng tô này màu trắng không?' },
+      { answer: 'How much is this coat?', question: 'Cái áo măng tô này giá bao nhiêu?' },
+      { answer: 'This coat is warm.', question: 'Cái áo măng tô này ấm.' },
+      { answer: 'I like this coat.', question: 'Tôi thích cái áo măng tô này.' },
+    ] },
+    { answer: 'sweater', question: 'áo len', phrases: [
+      { answer: 'I want to buy a sweater.', question: 'Tôi muốn mua một cái áo len.' },
+      { answer: 'Do you have this sweater in a size large?', question: 'Bạn có áo len này size lớn không?' },
+      { answer: 'How much is this sweater?', question: 'Cái áo len này giá bao nhiêu?' },
+      { answer: 'This sweater is warm.', question: 'Cái áo len này ấm.' },
+      { answer: 'I like this blue sweater.', question: 'Tôi thích cái áo len màu xanh dương này.' },
+    ] },
+    { answer: 'leather', question: 'da', phrases: [
+      { answer: 'This belt is leather.', question: 'Cái thắt lưng này bằng da.' },
+      { answer: 'Do you have leather shoes?', question: 'Bạn có giày da không?' },
+      { answer: 'Is this leather?', question: 'Cái này bằng da phải không?' },
+      { answer: 'I like leather jackets.', question: 'Tôi thích áo khoác da.' },
+      { answer: 'This bag is made of leather.', question: 'Cái túi này làm bằng da.' },
+    ] },
+    { answer: 'soft', question: 'mềm', phrases: [
+      { answer: 'This fabric is soft.', question: 'Vải này mềm.' },
+      { answer: 'This sweater is very soft.', question: 'Cái áo len này rất mềm.' },
+      { answer: 'Is it soft?', question: 'Nó có mềm không?' },
+      { answer: 'The silk is soft.', question: 'Lụa mềm.' },
+      { answer: 'I want a soft scarf.', question: 'Tôi muốn một cái khăn mềm.' },
+    ] },
+    { answer: 'fabric', question: 'vải', phrases: [
+      { answer: 'This fabric is soft.', question: 'Vải này mềm.' },
+      { answer: 'Do you have silk fabric?', question: 'Bạn có vải lụa không?' },
+      { answer: 'How much is this fabric?', question: 'Vải này giá bao nhiêu?' },
+      { answer: 'This fabric is beautiful.', question: 'Vải này đẹp.' },
+      { answer: 'I want to buy fabric.', question: 'Tôi muốn mua vải.' },
+    ] },
+    { answer: 'plastic', question: 'nhựa', phrases: [
+      { answer: 'This is made of plastic.', question: 'Cái này làm bằng nhựa.' },
+      { answer: 'Do you have a plastic bag?', question: 'Bạn có túi nhựa không?' },
+      { answer: 'This cup is plastic.', question: 'Cái cốc này bằng nhựa.' },
+      { answer: 'I do not want plastic.', question: 'Tôi không muốn nhựa.' },
+      { answer: 'Is this plastic?', question: 'Cái này bằng nhựa phải không?' },
+    ] },
+    { answer: "I'd like to try on this suit.", question: 'Tôi muốn mặc thử bộ com lê này.', phrases: [
+      { answer: 'I want', question: 'tôi muốn' },
+      { answer: 'to try on (clothes)', question: 'mặc thử' },
+      { answer: 'suit', question: 'bộ com lê' },
+      { answer: 'this', question: 'này' },
+      { answer: "I'd like to try on this suit.", question: 'Tôi muốn mặc thử bộ com lê này.' },
+    ] },
+    { answer: 'Do you have a fitting room?', question: 'Bạn có phòng thử đồ không?', phrases: [
+      { answer: 'you', question: 'bạn' },
+      { answer: 'to have', question: 'có' },
+      { answer: 'fitting room', question: 'phòng thử đồ' },
+      { answer: 'Do you have a fitting room?', question: 'Bạn có phòng thử đồ không?' },
+    ] },
+    { answer: "This shirt doesn't fit me.", question: 'Áo sơ mi này không vừa tôi.', phrases: [
+      { answer: 'shirt', question: 'áo sơ mi' },
+      { answer: 'this', question: 'này' },
+      { answer: 'does not fit', question: 'không vừa' },
+      { answer: "This shirt doesn't fit me.", question: 'Áo sơ mi này không vừa tôi.' },
+    ] },
+    { answer: 'Do you have this jacket in a size medium?', question: 'Bạn có áo khoác này size trung không?', phrases: [
+      { answer: 'jacket', question: 'áo khoác' },
+      { answer: 'size', question: 'size' },
+      { answer: 'medium', question: 'trung' },
+      { answer: 'Do you have this jacket in a size medium?', question: 'Bạn có áo khoác này size trung không?' },
+    ] },
+    { answer: "I'd like to try on these shoes.", question: 'Tôi muốn mang thử đôi giày này.', phrases: [
+      { answer: 'I want', question: 'tôi muốn' },
+      { answer: 'to try on (shoes)', question: 'mang thử' },
+      { answer: 'pair of shoes', question: 'đôi giày' },
+      { answer: "I'd like to try on these shoes.", question: 'Tôi muốn mang thử đôi giày này.' },
+    ] },
+    { answer: 'Do you have this skirt in a size small?', question: 'Bạn có váy đầm này size nhỏ không?', phrases: [
+      { answer: 'skirt', question: 'váy đầm' },
+      { answer: 'size', question: 'size' },
+      { answer: 'small', question: 'nhỏ' },
+      { answer: 'Do you have this skirt in a size small?', question: 'Bạn có váy đầm này size nhỏ không?' },
+    ] },
+    { answer: 'This dress is too big for me.', question: 'Cái váy này to quá với tôi.', phrases: [
+      { answer: 'dress', question: 'váy' },
+      { answer: 'big', question: 'to' },
+      { answer: 'too', question: 'quá' },
+      { answer: 'This dress is too big for me.', question: 'Cái váy này to quá với tôi.' },
+    ] },
+    { answer: 'Do you have this sweater in a size large?', question: 'Bạn có áo len này size lớn không?', phrases: [
+      { answer: 'sweater', question: 'áo len' },
+      { answer: 'size', question: 'size' },
+      { answer: 'large', question: 'lớn' },
+      { answer: 'Do you have this sweater in a size large?', question: 'Bạn có áo len này size lớn không?' },
+    ] },
+    { answer: 'Do you have earrings like these?', question: 'Bạn có hoa tai như thế này không?', phrases: [
+      { answer: 'you', question: 'bạn' },
+      { answer: 'to have', question: 'có' },
+      { answer: 'earrings', question: 'hoa tai' },
+      { answer: 'like these', question: 'như thế này' },
+      { answer: 'Do you have earrings like these?', question: 'Bạn có hoa tai như thế này không?' },
+    ] },
+    { answer: 'Do you have rings like this?', question: 'Bạn có nhẫn như thế này không?', phrases: [
+      { answer: 'you', question: 'bạn' },
+      { answer: 'to have', question: 'có' },
+      { answer: 'ring', question: 'nhẫn' },
+      { answer: 'like this', question: 'như thế này' },
+      { answer: 'Do you have rings like this?', question: 'Bạn có nhẫn như thế này không?' },
+    ] },
+      ],
+    },
+    {
+      subTitle: 'Colors',
+      cards: [
+        { answer: 'beige', question: 'màu be', phrases: [
+          { answer: 'I want a beige shirt.', question: 'Tôi muốn một cái áo sơ mi màu be.' },
+          { answer: 'Do you have this in beige?', question: 'Bạn có cái này màu be không?' },
+          { answer: 'I like beige.', question: 'Tôi thích màu be.' },
+          { answer: 'This shirt is beige.', question: 'Cái áo sơ mi này màu be.' },
+          { answer: 'Beige is a nice color.', question: 'Màu be đẹp.' },
+        ] },
+        { answer: 'black', question: 'màu đen', phrases: [
+          { answer: 'I want a black shirt.', question: 'Tôi muốn một cái áo sơ mi màu đen.' },
+          { answer: 'Do you have this in black?', question: 'Bạn có cái này màu đen không?' },
+          { answer: 'I like black.', question: 'Tôi thích màu đen.' },
+          { answer: 'I want black sunglasses.', question: 'Tôi muốn kính râm màu đen.' },
+          { answer: 'Black is a nice color.', question: 'Màu đen đẹp.' },
+        ] },
+        { answer: 'blue', question: 'màu xanh dương', phrases: [
+          { answer: 'I want a blue shirt.', question: 'Tôi muốn một cái áo sơ mi màu xanh dương.' },
+          { answer: 'Do you have this in blue?', question: 'Bạn có cái này màu xanh dương không?' },
+          { answer: 'I like blue.', question: 'Tôi thích màu xanh dương.' },
+          { answer: 'This blue sweater is beautiful.', question: 'Cái áo len màu xanh dương này đẹp.' },
+          { answer: 'Blue is a nice color.', question: 'Màu xanh dương đẹp.' },
+        ] },
+        { answer: 'brown', question: 'màu nâu', phrases: [
+          { answer: 'I want a brown shirt.', question: 'Tôi muốn một cái áo sơ mi màu nâu.' },
+          { answer: 'Do you have this in brown?', question: 'Bạn có cái này màu nâu không?' },
+          { answer: 'I like brown.', question: 'Tôi thích màu nâu.' },
+          { answer: 'I always wear brown shoes.', question: 'Tôi luôn mang giày màu nâu.' },
+          { answer: 'Brown is a nice color.', question: 'Màu nâu đẹp.' },
+        ] },
+        { answer: 'color', question: 'màu', phrases: [
+          { answer: 'What color do you want?', question: 'Bạn muốn màu gì?' },
+          { answer: 'I like this color.', question: 'Tôi thích màu này.' },
+          { answer: 'Do you have another color?', question: 'Bạn có màu khác không?' },
+          { answer: 'What is your favorite color?', question: 'Màu bạn thích nhất là gì?' },
+          { answer: 'This color is beautiful.', question: 'Màu này đẹp.' },
+        ] },
+        { answer: 'gray', question: 'màu xám', phrases: [
+          { answer: 'I want a gray shirt.', question: 'Tôi muốn một cái áo sơ mi màu xám.' },
+          { answer: 'Do you have this in gray?', question: 'Bạn có cái này màu xám không?' },
+          { answer: 'I like gray.', question: 'Tôi thích màu xám.' },
+          { answer: 'I like the gray suit.', question: 'Tôi thích bộ com lê màu xám.' },
+          { answer: 'Gray is a nice color.', question: 'Màu xám đẹp.' },
+        ] },
+        { answer: 'green', question: 'màu xanh lá cây', phrases: [
+          { answer: 'I want a green shirt.', question: 'Tôi muốn một cái áo sơ mi màu xanh lá cây.' },
+          { answer: 'Do you have this in green?', question: 'Bạn có cái này màu xanh lá cây không?' },
+          { answer: 'I like green.', question: 'Tôi thích màu xanh lá cây.' },
+          { answer: 'Do you have this hat in green?', question: 'Bạn có cái mũ này màu xanh lá cây không?' },
+          { answer: 'Green is a nice color.', question: 'Màu xanh lá cây đẹp.' },
+        ] },
+        { answer: 'orange', question: 'màu cam', phrases: [
+          { answer: 'I want an orange shirt.', question: 'Tôi muốn một cái áo sơ mi màu cam.' },
+          { answer: 'Do you have this in orange?', question: 'Bạn có cái này màu cam không?' },
+          { answer: 'I like orange.', question: 'Tôi thích màu cam.' },
+          { answer: 'This dress is orange.', question: 'Cái váy này màu cam.' },
+          { answer: 'Orange is a nice color.', question: 'Màu cam đẹp.' },
+        ] },
+        { answer: 'pink', question: 'màu hồng', phrases: [
+          { answer: 'I want a pink shirt.', question: 'Tôi muốn một cái áo sơ mi màu hồng.' },
+          { answer: 'Do you have this in pink?', question: 'Bạn có cái này màu hồng không?' },
+          { answer: 'I like pink.', question: 'Tôi thích màu hồng.' },
+          { answer: 'I do not like this pink skirt.', question: 'Tôi không thích cái váy đầm màu hồng này.' },
+          { answer: 'Pink is a nice color.', question: 'Màu hồng đẹp.' },
+        ] },
+        { answer: 'purple', question: 'màu tím', phrases: [
+          { answer: 'I want a purple shirt.', question: 'Tôi muốn một cái áo sơ mi màu tím.' },
+          { answer: 'Do you have this in purple?', question: 'Bạn có cái này màu tím không?' },
+          { answer: 'I like purple.', question: 'Tôi thích màu tím.' },
+          { answer: 'I like this purple tie.', question: 'Tôi thích cái cà vạt màu tím này.' },
+          { answer: 'Purple is a nice color.', question: 'Màu tím đẹp.' },
+        ] },
+        { answer: 'red', question: 'màu đỏ', phrases: [
+          { answer: 'I want a red shirt.', question: 'Tôi muốn một cái áo sơ mi màu đỏ.' },
+          { answer: 'Do you have this in red?', question: 'Bạn có cái này màu đỏ không?' },
+          { answer: 'I like red.', question: 'Tôi thích màu đỏ.' },
+          { answer: 'This dress is red.', question: 'Cái váy này màu đỏ.' },
+          { answer: 'Red is a nice color.', question: 'Màu đỏ đẹp.' },
+        ] },
+        { answer: 'white', question: 'màu trắng', phrases: [
+          { answer: 'I want a white shirt.', question: 'Tôi muốn một cái áo sơ mi màu trắng.' },
+          { answer: 'Do you have this coat in white?', question: 'Bạn có áo măng tô này màu trắng không?' },
+          { answer: 'I like white.', question: 'Tôi thích màu trắng.' },
+          { answer: 'This shirt is white.', question: 'Cái áo sơ mi này màu trắng.' },
+          { answer: 'White is a nice color.', question: 'Màu trắng đẹp.' },
+        ] },
+        { answer: 'yellow', question: 'màu vàng', phrases: [
+          { answer: 'I want a yellow shirt.', question: 'Tôi muốn một cái áo sơ mi màu vàng.' },
+          { answer: 'Do you have this in yellow?', question: 'Bạn có cái này màu vàng không?' },
+          { answer: 'I like yellow.', question: 'Tôi thích màu vàng.' },
+          { answer: 'This hat is yellow.', question: 'Cái mũ này màu vàng.' },
+          { answer: 'Yellow is a nice color.', question: 'Màu vàng đẹp.' },
+        ] },
+        { answer: 'What color do you want?', question: 'Bạn muốn màu gì?', phrases: [
+          { answer: 'you', question: 'bạn' },
+          { answer: 'to want', question: 'muốn' },
+          { answer: 'color', question: 'màu' },
+          { answer: 'what', question: 'gì' },
+          { answer: 'What color do you want?', question: 'Bạn muốn màu gì?' },
+        ] },
+        { answer: 'I want a red shirt.', question: 'Tôi muốn một cái áo sơ mi màu đỏ.', phrases: [
+          { answer: 'I want', question: 'tôi muốn' },
+          { answer: 'shirt', question: 'áo sơ mi' },
+          { answer: 'red', question: 'màu đỏ' },
+          { answer: 'I want a red shirt.', question: 'Tôi muốn một cái áo sơ mi màu đỏ.' },
+        ] },
+        { answer: 'Do you have this coat in white?', question: 'Bạn có áo măng tô này màu trắng không?', phrases: [
+          { answer: 'coat', question: 'áo măng tô' },
+          { answer: 'white', question: 'màu trắng' },
+          { answer: 'Do you have this coat in white?', question: 'Bạn có áo măng tô này màu trắng không?' },
+        ] },
+        { answer: "I'd like to try on this blue sweater.", question: 'Tôi muốn mặc thử cái áo len màu xanh dương này.', phrases: [
+          { answer: 'to try on (clothes)', question: 'mặc thử' },
+          { answer: 'sweater', question: 'áo len' },
+          { answer: 'blue', question: 'màu xanh dương' },
+          { answer: "I'd like to try on this blue sweater.", question: 'Tôi muốn mặc thử cái áo len màu xanh dương này.' },
+        ] },
+        { answer: "I don't like this pink skirt.", question: 'Tôi không thích cái váy đầm màu hồng này.', phrases: [
+          { answer: 'I do not like', question: 'tôi không thích' },
+          { answer: 'skirt', question: 'váy đầm' },
+          { answer: 'pink', question: 'màu hồng' },
+          { answer: "I don't like this pink skirt.", question: 'Tôi không thích cái váy đầm màu hồng này.' },
+        ] },
+        { answer: 'Do you have this hat in green?', question: 'Bạn có cái mũ này màu xanh lá cây không?', phrases: [
+          { answer: 'hat', question: 'mũ' },
+          { answer: 'green', question: 'màu xanh lá cây' },
+          { answer: 'Do you have this hat in green?', question: 'Bạn có cái mũ này màu xanh lá cây không?' },
+        ] },
+        { answer: 'I want to buy a pair of black sunglasses.', question: 'Tôi muốn mua một đôi kính râm màu đen.', phrases: [
+          { answer: 'I want to buy', question: 'tôi muốn mua' },
+          { answer: 'sunglasses', question: 'kính râm' },
+          { answer: 'black', question: 'màu đen' },
+          { answer: 'I want to buy a pair of black sunglasses.', question: 'Tôi muốn mua một đôi kính râm màu đen.' },
+        ] },
+        { answer: 'I like this purple tie.', question: 'Tôi thích cái cà vạt màu tím này.', phrases: [
+          { answer: 'I like', question: 'tôi thích' },
+          { answer: 'tie', question: 'cà vạt' },
+          { answer: 'purple', question: 'màu tím' },
+          { answer: 'I like this purple tie.', question: 'Tôi thích cái cà vạt màu tím này.' },
+        ] },
+      ],
+    },
+    {
+      subTitle: 'Measurements and Sizes',
+      cards: [
+        { answer: 'big', question: 'rộng, to', phrases: [
+          { answer: 'This shirt is too big.', question: 'Cái áo sơ mi này to quá.' },
+          { answer: 'Do you have a bigger one?', question: 'Bạn có cái to hơn không?' },
+          { answer: 'This is too big for me.', question: 'Cái này to quá với tôi.' },
+          { answer: 'The room is big.', question: 'Phòng rộng.' },
+          { answer: 'I want a big one.', question: 'Tôi muốn một cái to.' },
+        ] },
+        { answer: 'extra-large', question: 'lớn nhất, cực lớn', phrases: [
+          { answer: 'Do you have extra-large?', question: 'Bạn có cỡ lớn nhất không?' },
+          { answer: 'I want an extra-large shirt.', question: 'Tôi muốn một cái áo sơ mi cỡ lớn nhất.' },
+          { answer: 'This is extra-large.', question: 'Cái này cực lớn.' },
+          { answer: 'Is there an extra-large size?', question: 'Có cỡ lớn nhất không?' },
+          { answer: 'I need extra-large.', question: 'Tôi cần cỡ lớn nhất.' },
+        ] },
+        { answer: 'height', question: 'chiều cao', phrases: [
+          { answer: 'What is your height?', question: 'Chiều cao của bạn là bao nhiêu?' },
+          { answer: 'My height is 1.7 meters.', question: 'Chiều cao của tôi là một mét bảy.' },
+          { answer: 'The height is right.', question: 'Chiều cao vừa.' },
+          { answer: 'Do you know your height?', question: 'Bạn có biết chiều cao của mình không?' },
+          { answer: 'The height of the room is three meters.', question: 'Chiều cao của phòng là ba mét.' },
+        ] },
+        { answer: 'large', question: 'lớn', phrases: [
+          { answer: 'Do you have this in a size large?', question: 'Bạn có cái này size lớn không?' },
+          { answer: 'I want a large shirt.', question: 'Tôi muốn một cái áo sơ mi lớn.' },
+          { answer: 'This is too large.', question: 'Cái này lớn quá.' },
+          { answer: 'Do you have a large one?', question: 'Bạn có cái lớn không?' },
+          { answer: 'I need a large size.', question: 'Tôi cần cỡ lớn.' },
+        ] },
+        { answer: 'medium', question: 'trung', phrases: [
+          { answer: 'Do you have this in a size medium?', question: 'Bạn có cái này size trung không?' },
+          { answer: 'I want a medium shirt.', question: 'Tôi muốn một cái áo sơ mi cỡ trung.' },
+          { answer: 'This is medium size.', question: 'Cái này cỡ trung.' },
+          { answer: 'Do you have a medium one?', question: 'Bạn có cái cỡ trung không?' },
+          { answer: 'I need a medium size.', question: 'Tôi cần cỡ trung.' },
+        ] },
+        { answer: 'small', question: 'nhỏ', phrases: [
+          { answer: 'Do you have this in a size small?', question: 'Bạn có cái này size nhỏ không?' },
+          { answer: 'I want a small shirt.', question: 'Tôi muốn một cái áo sơ mi nhỏ.' },
+          { answer: 'This is too small.', question: 'Cái này nhỏ quá.' },
+          { answer: 'Do you have a smaller one?', question: 'Bạn có cái nhỏ hơn không?' },
+          { answer: 'I want to buy the small one.', question: 'Tôi muốn mua chiếc áo nhỏ.' },
+        ] },
+        { answer: 'size', question: 'size, kích cỡ', phrases: [
+          { answer: 'What size do you want?', question: 'Bạn muốn size gì?' },
+          { answer: 'What size is this?', question: 'Cái này size gì?' },
+          { answer: 'Do you have my size?', question: 'Bạn có size của tôi không?' },
+          { answer: 'This size is right.', question: 'Kích cỡ này vừa.' },
+          { answer: 'What size do you wear?', question: 'Bạn mặc size gì?' },
+        ] },
+        { answer: 'extra-small', question: 'nhỏ nhất, cực nhỏ', phrases: [
+          { answer: 'Do you have extra-small?', question: 'Bạn có cỡ nhỏ nhất không?' },
+          { answer: 'I want an extra-small shirt.', question: 'Tôi muốn một cái áo sơ mi cỡ nhỏ nhất.' },
+          { answer: 'This is extra-small.', question: 'Cái này cực nhỏ.' },
+          { answer: 'Is there an extra-small size?', question: 'Có cỡ nhỏ nhất không?' },
+          { answer: 'I need extra-small.', question: 'Tôi cần cỡ nhỏ nhất.' },
+        ] },
+        { answer: 'measurement', question: 'đo lường', phrases: [
+          { answer: 'Measurement is important.', question: 'Đo lường rất quan trọng.' },
+          { answer: 'I need to take a measurement.', question: 'Tôi cần đo lường.' },
+          { answer: 'The measurement is correct.', question: 'Đo lường đúng.' },
+          { answer: 'Do you know the measurement?', question: 'Bạn có biết số đo không?' },
+          { answer: 'Please take the measurement.', question: 'Xin đo lường.' },
+        ] },
+        { answer: 'meter', question: 'mét', phrases: [
+          { answer: 'I am 1.7 meters tall.', question: 'Tôi cao một mét bảy.' },
+          { answer: 'This is two meters long.', question: 'Cái này dài hai mét.' },
+          { answer: 'I need three meters of fabric.', question: 'Tôi cần ba mét vải.' },
+          { answer: 'How many meters do you want?', question: 'Bạn muốn mấy mét?' },
+          { answer: 'The room is four meters wide.', question: 'Phòng rộng bốn mét.' },
+        ] },
+        { answer: 'short', question: 'ngắn', phrases: [
+          { answer: 'This skirt is too short.', question: 'Cái váy này ngắn quá.' },
+          { answer: 'Do you have a shorter one?', question: 'Bạn có cái ngắn hơn không?' },
+          { answer: 'These pants are short.', question: 'Chiếc quần này ngắn.' },
+          { answer: 'The sleeves are short.', question: 'Tay áo ngắn.' },
+          { answer: 'I want a short skirt.', question: 'Tôi muốn một cái váy ngắn.' },
+        ] },
+        { answer: 'size', question: 'cỡ', phrases: [
+          { answer: 'What size do you want?', question: 'Bạn muốn cỡ gì?' },
+          { answer: 'Do you have a bigger size?', question: 'Bạn có cỡ lớn hơn không?' },
+          { answer: 'This size fits me.', question: 'Cỡ này vừa tôi.' },
+          { answer: 'What is your size?', question: 'Cỡ của bạn là gì?' },
+          { answer: 'Do you have a smaller size?', question: 'Bạn có cỡ nhỏ hơn không?' },
+        ] },
+        { answer: 'weight', question: 'trọng lượng', phrases: [
+          { answer: 'What is the weight?', question: 'Trọng lượng là bao nhiêu?' },
+          { answer: 'The weight is two kilos.', question: 'Trọng lượng là hai ký.' },
+          { answer: 'Do you know the weight?', question: 'Bạn có biết trọng lượng không?' },
+          { answer: 'The weight is right.', question: 'Trọng lượng vừa.' },
+          { answer: 'What is your weight?', question: 'Trọng lượng của bạn là bao nhiêu?' },
+        ] },
+        { answer: 'width', question: 'chiều rộng', phrases: [
+          { answer: 'What is the width?', question: 'Chiều rộng là bao nhiêu?' },
+          { answer: 'The width is one meter.', question: 'Chiều rộng là một mét.' },
+          { answer: 'Do you know the width?', question: 'Bạn có biết chiều rộng không?' },
+          { answer: 'The width is right.', question: 'Chiều rộng vừa.' },
+          { answer: 'The width of the table is one meter.', question: 'Chiều rộng của bàn là một mét.' },
+        ] },
+        { answer: 'What size do you want?', question: 'Bạn muốn size gì?', phrases: [
+          { answer: 'you', question: 'bạn' },
+          { answer: 'to want', question: 'muốn' },
+          { answer: 'size', question: 'size' },
+          { answer: 'what', question: 'gì' },
+          { answer: 'What size do you want?', question: 'Bạn muốn size gì?' },
+        ] },
+        { answer: 'These jackets come in three sizes: small, medium, and large.', question: 'Những chiếc áo khoác này có ba cỡ: nhỏ, trung, và lớn.', phrases: [
+          { answer: 'jacket', question: 'áo khoác' },
+          { answer: 'three sizes', question: 'ba cỡ' },
+          { answer: 'small, medium, and large', question: 'nhỏ, trung, và lớn' },
+          { answer: 'These jackets come in three sizes: small, medium, and large.', question: 'Những chiếc áo khoác này có ba cỡ: nhỏ, trung, và lớn.' },
+        ] },
+        { answer: 'I want to buy the small one.', question: 'Tôi muốn mua chiếc áo nhỏ.', phrases: [
+          { answer: 'I want to buy', question: 'tôi muốn mua' },
+          { answer: 'shirt (item)', question: 'chiếc áo' },
+          { answer: 'small', question: 'nhỏ' },
+          { answer: 'I want to buy the small one.', question: 'Tôi muốn mua chiếc áo nhỏ.' },
+        ] },
+        { answer: "I'd like to try on these pants.", question: 'Tôi muốn mặc thử chiếc quần này.', phrases: [
+          { answer: 'I want', question: 'tôi muốn' },
+          { answer: 'to try on (clothes)', question: 'mặc thử' },
+          { answer: 'pants', question: 'chiếc quần' },
+          { answer: "I'd like to try on these pants.", question: 'Tôi muốn mặc thử chiếc quần này.' },
+        ] },
+        { answer: "Where's the fitting room?", question: 'Phòng thử đồ ở đâu?', phrases: [
+          { answer: 'fitting room', question: 'phòng thử đồ' },
+          { answer: 'where', question: 'ở đâu' },
+          { answer: "Where's the fitting room?", question: 'Phòng thử đồ ở đâu?' },
+        ] },
+        { answer: 'Does this color suit me?', question: 'Màu này có hợp tôi không?', phrases: [
+          { answer: 'color', question: 'màu' },
+          { answer: 'this', question: 'này' },
+          { answer: 'to suit', question: 'hợp' },
+          { answer: 'Does this color suit me?', question: 'Màu này có hợp tôi không?' },
+        ] },
+        { answer: 'How much are these high heels?', question: 'Đôi giày cao gót này giá bao nhiêu?', phrases: [
+          { answer: 'pair of high heels', question: 'đôi giày cao gót' },
+          { answer: 'how much', question: 'giá bao nhiêu' },
+          { answer: 'How much are these high heels?', question: 'Đôi giày cao gót này giá bao nhiêu?' },
+        ] },
+        { answer: 'These shoes are one size too big. Do you have them in a size 8?', question: 'Đôi giày này hơi rộng. Anh có số tám không?', phrases: [
+          { answer: 'pair of shoes', question: 'đôi giày' },
+          { answer: 'a little big', question: 'hơi rộng' },
+          { answer: 'size 8', question: 'số tám' },
+          { answer: 'These shoes are one size too big. Do you have them in a size 8?', question: 'Đôi giày này hơi rộng. Anh có số tám không?' },
+        ] },
+        { answer: 'These high heels fit perfectly.', question: 'Đôi giày cao gót này rất vừa vặn.', phrases: [
+          { answer: 'pair of high heels', question: 'đôi giày cao gót' },
+          { answer: 'very', question: 'rất' },
+          { answer: 'to fit', question: 'vừa vặn' },
+          { answer: 'These high heels fit perfectly.', question: 'Đôi giày cao gót này rất vừa vặn.' },
+        ] },
+        { answer: 'I always wear brown shoes.', question: 'Tôi luôn mang giày màu nâu.', phrases: [
+          { answer: 'I', question: 'tôi' },
+          { answer: 'always', question: 'luôn' },
+          { answer: 'to wear (shoes)', question: 'mang' },
+          { answer: 'brown', question: 'màu nâu' },
+          { answer: 'I always wear brown shoes.', question: 'Tôi luôn mang giày màu nâu.' },
+        ] },
+        { answer: 'I like the gray suit.', question: 'Tôi thích bộ com lê màu xám.', phrases: [
+          { answer: 'I like', question: 'tôi thích' },
+          { answer: 'suit', question: 'bộ com lê' },
+          { answer: 'gray', question: 'màu xám' },
+          { answer: 'I like the gray suit.', question: 'Tôi thích bộ com lê màu xám.' },
+        ] },
+        { answer: "I don't like the green shirt.", question: 'Tôi không thích chiếc áo sơ mi màu xanh lá cây.', phrases: [
+          { answer: 'I do not like', question: 'tôi không thích' },
+          { answer: 'shirt', question: 'áo sơ mi' },
+          { answer: 'green', question: 'màu xanh lá cây' },
+          { answer: "I don't like the green shirt.", question: 'Tôi không thích chiếc áo sơ mi màu xanh lá cây.' },
+        ] },
+        { answer: 'Give me a discount on this sweater, will you?', question: 'Giảm giá chiếc áo len này cho tôi, được không?', phrases: [
+          { answer: 'discount', question: 'giảm giá' },
+          { answer: 'sweater', question: 'áo len' },
+          { answer: 'for me', question: 'cho tôi' },
+          { answer: 'Give me a discount on this sweater, will you?', question: 'Giảm giá chiếc áo len này cho tôi, được không?' },
+        ] },
+      ],
+    },
+  ],
   'At the Bookstore': [{ cards: [
-    // author - tac gia
-    // book - cuon sach, sach
-    // culture - van hoa
-    // dictionary - tu dien
-    // English-Vietnamese dictionary - tu dien Anh-Viet
-    // help - giup
-    // history - lich su
-    // in (a certain language) - bang
-    // magazine - tap chi
-    // map - ban do
-    // novel - tieu thuyet
-    // publisher - nha xuat ban
-    // reference book - sach tham khao
-    // travel guide - sach huong dan du lich
-    // Vietnamese-English dictionary - tu dien Viet-Anh
-    // newspaper - bao
-    // novelist - nha van
-    // painting - buc tranh
-    // picture book - truyen tranh
-    // pack of playing cards - bo bai
-    // pack of Pokemon cards - bo bai Pokemon
-    // postcard - buc thu, buc phong su
-    // bookmark - dau sach
-    // sticker - nhan dan, tem dan
-    // headphones - tai nghe
-    // learn, study - hoc
-    // cafe - quan ca phe
-    // croissant - banh mi
-    // comic book - truyen tranh
-    // cheesecake - banh pho mai
-    // coffee cake - banh ca phe
-    // focus - tap trung
-    // I want to buy an English-Vietnamese dictionary. - Toi muon mua mot cuon tu dien Anh-Viet.
-    // I will teach myself Vietnamese. - Toi se tu hoc tieng Viet.
-    // Do you have any Pokemon cards? - Ban co bo bai Pokemon khong?
-    // Where are the postcards? - Ban do buc thu o dau?
-    // I'd like to buy this novel. - Toi muon mua cuon tieu thuyet nay.
-    // Do you have any books about Vietnamese culture? - Ban co sach ve van hoa Viet Nam khong?
-    // I'd like to buy a pack of playing cards. - Toi muon mua mot bo bai.
-    // Let's look at the comics. - Hay xem truyen tranh di.
-    // I'm interested in Vietnamese history. - Toi quan tam den lich su Viet Nam.
-    // Please hep me find a book on Vietnamese culture. - Lam on giup toi tim mot cuon sach ve van hoa Viet Nam.
-    // I want an English-language newspaper. - Toi muon mot to bao tieng Anh.
+    { answer: 'author', question: 'tác giả', phrases: [
+      { answer: 'Who is the author?', question: 'Tác giả là ai?' },
+      { answer: 'I like this author.', question: 'Tôi thích tác giả này.' },
+      { answer: 'This author is famous.', question: 'Tác giả này nổi tiếng.' },
+      { answer: 'Who is the author of this book?', question: 'Tác giả của cuốn sách này là ai?' },
+      { answer: 'He is a famous author.', question: 'Anh ấy là một tác giả nổi tiếng.' },
+    ] },
+    { answer: 'book', question: 'cuốn sách, sách', phrases: [
+      { answer: 'I want to buy a book.', question: 'Tôi muốn mua một cuốn sách.' },
+      { answer: 'Do you have this book?', question: 'Bạn có cuốn sách này không?' },
+      { answer: 'This book is interesting.', question: 'Cuốn sách này thú vị.' },
+      { answer: 'How much is this book?', question: 'Cuốn sách này giá bao nhiêu?' },
+      { answer: 'I like to read books.', question: 'Tôi thích đọc sách.' },
+    ] },
+    { answer: 'culture', question: 'văn hóa', phrases: [
+      { answer: 'I am interested in Vietnamese culture.', question: 'Tôi quan tâm đến văn hóa Việt Nam.' },
+      { answer: 'Do you have books about culture?', question: 'Bạn có sách về văn hóa không?' },
+      { answer: 'Vietnamese culture is interesting.', question: 'Văn hóa Việt Nam thú vị.' },
+      { answer: 'I want to learn about the culture.', question: 'Tôi muốn học về văn hóa.' },
+      { answer: 'Culture is important.', question: 'Văn hóa quan trọng.' },
+    ] },
+    { answer: 'dictionary', question: 'từ điển', phrases: [
+      { answer: 'I want to buy a dictionary.', question: 'Tôi muốn mua một cuốn từ điển.' },
+      { answer: 'Do you have a dictionary?', question: 'Bạn có từ điển không?' },
+      { answer: 'How much is this dictionary?', question: 'Cuốn từ điển này giá bao nhiêu?' },
+      { answer: 'I need a dictionary.', question: 'Tôi cần một cuốn từ điển.' },
+      { answer: 'This dictionary is good.', question: 'Cuốn từ điển này tốt.' },
+    ] },
+    { answer: 'English-Vietnamese dictionary', question: 'từ điển Anh-Việt', phrases: [
+      { answer: 'I want to buy an English-Vietnamese dictionary.', question: 'Tôi muốn mua một cuốn từ điển Anh-Việt.' },
+      { answer: 'Do you have an English-Vietnamese dictionary?', question: 'Bạn có từ điển Anh-Việt không?' },
+      { answer: 'How much is this English-Vietnamese dictionary?', question: 'Cuốn từ điển Anh-Việt này giá bao nhiêu?' },
+      { answer: 'I need an English-Vietnamese dictionary.', question: 'Tôi cần một cuốn từ điển Anh-Việt.' },
+      { answer: 'This English-Vietnamese dictionary is good.', question: 'Cuốn từ điển Anh-Việt này tốt.' },
+    ] },
+    { answer: 'help', question: 'giúp', phrases: [
+      { answer: 'Can you help me?', question: 'Bạn giúp tôi được không?' },
+      { answer: 'Please help me find a book.', question: 'Làm ơn giúp tôi tìm một cuốn sách.' },
+      { answer: 'I need help.', question: 'Tôi cần giúp đỡ.' },
+      { answer: 'Thank you for your help.', question: 'Cảm ơn sự giúp đỡ của bạn.' },
+      { answer: 'Can you help me, please?', question: 'Làm ơn giúp tôi được không?' },
+    ] },
+    { answer: 'history', question: 'lịch sử', phrases: [
+      { answer: 'I am interested in Vietnamese history.', question: 'Tôi quan tâm đến lịch sử Việt Nam.' },
+      { answer: 'Do you have history books?', question: 'Bạn có sách lịch sử không?' },
+      { answer: 'Vietnamese history is interesting.', question: 'Lịch sử Việt Nam thú vị.' },
+      { answer: 'I like history.', question: 'Tôi thích lịch sử.' },
+      { answer: 'I want to learn history.', question: 'Tôi muốn học lịch sử.' },
+    ] },
+    { answer: 'in (a certain language)', question: 'bằng', phrases: [
+      { answer: 'Is this book in English?', question: 'Cuốn sách này bằng tiếng Anh phải không?' },
+      { answer: 'Do you have books in English?', question: 'Bạn có sách bằng tiếng Anh không?' },
+      { answer: 'I want a book in Vietnamese.', question: 'Tôi muốn một cuốn sách bằng tiếng Việt.' },
+      { answer: 'Please write it in English.', question: 'Xin viết bằng tiếng Anh.' },
+      { answer: 'Is it in Vietnamese?', question: 'Nó bằng tiếng Việt phải không?' },
+    ] },
+    { answer: 'magazine', question: 'tạp chí', phrases: [
+      { answer: 'I want to buy a magazine.', question: 'Tôi muốn mua một cuốn tạp chí.' },
+      { answer: 'Do you have magazines?', question: 'Bạn có tạp chí không?' },
+      { answer: 'How much is this magazine?', question: 'Cuốn tạp chí này giá bao nhiêu?' },
+      { answer: 'I like to read magazines.', question: 'Tôi thích đọc tạp chí.' },
+      { answer: 'Where are the magazines?', question: 'Tạp chí ở đâu?' },
+    ] },
+    { answer: 'map', question: 'bản đồ', phrases: [
+      { answer: 'I want to buy a map.', question: 'Tôi muốn mua một bản đồ.' },
+      { answer: 'Do you have a map?', question: 'Bạn có bản đồ không?' },
+      { answer: 'How much is this map?', question: 'Bản đồ này giá bao nhiêu?' },
+      { answer: 'I need a map of the city.', question: 'Tôi cần một bản đồ thành phố.' },
+      { answer: 'Where are the maps?', question: 'Bản đồ ở đâu?' },
+    ] },
+    { answer: 'novel', question: 'tiểu thuyết', phrases: [
+      { answer: "I'd like to buy this novel.", question: 'Tôi muốn mua cuốn tiểu thuyết này.' },
+      { answer: 'Do you have novels?', question: 'Bạn có tiểu thuyết không?' },
+      { answer: 'This novel is interesting.', question: 'Cuốn tiểu thuyết này thú vị.' },
+      { answer: 'I like to read novels.', question: 'Tôi thích đọc tiểu thuyết.' },
+      { answer: 'How much is this novel?', question: 'Cuốn tiểu thuyết này giá bao nhiêu?' },
+    ] },
+    { answer: 'publisher', question: 'nhà xuất bản', phrases: [
+      { answer: 'Who is the publisher?', question: 'Nhà xuất bản là ai?' },
+      { answer: 'This is a famous publisher.', question: 'Đây là một nhà xuất bản nổi tiếng.' },
+      { answer: 'Which publisher is this?', question: 'Đây là nhà xuất bản nào?' },
+      { answer: 'The publisher is in Hanoi.', question: 'Nhà xuất bản ở Hà Nội.' },
+      { answer: 'I like this publisher.', question: 'Tôi thích nhà xuất bản này.' },
+    ] },
+    { answer: 'reference book', question: 'sách tham khảo', phrases: [
+      { answer: 'I want to buy a reference book.', question: 'Tôi muốn mua một cuốn sách tham khảo.' },
+      { answer: 'Do you have reference books?', question: 'Bạn có sách tham khảo không?' },
+      { answer: 'This reference book is useful.', question: 'Cuốn sách tham khảo này hữu ích.' },
+      { answer: 'How much is this reference book?', question: 'Cuốn sách tham khảo này giá bao nhiêu?' },
+      { answer: 'Where are the reference books?', question: 'Sách tham khảo ở đâu?' },
+    ] },
+    { answer: 'travel guide', question: 'sách hướng dẫn du lịch', phrases: [
+      { answer: 'I want to buy a travel guide.', question: 'Tôi muốn mua một cuốn sách hướng dẫn du lịch.' },
+      { answer: 'Do you have travel guides?', question: 'Bạn có sách hướng dẫn du lịch không?' },
+      { answer: 'This travel guide is useful.', question: 'Cuốn sách hướng dẫn du lịch này hữu ích.' },
+      { answer: 'I need a travel guide for Vietnam.', question: 'Tôi cần một cuốn sách hướng dẫn du lịch Việt Nam.' },
+      { answer: 'Where are the travel guides?', question: 'Sách hướng dẫn du lịch ở đâu?' },
+    ] },
+    { answer: 'Vietnamese-English dictionary', question: 'từ điển Việt-Anh', phrases: [
+      { answer: 'I want to buy a Vietnamese-English dictionary.', question: 'Tôi muốn mua một cuốn từ điển Việt-Anh.' },
+      { answer: 'Do you have a Vietnamese-English dictionary?', question: 'Bạn có từ điển Việt-Anh không?' },
+      { answer: 'How much is this Vietnamese-English dictionary?', question: 'Cuốn từ điển Việt-Anh này giá bao nhiêu?' },
+      { answer: 'I need a Vietnamese-English dictionary.', question: 'Tôi cần một cuốn từ điển Việt-Anh.' },
+      { answer: 'This Vietnamese-English dictionary is good.', question: 'Cuốn từ điển Việt-Anh này tốt.' },
+    ] },
+    { answer: 'newspaper', question: 'báo', phrases: [
+      { answer: 'I want to buy a newspaper.', question: 'Tôi muốn mua một tờ báo.' },
+      { answer: 'Do you have newspapers?', question: 'Bạn có báo không?' },
+      { answer: 'I want an English-language newspaper.', question: 'Tôi muốn một tờ báo tiếng Anh.' },
+      { answer: 'I read the newspaper every morning.', question: 'Tôi đọc báo mỗi sáng.' },
+      { answer: 'Where are the newspapers?', question: 'Báo ở đâu?' },
+    ] },
+    { answer: 'novelist', question: 'nhà văn', phrases: [
+      { answer: 'He is a famous novelist.', question: 'Anh ấy là một nhà văn nổi tiếng.' },
+      { answer: 'I like this novelist.', question: 'Tôi thích nhà văn này.' },
+      { answer: 'Who is this novelist?', question: 'Nhà văn này là ai?' },
+      { answer: 'She is a Vietnamese novelist.', question: 'Cô ấy là một nhà văn Việt Nam.' },
+      { answer: 'I want to be a novelist.', question: 'Tôi muốn làm nhà văn.' },
+    ] },
+    { answer: 'painting', question: 'bức tranh', phrases: [
+      { answer: 'I want to buy a painting.', question: 'Tôi muốn mua một bức tranh.' },
+      { answer: 'Do you have paintings?', question: 'Bạn có bức tranh không?' },
+      { answer: 'This painting is beautiful.', question: 'Bức tranh này đẹp.' },
+      { answer: 'How much is this painting?', question: 'Bức tranh này giá bao nhiêu?' },
+      { answer: 'I like this painting.', question: 'Tôi thích bức tranh này.' },
+    ] },
+    { answer: 'picture book', question: 'truyện tranh', phrases: [
+      { answer: 'I want to buy a picture book.', question: 'Tôi muốn mua một cuốn truyện tranh.' },
+      { answer: 'Do you have picture books?', question: 'Bạn có truyện tranh không?' },
+      { answer: 'Children love picture books.', question: 'Trẻ con thích truyện tranh.' },
+      { answer: 'How much is this picture book?', question: 'Cuốn truyện tranh này giá bao nhiêu?' },
+      { answer: 'Where are the picture books?', question: 'Truyện tranh ở đâu?' },
+    ] },
+    { answer: 'pack of playing cards', question: 'bộ bài', phrases: [
+      { answer: "I'd like to buy a pack of playing cards.", question: 'Tôi muốn mua một bộ bài.' },
+      { answer: 'Do you have playing cards?', question: 'Bạn có bộ bài không?' },
+      { answer: 'How much is a pack of playing cards?', question: 'Một bộ bài giá bao nhiêu?' },
+      { answer: 'We need a pack of playing cards.', question: 'Chúng tôi cần một bộ bài.' },
+      { answer: "Let's play cards.", question: 'Chơi bài đi.' },
+    ] },
+    { answer: 'pack of Pokemon cards', question: 'bộ bài Pokemon', phrases: [
+      { answer: 'Do you have any Pokemon cards?', question: 'Bạn có bộ bài Pokemon không?' },
+      { answer: 'I want to buy a pack of Pokemon cards.', question: 'Tôi muốn mua một bộ bài Pokemon.' },
+      { answer: 'How much is a pack of Pokemon cards?', question: 'Một bộ bài Pokemon giá bao nhiêu?' },
+      { answer: 'Children love Pokemon cards.', question: 'Trẻ con thích bộ bài Pokemon.' },
+      { answer: 'Where are the Pokemon cards?', question: 'Bộ bài Pokemon ở đâu?' },
+    ] },
+    { answer: 'postcard', question: 'bưu thiếp', phrases: [
+      { answer: 'I want to buy a postcard.', question: 'Tôi muốn mua một tấm bưu thiếp.' },
+      { answer: 'Do you have postcards?', question: 'Bạn có bưu thiếp không?' },
+      { answer: 'Where are the postcards?', question: 'Bưu thiếp ở đâu?' },
+      { answer: 'I want to send a postcard.', question: 'Tôi muốn gửi bưu thiếp.' },
+      { answer: 'How much is this postcard?', question: 'Tấm bưu thiếp này giá bao nhiêu?' },
+    ] },
+    { answer: 'bookmark', question: 'dấu trang', phrases: [
+      { answer: 'I want to buy a bookmark.', question: 'Tôi muốn mua một cái dấu trang.' },
+      { answer: 'Do you have bookmarks?', question: 'Bạn có dấu trang không?' },
+      { answer: 'This bookmark is beautiful.', question: 'Cái dấu trang này đẹp.' },
+      { answer: 'I need a bookmark.', question: 'Tôi cần một cái dấu trang.' },
+      { answer: 'Where are the bookmarks?', question: 'Dấu trang ở đâu?' },
+    ] },
+    { answer: 'sticker', question: 'nhãn dán, tem dán', phrases: [
+      { answer: 'I want to buy stickers.', question: 'Tôi muốn mua nhãn dán.' },
+      { answer: 'Do you have stickers?', question: 'Bạn có nhãn dán không?' },
+      { answer: 'Children love stickers.', question: 'Trẻ con thích nhãn dán.' },
+      { answer: 'How much are these stickers?', question: 'Nhãn dán này giá bao nhiêu?' },
+      { answer: 'These stickers are beautiful.', question: 'Nhãn dán này đẹp.' },
+    ] },
+    { answer: 'headphones', question: 'tai nghe', phrases: [
+      { answer: 'I want to buy headphones.', question: 'Tôi muốn mua tai nghe.' },
+      { answer: 'Do you have headphones?', question: 'Bạn có tai nghe không?' },
+      { answer: 'How much are these headphones?', question: 'Tai nghe này giá bao nhiêu?' },
+      { answer: 'These headphones are good.', question: 'Tai nghe này tốt.' },
+      { answer: 'My headphones are broken.', question: 'Tai nghe của tôi bị hỏng.' },
+    ] },
+    { answer: 'learn, study', question: 'học', phrases: [
+      { answer: 'I want to study Vietnamese.', question: 'Tôi muốn học tiếng Việt.' },
+      { answer: 'I will teach myself Vietnamese.', question: 'Tôi sẽ tự học tiếng Việt.' },
+      { answer: 'I like to learn.', question: 'Tôi thích học.' },
+      { answer: 'I am studying history.', question: 'Tôi đang học lịch sử.' },
+      { answer: 'I want to learn about the culture.', question: 'Tôi muốn học về văn hóa.' },
+    ] },
+    { answer: 'cafe', question: 'quán cà phê', phrases: [
+      { answer: 'There is a cafe in the bookstore.', question: 'Có quán cà phê trong nhà sách.' },
+      { answer: "Let's go to the cafe.", question: 'Đi đến quán cà phê đi.' },
+      { answer: 'This cafe is nice.', question: 'Quán cà phê này đẹp.' },
+      { answer: 'I want to read at the cafe.', question: 'Tôi muốn đọc sách ở quán cà phê.' },
+      { answer: 'Is there a cafe near here?', question: 'Có quán cà phê nào gần đây không?' },
+    ] },
+    { answer: 'croissant', question: 'bánh sừng bò', phrases: [
+      { answer: 'I would like a croissant.', question: 'Cho tôi một cái bánh sừng bò.' },
+      { answer: 'Do you have croissants?', question: 'Bạn có bánh sừng bò không?' },
+      { answer: 'This croissant is delicious.', question: 'Bánh sừng bò này ngon.' },
+      { answer: 'I want a croissant with my coffee.', question: 'Tôi muốn một cái bánh sừng bò với cà phê.' },
+      { answer: 'I like croissants.', question: 'Tôi thích bánh sừng bò.' },
+    ] },
+    { answer: 'comic book', question: 'truyện tranh', phrases: [
+      { answer: "Let's look at the comics.", question: 'Hãy xem truyện tranh đi.' },
+      { answer: 'Do you have comic books?', question: 'Bạn có truyện tranh không?' },
+      { answer: 'I want to buy a comic book.', question: 'Tôi muốn mua một cuốn truyện tranh.' },
+      { answer: 'Children love comic books.', question: 'Trẻ con thích truyện tranh.' },
+      { answer: 'Where are the comic books?', question: 'Truyện tranh ở đâu?' },
+    ] },
+    { answer: 'cheesecake', question: 'bánh phô mai', phrases: [
+      { answer: 'I would like cheesecake.', question: 'Cho tôi bánh phô mai.' },
+      { answer: 'Do you have cheesecake?', question: 'Bạn có bánh phô mai không?' },
+      { answer: 'This cheesecake is delicious.', question: 'Bánh phô mai này ngon.' },
+      { answer: 'I want to order cheesecake.', question: 'Tôi muốn gọi bánh phô mai.' },
+      { answer: 'I like cheesecake.', question: 'Tôi thích bánh phô mai.' },
+    ] },
+    { answer: 'coffee cake', question: 'bánh cà phê', phrases: [
+      { answer: 'I would like coffee cake.', question: 'Cho tôi bánh cà phê.' },
+      { answer: 'Do you have coffee cake?', question: 'Bạn có bánh cà phê không?' },
+      { answer: 'This coffee cake is delicious.', question: 'Bánh cà phê này ngon.' },
+      { answer: 'I want to order coffee cake.', question: 'Tôi muốn gọi bánh cà phê.' },
+      { answer: 'I like coffee cake.', question: 'Tôi thích bánh cà phê.' },
+    ] },
+    { answer: 'focus', question: 'tập trung', phrases: [
+      { answer: 'I need to focus.', question: 'Tôi cần tập trung.' },
+      { answer: 'I cannot focus.', question: 'Tôi không thể tập trung.' },
+      { answer: 'Please focus.', question: 'Xin tập trung.' },
+      { answer: 'I focus when I study.', question: 'Tôi tập trung khi học.' },
+      { answer: 'It is hard to focus here.', question: 'Khó tập trung ở đây.' },
+    ] },
+    { answer: 'I want to buy an English-Vietnamese dictionary.', question: 'Tôi muốn mua một cuốn từ điển Anh-Việt.', phrases: [
+      { answer: 'I want to buy', question: 'tôi muốn mua' },
+      { answer: 'a book/volume', question: 'một cuốn' },
+      { answer: 'English-Vietnamese dictionary', question: 'từ điển Anh-Việt' },
+      { answer: 'I want to buy an English-Vietnamese dictionary.', question: 'Tôi muốn mua một cuốn từ điển Anh-Việt.' },
+    ] },
+    { answer: 'I will teach myself Vietnamese.', question: 'Tôi sẽ tự học tiếng Việt.', phrases: [
+      { answer: 'I', question: 'tôi' },
+      { answer: 'will', question: 'sẽ' },
+      { answer: 'to teach oneself', question: 'tự học' },
+      { answer: 'Vietnamese (language)', question: 'tiếng Việt' },
+      { answer: 'I will teach myself Vietnamese.', question: 'Tôi sẽ tự học tiếng Việt.' },
+    ] },
+    { answer: 'Do you have any Pokemon cards?', question: 'Bạn có bộ bài Pokemon không?', phrases: [
+      { answer: 'you', question: 'bạn' },
+      { answer: 'to have', question: 'có' },
+      { answer: 'pack of Pokemon cards', question: 'bộ bài Pokemon' },
+      { answer: 'Do you have any Pokemon cards?', question: 'Bạn có bộ bài Pokemon không?' },
+    ] },
+    { answer: 'Where are the postcards?', question: 'Bưu thiếp ở đâu?', phrases: [
+      { answer: 'postcard', question: 'bưu thiếp' },
+      { answer: 'where', question: 'ở đâu' },
+      { answer: 'Where are the postcards?', question: 'Bưu thiếp ở đâu?' },
+    ] },
+    { answer: "I'd like to buy this novel.", question: 'Tôi muốn mua cuốn tiểu thuyết này.', phrases: [
+      { answer: 'I want to buy', question: 'tôi muốn mua' },
+      { answer: 'novel', question: 'tiểu thuyết' },
+      { answer: 'this', question: 'này' },
+      { answer: "I'd like to buy this novel.", question: 'Tôi muốn mua cuốn tiểu thuyết này.' },
+    ] },
+    { answer: 'Do you have any books about Vietnamese culture?', question: 'Bạn có sách về văn hóa Việt Nam không?', phrases: [
+      { answer: 'you', question: 'bạn' },
+      { answer: 'to have', question: 'có' },
+      { answer: 'book', question: 'sách' },
+      { answer: 'about Vietnamese culture', question: 'về văn hóa Việt Nam' },
+      { answer: 'Do you have any books about Vietnamese culture?', question: 'Bạn có sách về văn hóa Việt Nam không?' },
+    ] },
+    { answer: "I'd like to buy a pack of playing cards.", question: 'Tôi muốn mua một bộ bài.', phrases: [
+      { answer: 'I want to buy', question: 'tôi muốn mua' },
+      { answer: 'one, a', question: 'một' },
+      { answer: 'pack of playing cards', question: 'bộ bài' },
+      { answer: "I'd like to buy a pack of playing cards.", question: 'Tôi muốn mua một bộ bài.' },
+    ] },
+    { answer: "Let's look at the comics.", question: 'Hãy xem truyện tranh đi.', phrases: [
+      { answer: "let's", question: 'hãy ... đi' },
+      { answer: 'to look at', question: 'xem' },
+      { answer: 'comics', question: 'truyện tranh' },
+      { answer: "Let's look at the comics.", question: 'Hãy xem truyện tranh đi.' },
+    ] },
+    { answer: "I'm interested in Vietnamese history.", question: 'Tôi quan tâm đến lịch sử Việt Nam.', phrases: [
+      { answer: 'I', question: 'tôi' },
+      { answer: 'to be interested in', question: 'quan tâm đến' },
+      { answer: 'Vietnamese history', question: 'lịch sử Việt Nam' },
+      { answer: "I'm interested in Vietnamese history.", question: 'Tôi quan tâm đến lịch sử Việt Nam.' },
+    ] },
+    { answer: 'Please help me find a book on Vietnamese culture.', question: 'Làm ơn giúp tôi tìm một cuốn sách về văn hóa Việt Nam.', phrases: [
+      { answer: 'please', question: 'làm ơn' },
+      { answer: 'help me', question: 'giúp tôi' },
+      { answer: 'to find', question: 'tìm' },
+      { answer: 'a book about Vietnamese culture', question: 'một cuốn sách về văn hóa Việt Nam' },
+      { answer: 'Please help me find a book on Vietnamese culture.', question: 'Làm ơn giúp tôi tìm một cuốn sách về văn hóa Việt Nam.' },
+    ] },
+    { answer: 'I want an English-language newspaper.', question: 'Tôi muốn một tờ báo tiếng Anh.', phrases: [
+      { answer: 'I want', question: 'tôi muốn' },
+      { answer: 'a newspaper', question: 'một tờ báo' },
+      { answer: 'English (language)', question: 'tiếng Anh' },
+      { answer: 'I want an English-language newspaper.', question: 'Tôi muốn một tờ báo tiếng Anh.' },
+    ] },
   ] }],
   'At the Post Office': [{ cards: [] }],
   'At the Beauty Salon': [{ cards: [] }],
   'At the Barbershop': [{ cards: [] }],
   'Visiting a Vietnamese Home': [{ cards: [
-    // antique chair - ghe co
-    // antique table - ban co
-    // dining room - phong an
-    // fragrant - thom
-    // living room - phong khach
-    // must be - chac la
-    // priceless -vo gia
-    // spacious - rong
-    // take off - coi
-    // toilet - nha ve sinh
-    // kitchen - bep
-    // bedroom - phong ngu
-    // door - cua
-    // window - cua so
-    // rug - tham
-    // painting (noun) - buc tranh
-    // wall - tuong
-    // silverware - do an bang bac
-    // cup - coc
-    // vase - binh
-    // Do we need to take off our shoes? - Chung toi co can coi giay ra khong?
-    // Your house is beautiful! - Nha cua anh chi dep qua!
-    // Your living room is so spacious! - Phong khach cua anh chi rong qua!
-    // This antique table must be priceless. - Chiec ban co nay chac la vo gia.
-    // Could I use the toilet? - Toi dung nha ve sinh duoc khong?
-    // This tea is so fragrant! - Tra nay thom qua!
-    // Where did you buy it? Anh chi mua no o dau?
-    // We are so sorry we cannot stay for dinner. - Chung toi xin loi khong the o lai cho bua toi duoc.
-    // Thank you for inviting us. - Cam on anh chi da moi chung toi.
-    // Your bedroom is so beautiful! - Phong ngu cua anh chi dep qua!
+    { answer: 'antique chair', question: 'ghế cổ', phrases: [
+      { answer: 'This is an antique chair.', question: 'Đây là một cái ghế cổ.' },
+      { answer: 'This antique chair is beautiful.', question: 'Cái ghế cổ này đẹp.' },
+      { answer: 'Do you have antique chairs?', question: 'Bạn có ghế cổ không?' },
+      { answer: 'This antique chair is priceless.', question: 'Cái ghế cổ này vô giá.' },
+      { answer: 'I like this antique chair.', question: 'Tôi thích cái ghế cổ này.' },
+    ] },
+    { answer: 'antique table', question: 'bàn cổ', phrases: [
+      { answer: 'This is an antique table.', question: 'Đây là một cái bàn cổ.' },
+      { answer: 'This antique table must be priceless.', question: 'Cái bàn cổ này chắc là vô giá.' },
+      { answer: 'This antique table is beautiful.', question: 'Cái bàn cổ này đẹp.' },
+      { answer: 'Where did you buy this antique table?', question: 'Anh chị mua cái bàn cổ này ở đâu?' },
+      { answer: 'I like this antique table.', question: 'Tôi thích cái bàn cổ này.' },
+    ] },
+    { answer: 'dining room', question: 'phòng ăn', phrases: [
+      { answer: 'This is the dining room.', question: 'Đây là phòng ăn.' },
+      { answer: 'The dining room is spacious.', question: 'Phòng ăn rộng.' },
+      { answer: 'We eat in the dining room.', question: 'Chúng tôi ăn ở phòng ăn.' },
+      { answer: 'Your dining room is beautiful.', question: 'Phòng ăn của anh chị đẹp.' },
+      { answer: 'Where is the dining room?', question: 'Phòng ăn ở đâu?' },
+    ] },
+    { answer: 'fragrant', question: 'thơm', phrases: [
+      { answer: 'This tea is so fragrant!', question: 'Trà này thơm quá!' },
+      { answer: 'The flowers are fragrant.', question: 'Hoa thơm.' },
+      { answer: 'This coffee is fragrant.', question: 'Cà phê này thơm.' },
+      { answer: 'The food smells fragrant.', question: 'Thức ăn thơm.' },
+      { answer: 'It is very fragrant.', question: 'Rất thơm.' },
+    ] },
+    { answer: 'living room', question: 'phòng khách', phrases: [
+      { answer: 'This is the living room.', question: 'Đây là phòng khách.' },
+      { answer: 'Your living room is so spacious!', question: 'Phòng khách của anh chị rộng quá!' },
+      { answer: 'The living room is beautiful.', question: 'Phòng khách đẹp.' },
+      { answer: 'We sit in the living room.', question: 'Chúng tôi ngồi ở phòng khách.' },
+      { answer: 'Where is the living room?', question: 'Phòng khách ở đâu?' },
+    ] },
+    { answer: 'must be', question: 'chắc là', phrases: [
+      { answer: 'This must be priceless.', question: 'Cái này chắc là vô giá.' },
+      { answer: 'He must be tired.', question: 'Anh ấy chắc là mệt.' },
+      { answer: 'This must be expensive.', question: 'Cái này chắc là đắt.' },
+      { answer: 'She must be at home.', question: 'Cô ấy chắc là ở nhà.' },
+      { answer: 'It must be delicious.', question: 'Chắc là ngon.' },
+    ] },
+    { answer: 'priceless', question: 'vô giá', phrases: [
+      { answer: 'This antique table is priceless.', question: 'Cái bàn cổ này vô giá.' },
+      { answer: 'This painting is priceless.', question: 'Bức tranh này vô giá.' },
+      { answer: 'It is priceless.', question: 'Nó vô giá.' },
+      { answer: 'These antiques are priceless.', question: 'Những món đồ cổ này vô giá.' },
+      { answer: 'This vase must be priceless.', question: 'Cái bình này chắc là vô giá.' },
+    ] },
+    { answer: 'spacious', question: 'rộng', phrases: [
+      { answer: 'Your house is spacious.', question: 'Nhà của anh chị rộng.' },
+      { answer: 'The living room is so spacious!', question: 'Phòng khách rộng quá!' },
+      { answer: 'This room is spacious.', question: 'Phòng này rộng.' },
+      { answer: 'Your bedroom is spacious.', question: 'Phòng ngủ của anh chị rộng.' },
+      { answer: 'The kitchen is spacious.', question: 'Bếp rộng.' },
+    ] },
+    { answer: 'take off', question: 'cởi', phrases: [
+      { answer: 'Do we need to take off our shoes?', question: 'Chúng tôi có cần cởi giày ra không?' },
+      { answer: 'Please take off your shoes.', question: 'Xin cởi giày ra.' },
+      { answer: 'I will take off my shoes.', question: 'Tôi sẽ cởi giày.' },
+      { answer: 'Should I take off my shoes?', question: 'Tôi có nên cởi giày không?' },
+      { answer: 'Take off your hat.', question: 'Cởi mũ ra.' },
+    ] },
+    { answer: 'toilet', question: 'nhà vệ sinh', phrases: [
+      { answer: 'Could I use the toilet?', question: 'Tôi dùng nhà vệ sinh được không?' },
+      { answer: 'Where is the toilet?', question: 'Nhà vệ sinh ở đâu?' },
+      { answer: 'Is there a toilet here?', question: 'Có nhà vệ sinh ở đây không?' },
+      { answer: 'The toilet is over there.', question: 'Nhà vệ sinh ở đằng kia.' },
+      { answer: 'I need to use the toilet.', question: 'Tôi cần đi vệ sinh.' },
+    ] },
+    { answer: 'kitchen', question: 'bếp', phrases: [
+      { answer: 'This is the kitchen.', question: 'Đây là bếp.' },
+      { answer: 'The kitchen is spacious.', question: 'Bếp rộng.' },
+      { answer: 'She is cooking in the kitchen.', question: 'Cô ấy đang nấu ăn trong bếp.' },
+      { answer: 'Your kitchen is beautiful.', question: 'Bếp của anh chị đẹp.' },
+      { answer: 'Where is the kitchen?', question: 'Bếp ở đâu?' },
+    ] },
+    { answer: 'bedroom', question: 'phòng ngủ', phrases: [
+      { answer: 'This is the bedroom.', question: 'Đây là phòng ngủ.' },
+      { answer: 'Your bedroom is so beautiful!', question: 'Phòng ngủ của anh chị đẹp quá!' },
+      { answer: 'The bedroom is spacious.', question: 'Phòng ngủ rộng.' },
+      { answer: 'I sleep in the bedroom.', question: 'Tôi ngủ ở phòng ngủ.' },
+      { answer: 'Where is the bedroom?', question: 'Phòng ngủ ở đâu?' },
+    ] },
+    { answer: 'door', question: 'cửa', phrases: [
+      { answer: 'Please close the door.', question: 'Xin đóng cửa.' },
+      { answer: 'Please open the door.', question: 'Xin mở cửa.' },
+      { answer: 'The door is open.', question: 'Cửa mở.' },
+      { answer: 'Where is the door?', question: 'Cửa ở đâu?' },
+      { answer: 'The door is beautiful.', question: 'Cửa đẹp.' },
+    ] },
+    { answer: 'window', question: 'cửa sổ', phrases: [
+      { answer: 'Please open the window.', question: 'Xin mở cửa sổ.' },
+      { answer: 'Please close the window.', question: 'Xin đóng cửa sổ.' },
+      { answer: 'The window is open.', question: 'Cửa sổ mở.' },
+      { answer: 'We want a table by the window.', question: 'Chúng tôi muốn một bàn ở gần cửa sổ.' },
+      { answer: 'The window is big.', question: 'Cửa sổ to.' },
+    ] },
+    { answer: 'rug', question: 'thảm', phrases: [
+      { answer: 'This rug is beautiful.', question: 'Cái thảm này đẹp.' },
+      { answer: 'Do you have a rug?', question: 'Bạn có thảm không?' },
+      { answer: 'The rug is soft.', question: 'Cái thảm mềm.' },
+      { answer: 'I want to buy a rug.', question: 'Tôi muốn mua một cái thảm.' },
+      { answer: 'The rug is on the floor.', question: 'Cái thảm ở trên sàn.' },
+    ] },
+    { answer: 'painting (noun)', question: 'bức tranh', phrases: [
+      { answer: 'This painting is beautiful.', question: 'Bức tranh này đẹp.' },
+      { answer: 'This painting is priceless.', question: 'Bức tranh này vô giá.' },
+      { answer: 'Where did you buy this painting?', question: 'Anh chị mua bức tranh này ở đâu?' },
+      { answer: 'I like this painting.', question: 'Tôi thích bức tranh này.' },
+      { answer: 'The painting is on the wall.', question: 'Bức tranh ở trên tường.' },
+    ] },
+    { answer: 'wall', question: 'tường', phrases: [
+      { answer: 'The painting is on the wall.', question: 'Bức tranh ở trên tường.' },
+      { answer: 'The wall is white.', question: 'Tường màu trắng.' },
+      { answer: 'There is a painting on the wall.', question: 'Có một bức tranh trên tường.' },
+      { answer: 'The wall is beautiful.', question: 'Tường đẹp.' },
+      { answer: 'Do not write on the wall.', question: 'Đừng viết lên tường.' },
+    ] },
+    { answer: 'silverware', question: 'đồ ăn bằng bạc', phrases: [
+      { answer: 'This silverware is beautiful.', question: 'Đồ ăn bằng bạc này đẹp.' },
+      { answer: 'The silverware is priceless.', question: 'Đồ ăn bằng bạc vô giá.' },
+      { answer: 'Do you have silverware?', question: 'Bạn có đồ ăn bằng bạc không?' },
+      { answer: 'This silverware is old.', question: 'Đồ ăn bằng bạc này cổ.' },
+      { answer: 'I like this silverware.', question: 'Tôi thích đồ ăn bằng bạc này.' },
+    ] },
+    { answer: 'cup', question: 'cốc', phrases: [
+      { answer: 'This is a beautiful cup.', question: 'Đây là một cái cốc đẹp.' },
+      { answer: 'Could I have a cup of tea?', question: 'Cho tôi một cốc trà được không?' },
+      { answer: 'The cup is on the table.', question: 'Cái cốc ở trên bàn.' },
+      { answer: 'This cup is dirty.', question: 'Cái cốc này bẩn.' },
+      { answer: 'I need a cup.', question: 'Tôi cần một cái cốc.' },
+    ] },
+    { answer: 'vase', question: 'bình', phrases: [
+      { answer: 'This vase is beautiful.', question: 'Cái bình này đẹp.' },
+      { answer: 'This vase must be priceless.', question: 'Cái bình này chắc là vô giá.' },
+      { answer: 'The flowers are in the vase.', question: 'Hoa ở trong bình.' },
+      { answer: 'Where did you buy this vase?', question: 'Anh chị mua cái bình này ở đâu?' },
+      { answer: 'I like this vase.', question: 'Tôi thích cái bình này.' },
+    ] },
+    { answer: 'Do we need to take off our shoes?', question: 'Chúng tôi có cần cởi giày ra không?', phrases: [
+      { answer: 'we', question: 'chúng tôi' },
+      { answer: 'to need', question: 'cần' },
+      { answer: 'to take off', question: 'cởi' },
+      { answer: 'shoes', question: 'giày' },
+      { answer: 'Do we need to take off our shoes?', question: 'Chúng tôi có cần cởi giày ra không?' },
+    ] },
+    { answer: 'Your house is beautiful!', question: 'Nhà của anh chị đẹp quá!', phrases: [
+      { answer: 'house', question: 'nhà' },
+      { answer: 'your (a couple)', question: 'của anh chị' },
+      { answer: 'beautiful', question: 'đẹp' },
+      { answer: 'Your house is beautiful!', question: 'Nhà của anh chị đẹp quá!' },
+    ] },
+    { answer: 'Your living room is so spacious!', question: 'Phòng khách của anh chị rộng quá!', phrases: [
+      { answer: 'living room', question: 'phòng khách' },
+      { answer: 'your (a couple)', question: 'của anh chị' },
+      { answer: 'spacious', question: 'rộng' },
+      { answer: 'Your living room is so spacious!', question: 'Phòng khách của anh chị rộng quá!' },
+    ] },
+    { answer: 'This antique table must be priceless.', question: 'Chiếc bàn cổ này chắc là vô giá.', phrases: [
+      { answer: 'antique table', question: 'bàn cổ' },
+      { answer: 'must be', question: 'chắc là' },
+      { answer: 'priceless', question: 'vô giá' },
+      { answer: 'This antique table must be priceless.', question: 'Chiếc bàn cổ này chắc là vô giá.' },
+    ] },
+    { answer: 'Could I use the toilet?', question: 'Tôi dùng nhà vệ sinh được không?', phrases: [
+      { answer: 'I', question: 'tôi' },
+      { answer: 'to use', question: 'dùng' },
+      { answer: 'toilet', question: 'nhà vệ sinh' },
+      { answer: 'Could I use the toilet?', question: 'Tôi dùng nhà vệ sinh được không?' },
+    ] },
+    { answer: 'This tea is so fragrant!', question: 'Trà này thơm quá!', phrases: [
+      { answer: 'tea', question: 'trà' },
+      { answer: 'fragrant', question: 'thơm' },
+      { answer: 'so, too', question: 'quá' },
+      { answer: 'This tea is so fragrant!', question: 'Trà này thơm quá!' },
+    ] },
+    { answer: 'Where did you buy it?', question: 'Anh chị mua nó ở đâu?', phrases: [
+      { answer: 'you (a couple)', question: 'anh chị' },
+      { answer: 'to buy', question: 'mua' },
+      { answer: 'where', question: 'ở đâu' },
+      { answer: 'Where did you buy it?', question: 'Anh chị mua nó ở đâu?' },
+    ] },
+    { answer: 'We are so sorry we cannot stay for dinner.', question: 'Chúng tôi xin lỗi không thể ở lại cho bữa tối được.', phrases: [
+      { answer: 'we are sorry', question: 'chúng tôi xin lỗi' },
+      { answer: 'cannot', question: 'không thể' },
+      { answer: 'to stay', question: 'ở lại' },
+      { answer: 'dinner', question: 'bữa tối' },
+      { answer: 'We are so sorry we cannot stay for dinner.', question: 'Chúng tôi xin lỗi không thể ở lại cho bữa tối được.' },
+    ] },
+    { answer: 'Thank you for inviting us.', question: 'Cảm ơn anh chị đã mời chúng tôi.', phrases: [
+      { answer: 'thank you', question: 'cảm ơn' },
+      { answer: 'to invite', question: 'mời' },
+      { answer: 'us', question: 'chúng tôi' },
+      { answer: 'Thank you for inviting us.', question: 'Cảm ơn anh chị đã mời chúng tôi.' },
+    ] },
+    { answer: 'Your bedroom is so beautiful!', question: 'Phòng ngủ của anh chị đẹp quá!', phrases: [
+      { answer: 'bedroom', question: 'phòng ngủ' },
+      { answer: 'your (a couple)', question: 'của anh chị' },
+      { answer: 'beautiful', question: 'đẹp' },
+      { answer: 'Your bedroom is so beautiful!', question: 'Phòng ngủ của anh chị đẹp quá!' },
+    ] },
   ] }],
   'Small Talk (Seasons, Weather, etc.)': [{ cards: [
-    // again - lai
-    // always - luon luon
-    // beautiful - dep
-    // because - vi
-    // cloud - may
-    // cloudy - nhieu may
-    // cold - lanh
-    // cold season - mua lanh
-    // cool - mat
-    // dry - kho
-    // dry season - mua kho
-    // fall (noun) - mua thu
-    // hot - nong
-    // hot season - mua nong
-    // humid - am
-    // love (verb) - yeu
-    // rain - mua
-    // rainy season - mua mua
-    // season - mua
-    // ski - truot tuyet
-    // snow - tuyet
-    // snowy - co tuyet
-    // spring (noun) - mua xuan
-    // summer (noun) - mua he
-    // sunny - nang
-    // throughout, all of - suot
-    // usually - thuong
-    // weather - troi
-    // weather forecast - du bao thoi tiet
-    // winter (noun) - mua dong
-    // prepare - chuan bi
-    // Do you like the weather here? - Ban co thich thoi tiet o day khong?
-    // It's so hot today! - Hom nay nong qua!
-    // It's so cool tonight. - Toi nay troi mat qua!
-    // It's raining again! - Troi lai mua!
-    // We hate rainy weather. - Chúng tôi ghét thời mưa.
-    // I like sunny weather. - Toi thich troi nang.
-    // I love the spring because the weather is always beautiful. - Toi yeu mua xuan vi thoi tiet luon dep.
-    // What's your favorite season? - Anh/Chi thich mua nao nhat?
-    // Summer's my favorite season. - Toi thich mua he nhat.
-    // In summer, the days are longer and it's usually sunny. - Vao mua he, ngay dai hon va thuong nang.
-    // According to the weather forecast, it will rain all week next week. - Theo du bao thoi tiet, troi se mua suot tuan sau.
-    // What do you enjoy doing in the winter? - Anh/Chi thich lam gi vao mua dong?
-    // I like to go skiing. - Toi thich di truot tuyet.
-    // I don't like cold weather. - Toi khong thich thoi tiet lanh.
+    { answer: 'again', question: 'lại', phrases: [
+      { answer: 'It is raining again!', question: 'Trời lại mưa!' },
+      { answer: 'Please say it again.', question: 'Xin nói lại.' },
+      { answer: 'I want to go again.', question: 'Tôi muốn đi lại.' },
+      { answer: 'Try again.', question: 'Thử lại đi.' },
+      { answer: 'See you again.', question: 'Hẹn gặp lại.' },
+    ] },
+    { answer: 'always', question: 'luôn luôn', phrases: [
+      { answer: 'The weather is always beautiful.', question: 'Thời tiết luôn luôn đẹp.' },
+      { answer: 'I always drink coffee.', question: 'Tôi luôn luôn uống cà phê.' },
+      { answer: 'She is always busy.', question: 'Cô ấy luôn luôn bận.' },
+      { answer: 'It always rains here.', question: 'Ở đây luôn luôn mưa.' },
+      { answer: 'I always wear brown shoes.', question: 'Tôi luôn luôn mang giày màu nâu.' },
+    ] },
+    { answer: 'beautiful', question: 'đẹp', phrases: [
+      { answer: 'The weather is beautiful.', question: 'Thời tiết đẹp.' },
+      { answer: 'It is a beautiful day.', question: 'Hôm nay là một ngày đẹp.' },
+      { answer: 'The spring is beautiful.', question: 'Mùa xuân đẹp.' },
+      { answer: 'She is very beautiful.', question: 'Cô ấy rất đẹp.' },
+      { answer: 'What a beautiful day!', question: 'Ngày đẹp quá!' },
+    ] },
+    { answer: 'because', question: 'vì', phrases: [
+      { answer: 'I love spring because the weather is beautiful.', question: 'Tôi yêu mùa xuân vì thời tiết đẹp.' },
+      { answer: 'I am tired because I worked all day.', question: 'Tôi mệt vì làm việc cả ngày.' },
+      { answer: 'I like summer because it is sunny.', question: 'Tôi thích mùa hè vì trời nắng.' },
+      { answer: 'I stayed home because it was raining.', question: 'Tôi ở nhà vì trời mưa.' },
+      { answer: 'Why? Because it is hot.', question: 'Tại sao? Vì trời nóng.' },
+    ] },
+    { answer: 'cloud', question: 'mây', phrases: [
+      { answer: 'There are many clouds.', question: 'Có nhiều mây.' },
+      { answer: 'The clouds are white.', question: 'Mây màu trắng.' },
+      { answer: 'There are no clouds today.', question: 'Hôm nay không có mây.' },
+      { answer: 'Look at the clouds.', question: 'Nhìn mây kìa.' },
+      { answer: 'The clouds are beautiful.', question: 'Mây đẹp.' },
+    ] },
+    { answer: 'cloudy', question: 'nhiều mây', phrases: [
+      { answer: 'It is cloudy today.', question: 'Hôm nay nhiều mây.' },
+      { answer: 'The sky is cloudy.', question: 'Trời nhiều mây.' },
+      { answer: 'It is cloudy and cold.', question: 'Trời nhiều mây và lạnh.' },
+      { answer: 'Is it cloudy?', question: 'Trời có nhiều mây không?' },
+      { answer: 'It will be cloudy tomorrow.', question: 'Ngày mai trời sẽ nhiều mây.' },
+    ] },
+    { answer: 'cold', question: 'lạnh', phrases: [
+      { answer: 'It is cold today.', question: 'Hôm nay trời lạnh.' },
+      { answer: 'I do not like cold weather.', question: 'Tôi không thích thời tiết lạnh.' },
+      { answer: 'The water is cold.', question: 'Nước lạnh.' },
+      { answer: 'It is very cold in winter.', question: 'Mùa đông trời rất lạnh.' },
+      { answer: 'Are you cold?', question: 'Bạn có lạnh không?' },
+    ] },
+    { answer: 'cold season', question: 'mùa lạnh', phrases: [
+      { answer: 'I do not like the cold season.', question: 'Tôi không thích mùa lạnh.' },
+      { answer: 'The cold season is here.', question: 'Mùa lạnh đến rồi.' },
+      { answer: 'It rains in the cold season.', question: 'Mùa lạnh trời mưa.' },
+      { answer: 'The cold season is long.', question: 'Mùa lạnh dài.' },
+      { answer: 'I wear a coat in the cold season.', question: 'Tôi mặc áo khoác vào mùa lạnh.' },
+    ] },
+    { answer: 'cool', question: 'mát', phrases: [
+      { answer: 'It is cool tonight.', question: 'Tối nay trời mát.' },
+      { answer: 'The weather is cool.', question: 'Thời tiết mát.' },
+      { answer: 'I like cool weather.', question: 'Tôi thích thời tiết mát.' },
+      { answer: 'It is cool in the morning.', question: 'Buổi sáng trời mát.' },
+      { answer: 'The autumn is cool.', question: 'Mùa thu mát.' },
+    ] },
+    { answer: 'dry', question: 'khô', phrases: [
+      { answer: 'The weather is dry.', question: 'Thời tiết khô.' },
+      { answer: 'It is dry in the dry season.', question: 'Mùa khô trời khô.' },
+      { answer: 'My skin is dry.', question: 'Da tôi khô.' },
+      { answer: 'The dry season is hot.', question: 'Mùa khô nóng.' },
+      { answer: 'It is hot and dry.', question: 'Trời nóng và khô.' },
+    ] },
+    { answer: 'dry season', question: 'mùa khô', phrases: [
+      { answer: 'The dry season is hot.', question: 'Mùa khô nóng.' },
+      { answer: 'I like the dry season.', question: 'Tôi thích mùa khô.' },
+      { answer: 'It does not rain in the dry season.', question: 'Mùa khô không mưa.' },
+      { answer: 'The dry season is long.', question: 'Mùa khô dài.' },
+      { answer: 'When is the dry season?', question: 'Mùa khô là khi nào?' },
+    ] },
+    { answer: 'fall (noun)', question: 'mùa thu', phrases: [
+      { answer: 'Fall is my favorite season.', question: 'Mùa thu là mùa tôi thích nhất.' },
+      { answer: 'The weather is cool in the fall.', question: 'Mùa thu thời tiết mát.' },
+      { answer: 'I love the fall.', question: 'Tôi yêu mùa thu.' },
+      { answer: 'The fall is beautiful.', question: 'Mùa thu đẹp.' },
+      { answer: 'It is fall now.', question: 'Bây giờ là mùa thu.' },
+    ] },
+    { answer: 'hot', question: 'nóng', phrases: [
+      { answer: 'It is so hot today!', question: 'Hôm nay nóng quá!' },
+      { answer: 'The weather is hot.', question: 'Thời tiết nóng.' },
+      { answer: 'I do not like hot weather.', question: 'Tôi không thích thời tiết nóng.' },
+      { answer: 'It is very hot in summer.', question: 'Mùa hè trời rất nóng.' },
+      { answer: 'The coffee is hot.', question: 'Cà phê nóng.' },
+    ] },
+    { answer: 'hot season', question: 'mùa nóng', phrases: [
+      { answer: 'I do not like the hot season.', question: 'Tôi không thích mùa nóng.' },
+      { answer: 'The hot season is here.', question: 'Mùa nóng đến rồi.' },
+      { answer: 'It is dry in the hot season.', question: 'Mùa nóng trời khô.' },
+      { answer: 'The hot season is long.', question: 'Mùa nóng dài.' },
+      { answer: 'When is the hot season?', question: 'Mùa nóng là khi nào?' },
+    ] },
+    { answer: 'humid', question: 'ẩm', phrases: [
+      { answer: 'The weather is humid.', question: 'Thời tiết ẩm.' },
+      { answer: 'It is hot and humid.', question: 'Trời nóng và ẩm.' },
+      { answer: 'I do not like humid weather.', question: 'Tôi không thích thời tiết ẩm.' },
+      { answer: 'It is very humid today.', question: 'Hôm nay trời rất ẩm.' },
+      { answer: 'The rainy season is humid.', question: 'Mùa mưa ẩm.' },
+    ] },
+    { answer: 'love (verb)', question: 'yêu', phrases: [
+      { answer: 'I love the spring.', question: 'Tôi yêu mùa xuân.' },
+      { answer: 'I love my family.', question: 'Tôi yêu gia đình tôi.' },
+      { answer: 'I love Vietnam.', question: 'Tôi yêu Việt Nam.' },
+      { answer: 'I love sunny weather.', question: 'Tôi yêu thời tiết nắng.' },
+      { answer: 'I love you.', question: 'Tôi yêu bạn.' },
+    ] },
+    { answer: 'rain', question: 'mưa', phrases: [
+      { answer: 'It is raining again!', question: 'Trời lại mưa!' },
+      { answer: 'I do not like the rain.', question: 'Tôi không thích mưa.' },
+      { answer: 'It will rain tomorrow.', question: 'Ngày mai trời sẽ mưa.' },
+      { answer: 'It rains a lot in the rainy season.', question: 'Mùa mưa trời mưa nhiều.' },
+      { answer: 'Is it raining?', question: 'Trời có mưa không?' },
+    ] },
+    { answer: 'rainy season', question: 'mùa mưa', phrases: [
+      { answer: 'It rains a lot in the rainy season.', question: 'Mùa mưa trời mưa nhiều.' },
+      { answer: 'I do not like the rainy season.', question: 'Tôi không thích mùa mưa.' },
+      { answer: 'The rainy season is humid.', question: 'Mùa mưa ẩm.' },
+      { answer: 'The rainy season is here.', question: 'Mùa mưa đến rồi.' },
+      { answer: 'When is the rainy season?', question: 'Mùa mưa là khi nào?' },
+    ] },
+    { answer: 'season', question: 'mùa', phrases: [
+      { answer: "What's your favorite season?", question: 'Bạn thích mùa nào nhất?' },
+      { answer: 'There are four seasons.', question: 'Có bốn mùa.' },
+      { answer: 'Spring is my favorite season.', question: 'Mùa xuân là mùa tôi thích nhất.' },
+      { answer: 'Which season do you like?', question: 'Bạn thích mùa nào?' },
+      { answer: 'This season is beautiful.', question: 'Mùa này đẹp.' },
+    ] },
+    { answer: 'ski', question: 'trượt tuyết', phrases: [
+      { answer: 'I like to go skiing.', question: 'Tôi thích đi trượt tuyết.' },
+      { answer: 'Do you want to go skiing?', question: 'Bạn muốn đi trượt tuyết không?' },
+      { answer: 'We go skiing in winter.', question: 'Chúng tôi đi trượt tuyết vào mùa đông.' },
+      { answer: 'I cannot ski.', question: 'Tôi không biết trượt tuyết.' },
+      { answer: 'Skiing is fun.', question: 'Trượt tuyết vui.' },
+    ] },
+    { answer: 'snow', question: 'tuyết', phrases: [
+      { answer: 'There is no snow in Vietnam.', question: 'Ở Việt Nam không có tuyết.' },
+      { answer: 'I love the snow.', question: 'Tôi yêu tuyết.' },
+      { answer: 'The snow is white.', question: 'Tuyết màu trắng.' },
+      { answer: 'It snows in winter.', question: 'Mùa đông có tuyết.' },
+      { answer: 'Have you seen snow?', question: 'Bạn đã thấy tuyết chưa?' },
+    ] },
+    { answer: 'snowy', question: 'có tuyết', phrases: [
+      { answer: 'It is snowy in winter.', question: 'Mùa đông có tuyết.' },
+      { answer: 'The weather is snowy.', question: 'Thời tiết có tuyết.' },
+      { answer: 'It is cold and snowy.', question: 'Trời lạnh và có tuyết.' },
+      { answer: 'Is it snowy there?', question: 'Ở đó có tuyết không?' },
+      { answer: 'It will be snowy tomorrow.', question: 'Ngày mai trời sẽ có tuyết.' },
+    ] },
+    { answer: 'spring (noun)', question: 'mùa xuân', phrases: [
+      { answer: 'I love the spring.', question: 'Tôi yêu mùa xuân.' },
+      { answer: 'The weather is beautiful in the spring.', question: 'Mùa xuân thời tiết đẹp.' },
+      { answer: 'Spring is my favorite season.', question: 'Mùa xuân là mùa tôi thích nhất.' },
+      { answer: 'The spring is warm.', question: 'Mùa xuân ấm.' },
+      { answer: 'It is spring now.', question: 'Bây giờ là mùa xuân.' },
+    ] },
+    { answer: 'summer (noun)', question: 'mùa hè', phrases: [
+      { answer: "Summer's my favorite season.", question: 'Tôi thích mùa hè nhất.' },
+      { answer: 'It is hot in the summer.', question: 'Mùa hè trời nóng.' },
+      { answer: 'I love the summer.', question: 'Tôi yêu mùa hè.' },
+      { answer: 'The days are long in summer.', question: 'Mùa hè ngày dài.' },
+      { answer: 'It is summer now.', question: 'Bây giờ là mùa hè.' },
+    ] },
+    { answer: 'sunny', question: 'nắng', phrases: [
+      { answer: 'I like sunny weather.', question: 'Tôi thích trời nắng.' },
+      { answer: 'It is sunny today.', question: 'Hôm nay trời nắng.' },
+      { answer: 'It is usually sunny in summer.', question: 'Mùa hè thường nắng.' },
+      { answer: 'It will be sunny tomorrow.', question: 'Ngày mai trời sẽ nắng.' },
+      { answer: 'Is it sunny?', question: 'Trời có nắng không?' },
+    ] },
+    { answer: 'throughout, all of', question: 'suốt', phrases: [
+      { answer: 'It will rain all week.', question: 'Trời sẽ mưa suốt tuần.' },
+      { answer: 'I worked all day.', question: 'Tôi làm việc suốt ngày.' },
+      { answer: 'It rained throughout the night.', question: 'Trời mưa suốt đêm.' },
+      { answer: 'I studied all month.', question: 'Tôi học suốt tháng.' },
+      { answer: 'It is hot all summer.', question: 'Trời nóng suốt mùa hè.' },
+    ] },
+    { answer: 'usually', question: 'thường', phrases: [
+      { answer: 'It is usually sunny in summer.', question: 'Mùa hè thường nắng.' },
+      { answer: 'I usually drink coffee in the morning.', question: 'Tôi thường uống cà phê buổi sáng.' },
+      { answer: 'It usually rains in the afternoon.', question: 'Trời thường mưa buổi chiều.' },
+      { answer: 'I usually go to bed early.', question: 'Tôi thường đi ngủ sớm.' },
+      { answer: 'She usually works on Saturday.', question: 'Cô ấy thường làm việc vào thứ bảy.' },
+    ] },
+    { answer: 'weather', question: 'trời', phrases: [
+      { answer: 'The weather is beautiful.', question: 'Trời đẹp.' },
+      { answer: 'How is the weather today?', question: 'Hôm nay trời thế nào?' },
+      { answer: 'The weather is hot.', question: 'Trời nóng.' },
+      { answer: 'The weather is cold.', question: 'Trời lạnh.' },
+      { answer: 'It is raining.', question: 'Trời đang mưa.' },
+    ] },
+    { answer: 'weather forecast', question: 'dự báo thời tiết', phrases: [
+      { answer: 'According to the weather forecast, it will rain.', question: 'Theo dự báo thời tiết, trời sẽ mưa.' },
+      { answer: 'Did you watch the weather forecast?', question: 'Bạn có xem dự báo thời tiết không?' },
+      { answer: 'The weather forecast says it will be sunny.', question: 'Dự báo thời tiết nói trời sẽ nắng.' },
+      { answer: 'I watch the weather forecast every day.', question: 'Tôi xem dự báo thời tiết mỗi ngày.' },
+      { answer: 'The weather forecast is not always correct.', question: 'Dự báo thời tiết không phải lúc nào cũng đúng.' },
+    ] },
+    { answer: 'winter (noun)', question: 'mùa đông', phrases: [
+      { answer: 'What do you enjoy doing in the winter?', question: 'Bạn thích làm gì vào mùa đông?' },
+      { answer: 'It is cold in the winter.', question: 'Mùa đông trời lạnh.' },
+      { answer: 'I do not like the winter.', question: 'Tôi không thích mùa đông.' },
+      { answer: 'It snows in the winter.', question: 'Mùa đông có tuyết.' },
+      { answer: 'It is winter now.', question: 'Bây giờ là mùa đông.' },
+    ] },
+    { answer: 'prepare', question: 'chuẩn bị', phrases: [
+      { answer: 'I need to prepare for the trip.', question: 'Tôi cần chuẩn bị cho chuyến đi.' },
+      { answer: 'Please prepare the food.', question: 'Xin chuẩn bị thức ăn.' },
+      { answer: 'I am preparing for the exam.', question: 'Tôi đang chuẩn bị cho kỳ thi.' },
+      { answer: 'We need to prepare for the rainy season.', question: 'Chúng tôi cần chuẩn bị cho mùa mưa.' },
+      { answer: 'Are you ready to prepare?', question: 'Bạn sẵn sàng chuẩn bị chưa?' },
+    ] },
+    { answer: 'Do you like the weather here?', question: 'Bạn có thích thời tiết ở đây không?', phrases: [
+      { answer: 'you', question: 'bạn' },
+      { answer: 'to like', question: 'thích' },
+      { answer: 'weather', question: 'thời tiết' },
+      { answer: 'here', question: 'ở đây' },
+      { answer: 'Do you like the weather here?', question: 'Bạn có thích thời tiết ở đây không?' },
+    ] },
+    { answer: "It's so hot today!", question: 'Hôm nay nóng quá!', phrases: [
+      { answer: 'today', question: 'hôm nay' },
+      { answer: 'hot', question: 'nóng' },
+      { answer: 'so, too', question: 'quá' },
+      { answer: "It's so hot today!", question: 'Hôm nay nóng quá!' },
+    ] },
+    { answer: "It's so cool tonight.", question: 'Tối nay trời mát quá!', phrases: [
+      { answer: 'tonight', question: 'tối nay' },
+      { answer: 'weather', question: 'trời' },
+      { answer: 'cool', question: 'mát' },
+      { answer: "It's so cool tonight.", question: 'Tối nay trời mát quá!' },
+    ] },
+    { answer: "It's raining again!", question: 'Trời lại mưa!', phrases: [
+      { answer: 'weather', question: 'trời' },
+      { answer: 'again', question: 'lại' },
+      { answer: 'to rain', question: 'mưa' },
+      { answer: "It's raining again!", question: 'Trời lại mưa!' },
+    ] },
+    { answer: 'We hate rainy weather.', question: 'Chúng tôi ghét thời tiết mưa.', phrases: [
+      { answer: 'we', question: 'chúng tôi' },
+      { answer: 'to hate', question: 'ghét' },
+      { answer: 'rainy weather', question: 'thời tiết mưa' },
+      { answer: 'We hate rainy weather.', question: 'Chúng tôi ghét thời tiết mưa.' },
+    ] },
+    { answer: 'I like sunny weather.', question: 'Tôi thích trời nắng.', phrases: [
+      { answer: 'I like', question: 'tôi thích' },
+      { answer: 'weather', question: 'trời' },
+      { answer: 'sunny', question: 'nắng' },
+      { answer: 'I like sunny weather.', question: 'Tôi thích trời nắng.' },
+    ] },
+    { answer: 'I love the spring because the weather is always beautiful.', question: 'Tôi yêu mùa xuân vì thời tiết luôn đẹp.', phrases: [
+      { answer: 'I love', question: 'tôi yêu' },
+      { answer: 'spring', question: 'mùa xuân' },
+      { answer: 'because', question: 'vì' },
+      { answer: 'the weather is always beautiful', question: 'thời tiết luôn đẹp' },
+      { answer: 'I love the spring because the weather is always beautiful.', question: 'Tôi yêu mùa xuân vì thời tiết luôn đẹp.' },
+    ] },
+    { answer: "What's your favorite season?", question: 'Anh/Chị thích mùa nào nhất?', phrases: [
+      { answer: 'to like', question: 'thích' },
+      { answer: 'season', question: 'mùa' },
+      { answer: 'which', question: 'nào' },
+      { answer: 'most', question: 'nhất' },
+      { answer: "What's your favorite season?", question: 'Anh/Chị thích mùa nào nhất?' },
+    ] },
+    { answer: "Summer's my favorite season.", question: 'Tôi thích mùa hè nhất.', phrases: [
+      { answer: 'I like', question: 'tôi thích' },
+      { answer: 'summer', question: 'mùa hè' },
+      { answer: 'most', question: 'nhất' },
+      { answer: "Summer's my favorite season.", question: 'Tôi thích mùa hè nhất.' },
+    ] },
+    { answer: "In summer, the days are longer and it's usually sunny.", question: 'Vào mùa hè, ngày dài hơn và thường nắng.', phrases: [
+      { answer: 'in summer', question: 'vào mùa hè' },
+      { answer: 'the days are longer', question: 'ngày dài hơn' },
+      { answer: 'usually', question: 'thường' },
+      { answer: 'sunny', question: 'nắng' },
+      { answer: "In summer, the days are longer and it's usually sunny.", question: 'Vào mùa hè, ngày dài hơn và thường nắng.' },
+    ] },
+    { answer: 'According to the weather forecast, it will rain all week next week.', question: 'Theo dự báo thời tiết, trời sẽ mưa suốt tuần sau.', phrases: [
+      { answer: 'according to', question: 'theo' },
+      { answer: 'weather forecast', question: 'dự báo thời tiết' },
+      { answer: 'it will rain', question: 'trời sẽ mưa' },
+      { answer: 'all week', question: 'suốt tuần' },
+      { answer: 'According to the weather forecast, it will rain all week next week.', question: 'Theo dự báo thời tiết, trời sẽ mưa suốt tuần sau.' },
+    ] },
+    { answer: 'What do you enjoy doing in the winter?', question: 'Anh/Chị thích làm gì vào mùa đông?', phrases: [
+      { answer: 'to like', question: 'thích' },
+      { answer: 'to do', question: 'làm' },
+      { answer: 'what', question: 'gì' },
+      { answer: 'in the winter', question: 'vào mùa đông' },
+      { answer: 'What do you enjoy doing in the winter?', question: 'Anh/Chị thích làm gì vào mùa đông?' },
+    ] },
+    { answer: 'I like to go skiing.', question: 'Tôi thích đi trượt tuyết.', phrases: [
+      { answer: 'I like', question: 'tôi thích' },
+      { answer: 'to go', question: 'đi' },
+      { answer: 'to ski', question: 'trượt tuyết' },
+      { answer: 'I like to go skiing.', question: 'Tôi thích đi trượt tuyết.' },
+    ] },
+    { answer: "I don't like cold weather.", question: 'Tôi không thích thời tiết lạnh.', phrases: [
+      { answer: 'I do not like', question: 'tôi không thích' },
+      { answer: 'weather', question: 'thời tiết' },
+      { answer: 'cold', question: 'lạnh' },
+      { answer: "I don't like cold weather.", question: 'Tôi không thích thời tiết lạnh.' },
+    ] },
   ] }],
   'Common Locations and Business': [{ cards: [
-    // airport - phi truong, san bay
-    // bank - ngan hang
-    // bar - quan ruou
-    // barbershop - tiem hot toc, tiem cat toc
-    // beach - bai bien
-    // beauty salon - tham my vien, tiem lam dep
-    // shop (noun) - cua hang
-    // bookstore - nha sach
-    // church - nha tho
-    // dance club - vu truong
-    // hospital - benh vien
-    // library - thu vien
-    // market, marketplace - cho
-    // pagoda, temple - chua
-    // park - cong vien
-    // post office - buu dien
-    // school - truong hoc
-    // supermarket - sieu thi
-    // university - dai hoc
-    // zoo - so thu
-    // gas station - cay xang
-    // restaurant - nha hang, tiem an
-    // Where is the nearest bank? - Ngan hang gan nhat o dau?
-    // Let's go to a beauty salon. - Hay di den tham my vien di.
+    { answer: 'airport', question: 'phi trường, sân bay', phrases: [
+      { answer: 'Where is the airport?', question: 'Phi trường ở đâu?' },
+      { answer: 'I am going to the airport.', question: 'Tôi đi đến phi trường.' },
+      { answer: 'Is the airport far?', question: 'Phi trường có xa không?' },
+      { answer: 'Please take me to the airport.', question: 'Xin đưa tôi đến phi trường.' },
+      { answer: 'The airport is big.', question: 'Phi trường lớn.' },
+    ] },
+    { answer: 'bank', question: 'ngân hàng', phrases: [
+      { answer: 'Where is the nearest bank?', question: 'Ngân hàng gần nhất ở đâu?' },
+      { answer: 'Is there a bank near here?', question: 'Có ngân hàng nào gần đây không?' },
+      { answer: 'I am going to the bank.', question: 'Tôi đi đến ngân hàng.' },
+      { answer: 'The bank is closed.', question: 'Ngân hàng đóng cửa.' },
+      { answer: 'I need to go to the bank.', question: 'Tôi cần đi ngân hàng.' },
+    ] },
+    { answer: 'bar', question: 'quán rượu', phrases: [
+      { answer: 'Where is the bar?', question: 'Quán rượu ở đâu?' },
+      { answer: 'Is there a bar near here?', question: 'Có quán rượu nào gần đây không?' },
+      { answer: "Let's go to a bar.", question: 'Đi đến quán rượu đi.' },
+      { answer: 'The bar is crowded.', question: 'Quán rượu đông người.' },
+      { answer: 'I do not like bars.', question: 'Tôi không thích quán rượu.' },
+    ] },
+    { answer: 'barbershop', question: 'tiệm hớt tóc, tiệm cắt tóc', phrases: [
+      { answer: 'Where is the barbershop?', question: 'Tiệm hớt tóc ở đâu?' },
+      { answer: 'Is there a barbershop near here?', question: 'Có tiệm hớt tóc nào gần đây không?' },
+      { answer: 'I am going to the barbershop.', question: 'Tôi đi đến tiệm hớt tóc.' },
+      { answer: 'The barbershop is closed.', question: 'Tiệm hớt tóc đóng cửa.' },
+      { answer: 'I need a haircut at the barbershop.', question: 'Tôi cần cắt tóc ở tiệm hớt tóc.' },
+    ] },
+    { answer: 'beach', question: 'bãi biển', phrases: [
+      { answer: 'Where is the beach?', question: 'Bãi biển ở đâu?' },
+      { answer: 'The beach is beautiful.', question: 'Bãi biển đẹp.' },
+      { answer: "Let's go to the beach.", question: 'Đi đến bãi biển đi.' },
+      { answer: 'I love the beach.', question: 'Tôi yêu bãi biển.' },
+      { answer: 'Is the beach far?', question: 'Bãi biển có xa không?' },
+    ] },
+    { answer: 'beauty salon', question: 'thẩm mỹ viện, tiệm làm đẹp', phrases: [
+      { answer: 'Where is the beauty salon?', question: 'Thẩm mỹ viện ở đâu?' },
+      { answer: "Let's go to a beauty salon.", question: 'Hãy đi đến thẩm mỹ viện đi.' },
+      { answer: 'Is there a beauty salon near here?', question: 'Có thẩm mỹ viện nào gần đây không?' },
+      { answer: 'The beauty salon is nice.', question: 'Thẩm mỹ viện đẹp.' },
+      { answer: 'I am going to the beauty salon.', question: 'Tôi đi đến thẩm mỹ viện.' },
+    ] },
+    { answer: 'shop (noun)', question: 'cửa hàng', phrases: [
+      { answer: 'Where is the shop?', question: 'Cửa hàng ở đâu?' },
+      { answer: 'The shop is closed.', question: 'Cửa hàng đóng cửa.' },
+      { answer: 'Is there a shop near here?', question: 'Có cửa hàng nào gần đây không?' },
+      { answer: 'This shop is nice.', question: 'Cửa hàng này đẹp.' },
+      { answer: 'I am going to the shop.', question: 'Tôi đi đến cửa hàng.' },
+    ] },
+    { answer: 'bookstore', question: 'nhà sách', phrases: [
+      { answer: 'Where is the bookstore?', question: 'Nhà sách ở đâu?' },
+      { answer: 'Is there a bookstore near here?', question: 'Có nhà sách nào gần đây không?' },
+      { answer: 'I am going to the bookstore.', question: 'Tôi đi đến nhà sách.' },
+      { answer: 'The bookstore is big.', question: 'Nhà sách lớn.' },
+      { answer: 'I like this bookstore.', question: 'Tôi thích nhà sách này.' },
+    ] },
+    { answer: 'church', question: 'nhà thờ', phrases: [
+      { answer: 'Where is the church?', question: 'Nhà thờ ở đâu?' },
+      { answer: 'The church is beautiful.', question: 'Nhà thờ đẹp.' },
+      { answer: 'I am going to the church.', question: 'Tôi đi đến nhà thờ.' },
+      { answer: 'Is there a church near here?', question: 'Có nhà thờ nào gần đây không?' },
+      { answer: 'The church is old.', question: 'Nhà thờ cổ.' },
+    ] },
+    { answer: 'dance club', question: 'vũ trường', phrases: [
+      { answer: 'Where is the dance club?', question: 'Vũ trường ở đâu?' },
+      { answer: "Let's go to a dance club.", question: 'Đi đến vũ trường đi.' },
+      { answer: 'Is there a dance club near here?', question: 'Có vũ trường nào gần đây không?' },
+      { answer: 'The dance club is crowded.', question: 'Vũ trường đông người.' },
+      { answer: 'I like the dance club.', question: 'Tôi thích vũ trường.' },
+    ] },
+    { answer: 'hospital', question: 'bệnh viện', phrases: [
+      { answer: 'Where is the hospital?', question: 'Bệnh viện ở đâu?' },
+      { answer: 'I need to go to the hospital.', question: 'Tôi cần đi bệnh viện.' },
+      { answer: 'Is there a hospital near here?', question: 'Có bệnh viện nào gần đây không?' },
+      { answer: 'The hospital is far.', question: 'Bệnh viện xa.' },
+      { answer: 'Please take me to the hospital.', question: 'Xin đưa tôi đến bệnh viện.' },
+    ] },
+    { answer: 'library', question: 'thư viện', phrases: [
+      { answer: 'Where is the library?', question: 'Thư viện ở đâu?' },
+      { answer: 'I am going to the library.', question: 'Tôi đi đến thư viện.' },
+      { answer: 'Is there a library near here?', question: 'Có thư viện nào gần đây không?' },
+      { answer: 'The library is quiet.', question: 'Thư viện yên tĩnh.' },
+      { answer: 'I study at the library.', question: 'Tôi học ở thư viện.' },
+    ] },
+    { answer: 'market, marketplace', question: 'chợ', phrases: [
+      { answer: 'Where is the market?', question: 'Chợ ở đâu?' },
+      { answer: 'I am going to the market.', question: 'Tôi đi chợ.' },
+      { answer: 'The market is crowded.', question: 'Chợ đông người.' },
+      { answer: 'Fruit is cheap at the market.', question: 'Trái cây ở chợ rẻ.' },
+      { answer: 'Is there a market near here?', question: 'Có chợ nào gần đây không?' },
+    ] },
+    { answer: 'pagoda, temple', question: 'chùa', phrases: [
+      { answer: 'Where is the pagoda?', question: 'Chùa ở đâu?' },
+      { answer: 'The pagoda is beautiful.', question: 'Chùa đẹp.' },
+      { answer: 'I am going to the pagoda.', question: 'Tôi đi đến chùa.' },
+      { answer: 'The pagoda is old.', question: 'Chùa cổ.' },
+      { answer: 'Is there a pagoda near here?', question: 'Có chùa nào gần đây không?' },
+    ] },
+    { answer: 'park', question: 'công viên', phrases: [
+      { answer: 'Where is the park?', question: 'Công viên ở đâu?' },
+      { answer: "Let's go to the park.", question: 'Đi đến công viên đi.' },
+      { answer: 'The park is beautiful.', question: 'Công viên đẹp.' },
+      { answer: 'I walk in the park.', question: 'Tôi đi bộ trong công viên.' },
+      { answer: 'Is there a park near here?', question: 'Có công viên nào gần đây không?' },
+    ] },
+    { answer: 'post office', question: 'bưu điện', phrases: [
+      { answer: 'Where is the post office?', question: 'Bưu điện ở đâu?' },
+      { answer: 'I am going to the post office.', question: 'Tôi đi đến bưu điện.' },
+      { answer: 'Is there a post office near here?', question: 'Có bưu điện nào gần đây không?' },
+      { answer: 'The post office is closed.', question: 'Bưu điện đóng cửa.' },
+      { answer: 'I need to go to the post office.', question: 'Tôi cần đi bưu điện.' },
+    ] },
+    { answer: 'school', question: 'trường học', phrases: [
+      { answer: 'Where is the school?', question: 'Trường học ở đâu?' },
+      { answer: 'I am going to school.', question: 'Tôi đi học.' },
+      { answer: 'The school is big.', question: 'Trường học lớn.' },
+      { answer: 'Is there a school near here?', question: 'Có trường học nào gần đây không?' },
+      { answer: 'My children go to this school.', question: 'Con tôi học ở trường này.' },
+    ] },
+    { answer: 'supermarket', question: 'siêu thị', phrases: [
+      { answer: 'Where is the supermarket?', question: 'Siêu thị ở đâu?' },
+      { answer: 'I am going to the supermarket.', question: 'Tôi đi đến siêu thị.' },
+      { answer: 'Is there a supermarket near here?', question: 'Có siêu thị nào gần đây không?' },
+      { answer: 'The supermarket is big.', question: 'Siêu thị lớn.' },
+      { answer: 'I buy food at the supermarket.', question: 'Tôi mua thức ăn ở siêu thị.' },
+    ] },
+    { answer: 'university', question: 'đại học', phrases: [
+      { answer: 'Where is the university?', question: 'Đại học ở đâu?' },
+      { answer: 'I study at the university.', question: 'Tôi học ở đại học.' },
+      { answer: 'The university is big.', question: 'Đại học lớn.' },
+      { answer: 'Is there a university near here?', question: 'Có đại học nào gần đây không?' },
+      { answer: 'My son goes to the university.', question: 'Con trai tôi học đại học.' },
+    ] },
+    { answer: 'zoo', question: 'sở thú', phrases: [
+      { answer: 'Where is the zoo?', question: 'Sở thú ở đâu?' },
+      { answer: "Let's go to the zoo.", question: 'Đi đến sở thú đi.' },
+      { answer: 'The zoo is fun.', question: 'Sở thú vui.' },
+      { answer: 'Children love the zoo.', question: 'Trẻ con thích sở thú.' },
+      { answer: 'Is there a zoo near here?', question: 'Có sở thú nào gần đây không?' },
+    ] },
+    { answer: 'gas station', question: 'cây xăng', phrases: [
+      { answer: 'Where is the gas station?', question: 'Cây xăng ở đâu?' },
+      { answer: 'Is there a gas station near here?', question: 'Có cây xăng nào gần đây không?' },
+      { answer: 'I need to go to the gas station.', question: 'Tôi cần đi cây xăng.' },
+      { answer: 'The gas station is over there.', question: 'Cây xăng ở đằng kia.' },
+      { answer: 'Please take me to the gas station.', question: 'Xin đưa tôi đến cây xăng.' },
+    ] },
+    { answer: 'restaurant', question: 'nhà hàng, tiệm ăn', phrases: [
+      { answer: 'Where is the restaurant?', question: 'Nhà hàng ở đâu?' },
+      { answer: 'Is there a restaurant near here?', question: 'Có nhà hàng nào gần đây không?' },
+      { answer: "Let's go to a restaurant.", question: 'Đi đến nhà hàng đi.' },
+      { answer: 'This restaurant is good.', question: 'Nhà hàng này ngon.' },
+      { answer: 'I booked a restaurant.', question: 'Tôi đã đặt nhà hàng.' },
+    ] },
+    { answer: 'Where is the nearest bank?', question: 'Ngân hàng gần nhất ở đâu?', phrases: [
+      { answer: 'bank', question: 'ngân hàng' },
+      { answer: 'nearest', question: 'gần nhất' },
+      { answer: 'where', question: 'ở đâu' },
+      { answer: 'Where is the nearest bank?', question: 'Ngân hàng gần nhất ở đâu?' },
+    ] },
+    { answer: "Let's go to a beauty salon.", question: 'Hãy đi đến thẩm mỹ viện đi.', phrases: [
+      { answer: "let's", question: 'hãy ... đi' },
+      { answer: 'to go to', question: 'đi đến' },
+      { answer: 'beauty salon', question: 'thẩm mỹ viện' },
+      { answer: "Let's go to a beauty salon.", question: 'Hãy đi đến thẩm mỹ viện đi.' },
+    ] },
   ] }],
   'Forms of Entertainment': [{ cards: [
-    // coffee shop - quan ca phe
-    // free - ranh, mien phi
-    // fun - vui
-    // ice-cream parlor - tiem kem, quan kem
-    // karaoke bar - quan karaoke
-    // let us - chung ta...di
-    // movie theater - rap chieu phim, xi-ne // NOTE: xi-ne is a loanword from French, but it's commonly used in Vietnamese to refer to movie theaters
-    // music - am nhac
-    // nightclub - quan bar, vu truong, hop dem
-    // opera house - nha hat lon
+    { answer: 'coffee shop', question: 'quán cà phê', phrases: [
+      { answer: "Let's go to a coffee shop.", question: 'Đi đến quán cà phê đi.' },
+      { answer: 'Is there a coffee shop near here?', question: 'Có quán cà phê nào gần đây không?' },
+      { answer: 'I want to go have a coffee.', question: 'Tôi muốn đi uống cà phê.' },
+      { answer: 'This coffee shop is nice.', question: 'Quán cà phê này đẹp.' },
+      { answer: 'I am at the coffee shop.', question: 'Tôi đang ở quán cà phê.' },
+    ] },
+    { answer: 'free', question: 'rảnh, miễn phí', phrases: [
+      { answer: 'Are you free?', question: 'Bạn có rảnh không?' },
+      { answer: 'I am free this weekend.', question: 'Tôi rảnh cuối tuần này.' },
+      { answer: 'Local calls are free.', question: 'Gọi điện thoại nội hạt miễn phí.' },
+      { answer: 'Is it free?', question: 'Nó miễn phí không?' },
+      { answer: 'Are you free, Hoa?', question: 'Anh Hoa có rảnh không?' },
+    ] },
+    { answer: 'fun', question: 'vui', phrases: [
+      { answer: 'It will be fun!', question: 'Vui lắm!' },
+      { answer: 'The party is fun.', question: 'Bữa tiệc vui.' },
+      { answer: 'Skiing is fun.', question: 'Trượt tuyết vui.' },
+      { answer: 'It is very fun.', question: 'Rất vui.' },
+      { answer: 'Karaoke is fun.', question: 'Karaoke vui.' },
+    ] },
+    { answer: 'ice-cream parlor', question: 'tiệm kem, quán kem', phrases: [
+      { answer: "Let's go to the ice-cream parlor.", question: 'Đi đến tiệm kem đi.' },
+      { answer: 'Is there an ice-cream parlor near here?', question: 'Có tiệm kem nào gần đây không?' },
+      { answer: 'I want to go have an ice cream.', question: 'Tôi muốn đi ăn kem.' },
+      { answer: 'The ice-cream parlor is nice.', question: 'Tiệm kem đẹp.' },
+      { answer: 'Children love the ice-cream parlor.', question: 'Trẻ con thích tiệm kem.' },
+    ] },
+    { answer: 'karaoke bar', question: 'quán karaoke', phrases: [
+      { answer: "Let's go find a karaoke bar.", question: 'Chúng ta đi tìm một quán karaoke đi.' },
+      { answer: 'Is there a karaoke bar near here?', question: 'Có quán karaoke nào gần đây không?' },
+      { answer: 'I want to go to a karaoke bar.', question: 'Tôi muốn đi đến quán karaoke.' },
+      { answer: 'The karaoke bar is fun.', question: 'Quán karaoke vui.' },
+      { answer: 'Do you like karaoke bars?', question: 'Bạn có thích quán karaoke không?' },
+    ] },
+    { answer: 'let us', question: 'chúng ta ... đi', phrases: [
+      { answer: "Let's go together.", question: 'Chúng ta cùng đi đi.' },
+      { answer: "Let's eat.", question: 'Chúng ta ăn đi.' },
+      { answer: "Let's go to the movies.", question: 'Chúng ta đi xem phim đi.' },
+      { answer: "Let's find a karaoke bar.", question: 'Chúng ta đi tìm quán karaoke đi.' },
+      { answer: "Let's go home.", question: 'Chúng ta về nhà đi.' },
+    ] },
+    { answer: 'movie theater', question: 'rạp chiếu phim, xi-nê', phrases: [
+      { answer: "Let's go to the movie theater.", question: 'Đi đến rạp chiếu phim đi.' },
+      { answer: 'Is there a movie theater near here?', question: 'Có rạp chiếu phim nào gần đây không?' },
+      { answer: 'I want to go see a movie.', question: 'Tôi muốn đi xem xi-nê.' },
+      { answer: 'The movie theater is crowded.', question: 'Rạp chiếu phim đông người.' },
+      { answer: 'I like the movie theater.', question: 'Tôi thích rạp chiếu phim.' },
+    ] },
+    { answer: 'music', question: 'âm nhạc', phrases: [
+      { answer: 'I like music.', question: 'Tôi thích âm nhạc.' },
+      { answer: 'This music is good.', question: 'Âm nhạc này hay.' },
+      { answer: 'I love Vietnamese music.', question: 'Tôi yêu âm nhạc Việt Nam.' },
+      { answer: 'Do you like music?', question: 'Bạn có thích âm nhạc không?' },
+      { answer: 'The music is loud.', question: 'Âm nhạc to.' },
+    ] },
+    { answer: 'nightclub', question: 'quán bar, vũ trường, hộp đêm', phrases: [
+      { answer: "We're going to a nightclub.", question: 'Chúng tôi đang đi đến một hộp đêm.' },
+      { answer: 'Is there a nightclub near here?', question: 'Có hộp đêm nào gần đây không?' },
+      { answer: "Let's go to a nightclub.", question: 'Đi đến hộp đêm đi.' },
+      { answer: 'The nightclub is crowded.', question: 'Hộp đêm đông người.' },
+      { answer: 'I do not like nightclubs.', question: 'Tôi không thích hộp đêm.' },
+    ] },
+    { answer: 'opera house', question: 'nhà hát lớn', phrases: [
+      { answer: 'I have tickets to the opera house.', question: 'Tôi có vé nhà hát lớn.' },
+      { answer: 'The opera house is beautiful.', question: 'Nhà hát lớn đẹp.' },
+      { answer: "Let's go to the opera house.", question: 'Đi đến nhà hát lớn đi.' },
+      { answer: 'Where is the opera house?', question: 'Nhà hát lớn ở đâu?' },
+      { answer: 'The opera house is old.', question: 'Nhà hát lớn cổ.' },
+    ] },
     // together - cung, cung nhau
     // weekend - cuoi tuan
     // I want to go have an ice cream. - Toi muon di an kem.
