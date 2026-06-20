@@ -1,4 +1,4 @@
-import type { CardCollection } from './types';
+import type { CardCollection } from '../types';
 
 export const Chapter5: CardCollection = {
   'Taking a Tour of Your Home': [
