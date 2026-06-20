@@ -176,7 +176,7 @@ export const useFlashcardsStore = defineStore('flashcards', () => {
   const advance = () => {
     const s = state.value;
     if (s.deck.length === 0) return;
-    const maxStep = 3;
+    const maxStep = 1;
     // Only the "move to the next card" branch needs a fresh entry (and possibly a
     // reshuffle); during a step increment the reducer ignores these, so skip the
     // work — mirrors the reducer's own step guard.

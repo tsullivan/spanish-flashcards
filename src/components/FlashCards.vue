@@ -69,7 +69,7 @@ const speak = (text: string) => {
           </template>
         </h2>
 
-        <p v-if="state.step > 1">
+        <p v-if="state.step > 0">
           <a
             v-if="speechSupported && state.current.showQuestionFirst"
             class="speak-link"
@@ -80,7 +80,7 @@ const speak = (text: string) => {
           <template v-else>{{ currentPhrase[state.current.showQuestionFirst ? 'question' : 'answer'] }}</template>
         </p>
 
-        <p v-if="state.step > 2">
+        <p v-if="state.step > 0">
           <a
             v-if="speechSupported && !state.current.showQuestionFirst"
             class="speak-link"
