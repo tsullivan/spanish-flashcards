@@ -12,9 +12,9 @@ export const Introduction: CardCollection = {
           question: 'ma',
           phrases: [
             { answer: 'level tone - no symbol - relatively high pitch', question: 'ma' },
-            { answer: 'I think I saw a ghost!', question: 'Tôi nghĩ tôi đã nhìn thấy một con ma!' },
+            { answer: 'I think I saw a ghost!', question: 'Tôi nghĩ tôi đã thấy ma!' },
             { answer: 'Do you believe in ghosts?', question: 'Bạn có tin vào ma không?' },
-            { answer: 'That house has a ghost.', question: 'Ngôi nhà đó có ma.' },
+            { answer: 'That house has a ghost.', question: 'Nhà đó có ma.' },
             { answer: "I'm not afraid of ghosts.", question: 'Tôi không sợ ma.' },
           ],
         },

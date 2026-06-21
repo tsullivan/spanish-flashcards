@@ -1148,13 +1148,13 @@ export const Supplemental: CardCollection = {
           { answer: 'I want to enroll in the class.', question: 'Tôi muốn đăng ký lớp học.' },
           { answer: 'She enrolled in the school.', question: 'Cô ấy đăng ký vào trường.' },
         ] },
-        { answer: 'Vietnamese class', question: 'lớp học tiếng Việt', phrases: [
-          { answer: 'I have Vietnamese class today.', question: 'Hôm nay tôi có lớp học tiếng Việt.' },
-          { answer: 'Vietnamese class is interesting.', question: 'Lớp học tiếng Việt thú vị.' },
+        { answer: 'Vietnamese class', question: 'lớp tiếng Việt', phrases: [
+          { answer: 'I have Vietnamese class today.', question: 'Hôm nay tôi có lớp tiếng Việt.' },
+          { answer: 'Vietnamese class is interesting.', question: 'Lớp tiếng Việt thú vị.' },
         ] },
-        { answer: 'English class', question: 'lớp học tiếng Anh', phrases: [
-          { answer: 'I have English class today.', question: 'Hôm nay tôi có lớp học tiếng Anh.' },
-          { answer: 'English class is fun.', question: 'Lớp học tiếng Anh vui.' },
+        { answer: 'English class', question: 'lớp tiếng Anh', phrases: [
+          { answer: 'I have English class today.', question: 'Hôm nay tôi có lớp tiếng Anh.' },
+          { answer: 'English class is fun.', question: 'Lớp tiếng Anh vui.' },
         ] },
       ],
     },
@@ -1292,7 +1292,7 @@ export const Supplemental: CardCollection = {
           { answer: 'She has one child.', question: 'Cô ấy có một đứa con.' },
         ] },
         { answer: 'eye', question: 'mắt', phrases: [
-          { answer: 'Her eyes are beautiful.', question: 'Mắt của cô ấy đẹp.' },
+          { answer: 'Her eyes are beautiful.', question: 'Mắt cô ấy đẹp.' },
           { answer: 'My eyes hurt.', question: 'Mắt tôi đau.' },
         ] },
         { answer: 'woman', question: 'phụ nữ', phrases: [

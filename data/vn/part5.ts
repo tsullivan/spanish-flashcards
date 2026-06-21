@@ -1127,7 +1127,7 @@ export const Part5: CardCollection = {
   ],
   'At the Clothing Store': [{ cards: [
     { answer: 'fit (verb)', question: 'vừa vặn', phrases: [
-      { answer: 'This shirt fits me.', question: 'Áo sơ mi này vừa tôi.' },
+      { answer: 'This shirt fits me.', question: 'Áo này vừa tôi.' },
       { answer: 'These shoes fit perfectly.', question: 'Đôi giày này rất vừa vặn.' },
       { answer: 'This does not fit me.', question: 'Cái này không vừa tôi.' },
       { answer: 'Does it fit?', question: 'Có vừa không?' },
@@ -1161,12 +1161,12 @@ export const Part5: CardCollection = {
       { answer: 'These pants are too big.', question: 'Chiếc quần này to quá.' },
       { answer: 'I like these pants.', question: 'Tôi thích chiếc quần này.' },
     ] },
-    { answer: 'shirt', question: 'áo sơ mi', phrases: [
-      { answer: 'I want to buy a shirt.', question: 'Tôi muốn mua một cái áo sơ mi.' },
-      { answer: 'Do you have shirts?', question: 'Bạn có áo sơ mi không?' },
-      { answer: 'This shirt does not fit me.', question: 'Áo sơ mi này không vừa tôi.' },
-      { answer: 'I want a red shirt.', question: 'Tôi muốn một cái áo sơ mi màu đỏ.' },
-      { answer: 'How much is this shirt?', question: 'Áo sơ mi này giá bao nhiêu?' },
+    { answer: 'shirt', question: 'áo', phrases: [
+      { answer: 'I want to buy a shirt.', question: 'Tôi muốn mua một cái áo.' },
+      { answer: 'Do you have shirts?', question: 'Bạn có áo không?' },
+      { answer: 'This shirt does not fit me.', question: 'Áo này không vừa tôi.' },
+      { answer: 'I want a red shirt.', question: 'Tôi muốn một cái áo màu đỏ.' },
+      { answer: 'How much is this shirt?', question: 'Áo này giá bao nhiêu?' },
     ] },
     { answer: 'sunglasses', question: 'kính râm', phrases: [
       { answer: 'I want to buy sunglasses.', question: 'Tôi muốn mua kính râm.' },
@@ -1262,7 +1262,7 @@ export const Part5: CardCollection = {
     { answer: 'try on (clothes)', question: 'mặc thử', phrases: [
       { answer: 'I would like to try on this suit.', question: 'Tôi muốn mặc thử bộ com lê này.' },
       { answer: 'Can I try this on?', question: 'Tôi mặc thử cái này được không?' },
-      { answer: 'I want to try on this shirt.', question: 'Tôi muốn mặc thử cái áo sơ mi này.' },
+      { answer: 'I want to try on this shirt.', question: 'Tôi muốn mặc thử cái áo này.' },
       { answer: 'Where can I try it on?', question: 'Tôi mặc thử ở đâu?' },
       { answer: 'I would like to try on these pants.', question: 'Tôi muốn mặc thử chiếc quần này.' },
     ] },
@@ -1363,11 +1363,11 @@ export const Part5: CardCollection = {
       { answer: 'fitting room', question: 'phòng thử đồ' },
       { answer: 'Do you have a fitting room?', question: 'Bạn có phòng thử đồ không?' },
     ] },
-    { answer: "This shirt doesn't fit me.", question: 'Áo sơ mi này không vừa tôi.', phrases: [
-      { answer: 'shirt', question: 'áo sơ mi' },
+    { answer: "This shirt doesn't fit me.", question: 'Áo này không vừa tôi.', phrases: [
+      { answer: 'shirt', question: 'áo' },
       { answer: 'this', question: 'này' },
       { answer: 'does not fit', question: 'không vừa' },
-      { answer: "This shirt doesn't fit me.", question: 'Áo sơ mi này không vừa tôi.' },
+      { answer: "This shirt doesn't fit me.", question: 'Áo này không vừa tôi.' },
     ] },
     { answer: 'Do you have this jacket in a size medium?', question: 'Bạn có áo khoác này size trung không?', phrases: [
       { answer: 'jacket', question: 'áo khoác' },
@@ -1419,28 +1419,28 @@ export const Part5: CardCollection = {
       subTitle: 'Colors',
       cards: [
         { answer: 'beige', question: 'màu be', phrases: [
-          { answer: 'I want a beige shirt.', question: 'Tôi muốn một cái áo sơ mi màu be.' },
+          { answer: 'I want a beige shirt.', question: 'Tôi muốn một cái áo màu be.' },
           { answer: 'Do you have this in beige?', question: 'Bạn có cái này màu be không?' },
           { answer: 'I like beige.', question: 'Tôi thích màu be.' },
-          { answer: 'This shirt is beige.', question: 'Cái áo sơ mi này màu be.' },
+          { answer: 'This shirt is beige.', question: 'Cái áo này màu be.' },
           { answer: 'Beige is a nice color.', question: 'Màu be đẹp.' },
         ] },
         { answer: 'black', question: 'màu đen', phrases: [
-          { answer: 'I want a black shirt.', question: 'Tôi muốn một cái áo sơ mi màu đen.' },
+          { answer: 'I want a black shirt.', question: 'Tôi muốn một cái áo màu đen.' },
           { answer: 'Do you have this in black?', question: 'Bạn có cái này màu đen không?' },
           { answer: 'I like black.', question: 'Tôi thích màu đen.' },
           { answer: 'I want black sunglasses.', question: 'Tôi muốn kính râm màu đen.' },
           { answer: 'Black is a nice color.', question: 'Màu đen đẹp.' },
         ] },
         { answer: 'blue', question: 'màu xanh dương', phrases: [
-          { answer: 'I want a blue shirt.', question: 'Tôi muốn một cái áo sơ mi màu xanh dương.' },
+          { answer: 'I want a blue shirt.', question: 'Tôi muốn một cái áo màu xanh dương.' },
           { answer: 'Do you have this in blue?', question: 'Bạn có cái này màu xanh dương không?' },
           { answer: 'I like blue.', question: 'Tôi thích màu xanh dương.' },
           { answer: 'This blue sweater is beautiful.', question: 'Cái áo len màu xanh dương này đẹp.' },
           { answer: 'Blue is a nice color.', question: 'Màu xanh dương đẹp.' },
         ] },
         { answer: 'brown', question: 'màu nâu', phrases: [
-          { answer: 'I want a brown shirt.', question: 'Tôi muốn một cái áo sơ mi màu nâu.' },
+          { answer: 'I want a brown shirt.', question: 'Tôi muốn một cái áo màu nâu.' },
           { answer: 'Do you have this in brown?', question: 'Bạn có cái này màu nâu không?' },
           { answer: 'I like brown.', question: 'Tôi thích màu nâu.' },
           { answer: 'I always wear brown shoes.', question: 'Tôi luôn mang giày màu nâu.' },
@@ -1454,56 +1454,56 @@ export const Part5: CardCollection = {
           { answer: 'This color is beautiful.', question: 'Màu này đẹp.' },
         ] },
         { answer: 'gray', question: 'màu xám', phrases: [
-          { answer: 'I want a gray shirt.', question: 'Tôi muốn một cái áo sơ mi màu xám.' },
+          { answer: 'I want a gray shirt.', question: 'Tôi muốn một cái áo màu xám.' },
           { answer: 'Do you have this in gray?', question: 'Bạn có cái này màu xám không?' },
           { answer: 'I like gray.', question: 'Tôi thích màu xám.' },
           { answer: 'I like the gray suit.', question: 'Tôi thích bộ com lê màu xám.' },
           { answer: 'Gray is a nice color.', question: 'Màu xám đẹp.' },
         ] },
         { answer: 'green', question: 'màu xanh lá cây', phrases: [
-          { answer: 'I want a green shirt.', question: 'Tôi muốn một cái áo sơ mi màu xanh lá cây.' },
+          { answer: 'I want a green shirt.', question: 'Tôi muốn một cái áo màu xanh lá cây.' },
           { answer: 'Do you have this in green?', question: 'Bạn có cái này màu xanh lá cây không?' },
           { answer: 'I like green.', question: 'Tôi thích màu xanh lá cây.' },
           { answer: 'Do you have this hat in green?', question: 'Bạn có cái mũ này màu xanh lá cây không?' },
           { answer: 'Green is a nice color.', question: 'Màu xanh lá cây đẹp.' },
         ] },
         { answer: 'orange', question: 'màu cam', phrases: [
-          { answer: 'I want an orange shirt.', question: 'Tôi muốn một cái áo sơ mi màu cam.' },
+          { answer: 'I want an orange shirt.', question: 'Tôi muốn một cái áo màu cam.' },
           { answer: 'Do you have this in orange?', question: 'Bạn có cái này màu cam không?' },
           { answer: 'I like orange.', question: 'Tôi thích màu cam.' },
           { answer: 'This dress is orange.', question: 'Cái váy này màu cam.' },
           { answer: 'Orange is a nice color.', question: 'Màu cam đẹp.' },
         ] },
         { answer: 'pink', question: 'màu hồng', phrases: [
-          { answer: 'I want a pink shirt.', question: 'Tôi muốn một cái áo sơ mi màu hồng.' },
+          { answer: 'I want a pink shirt.', question: 'Tôi muốn một cái áo màu hồng.' },
           { answer: 'Do you have this in pink?', question: 'Bạn có cái này màu hồng không?' },
           { answer: 'I like pink.', question: 'Tôi thích màu hồng.' },
           { answer: 'I do not like this pink skirt.', question: 'Tôi không thích cái váy đầm màu hồng này.' },
           { answer: 'Pink is a nice color.', question: 'Màu hồng đẹp.' },
         ] },
         { answer: 'purple', question: 'màu tím', phrases: [
-          { answer: 'I want a purple shirt.', question: 'Tôi muốn một cái áo sơ mi màu tím.' },
+          { answer: 'I want a purple shirt.', question: 'Tôi muốn một cái áo màu tím.' },
           { answer: 'Do you have this in purple?', question: 'Bạn có cái này màu tím không?' },
           { answer: 'I like purple.', question: 'Tôi thích màu tím.' },
           { answer: 'I like this purple tie.', question: 'Tôi thích cái cà vạt màu tím này.' },
           { answer: 'Purple is a nice color.', question: 'Màu tím đẹp.' },
         ] },
         { answer: 'red', question: 'màu đỏ', phrases: [
-          { answer: 'I want a red shirt.', question: 'Tôi muốn một cái áo sơ mi màu đỏ.' },
+          { answer: 'I want a red shirt.', question: 'Tôi muốn một cái áo màu đỏ.' },
           { answer: 'Do you have this in red?', question: 'Bạn có cái này màu đỏ không?' },
           { answer: 'I like red.', question: 'Tôi thích màu đỏ.' },
           { answer: 'This dress is red.', question: 'Cái váy này màu đỏ.' },
           { answer: 'Red is a nice color.', question: 'Màu đỏ đẹp.' },
         ] },
         { answer: 'white', question: 'màu trắng', phrases: [
-          { answer: 'I want a white shirt.', question: 'Tôi muốn một cái áo sơ mi màu trắng.' },
+          { answer: 'I want a white shirt.', question: 'Tôi muốn một cái áo màu trắng.' },
           { answer: 'Do you have this coat in white?', question: 'Bạn có áo măng tô này màu trắng không?' },
           { answer: 'I like white.', question: 'Tôi thích màu trắng.' },
-          { answer: 'This shirt is white.', question: 'Cái áo sơ mi này màu trắng.' },
+          { answer: 'This shirt is white.', question: 'Cái áo này màu trắng.' },
           { answer: 'White is a nice color.', question: 'Màu trắng đẹp.' },
         ] },
         { answer: 'yellow', question: 'màu vàng', phrases: [
-          { answer: 'I want a yellow shirt.', question: 'Tôi muốn một cái áo sơ mi màu vàng.' },
+          { answer: 'I want a yellow shirt.', question: 'Tôi muốn một cái áo màu vàng.' },
           { answer: 'Do you have this in yellow?', question: 'Bạn có cái này màu vàng không?' },
           { answer: 'I like yellow.', question: 'Tôi thích màu vàng.' },
           { answer: 'This hat is yellow.', question: 'Cái mũ này màu vàng.' },
@@ -1516,11 +1516,11 @@ export const Part5: CardCollection = {
           { answer: 'what', question: 'gì' },
           { answer: 'What color do you want?', question: 'Bạn muốn màu gì?' },
         ] },
-        { answer: 'I want a red shirt.', question: 'Tôi muốn một cái áo sơ mi màu đỏ.', phrases: [
+        { answer: 'I want a red shirt.', question: 'Tôi muốn một cái áo màu đỏ.', phrases: [
           { answer: 'I want', question: 'tôi muốn' },
-          { answer: 'shirt', question: 'áo sơ mi' },
+          { answer: 'shirt', question: 'áo' },
           { answer: 'red', question: 'màu đỏ' },
-          { answer: 'I want a red shirt.', question: 'Tôi muốn một cái áo sơ mi màu đỏ.' },
+          { answer: 'I want a red shirt.', question: 'Tôi muốn một cái áo màu đỏ.' },
         ] },
         { answer: 'Do you have this coat in white?', question: 'Bạn có áo măng tô này màu trắng không?', phrases: [
           { answer: 'coat', question: 'áo măng tô' },
@@ -1562,7 +1562,7 @@ export const Part5: CardCollection = {
       subTitle: 'Measurements and Sizes',
       cards: [
         { answer: 'big', question: 'rộng, to', phrases: [
-          { answer: 'This shirt is too big.', question: 'Cái áo sơ mi này to quá.' },
+          { answer: 'This shirt is too big.', question: 'Cái áo này to quá.' },
           { answer: 'Do you have a bigger one?', question: 'Bạn có cái to hơn không?' },
           { answer: 'This is too big for me.', question: 'Cái này to quá với tôi.' },
           { answer: 'The room is big.', question: 'Phòng rộng.' },
@@ -1570,7 +1570,7 @@ export const Part5: CardCollection = {
         ] },
         { answer: 'extra-large', question: 'lớn nhất, cực lớn', phrases: [
           { answer: 'Do you have extra-large?', question: 'Bạn có cỡ lớn nhất không?' },
-          { answer: 'I want an extra-large shirt.', question: 'Tôi muốn một cái áo sơ mi cỡ lớn nhất.' },
+          { answer: 'I want an extra-large shirt.', question: 'Tôi muốn một cái áo cỡ lớn nhất.' },
           { answer: 'This is extra-large.', question: 'Cái này cực lớn.' },
           { answer: 'Is there an extra-large size?', question: 'Có cỡ lớn nhất không?' },
           { answer: 'I need extra-large.', question: 'Tôi cần cỡ lớn nhất.' },
@@ -1584,21 +1584,21 @@ export const Part5: CardCollection = {
         ] },
         { answer: 'large', question: 'lớn', phrases: [
           { answer: 'Do you have this in a size large?', question: 'Bạn có cái này size lớn không?' },
-          { answer: 'I want a large shirt.', question: 'Tôi muốn một cái áo sơ mi lớn.' },
+          { answer: 'I want a large shirt.', question: 'Tôi muốn một cái áo lớn.' },
           { answer: 'This is too large.', question: 'Cái này lớn quá.' },
           { answer: 'Do you have a large one?', question: 'Bạn có cái lớn không?' },
           { answer: 'I need a large size.', question: 'Tôi cần cỡ lớn.' },
         ] },
         { answer: 'medium', question: 'trung', phrases: [
           { answer: 'Do you have this in a size medium?', question: 'Bạn có cái này size trung không?' },
-          { answer: 'I want a medium shirt.', question: 'Tôi muốn một cái áo sơ mi cỡ trung.' },
+          { answer: 'I want a medium shirt.', question: 'Tôi muốn một cái áo cỡ trung.' },
           { answer: 'This is medium size.', question: 'Cái này cỡ trung.' },
           { answer: 'Do you have a medium one?', question: 'Bạn có cái cỡ trung không?' },
           { answer: 'I need a medium size.', question: 'Tôi cần cỡ trung.' },
         ] },
         { answer: 'small', question: 'nhỏ', phrases: [
           { answer: 'Do you have this in a size small?', question: 'Bạn có cái này size nhỏ không?' },
-          { answer: 'I want a small shirt.', question: 'Tôi muốn một cái áo sơ mi nhỏ.' },
+          { answer: 'I want a small shirt.', question: 'Tôi muốn một cái áo nhỏ.' },
           { answer: 'This is too small.', question: 'Cái này nhỏ quá.' },
           { answer: 'Do you have a smaller one?', question: 'Bạn có cái nhỏ hơn không?' },
           { answer: 'I want to buy the small one.', question: 'Tôi muốn mua chiếc áo nhỏ.' },
@@ -1612,7 +1612,7 @@ export const Part5: CardCollection = {
         ] },
         { answer: 'extra-small', question: 'nhỏ nhất, cực nhỏ', phrases: [
           { answer: 'Do you have extra-small?', question: 'Bạn có cỡ nhỏ nhất không?' },
-          { answer: 'I want an extra-small shirt.', question: 'Tôi muốn một cái áo sơ mi cỡ nhỏ nhất.' },
+          { answer: 'I want an extra-small shirt.', question: 'Tôi muốn một cái áo cỡ nhỏ nhất.' },
           { answer: 'This is extra-small.', question: 'Cái này cực nhỏ.' },
           { answer: 'Is there an extra-small size?', question: 'Có cỡ nhỏ nhất không?' },
           { answer: 'I need extra-small.', question: 'Tôi cần cỡ nhỏ nhất.' },
@@ -1725,11 +1725,11 @@ export const Part5: CardCollection = {
           { answer: 'gray', question: 'màu xám' },
           { answer: 'I like the gray suit.', question: 'Tôi thích bộ com lê màu xám.' },
         ] },
-        { answer: "I don't like the green shirt.", question: 'Tôi không thích chiếc áo sơ mi màu xanh lá cây.', phrases: [
+        { answer: "I don't like the green shirt.", question: 'Tôi không thích chiếc áo màu xanh lá cây.', phrases: [
           { answer: 'I do not like', question: 'tôi không thích' },
-          { answer: 'shirt', question: 'áo sơ mi' },
+          { answer: 'shirt', question: 'áo' },
           { answer: 'green', question: 'màu xanh lá cây' },
-          { answer: "I don't like the green shirt.", question: 'Tôi không thích chiếc áo sơ mi màu xanh lá cây.' },
+          { answer: "I don't like the green shirt.", question: 'Tôi không thích chiếc áo màu xanh lá cây.' },
         ] },
         { answer: 'Give me a discount on this sweater, will you?', question: 'Giảm giá chiếc áo len này cho tôi, được không?', phrases: [
           { answer: 'discount', question: 'giảm giá' },

@@ -194,7 +194,7 @@ export const Part3: CardCollection = {
           { answer: 'drive', question: 'chở' },
           { answer: 'airport', question: 'phi trường' },
         ] },
-        { answer: 'How long does it take to get there?', question: 'Đi đến bao lâu?', phrases: [
+        { answer: 'How long does it take to get there?', question: 'Đến đó mất bao lâu?', phrases: [
           { answer: 'how long?', question: 'mất bao lâu' },
           { answer: 'get there', question: 'đến đó' },
         ] },
@@ -239,7 +239,7 @@ export const Part3: CardCollection = {
         { answer: 'city', question: 'thành phố', phrases: [{ answer: 'I live in a big city.', question: 'Tôi sống ở một thành phố lớn.' }] },
         { answer: 'cyclo', question: 'xe xích lô', phrases: [{ answer: "Let's ride a cyclo.", question: 'Đi xích lô đi.' }] },
         { answer: 'get around', question: 'đi quanh, đi lại', phrases: [{ answer: 'I need to rent a motorbike to get around the city.', question: 'Tôi cần thuê một chiếc xe gắn máy để đi quanh thành phố.' }] },
-        { answer: 'motorbike', question: 'xe gắn máy', phrases: [{ answer: 'Many people ride motorbikes.', question: 'Nhiều người đi xe máy.' }] },
+        { answer: 'motorbike', question: 'xe gắn máy', phrases: [{ answer: 'Many people ride motorbikes.', question: 'Nhiều người đi xe gắn máy.' }] },
         { answer: 'new', question: 'mới', phrases: [{ answer: 'I need to buy a new bike.', question: 'Tôi cần mua một chiếc xe đạp mới.' }] },
         { answer: 'used', question: 'cũ', phrases: [{ answer: 'I want to buy a used car.', question: 'Tôi muốn mua một chiếc xe hơi cũ.' }] },
         { answer: 'I need to rent a motorbike to get around the city.', question: 'Tôi cần thuê một chiếc xe gắn máy để đi quanh thành phố.', phrases: [

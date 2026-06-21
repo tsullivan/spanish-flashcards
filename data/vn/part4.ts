@@ -72,9 +72,9 @@ export const Part4: CardCollection = {
           { answer: 'My heel hurts.', question: 'Gót chân tôi bị đau.' },
           { answer: 'I hurt my heel.', question: 'Gót chân tôi bị thương.' },
         ] },
-        { answer: 'hip', question: 'mông', phrases: [
-          { answer: 'I just got a new hip.', question: 'Tôi vừa mới thay mông mới.' },
-          { answer: 'hip replacement', question: 'thay mông' },
+        { answer: 'hip', question: 'hông', phrases: [
+          { answer: 'I just got a new hip.', question: 'Tôi vừa thay khớp háng mới.' },
+          { answer: 'hip replacement', question: 'thay khớp háng' },
         ] },
         { answer: 'knee', question: 'đầu gối', phrases: [
           { answer: 'My knee hurts.', question: 'Đầu gối tôi bị đau.' },
@@ -105,12 +105,12 @@ export const Part4: CardCollection = {
         ] },
         { answer: 'throat', question: 'họng', phrases: [
           { answer: 'My throat hurts.', question: 'Họng tôi bị đau.' },
-          { answer: 'I have a sore throat.', question: 'Họng tôi bị sưng họng.' },
+          { answer: 'I have a sore throat.', question: 'Họng tôi bị sưng.' },
         ] },
         { answer: 'thumb', question: 'ngón tay cái', phrases: [
           { answer: 'My thumb hurts.', question: 'Ngón tay cái tôi bị đau.' },
           { answer: 'I hurt my thumb.', question: 'Ngón tay cái tôi bị thương.' },
-          { answer: 'Under my thumb', question: 'dưới ngón tay cái của tôi' },
+          { answer: 'Under my thumb', question: 'dưới ngón tay cái tôi' },
         ] },
         { answer: 'tongue', question: 'lưỡi', phrases: [
           { answer: 'My tongue hurts.', question: 'Lưỡi tôi bị đau.' },
@@ -188,7 +188,7 @@ export const Part4: CardCollection = {
         ] },
         { answer: 'cast', question: 'bó bột', phrases: [
           { answer: 'I have a cast on my leg.', question: 'Chân tôi bị bó bột.' },
-          { answer: 'I need to get a cast for my broken arm.', question: 'Tôi cần đi bó bột cho cánh tay bị gãy của tôi.' },
+          { answer: 'I need to get a cast for my broken arm.', question: 'Tôi cần đi bó bột cho cánh tay bị gãy.' },
         ] },
         { answer: 'chills', question: 'ớn lạnh', phrases: [
           { answer: 'I have chills.', question: 'Tôi bị ớn lạnh.' },
@@ -329,7 +329,7 @@ export const Part4: CardCollection = {
         ] },
         { answer: 'sore', question: 'bị đau', phrases: [
           { answer: 'My throat is sore.', question: 'Họng tôi bị đau.' },
-          { answer: 'I have a sore throat.', question: 'Họng tôi bị sưng họng.' },
+          { answer: 'I have a sore throat.', question: 'Họng tôi bị sưng.' },
         ] },
         { answer: 'sprain', question: 'bong gân', phrases: [
           { answer: 'I have a sprain.', question: 'Tôi bị bong gân.' },
@@ -503,7 +503,7 @@ export const Part4: CardCollection = {
     ] },
     { answer: 'dry skin', question: 'da khô', phrases: [
       { answer: 'I have dry skin.', question: 'Da tôi bị khô.' },
-      { answer: 'I need some lotion for my dry skin.', question: 'Tôi cần một số kem dưỡng cho da khô của tôi.' },
+      { answer: 'I need some lotion for my dry skin.', question: 'Tôi cần một số kem dưỡng cho da khô.' },
     ] },
     { answer: 'flu', question: 'cúm', phrases: [
       { answer: 'I need a flu shot.', question: 'Tôi cần chích ngừa cúm.' },
