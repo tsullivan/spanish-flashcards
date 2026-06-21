@@ -1,11 +1,11 @@
-# spanish-flashcards
+# vietnamese-flashcards
 
-A Spanish language learning app built with Vue 3. Presents flashcards for verbs and nouns across multiple tenses, randomizing which side of the card appears first.
+A Vietnamese language learning app built with Vue 3. Presents flashcards for verbs and nouns across multiple tenses, randomizing which side of the card appears first.
 
 ## How it works
 
 Each flashcard has four steps:
-1. Word (Spanish or English, randomized)
+1. Word (Vietnamese or English, randomized)
 2. Word + translation
 3. Example phrase (one side)
 4. Example phrase (other side)
@@ -46,11 +46,11 @@ npm run type-check
 npm run build
 ```
 
-The app is deployed at `/spanish-flashcards/` (GitHub Pages), so the Vite config sets `base: '/spanish-flashcards/'`. Built assets use that prefix — do not test the `dist/` output with a generic static server like `npx serve`. Use Vite's preview server instead, which handles the base path correctly:
+The app is deployed at `/vietnamese-flashcards/` (GitHub Pages), so the Vite config sets `base: '/vietnamese-flashcards/'`. Built assets use that prefix — do not test the `dist/` output with a generic static server like `npx serve`. Use Vite's preview server instead, which handles the base path correctly:
 
 ```sh
 npm run preview
-# open http://localhost:4173/spanish-flashcards/
+# open http://localhost:4173/vietnamese-flashcards/
 ```
 
 ### Lint
