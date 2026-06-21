@@ -1,4 +1,4 @@
-import type { CardCollection } from './types';
+import type { CardCollection } from '../types';
 
 export const Chapter1: CardCollection = {
   'Tackling Basic Grammar': [

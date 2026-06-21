@@ -1,4 +1,4 @@
-import type { CardCollection } from './types';
+import type { CardCollection } from '../types';
 
 export const Chapter3: CardCollection = {
   'Reflecting on Reflexive Verbs and Pronouns': [

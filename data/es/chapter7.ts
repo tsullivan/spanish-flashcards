@@ -1,4 +1,4 @@
-import type { CardCollection } from './types';
+import type { CardCollection } from '../types';
 
 export const Chapter7: CardCollection = {
   'Asking "Where Is...?" and "Where Are...?"': [

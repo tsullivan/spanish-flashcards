@@ -1,4 +1,4 @@
-import type { CardCollection } from './types';
+import type { CardCollection } from '../types';
 
 export const Chapter4: CardCollection = {
   'Counting to 100 and Beyond': [
