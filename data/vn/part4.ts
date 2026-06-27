@@ -45,6 +45,10 @@ export const Part4: CardCollection = {
           { answer: 'My head hurts.', question: 'Đầu tôi bị đau.' },
           { answer: 'I have a headache.', question: 'Tôi bị nhức đầu.' },
         ] },
+        { answer: 'hair', question: 'tóc', phrases: [
+          { answer: 'My hair is long.', question: 'Tóc tôi dài.' },
+          { answer: 'I need to cut my hair.', question: 'Tôi cần cắt tóc.' },
+        ] },
         { answer: 'leg', question: 'chân', phrases: [
           { answer: 'My leg hurts.', question: 'Chân tôi bị đau.' },
           { answer: 'My leg is strong.', question: 'Chân tôi khỏe.' },

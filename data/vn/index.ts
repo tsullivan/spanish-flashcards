@@ -8,6 +8,7 @@ import { Part5 } from './part5';
 import { Part6 } from './part6';
 import { Part7 } from './part7';
 import { Supplemental } from './supplemental';
+import { Supplemental2 } from './supplemental2';
 
 export const source: AppData = {
   language: 'vi-VN',
@@ -21,5 +22,6 @@ export const source: AppData = {
     'Part 6: Exploring Vietnam': Part6,
     'Part 7: Key Names and Signs': Part7,
     'Supplemental': Supplemental,
+    'Supplemental 2': Supplemental2,
   },
 };
