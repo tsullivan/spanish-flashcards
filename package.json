@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "test:unit": "vitest",
     "build-only": "vite build",
+    "build:offline": "run-p type-check \"build-only -- --mode offline\"",
     "type-check": "vue-tsc --build",
     "lint": "run-s lint:*",
     "lint:eslint": "eslint . --fix --cache",
@@ -40,6 +41,7 @@
     "typescript": "~6.0.0",
     "typescript-eslint": "^8.59.4",
     "vite": "^8.0.8",
+    "vite-plugin-singlefile": "^2.3.3",
     "vite-plugin-vue-devtools": "^8.1.1",
     "vitest": "^4.1.4",
     "vue-tsc": "^3.2.6"
