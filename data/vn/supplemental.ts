@@ -189,9 +189,9 @@ export const Supplemental: CardCollection = {
           { answer: 'Where is the bottle opener?', question: 'Cái mở chai ở đâu?' },
           { answer: 'I need a bottle opener.', question: 'Tôi cần một cái mở chai.' },
         ] },
-        { answer: 'colander', question: 'cái rổ', phrases: [
-          { answer: 'Wash the vegetables in the colander.', question: 'Rửa rau trong cái rổ.' },
-          { answer: 'I need a colander.', question: 'Tôi cần một cái rổ.' },
+        { answer: 'basket', question: 'cái rổ', phrases: [
+          { answer: 'Wash the vegetables in the basket.', question: 'Rửa rau trong cái rổ.' },
+          { answer: 'I need a basket.', question: 'Tôi cần một cái rổ.' },
         ] },
         { answer: 'aluminum foil', question: 'giấy bạc', phrases: [
           { answer: 'Cover it with aluminum foil.', question: 'Phủ nó bằng giấy bạc.' },
@@ -391,7 +391,7 @@ export const Supplemental: CardCollection = {
           { answer: 'I need a glass of water.', question: 'Tôi cần một ly nước.' },
           { answer: 'The glass is empty.', question: 'Cái ly trống.' },
         ] },
-        { answer: 'wine glass', question: 'ly rượu, ly vang', phrases: [
+        { answer: 'wine glass', question: 'ly rượu', phrases: [
           { answer: 'I need a wine glass.', question: 'Tôi cần một ly rượu.' },
           { answer: 'The wine glass is full.', question: 'Ly rượu đầy.' },
         ] },
@@ -627,7 +627,6 @@ export const Supplemental: CardCollection = {
         ] },
         { answer: 'to undress (verb)', question: 'cởi quần áo', phrases: [
           { answer: 'I undress before bed.', question: 'Tôi cởi quần áo trước khi ngủ.' },
-          { answer: 'The child undresses.', question: 'Đứa trẻ cởi quần áo.' },
         ] },
         { answer: 'to go to bed (verb)', question: 'đi ngủ', phrases: [
           { answer: 'I go to bed at ten.', question: 'Tôi đi ngủ lúc mười giờ.' },
